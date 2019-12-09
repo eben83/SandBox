@@ -19,7 +19,21 @@ h1 {
     width: 5%;
 }
 
-.image{
-    width: 25%;
-    align-content: center;
+.imageBody{
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.listBasic {
+    list-style-type: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
