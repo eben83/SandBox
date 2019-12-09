@@ -30,6 +30,9 @@ h1 {
     float: left;
     list-style-type: none;
     margin-left: 30%;
+    border-style: solid;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 
@@ -37,4 +40,8 @@ h1 {
     float: right;
     list-style-type: none;
     margin-right: 30%;
+}
+
+a :hover {
+    color: crimson;
 }
