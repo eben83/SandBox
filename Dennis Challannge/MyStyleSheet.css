@@ -1,0 +1,71 @@
+/* MyStyleSheet.css */
+
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#titleBar {
+    padding: 0px 0px 0px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+    text-decoration: underline;
+}
+
+#logoImage {
+    padding: 10px 0px 0px 15px ;
+    width: 5%;
+}
+
+#homeImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+#para1 {
+    padding-top: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#para2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table.left {
+    float: left;
+    width: 5cm;
+    margin-left: 30%;
+}
+table.right {
+    float: right;
+    width: 5cm;
+    margin-right: 30%;
+    color: black;
+}
+
+table#pricingTable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20cm;
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
