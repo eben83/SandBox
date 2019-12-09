@@ -26,14 +26,15 @@ h1 {
     margin-right: auto;
 }
 
-.listBasic {
-    list-style-type: none;
-}
-
 .left {
     float: left;
+    list-style-type: none;
+    margin-left: 30%;
+
 }
 
 .right {
     float: right;
+    list-style-type: none;
+    margin-right: 30%;
 }
