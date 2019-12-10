@@ -44,6 +44,14 @@ h1 {
     border-style: solid;
     padding: 20px 20px 20px 20px;
 }
+.centre {
+    list-style-type: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    text-align: center;
+}
 
 .text {
     margin-left: 50px;
