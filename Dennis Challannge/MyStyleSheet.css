@@ -8,14 +8,16 @@ h1 {
 }
 
 .nav {
-    padding: 10px 0px 0px 20px;
+    padding: 0px;
+    margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: blue;
     text-decoration: none;
 }
 
+
 .imgNav {
-    padding: 10px 20px 0px 15px ;
+    padding: 10px 20px 0px 50px ;
     width: 5%;
 }
 
@@ -31,8 +33,7 @@ h1 {
     list-style-type: none;
     margin-left: 30%;
     border-style: solid;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 20px 20px 20px;
 
 }
 
@@ -40,8 +41,25 @@ h1 {
     float: right;
     list-style-type: none;
     margin-right: 30%;
+    border-style: solid;
+    padding: 20px 20px 20px 20px;
 }
 
-a :hover {
+.text {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
+a:hover {
     color: crimson;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 20px;
 }
