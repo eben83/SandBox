@@ -21,7 +21,7 @@ namespace MoviesAPI
                    o.UseSqlServer(connectionString));
           }
           public void Configure(IApplicationBuilder app,
-               Microsoft.AspNetCore.Hosting.IWebHostEnvironment,
+               IHostingEnvironment env,
                MoviesDbContext moviesDbContext)
           {
                if (env.IsDevelopment())
