@@ -12,16 +12,16 @@ namespace MoviesAPI
 {
      public class Startup
      {
-          public void ConfigureServices(IServiceCollection services
+          public void ConfigureServices(IServiceCollection services)
           {
                var connectionString =
-"Server=localhost;Database=MoviesDB;User Id=sa;Password=Passw0rd!";
+"Server=localhost;Database=MoviesDB;User Id=sa;Password=Burge8810";
                services
                  .AddDbContext<MoviesDbContext>(o =>
                    o.UseSqlServer(connectionString));
           }
           public void Configure(IApplicationBuilder app,
-               IHostingEnvironment env,
+               Microsoft.AspNetCore.Hosting.IWebHostEnvironment,
                MoviesDbContext moviesDbContext)
           {
                if (env.IsDevelopment())
