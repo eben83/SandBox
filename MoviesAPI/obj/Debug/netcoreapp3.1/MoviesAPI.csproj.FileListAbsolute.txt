@@ -16,3 +16,11 @@
 /Volumes/My Passport/Dev/MoviesAPI/obj/Debug/netcoreapp3.1/MoviesAPI.RazorTargetAssemblyInfo.cache
 /Volumes/My Passport/Dev/MoviesAPI/obj/Debug/netcoreapp3.1/MoviesAPI.dll
 /Volumes/My Passport/Dev/MoviesAPI/obj/Debug/netcoreapp3.1/MoviesAPI.pdb
+/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/obj/Debug/netcoreapp3.1/MoviesAPI.csprojAssemblyReference.cache
+/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/obj/Debug/netcoreapp3.1/staticwebassets/MoviesAPI.StaticWebAssets.Manifest.cache
+/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/obj/Debug/netcoreapp3.1/staticwebassets/MoviesAPI.StaticWebAssets.xml
+/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/obj/Debug/netcoreapp3.1/MoviesAPI.MvcApplicationPartsAssemblyInfo.cache
+/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/obj/Debug/netcoreapp3.1/MoviesAPI.AssemblyInfoInputs.cache
+/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/obj/Debug/netcoreapp3.1/MoviesAPI.AssemblyInfo.cs
+/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/obj/Debug/netcoreapp3.1/MoviesAPI.dll
+/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/obj/Debug/netcoreapp3.1/MoviesAPI.pdb

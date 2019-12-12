@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/My Passport/Dev/MoviesAPI/MoviesAPI.csproj": {}
+    "/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/MoviesAPI.csproj": {}
   },
   "projects": {
-    "/Volumes/My Passport/Dev/MoviesAPI/MoviesAPI.csproj": {
+    "/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/MoviesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/My Passport/Dev/MoviesAPI/MoviesAPI.csproj",
+        "projectUniqueName": "/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/MoviesAPI.csproj",
         "projectName": "MoviesAPI",
-        "projectPath": "/Volumes/My Passport/Dev/MoviesAPI/MoviesAPI.csproj",
+        "projectPath": "/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/MoviesAPI.csproj",
         "packagesPath": "/Users/ebenburger/.nuget/packages/",
-        "outputPath": "/Volumes/My Passport/Dev/MoviesAPI/obj/",
+        "outputPath": "/Volumes/My Passport/Dev/EbenSandbox/MoviesAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ebenburger/.nuget/NuGet/NuGet.Config"
