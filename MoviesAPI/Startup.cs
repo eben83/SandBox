@@ -24,22 +24,23 @@ namespace MoviesAPI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, MoviesDbContext moviesDbContext)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRouting();
+            app.UseStaticFiles();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
-            });
+            moviesDbContext.CreateSeedData();
+
+            app.Run(async (context) =>
+               {
+                    await context
+                           .Response
+                           .WriteAsync("Hello World!");
+               });
         }
     }
 }
