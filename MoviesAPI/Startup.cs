@@ -33,12 +33,12 @@ namespace MoviesAPI
                }
                app.UseStaticFiles();
                moviesDbContext.CreateSeedData();
-               app.Run(async (context) =>
+               app.UseMvc();
                {
                     await context
                            .Response
                            .WriteAsync("Hello World!");
-               });
+               };
           }
      }
 }
