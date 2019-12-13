@@ -12,7 +12,7 @@ namespace MoviesAPI
 {
      public class Startup
      {
-          public void ConfigureServices(IServiceCollection services
+          public void ConfigureServices(IServiceCollection services)
           {
                var connectionString =
 "Server=localhost;Database=MoviesDB;User Id=sa;Password=Passw0rd!";
