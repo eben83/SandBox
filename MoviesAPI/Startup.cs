@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MoviesAPI.Services;
+using Microsoft.AspNetCore.Mvc;
 namespace MoviesAPI
 {
      public class Startup
@@ -19,6 +20,8 @@ namespace MoviesAPI
                services
                  .AddDbContext<MoviesDbContext>(o =>
                    o.UseSqlServer(connectionString));
+
+                   services.AddMvcWithDefaultRoute();
           }
           public void Configure(IApplicationBuilder app,
                IHostingEnvironment env,
