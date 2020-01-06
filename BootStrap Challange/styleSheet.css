@@ -1,4 +1,6 @@
 .sheetTop {
     background-color: black;
-    text-decoration: white;
+    color: white;
+    font-size: 15px;
+    padding: 30px;
 }
