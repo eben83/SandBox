@@ -2,5 +2,19 @@
     background-color: black;
     color: white;
     font-size: 15px;
-    padding: 30px;
+    padding: 15px 0px 15px 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
+li{
+    display: inline;
+    padding-left: 15px;
+}
+.logoStyling{
+    display: block;
+    width: 10px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
