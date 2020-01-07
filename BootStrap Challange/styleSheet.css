@@ -10,6 +10,7 @@
 li{
     display: inline;
     padding-left: 15px;
+    margin-left: 50px;
 }
 .logoStyling{
     display: block;
@@ -38,4 +39,10 @@ a:hover {
 
 h3, h2, p {
     color: black;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
 }
