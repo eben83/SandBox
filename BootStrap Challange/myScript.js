@@ -1,3 +1,3 @@
 function myFunction() {
-    document.getElementById('email').innerHTML = window.alert('hello')
+    document.innerHTML = window.alert('hello');
 }
