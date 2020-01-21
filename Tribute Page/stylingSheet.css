@@ -27,3 +27,10 @@ img {
     padding: 20px;
     margin: 10px;
 }
+
+#tribute-info {
+    text-align: justify;
+    text-justify: inter-word;
+    width: 50%;
+    margin: auto;
+}
