@@ -1,0 +1,5 @@
+/Users/ebenburger/dev/EbenSandbox/helloWorld/helloWorld/bin/Debug/helloWorld.exe
+/Users/ebenburger/dev/EbenSandbox/helloWorld/helloWorld/bin/Debug/helloWorld.pdb
+/Users/ebenburger/dev/EbenSandbox/helloWorld/helloWorld/obj/Debug/helloWorld.csprojAssemblyReference.cache
+/Users/ebenburger/dev/EbenSandbox/helloWorld/helloWorld/obj/Debug/helloWorld.exe
+/Users/ebenburger/dev/EbenSandbox/helloWorld/helloWorld/obj/Debug/helloWorld.pdb
