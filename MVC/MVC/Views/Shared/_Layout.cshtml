@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MVC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <!--Black Lable at top-->
+        <div class="topLine">
+            <p>+27(0)11 395 1119</p>
+            <p>info@rapxgroup.com</p>
+            <p>Morehill, Benoni, Gauteng</p>
+        </div>
+
+        <!--logo strip-->
+        <div>
+            <a asp-area="" asp-controller="Home" asp-action="Index">
+                <img class="logo" src="~/logos/NewRapXGroupLogo.jpg" asp-append-version="true" alt="Logo" />
+            </a>
+        </div>
+
+        <!--nav bar strip-->
+        <nav class="active">
+            <ul>
+                <li>
+                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li>
+                <a asp-area="" asp-controller="About" asp-action="About">About Us</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="redBanner">
+        <h2>
+            Are you looking for a strategic partner in mininig solutions?
+        </h2>
+        <p>
+            Work with a partner that invests in the growth of our economy. Call or Contact us online.
+        </p>
+        <button class="button">Email Us</button>
+    </div>
+    <div class="flex-container">
+        <div><img class="logo" src="~/logos/RocProLogo.jpg" asp-append-version="true" alt="RocPro Logo" /></div>
+        <div><img class="logo" src="~/logos/CoalProLogo.jpg" asp-append-version="true" alt="CoalPro Logo" /></div>
+        <div><img class="logo" src="~/logos/ConsultLogo.jpg" asp-append-version="true" alt="Consult Logo" /></div>
+        <div><img class="logo" src="~/logos/RXCivilsLogo.jpg" asp-append-version="true" alt="RX Civils Logo" /></div>
+
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+
+            <div class="">
+                &copy; 2020 - ArlowConsult - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
