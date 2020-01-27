@@ -11,16 +11,16 @@
     <header>
         <!--Black Lable at top-->
         <div class="topLine">
-            <p>+27(0)11 395 1119</p>
-            <p>info@rapxgroup.com</p>
-            <p>Morehill, Benoni, Gauteng</p>
+            <ul>
+                <li>+27(0)11 395 1119</li>
+                <li>info@rapxgroup.com</li>
+                <li>Morehill, Benoni, Gauteng</li>
+            </ul>
         </div>
 
-        <!--logo strip-->
+        <!--logo strip, make logo a link to the home page-->
         <div>
-            <a asp-area="" asp-controller="Home" asp-action="Index">
                 <img class="logo" src="~/logos/NewRapXGroupLogo.jpg" asp-append-version="true" alt="Logo" />
-            </a>
         </div>
 
         <!--nav bar strip-->
@@ -30,12 +30,14 @@
                 <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                 </li>
                 <li>
-                <a asp-area="" asp-controller="About" asp-action="About">About Us</a>
+                <a asp-area="" asp-controller="Home" asp-action="About">About Us</a>
                 </li>
             </ul>
         </nav>
 
     </header>
+
+    <!--This is where each page get inserted-->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -63,7 +65,7 @@
         <div class="container">
 
             <div class="">
-                &copy; 2020 - ArlowConsult - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                &copy; 2020 - ArlowConsult - <a style="float: right" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
             </div>
         </div>
     </footer>
