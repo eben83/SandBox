@@ -3,4 +3,3 @@
 
 // Write your JavaScript code.
 
-// this is for the carousel

@@ -86,4 +86,8 @@ li {
     padding: 2em;
 }
 
-/* this is for the index page*/
+/*global containers*/
+.container { 
+    text-align: center;
+    justify-content: center;
+}
