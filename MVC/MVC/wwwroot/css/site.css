@@ -87,7 +87,27 @@ li {
 }
 
 /*global containers*/
-.container { 
+.container-fluid { 
     text-align: center;
     justify-content: center;
+    background-color: lightgrey;
+    padding: 20px 0 20px 0;
+}
+
+main, html {
+    height: 100%;
+}
+
+.hero-image {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.5;
+    background-color: rgb(233, 19, 42);
+}
+img {
+    height: 25em;
+    width: 100%;
 }
