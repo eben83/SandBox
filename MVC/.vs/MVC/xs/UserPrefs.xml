@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{F76F9E90-F4D8-4ED6-B8A3-54D4B16A8849}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MVC/wwwroot/css/site.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MVC/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="MVC/Views/Home/Index.cshtml" Line="51" Column="1" />
-      <File FileName="MVC/wwwroot/css/site.css" Line="95" Column="2" />
+      <File FileName="MVC/wwwroot/css/site.css" Line="64" Column="32" />
+      <File FileName="MVC/Views/Home/Index.cshtml" Line="40" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,14 +13,15 @@
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True">
-                  <Node name="site.css" selected="True" />
-                </Node>
+                <Node name="css" expanded="True" />
                 <Node name="images" expanded="True" />
+                <Node name="js" expanded="True" />
               </Node>
             </Node>
           </Node>

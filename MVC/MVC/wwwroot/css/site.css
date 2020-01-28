@@ -1,5 +1,6 @@
-﻿.topLine {
-    padding: 10px; /*This must be looked at*/
+﻿/* this is all the SHared view layout page*/
+.topLine {
+    padding: 10px; /*changed it to a Ul*/
     color: white;
     background-color: black;
 }
@@ -27,7 +28,8 @@ footer {
     text-align: center;
     background-color: black;
     color: white;
-    padding: 15px 0 15px 0;
+    padding: 20px 0 20px 0;
+    margin-bottom:2px;
 }
 
 a:hover {
@@ -79,12 +81,9 @@ li {
 .logo {
     display: block;
     width: 20em;
-    height: auto;
+    height: 50%;
     margin: auto;
     padding: 2em;
 }
 
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-}
+/* this is for the index page*/
