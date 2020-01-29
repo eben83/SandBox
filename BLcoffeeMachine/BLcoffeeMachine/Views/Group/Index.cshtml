@@ -1,10 +1,8 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+﻿@model BLcoffeeMachine.Models.Group
 
-</body>
-</html>
+<form method="post" action="/Group/Create">
+    <div class="input-group">
+        <input asp-for="Name" type="text" class="form-control" /> <!--this asp for' comes from the group.cs model file-->
+        <input type="submit" value="Create"  class="btn btn-primary"/>
+    </div>
+</form>

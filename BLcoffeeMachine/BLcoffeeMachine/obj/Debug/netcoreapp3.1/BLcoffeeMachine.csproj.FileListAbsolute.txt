@@ -33,3 +33,4 @@
 /Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/obj/Debug/netcoreapp3.1/BLcoffeeMachine.dll
 /Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/obj/Debug/netcoreapp3.1/BLcoffeeMachine.pdb
 /Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/obj/Debug/netcoreapp3.1/BLcoffeeMachine.csproj.CopyComplete
+/Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/obj/Debug/netcoreapp3.1/Razor/Views/Group/Index.cshtml.g.cs

@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -20,7 +20,7 @@ namespace BLcoffeeMachine.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(); //render view
         }
 
         public IActionResult Privacy()
