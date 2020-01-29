@@ -34,3 +34,11 @@
 /Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/obj/Debug/netcoreapp3.1/BLcoffeeMachine.pdb
 /Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/obj/Debug/netcoreapp3.1/BLcoffeeMachine.csproj.CopyComplete
 /Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/obj/Debug/netcoreapp3.1/Razor/Views/Group/Index.cshtml.g.cs
+/Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.Design.dll
+/Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/bin/Debug/netcoreapp3.1/Npgsql.dll
+/Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/bin/Debug/netcoreapp3.1/Remotion.Linq.dll
+/Users/ebenburger/dev/EbenSandbox/BLcoffeeMachine/BLcoffeeMachine/bin/Debug/netcoreapp3.1/System.Interactive.Async.dll

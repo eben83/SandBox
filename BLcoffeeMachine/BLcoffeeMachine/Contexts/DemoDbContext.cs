@@ -1,10 +1,13 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
+
 namespace BLcoffeeMachine.Contexts
+ 
 {
-    public class DbContext
-    {
-        public DbContext()
-        {
-        }
+     public class DemoDbContext : DbContext
+     {
+        public DemoDbContext(DbContextOptions<DemoDbContext> options) : base(options) { }
+
+        
     }
 }
