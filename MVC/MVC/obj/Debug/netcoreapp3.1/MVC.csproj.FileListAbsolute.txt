@@ -44,7 +44,6 @@
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/bin/Debug/netcoreapp3.1/MVC.pdb
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/bin/Debug/netcoreapp3.1/MVC.Views.dll
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/bin/Debug/netcoreapp3.1/MVC.Views.pdb
-/Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/MVC.csprojAssemblyReference.cache
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/staticwebassets/MVC.StaticWebAssets.Manifest.cache
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/staticwebassets/MVC.StaticWebAssets.xml
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/MVC.MvcApplicationPartsAssemblyInfo.cache
@@ -55,6 +54,8 @@
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/MVC.TagHelpers.input.cache
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/MVC.TagHelpers.output.cache
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/MVC.RazorCoreGenerate.cache
+/Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/About.cshtml.g.cs
+/Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Brand.cshtml.g.cs
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
@@ -68,5 +69,3 @@
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/MVC.dll
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/MVC.pdb
 /Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/MVC.csproj.CopyComplete
-/Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/About.cshtml.g.cs
-/Users/ebenburger/dev/EbenSandbox/MVC/MVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Brand.cshtml.g.cs
