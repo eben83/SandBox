@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{0EC7D408-5462-466E-B616-2758BACCF4F1}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BLcoffeeMachine" expanded="True">
+            <Node name="BLcoffeeMachine" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="GroupController.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Group" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BLcoffeeMachine PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
