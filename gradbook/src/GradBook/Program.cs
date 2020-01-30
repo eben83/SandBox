@@ -3,14 +3,17 @@ using System.Collections.Generic;
 
 namespace GradBook
 {
+
     class Program
     {
         static void Main(string[] args) //main is a method- in the () is the paramertes, arg is the name
         {
-            var x = 34.1;
-            var y = 22.2;
-            var result = x + y;
-            Console.WriteLine(result);
+
+            var book = new Book();
+             //new class placed in file Book.cs
+            book.AddGrade(89.0);
+            book.AddGrade(90.5);
+            book.AddGrade(8); // the adGrade is from the class Book.cs
 
             //creating number arrays- 
             var numbers = new [] {12.7, 14.5, 22.2};
@@ -18,7 +21,26 @@ namespace GradBook
             var grades = new List<double>(){12.7, 14.5, 22.2, 55.1};
             grades.Add(89.31);
             
-            //another way- var numbers = new double[3]; 
+            //for Each statment- 
+            var resultForEach = 0.0;
+            foreach(var number in grades) 
+            {
+                resultForEach += number;
+                
+            }
+            Console.WriteLine(resultForEach);
+            var average = resultForEach / grades.Count;
+            Console.WriteLine($" the average for the grade is {average:N1}"); 
+            // the :N3 will give you the format to 3 decimal place
+
+
+            //var x = 34.1;
+           // var y = 22.2;
+           // var result = x + y;
+           // Console.WriteLine(result);
+
+
+           //another way- var numbers = new double[3]; 
             //this will hold an array of length of 3, won't be
             //able to add any more to that, the one above allows as many numbers with the initializer
             // which is between the {} 
@@ -29,30 +51,7 @@ namespace GradBook
             //ArrayResult += numbers[2];
             //Console.WriteLine(ArrayResult);
 
-            //for Each statment- 
-            var resultForEach = 0.0;
-            foreach(var number in grades) 
-            {
-                resultForEach += number;
-                
-            }
-            Console.WriteLine(resultForEach);
-            var average = resultForEach / grades.Count;
-            System.Console.WriteLine($" the average for the grade is {average:N1}"); // the :N3 will give you the format to 3 decimal place
 
-
-
-            if (args.Length > 0) 
-            {
-            Console.WriteLine("Hello " + args[0] + "!"); //concat strings, adding the args sub zero from the array
-
-            Console.WriteLine($"Hello, {args[0]} !"); //string interpelation
-
-            }
-            else 
-            {
-                Console.WriteLine("Hello");
-            }
         }
     }
 }
