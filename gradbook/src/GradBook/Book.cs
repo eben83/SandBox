@@ -5,10 +5,11 @@ namespace GradBook
 {
     public class Book
     {
-        public Book(string name) // this is the initialiser 
+        public Book(string name) // this is the initialiser
+                                // inside the () is a perameter 
         {
             grades = new List<double> ();
-            this.name = name;   // this key work help with var's with the similar names-
+            Name = name;   // this key work help with var's with the similar names-
         }
 
         public void AddGrade(double grade) // public instnce of the method
@@ -45,6 +46,6 @@ namespace GradBook
         // }
 
         private List<double> grades;
-        private string name;
+        public string Name;
     }
 }

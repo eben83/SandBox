@@ -6,7 +6,7 @@ namespace GradBook.tests
     public class BookTests
     {
         [Fact]
-        public void Test1() // this is a unit test
+        public void BookCalculatesAnAverageGrade() // this is a unit test
 
         {
             //arrange
