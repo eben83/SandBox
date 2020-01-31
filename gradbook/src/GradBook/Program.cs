@@ -14,7 +14,12 @@ namespace GradBook
             book.AddGrade(89.0);
             book.AddGrade(90.5);
             book.AddGrade(8); // the addGrade is from the class Book.cs
-            book.showStats();
+            var statsResult = book.GetStats();
+
+            Console.WriteLine($"the lowest grade is {statsResult.low}");
+            Console.WriteLine($"the highest grade is {statsResult.High}");
+            Console.WriteLine($"the Average grade is {statsResult.Average}");
+
 
             //creating number arrays- 
             //var numbers = new [] {12.7, 14.5, 22.2};

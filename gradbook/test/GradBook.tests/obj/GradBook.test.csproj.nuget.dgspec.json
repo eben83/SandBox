@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ebenburger/dev/EbenSandbox/gradbook/test/GradBook.test/GradBook.test.csproj": {}
+    "/Users/ebenburger/dev/EbenSandbox/gradbook/test/GradBook.tests/GradBook.test.csproj": {}
   },
   "projects": {
-    "/Users/ebenburger/dev/EbenSandbox/gradbook/test/GradBook.test/GradBook.test.csproj": {
+    "/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/GradBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ebenburger/dev/EbenSandbox/gradbook/test/GradBook.test/GradBook.test.csproj",
-        "projectName": "GradBook.test",
-        "projectPath": "/Users/ebenburger/dev/EbenSandbox/gradbook/test/GradBook.test/GradBook.test.csproj",
+        "projectUniqueName": "/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/GradBook.csproj",
+        "projectName": "GradBook",
+        "projectPath": "/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/GradBook.csproj",
         "packagesPath": "/Users/ebenburger/.nuget/packages/",
-        "outputPath": "/Users/ebenburger/dev/EbenSandbox/gradbook/test/GradBook.test/obj/",
+        "outputPath": "/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -38,6 +38,63 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ebenburger/dev/EbenSandbox/gradbook/test/GradBook.tests/GradBook.test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ebenburger/dev/EbenSandbox/gradbook/test/GradBook.tests/GradBook.test.csproj",
+        "projectName": "GradBook.test",
+        "projectPath": "/Users/ebenburger/dev/EbenSandbox/gradbook/test/GradBook.tests/GradBook.test.csproj",
+        "packagesPath": "/Users/ebenburger/.nuget/packages/",
+        "outputPath": "/Users/ebenburger/dev/EbenSandbox/gradbook/test/GradBook.tests/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/ebenburger/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/GradBook.csproj": {
+                "projectPath": "/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/GradBook.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -49,7 +106,7 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.0, )"
+              "version": "[2.4.1, )"
             },
             "xunit.runner.visualstudio": {
               "target": "Package",
