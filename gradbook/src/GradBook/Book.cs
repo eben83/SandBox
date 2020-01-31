@@ -38,7 +38,7 @@ namespace GradBook
             //jumping statements
 
             //for loop
-            for(var index2 = 0; index2 < grades.Count; index += 1)
+            for(var index2 = 0; index2 < grades.Count; index2 += 1)
             {
                 result.low = Math.Min(grades[index2], result.low);
                 result.High = Math.Max(grades[index2], result.High);
@@ -61,7 +61,9 @@ namespace GradBook
             //result.Average /= grades.Count;
 
             //do while loop-- will run at least once
+
             var index = 0;
+
             do 
             {
                 result.low = Math.Min(grades[index], result.low);
@@ -72,7 +74,7 @@ namespace GradBook
             } while(index < grades.Count);
             
             result.Average /= grades.Count;
-
+            return result;
 
             //for Each statment- 
 
