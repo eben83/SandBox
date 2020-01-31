@@ -9,29 +9,20 @@ namespace GradBook
         static void Main(string[] args) //main is a method- in the () is the paramertes, arg is the name
         {
 
-            var book = new Book();
+            var book = new Book("eben's Grade book");
              //new class placed in file Book.cs
             book.AddGrade(89.0);
             book.AddGrade(90.5);
-            book.AddGrade(8); // the adGrade is from the class Book.cs
+            book.AddGrade(8); // the addGrade is from the class Book.cs
+            book.showStats();
 
             //creating number arrays- 
-            var numbers = new [] {12.7, 14.5, 22.2};
+            //var numbers = new [] {12.7, 14.5, 22.2};
             // list of double- add the above using statment Cmd + . will open the window to add
-            var grades = new List<double>(){12.7, 14.5, 22.2, 55.1};
-            grades.Add(89.31);
+            //var grades = new List<double>(){12.7, 14.5, 22.2, 55.1};
+            //grades.Add(89.31);
             
-            //for Each statment- 
-            var resultForEach = 0.0;
-            foreach(var number in grades) 
-            {
-                resultForEach += number;
-                
-            }
-            Console.WriteLine(resultForEach);
-            var average = resultForEach / grades.Count;
-            Console.WriteLine($" the average for the grade is {average:N1}"); 
-            // the :N3 will give you the format to 3 decimal place
+            
 
 
             //var x = 34.1;
