@@ -27,7 +27,7 @@ namespace GradBook
                 if (number > highGrade) { //this finds the highest number
                     highGrade = number;
                 }
-                if (number <= lowGrade) {
+                if (number <= lowGrade) { //finds the lowest number
                     lowGrade = number;
                 }
 
