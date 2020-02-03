@@ -10,15 +10,25 @@ namespace GradBook
         {
 
             var book = new Book("eben's Grade book");
+            var done = false;
+
+            while(!done){
+                System.Console.WriteLine("Enter a grade or 'q' to quit");
+                var input = Console.ReadLine();
+                var grade = double.Parse(input);
+            }
+            
+            
              //new class placed in file Book.cs
-            book.AddGrade(89.0);
-            book.AddGrade(90.5);
-            book.AddGrade(8); // the addGrade is from the class Book.cs
+            // book.AddGrade(89.0);
+            // book.AddGrade(90.5);
+            // book.AddGrade(8); // the addGrade is from the class Book.cs
             var statsResult = book.GetStats();
 
             Console.WriteLine($"the lowest grade is {statsResult.low}");
             Console.WriteLine($"the highest grade is {statsResult.High}");
             Console.WriteLine($"the Average grade is {statsResult.Average}");
+            Console.WriteLine($"the letter is {statsResult.Letter:N1}");
 
 
             //creating number arrays- 

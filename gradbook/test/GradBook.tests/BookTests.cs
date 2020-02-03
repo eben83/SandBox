@@ -24,6 +24,7 @@ namespace GradBook.tests
             Assert.Equal(85.6,result.Average, 1); // the 3rd perameter is the decimal point value
             Assert.Equal(90.5,result.High, 1);
             Assert.Equal(77.3,result.low, 1);
+            Assert.Equal('B', result.Letter);
 
         }
     }
