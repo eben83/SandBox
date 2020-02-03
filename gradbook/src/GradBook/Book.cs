@@ -8,6 +8,11 @@ namespace GradBook
 
     public class NameObject // inheritance.
     {
+        public NameObject(string name)
+        {
+            Name = name;
+        }
+
         public string Name
         {
             get;
@@ -18,7 +23,8 @@ namespace GradBook
 
     public class Book: NameObject
     {
-        public Book(string name) // this is the initialiser
+        public Book(string name) : base(name) 
+        // this is the initialiser
                                 // inside the () is a perameter 
         {
             grades = new List<double> ();
