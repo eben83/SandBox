@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace GradBook
 {
+
+    public delegate void GradeAddedDelegate(object sender, EventArgs args); // event
+
     public class Book
     {
         public Book(string name) // this is the initialiser
@@ -40,6 +43,10 @@ namespace GradBook
             if(grade <= 100 && grade >= 0) // boolian if statement with AND
             {
                 grades.Add(grade);
+                if(GradeAdded != null)
+                {
+                    GradeAdded(this, new EventArgs());
+                }
             }
             else 
             {
@@ -47,6 +54,9 @@ namespace GradBook
                 // throw exeption- this is an error handle..
             }
         }
+
+        public event GradeAddedDelegate GradeAdded;
+
         public stats GetStats()
         {
             var result = new stats();

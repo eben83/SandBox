@@ -10,7 +10,7 @@ namespace GradBook
         {
 
             var book = new Book("eben's Grade book");
-            //var done = false;
+            book.GradeAdded += OneGradeAdded;
 
             while(true)
             {
@@ -83,5 +83,11 @@ namespace GradBook
 
 
         }
+
+        static void OneGradeAdded(object sender, EventArgs e)
+        {
+            Console.WriteLine("A greade was added");
+        }
+
     }
 }
