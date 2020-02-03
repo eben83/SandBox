@@ -146,19 +146,29 @@ namespace GradBook
         
         public string Name //property
         {
-            get //this is knowen as a getter- gets the info
-            {
-                return name;
-            }
-            set //known as the setter- sets the info
-            {
-                if(!string.IsNullOrEmpty(value))
-                {
-                    name = value;
-                }
+            // get //this is knowen as a getter- gets the info
+            // {
+            //     return name;
+            // }
+            // set //known as the setter- sets the info
+            // {
+            //     if(!string.IsNullOrEmpty(value))
+            //     {
+            //         name = value;
+            //     }
                 
-            }
+            // }
+
+            //this is the short hand
+
+            get; 
+            
+            private set; 
+            // adding 'PRIVATE' to set will hide the set value- once the book has been set- ht user
+            //will not be able to change the name again...
+
         }
-        private string name;
+
+
     }
 }
