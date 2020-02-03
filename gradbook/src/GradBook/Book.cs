@@ -12,7 +12,7 @@ namespace GradBook
             Name = name;   // this key work help with var's with the similar names-
         }
 
-        public void AddLetterGrade(char Letter) //switch statemetns
+        public void AddGrade(char Letter) //switch statemetns
         {
             switch(Letter){
                 case 'A': 
