@@ -20,10 +20,19 @@ namespace GradBook
         }
     }
 
-
-    public class Book: NameObject
+    public abstract class Book : NameObject
     {
-        public Book(string name) : base(name) 
+        public Book(string name) : base(name)
+        {
+        }
+
+        public abstract void AddGrade(double grade);
+    }
+
+
+    public class InMemoryBook: Book
+    {
+        public InMemoryBook(string name) : base(name) 
         // this is the initialiser
                                 // inside the () is a perameter 
         {
@@ -49,7 +58,7 @@ namespace GradBook
             }
         }
 
-        public void AddGrade(double grade) // public instnce of the method
+        public override void AddGrade(double grade) // public instnce of the method
         {
 
             if(grade == 90.90) // this is the equal too
