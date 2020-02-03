@@ -43,7 +43,8 @@ namespace GradBook
             }
             else 
             {
-                System.Console.WriteLine("Invalid Value");
+                throw new ArgumentException($"Invalid {nameof(grade)}");
+                // throw exeption- this is an error handle..
             }
         }
         public stats GetStats()

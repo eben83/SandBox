@@ -12,10 +12,33 @@ namespace GradBook
             var book = new Book("eben's Grade book");
             var done = false;
 
-            while(!done){
-                System.Console.WriteLine("Enter a grade or 'q' to quit");
-                var input = Console.ReadLine();
-                var grade = double.Parse(input);
+            while(true)
+            {
+                Console.WriteLine("Enter a grade or 'q' to quit");
+                var input = Console.ReadLine(); //this will read the user input
+
+                if(input == "q")
+                {
+                    break;
+                }
+                // with this try- this will use the input if it is right will carry on in the program
+                //if not- the catch will tell the user the issue and carry on with the program without crashing the 
+                // the program.
+                try
+                {
+                    var grade = double.Parse(input);
+                    book.AddGrade(grade);
+                }
+                catch(Exception ex) // this will put an error out to the user
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    Console.WriteLine("**");
+                    //this block will always run even if there was an exaption or not- once everything ran,
+                    //this will then run after-
+                }
             }
             
             
