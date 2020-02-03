@@ -48,6 +48,7 @@ namespace GradBook
             // book.AddGrade(8); // the addGrade is from the class Book.cs
             var statsResult = book.GetStats();
 
+            System.Console.WriteLine($"For the book named {book.Name}");
             Console.WriteLine($"the lowest grade is {statsResult.low}");
             Console.WriteLine($"the highest grade is {statsResult.High}");
             Console.WriteLine($"the Average grade is {statsResult.Average}");

@@ -143,6 +143,22 @@ namespace GradBook
         // }
 
         private List<double> grades;
-        public string Name;
+        
+        public string Name //property
+        {
+            get //this is knowen as a getter- gets the info
+            {
+                return name;
+            }
+            set //known as the setter- sets the info
+            {
+                if(!string.IsNullOrEmpty(value))
+                {
+                    name = value;
+                }
+                
+            }
+        }
+        private string name;
     }
 }
