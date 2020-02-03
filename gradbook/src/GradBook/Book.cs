@@ -163,12 +163,9 @@ namespace GradBook
 
             get; 
             
-            private set; 
+           set; 
             // adding 'PRIVATE' to set will hide the set value- once the book has been set- ht user
             //will not be able to change the name again...
-
         }
-
-
     }
 }
