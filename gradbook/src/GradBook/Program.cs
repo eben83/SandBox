@@ -53,6 +53,7 @@ namespace GradBook
             Console.WriteLine($"the highest grade is {statsResult.High}");
             Console.WriteLine($"the Average grade is {statsResult.Average}");
             Console.WriteLine($"the letter is {statsResult.Letter:N1}");
+          
 
 
             //creating number arrays- 

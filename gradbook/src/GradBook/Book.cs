@@ -6,7 +6,17 @@ namespace GradBook
 
     public delegate void GradeAddedDelegate(object sender, EventArgs args); // event
 
-    public class Book
+    public class NameObject // inheritance.
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+
+    public class Book: NameObject
     {
         public Book(string name) // this is the initialiser
                                 // inside the () is a perameter 
@@ -154,29 +164,6 @@ namespace GradBook
 
         private List<double> grades;
         
-        public string Name //property
-        {
-            // get //this is knowen as a getter- gets the info
-            // {
-            //     return name;
-            // }
-            // set //known as the setter- sets the info
-            // {
-            //     if(!string.IsNullOrEmpty(value))
-            //     {
-            //         name = value;
-            //     }
-                
-            // }
-
-            //this is the short hand
-
-            get; 
-            
-           set; 
-            // adding 'PRIVATE' to set will hide the set value- once the book has been set- the user
-            //will not be able to change the name again...
-            //this will also mean you will not be able to access the item in the rest of the program.
-        }
+       
     }
 }
