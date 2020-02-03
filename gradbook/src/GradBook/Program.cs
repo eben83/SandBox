@@ -10,7 +10,7 @@ namespace GradBook
         {
 
             var book = new Book("eben's Grade book");
-            var done = false;
+            //var done = false;
 
             while(true)
             {

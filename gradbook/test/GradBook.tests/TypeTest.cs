@@ -10,16 +10,27 @@ namespace GradBook.tests
     public class TypeTests
     {
 
+        int count = 0;
+
         [Fact]
         public void WriteLogDelegateCanPointToMethod()
         {
-            WriteLogDelegate log;
-            log = returnMessage; // this will find the method below and use it
+            WriteLogDelegate log = returnMessage;
+
+            log += returnMessage; // this will find the method below and use it
+
             var result = log("hello");
-            Assert.Equal("hello", result);
+            Assert.Equal(2, count);
+            
+        }
+        string IncrementCount(string message)
+        {
+            count ++;
+            return message.ToLower();
         }
         string returnMessage(string message)
         {
+            count ++;
             return message;
         }
 
