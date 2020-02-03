@@ -3,8 +3,25 @@ using Xunit; //testing framework
 
 namespace GradBook.tests
 {
+
+    public delegate string WriteLogDelegate(string logMessage);
+
+
     public class TypeTests
     {
+
+        [Fact]
+        public void WriteLogDelegateCanPointToMethod()
+        {
+            WriteLogDelegate log;
+            log = returnMessage; // this will find the method below and use it
+            var result = log("hello");
+            Assert.Equal("hello", result);
+        }
+        string returnMessage(string message)
+        {
+            return message;
+        }
 
         [Fact]
 
