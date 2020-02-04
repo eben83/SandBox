@@ -103,8 +103,9 @@ namespace GradBook
 
             public override void AddGrade(double grade)
             {
-                var writer = File.AppendText($"{Name}.txt");
-                writer.WriteLine(grade);
+                var writer = File.AppendText($"{Name}.txt"); //opens file
+                writer.WriteLine(grade); //writes to file
+                writer.Close(); // closes file
             }
 
             public override stats GetStats()

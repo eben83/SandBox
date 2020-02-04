@@ -9,7 +9,7 @@ namespace GradBook
         static void Main(string[] args) //main is a method- in the () is the paramertes, arg is the name
         {
 
-            var book = new InMemoryBook("eben's Grade book");
+            var book = new InMemoryBook.DiskBook("eben's Grade book");
             book.GradeAdded += OneGradeAdded;
             EnterGrades(book);
 
