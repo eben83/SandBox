@@ -11,6 +11,7 @@ namespace GradBook
 
             var book = new InMemoryBook.DiskBook("eben's Grade book"); //InMemoryBook, was not added in the video
             book.GradeAdded += OneGradeAdded;
+            
             EnterGrades(book);
 
 
