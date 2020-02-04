@@ -161,55 +161,8 @@ namespace GradBook
 
             return result;
 
-            // While Loop
-            // while(index < grades.Count) --this is a while loop the loop will only
-            //                             -- run if the while statement is true.
-            // {
-            //     result.low = Math.Min(grades[index], result.low);
-            //     result.High = Math.Max(grades[index], result.High);
-            //     result.Average += grades[index];
-            //     index += 1;
-                
-            // } ;
-            //result.Average /= grades.Count;
 
-            //do while loop-- will run at least once
-
-            // var index = 0;
-
-            // do 
-            // {
-            //     result.low = Math.Min(grades[index], result.low);
-            //     result.High = Math.Max(grades[index], result.High);
-            //     result.Average += grades[index];
-            //     index += 1;
-                
-            // } while(index < grades.Count);
-            
-            // result.Average /= grades.Count;
-            // return result;
-
-            //for Each statment- 
-
-            // foreach(var grade in grades) 
-            // {
-            //     result.low = Math.Min(grade, result.low);
-            //     result.High = Math.Max(grade, result.High);
-            //     result.Average += grade;
-                
-            // }
-            
-            // result.Average /= grades.Count;
-
-            //return result;
         }
-
-
-        
-        // public void highGrade(double grade) {
-        //     grade.highGrade(grade);
-        // }
-
         private List<double> grades;
         
        
