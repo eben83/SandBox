@@ -20,13 +20,28 @@ namespace GradBook
         }
     }
 
-    public abstract class Book : NameObject
+    public interface IBook
+    {
+        void AddGrade(double grade);
+        stats GetStats();
+        string Name {get; }
+        event GradeAddedDelegate GradeAdded;
+    }
+
+    public abstract class Book : NameObject, IBook
     {
         public Book(string name) : base(name)
         {
         }
 
+        public virtual event GradeAddedDelegate GradeAdded;
+
         public abstract void AddGrade(double grade);
+
+        public virtual stats GetStats()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 
@@ -80,9 +95,9 @@ namespace GradBook
             }
         }
 
-        public event GradeAddedDelegate GradeAdded;
+        public override event GradeAddedDelegate GradeAdded;
 
-        public stats GetStats()
+        public override stats GetStats()
         {
             var result = new stats();
             result.Average = 0.0;
