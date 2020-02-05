@@ -5,4 +5,28 @@
 
 <h1>Restarants</h1>
 
-@Model.Message
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" value="" name="searchTerm"/>
+            <span class="input-group-btn">
+                <button class="btn btn-default">Search</button>
+            </span>
+        </div>
+    </div>
+</form>
+
+<table class="table">
+    @foreach (var restarant in Model.Restarants)
+    {
+        <tr>
+            <td>@restarant.Name</td>
+            <td>@restarant.Location</td>
+            <td>@restarant.Cuisine</td>
+        </tr>
+    }
+</table>
+
+<div>
+    @Model.Message
+</div>

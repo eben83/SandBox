@@ -34,3 +34,7 @@
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/OdeToFood.pdb
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/OdeToFood.csproj.CopyComplete
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/Razor/Pages/Restarants/List.cshtml.g.cs
+/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/bin/Debug/netcoreapp3.1/OdeToFood.Core.dll
+/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/bin/Debug/netcoreapp3.1/OdeToFood.Data.dll
+/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/bin/Debug/netcoreapp3.1/OdeToFood.Data.pdb
+/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/bin/Debug/netcoreapp3.1/OdeToFood.Core.pdb
