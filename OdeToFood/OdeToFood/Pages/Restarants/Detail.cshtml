@@ -1,4 +1,23 @@
 ﻿@page
 @model DetailModel
 @{
+    ViewData["Title"] = "Detail";
 }
+
+<h2>@Model.Restarant.Name</h2>
+
+<div>
+    id: @Model.Restarant.ID
+</div>
+
+<div>
+    @Model.Restarant.Location
+</div>
+
+<div>
+    @Model.Restarant.Cuisine
+</div>
+
+<a asp-page="./list" class="btn btn-default" style="color: dodgerblue">All Restaurants</a>
+
+<!--this is what the page will look like.-->

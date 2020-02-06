@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{D7A8DBAE-155F-4BCF-808F-0675FFB071FD}|Default">
   <MonoDevelop.Ide.ItemProperties.OdeToFood PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood/Pages/Restarants/Detail.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood.Core/Restarant.cs">
     <Files>
-      <File FileName="OdeToFood/Pages/Restarants/List.cshtml" Line="31" Column="6" />
-      <File FileName="OdeToFood/Pages/Restarants/List.cshtml.cs" Line="25" Column="51" />
-      <File FileName="OdeToFood/Pages/Restarants/Detail.cshtml" Line="1" Column="1" />
-      <File FileName="OdeToFood/Pages/Restarants/Detail.cshtml.cs" Line="19" Column="1" />
+      <File FileName="OdeToFood/Pages/Restarants/Detail.cshtml" Line="23" Column="43" />
+      <File FileName="OdeToFood/Pages/Restarants/Detail.cshtml.cs" Line="21" Column="1" />
+      <File FileName="OdeToFood.Core/CuisineType.cs" Line="1" Column="1" />
+      <File FileName="OdeToFood.Core/Restarant.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,14 +14,14 @@
             <Node name="OdeToFood" expanded="True">
               <Node name="Pages" expanded="True">
                 <Node name="Restarants" expanded="True">
-                  <Node name="Detail.cshtml" expanded="True">
-                    <Node name="Detail.cshtml.cs" selected="True" />
-                  </Node>
+                  <Node name="Detail.cshtml" expanded="True" />
                   <Node name="List.cshtml" expanded="True" />
                 </Node>
               </Node>
             </Node>
-            <Node name="OdeToFood.Core" expanded="True" />
+            <Node name="OdeToFood.Core" expanded="True">
+              <Node name="Restarant.cs" selected="True" />
+            </Node>
             <Node name="OdeToFood.Data" expanded="True" />
           </Node>
         </State>

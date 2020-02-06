@@ -38,3 +38,4 @@
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/bin/Debug/netcoreapp3.1/OdeToFood.Data.dll
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/bin/Debug/netcoreapp3.1/OdeToFood.Data.pdb
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/bin/Debug/netcoreapp3.1/OdeToFood.Core.pdb
+/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/Razor/Pages/Restarants/Detail.cshtml.g.cs

@@ -4,15 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using OdeToFood.Data;
 
 namespace OdeToFood.Pages.Restarants
 {
     public class DetailModel : PageModel
     {
-        public Restarant Restarant
+        public Restarant Restarant { get; set; }
 
         public void OnGet()
         {
+            Restarant = new Restarant();
         }
     }
 }
