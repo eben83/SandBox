@@ -8,7 +8,11 @@
 <form method="get">
     <div class="form-group">
         <div class="input-group">
-            <input type="search" class="form-control" value="" name="searchTerm"/>
+            <input type="search" class="form-control"
+                   asp-for="SearchTerm"/>
+<!--asp-for tag helper, helps with model binding, input and label tags-->
+<!-- asp-for: this input is for the following property on the model -->
+<!--SearchTearm is the part that allows you to seleact the element-->
             <span class="input-group-btn">
                 <button class="btn btn-default">Search</button>
             </span>

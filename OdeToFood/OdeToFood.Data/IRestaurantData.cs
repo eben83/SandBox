@@ -34,7 +34,7 @@ namespace OdeToFood.Data
                    orderby r.Name
                    select r;
             /*
-                must add the System.Linq to access the data.
+                must add the System.Linq to access the data. similar to sql
              */
         }
     }
