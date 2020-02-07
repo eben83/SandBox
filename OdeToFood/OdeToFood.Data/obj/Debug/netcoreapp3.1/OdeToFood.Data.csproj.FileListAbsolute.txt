@@ -1,11 +1,11 @@
-/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.csprojAssemblyReference.cache
-/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.AssemblyInfoInputs.cache
-/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.AssemblyInfo.cs
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/bin/Debug/netcoreapp3.1/OdeToFood.Data.deps.json
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/bin/Debug/netcoreapp3.1/OdeToFood.Data.dll
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/bin/Debug/netcoreapp3.1/OdeToFood.Data.pdb
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/bin/Debug/netcoreapp3.1/OdeToFood.Core.dll
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/bin/Debug/netcoreapp3.1/OdeToFood.Core.pdb
+/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.csprojAssemblyReference.cache
+/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.AssemblyInfoInputs.cache
+/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.AssemblyInfo.cs
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.csproj.CopyComplete
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.dll
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.pdb
