@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{D7A8DBAE-155F-4BCF-808F-0675FFB071FD}|Default">
   <MonoDevelop.Ide.ItemProperties.OdeToFood PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood.Core/Restarant.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood/Pages/Restarants/Detail.cshtml">
     <Files>
-      <File FileName="OdeToFood/Pages/Restarants/Detail.cshtml" Line="23" Column="43" />
-      <File FileName="OdeToFood/Pages/Restarants/Detail.cshtml.cs" Line="21" Column="1" />
-      <File FileName="OdeToFood.Core/CuisineType.cs" Line="1" Column="1" />
-      <File FileName="OdeToFood.Core/Restarant.cs" Line="1" Column="1" />
+      <File FileName="OdeToFood/Pages/Restarants/Detail.cshtml" Line="23" Column="25" />
+      <File FileName="OdeToFood/Pages/Restarants/Detail.cshtml.cs" Line="18" Column="68" />
+      <File FileName="OdeToFood/Pages/Restarants/List.cshtml" Line="33" Column="59" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

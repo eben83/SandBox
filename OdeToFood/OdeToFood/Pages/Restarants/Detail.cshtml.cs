@@ -12,9 +12,10 @@ namespace OdeToFood.Pages.Restarants
     {
         public Restarant Restarant { get; set; }
 
-        public void OnGet()
+        public void OnGet(int restarantID)
         {
             Restarant = new Restarant();
+            Restarant.ID = restarantID; // populat the restarant ID
         }
     }
 }
