@@ -28,7 +28,10 @@
             <td>@restarant.Location</td>
             <td>@restarant.Cuisine</td>
             <td>
-                <a>Click</a>
+                <a asp-page="./Detail"
+                   asp-route-restarantId="@restarant.ID">Click</a>
+                <a asp-page="./Edit"
+                   asp-route-restarantId="@restarant.ID">Edit</a>
             </td>
         </tr>
     }

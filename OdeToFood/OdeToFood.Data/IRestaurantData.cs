@@ -11,6 +11,8 @@ namespace OdeToFood.Data
         /*
             this will get all the Restarant data
          */
+
+        Restarant GetById(int id);
     }
     public class InMemoryRestarantData : IRestaurantData
     {
@@ -25,6 +27,15 @@ namespace OdeToFood.Data
                 new Restarant {ID = 3, Name = "Pots", Location = "JoBurg", Cuisine = CuisineType.Mexican},
                 new Restarant {ID = 4, Name = "burger Shack", Location = "Cape Town", Cuisine = CuisineType.None},
             };
+
+            
+        }
+
+        public Restarant GetById(int id)
+        {
+            return restarants.SingleOrDefault(r => r.ID == id);
+            // this will return the match or null
+
         }
 
         public IEnumerable<Restarant> GetRestaurantsByName(string name = null)

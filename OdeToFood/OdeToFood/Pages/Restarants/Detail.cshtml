@@ -1,4 +1,5 @@
-﻿@page
+﻿@page "{restarantId:int}"
+<!--above is the route, what the path should look like -->
 @model DetailModel
 @{
     ViewData["Title"] = "Detail";
@@ -11,11 +12,11 @@
 </div>
 
 <div>
-    @Model.Restarant.Location
+    Location: @Model.Restarant.Location
 </div>
 
 <div>
-    @Model.Restarant.Cuisine
+    Cuisine: @Model.Restarant.Cuisine
 </div>
 
 <a asp-page="./list" class="btn btn-default" style="color: dodgerblue">All Restaurants</a>
