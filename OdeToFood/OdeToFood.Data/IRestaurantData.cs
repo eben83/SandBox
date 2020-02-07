@@ -13,6 +13,13 @@ namespace OdeToFood.Data
          */
 
         Restarant GetById(int id);
+        /* get the in id for the restarant*/
+
+        Restarant Update(Restarant updatedRestarant);
+        /*this is the update property*/
+
+        int Commit();
+        /*this will be used to commit the the server*/
     }
     public class InMemoryRestarantData : IRestaurantData
     {
@@ -36,6 +43,23 @@ namespace OdeToFood.Data
             return restarants.SingleOrDefault(r => r.ID == id);
             // this will return the match or null
 
+        }
+
+        public Restarant Update(Restarant updatedRestarant)
+        {
+            var restarant = restarants.SingleOrDefault(r => r.ID == updatedRestarant.ID);
+                if(restarant != null)
+            {
+                restarant.Name = updatedRestarant.Name;
+                restarant.Location = updatedRestarant.Location;
+                restarant.Cuisine = updatedRestarant.Cuisine;
+            }
+            return restarant;
+        }
+
+        public int Commit()
+        {
+            return 0;
         }
 
         public IEnumerable<Restarant> GetRestaurantsByName(string name = null)

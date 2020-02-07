@@ -40,3 +40,4 @@
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/OdeToFood.Views.pdb
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/OdeToFood.csproj.CopyComplete
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/Razor/Pages/Restarants/NotFound.cshtml.g.cs
+/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/Razor/Pages/Restarants/Edit.cshtml.g.cs
