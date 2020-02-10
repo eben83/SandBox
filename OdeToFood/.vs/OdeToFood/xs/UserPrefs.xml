@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{D7A8DBAE-155F-4BCF-808F-0675FFB071FD}|Default">
   <MonoDevelop.Ide.ItemProperties.OdeToFood PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood/Pages/Restarants/Edit.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood.Data/IRestaurantData.cs">
     <Files>
-      <File FileName="OdeToFood.Data/IRestaurantData.cs" Line="19" Column="1" />
-      <File FileName="OdeToFood/Pages/Restarants/Edit.cshtml" Line="24" Column="82" />
-      <File FileName="OdeToFood/Pages/Restarants/Edit.cshtml.cs" />
-      <File FileName="OdeToFood.Core/Restarant.cs" />
-      <File FileName="OdeToFood/Pages/Restarants/Detail.cshtml" />
+      <File FileName="OdeToFood/Pages/Restarants/Edit.cshtml" Line="1" Column="26" />
+      <File FileName="OdeToFood/Pages/Restarants/Edit.cshtml.cs" Line="54" Column="40" />
+      <File FileName="OdeToFood.Core/Restarant.cs" Line="1" Column="1" />
+      <File FileName="OdeToFood/Pages/Restarants/List.cshtml" Line="40" Column="21" />
+      <File FileName="OdeToFood.Data/IRestaurantData.cs" Line="53" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,14 +15,14 @@
             <Node name="OdeToFood" expanded="True">
               <Node name="Pages" expanded="True">
                 <Node name="Restarants" expanded="True">
-                  <Node name="Detail.cshtml" expanded="True" />
-                  <Node name="Edit.cshtml" expanded="True" selected="True" />
-                  <Node name="List.cshtml" expanded="True" />
+                  <Node name="Edit.cshtml" expanded="True" />
                 </Node>
               </Node>
             </Node>
             <Node name="OdeToFood.Core" expanded="True" />
-            <Node name="OdeToFood.Data" expanded="True" />
+            <Node name="OdeToFood.Data" expanded="True">
+              <Node name="IRestaurantData.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

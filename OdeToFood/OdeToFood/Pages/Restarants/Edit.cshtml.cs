@@ -27,12 +27,21 @@ namespace OdeToFood.Pages.Restarants
 
         
 
-        public IActionResult OnGet(int restarantId)
+        public IActionResult OnGet(int? restarantId)
         {
-
             Cuisines = HtmlHelper.GetEnumSelectList<CuisineType>();
 
-            Restarant = restaurantData.GetById(restarantId);
+            /*below if the restarant has an ID- then it will return the value- if the id is null
+             it will return a new intstance*/
+
+            if (restarantId.HasValue)
+            {
+                Restarant = restaurantData.GetById(restarantId.Value);
+            }
+            else
+            {
+                Restarant = new Restarant();
+            }
 
             if(Restarant == null)
             {
@@ -42,6 +51,7 @@ namespace OdeToFood.Pages.Restarants
             return Page();
         }
 
+        /*this is the save button event*/
         public IActionResult OnPost()
         {
             if(ModelState.IsValid) /*checks the validation is correct with the model binding.*/

@@ -18,8 +18,11 @@ namespace OdeToFood.Data
         Restarant Update(Restarant updatedRestarant);
         /*this is the update property*/
 
+        Restarant Add(Restarant newRestarant);
+
         int Commit();
         /*this will be used to commit the the server*/
+
     }
     public class InMemoryRestarantData : IRestaurantData
     {
@@ -43,6 +46,13 @@ namespace OdeToFood.Data
             return restarants.SingleOrDefault(r => r.ID == id);
             // this will return the match or null
 
+        }
+
+        public Restarant Add(Restarant newRestarant)
+        {
+            restarants.Add(newRestarant);
+            newRestarant.ID = restarants.Max(r => r.ID) + 1; /*only dev testing*/
+            return newRestarant;
         }
 
         public Restarant Update(Restarant updatedRestarant)
