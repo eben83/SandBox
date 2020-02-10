@@ -54,17 +54,30 @@ namespace OdeToFood.Pages.Restarants
         /*this is the save button event*/
         public IActionResult OnPost()
         {
-            if(ModelState.IsValid) /*checks the validation is correct with the model binding.*/
+            if(!ModelState.IsValid) /*checks the validation is correct with the model binding.*/
             {
-                restaurantData.Update(Restarant);
-                restaurantData.Commit();
-                return RedirectToPage("./Detail", new {restarantId = Restarant.ID});
-                /*POST-Get- Redirect method*/
+                Cuisines = HtmlHelper.GetEnumSelectList<CuisineType>();
+                /*this will re build the selection option of the dropdown menu*/
+                return Page();
             }
 
-            Cuisines = HtmlHelper.GetEnumSelectList<CuisineType>();
-            /*this will re build the selection option of the dropdown menu*/
-            return Page();
+            if(Restarant.ID > 0)
+            {
+                restaurantData.Update(Restarant);
+            }
+            else
+            {
+                restaurantData.Add(Restarant);
+            }
+
+            
+            restaurantData.Commit();
+            TempData["Message"] = "Restaurant Saved!";
+                /*TempData is just for tempe data and won't display again*/
+
+            return RedirectToPage("./Detail", new { restarantId = Restarant.ID });
+                /*POST-Get- Redirect method*/
+
         }
     }
 }

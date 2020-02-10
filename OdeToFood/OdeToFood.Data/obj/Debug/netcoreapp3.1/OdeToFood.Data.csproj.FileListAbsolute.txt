@@ -1,4 +1,6 @@
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/bin/Debug/netcoreapp3.1/OdeToFood.Data.deps.json
+/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/bin/Debug/netcoreapp3.1/OdeToFood.Data.runtimeconfig.json
+/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/bin/Debug/netcoreapp3.1/OdeToFood.Data.runtimeconfig.dev.json
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/bin/Debug/netcoreapp3.1/OdeToFood.Data.dll
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/bin/Debug/netcoreapp3.1/OdeToFood.Data.pdb
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/bin/Debug/netcoreapp3.1/OdeToFood.Core.dll

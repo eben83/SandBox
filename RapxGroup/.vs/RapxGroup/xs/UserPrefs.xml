@@ -1,11 +1,7 @@
 ﻿<Properties StartupConfiguration="{99A9FE8E-5A93-40D3-B745-9ED0DFBA8E70}|Default">
   <MonoDevelop.Ide.ItemProperties.RapxGroup PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.ItemProperties.RapxGroup.Core FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RapxGroup/Pages/Shared/_Layout.cshtml">
-    <Files>
-      <File FileName="RapxGroup/Pages/Error.cshtml" Line="27" Column="1" />
-      <File FileName="RapxGroup/Pages/Shared/_Layout.cshtml" Line="43" Column="76" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -13,9 +9,12 @@
             <Node name="RapxGroup" expanded="True">
               <Node name="Pages" expanded="True">
                 <Node name="Shared" expanded="True" />
+                <Node name="Index.cshtml" expanded="True" selected="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
               </Node>
             </Node>
-            <Node name="RapxGroup.Core" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>

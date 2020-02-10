@@ -19,6 +19,11 @@
     Cuisine: @Model.Restarant.Cuisine
 </div>
 
+@if(Model.Message != null)
+{
+    <div style="color: red;">@Model.Message</div>
+}
+
 <a asp-page="./list" class="btn btn-default" style="color: dodgerblue">All Restaurants</a>
 
 <!--this is what the page will look like.-->
