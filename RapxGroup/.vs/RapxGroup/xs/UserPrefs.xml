@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{99A9FE8E-5A93-40D3-B745-9ED0DFBA8E70}|Default">
+  <MonoDevelop.Ide.ItemProperties.RapxGroup PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RapxGroup/Pages/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="RapxGroup/Pages/Error.cshtml" Line="27" Column="1" />
+      <File FileName="RapxGroup/Pages/Shared/_Layout.cshtml" Line="24" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RapxGroup" expanded="True">
+            <Node name="RapxGroup" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
