@@ -4,9 +4,9 @@
     <Files>
       <File FileName="OdeToFood.Data/IRestaurantData.cs" Line="19" Column="1" />
       <File FileName="OdeToFood/Pages/Restarants/Edit.cshtml" Line="24" Column="82" />
-      <File FileName="OdeToFood/Pages/Restarants/Edit.cshtml.cs" Line="13" Column="6" />
-      <File FileName="OdeToFood.Core/Restarant.cs" Line="1" Column="1" />
-      <File FileName="OdeToFood/Pages/Restarants/Detail.cshtml" Line="13" Column="1" />
+      <File FileName="OdeToFood/Pages/Restarants/Edit.cshtml.cs" />
+      <File FileName="OdeToFood.Core/Restarant.cs" />
+      <File FileName="OdeToFood/Pages/Restarants/Detail.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
