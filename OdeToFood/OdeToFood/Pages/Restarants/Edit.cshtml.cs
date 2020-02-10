@@ -44,13 +44,16 @@ namespace OdeToFood.Pages.Restarants
 
         public IActionResult OnPost()
         {
-            if(ModelState.IsValid)
+            if(ModelState.IsValid) /*checks the validation is correct with the model binding.*/
             {
                 restaurantData.Update(Restarant);
                 restaurantData.Commit();
+                return RedirectToPage("./Detail", new {restarantId = Restarant.ID});
+                /*POST-Get- Redirect method*/
             }
 
             Cuisines = HtmlHelper.GetEnumSelectList<CuisineType>();
+            /*this will re build the selection option of the dropdown menu*/
             return Page();
         }
     }

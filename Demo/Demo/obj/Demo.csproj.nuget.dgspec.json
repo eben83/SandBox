@@ -13,6 +13,9 @@
         "packagesPath": "/Users/ebenburger/.nuget/packages/",
         "outputPath": "/Users/ebenburger/dev/EbenSandbox/Demo/Demo/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "/Users/ebenburger/.config/NuGet/NuGet.Config"
         ],

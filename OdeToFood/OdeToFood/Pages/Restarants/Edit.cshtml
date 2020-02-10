@@ -1,4 +1,4 @@
-﻿@page "{restarantId:Int}"
+﻿@page  "{restarantId:Int}"
 @model EditModel
 @{
     ViewData["Title"] = "Edit";
@@ -28,9 +28,10 @@
         <label asp-for="Restarant.Cuisine"></label>
         <select class="form-control" asp-for="Restarant.Cuisine"
                 asp-items="Model.Cuisines">
-            <span class="text-danger" asp-validation-for="Restarant.Cuisine"></span>
-
         </select>
+        <span class="text-danger" asp-validation-for="Restarant.Cuisine"></span>
+
+
 
     </div>
 
