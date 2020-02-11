@@ -11,11 +11,10 @@
                   <Node name="Edit.cshtml" expanded="True" />
                 </Node>
               </Node>
+              <Node name="appsettings.json" selected="True" />
             </Node>
             <Node name="OdeToFood.Core" expanded="True" />
-            <Node name="OdeToFood.Data" expanded="True">
-              <Node name="OdeToFoodDbContext.cs" selected="True" />
-            </Node>
+            <Node name="OdeToFood.Data" expanded="True" />
           </Node>
         </State>
       </Pad>
