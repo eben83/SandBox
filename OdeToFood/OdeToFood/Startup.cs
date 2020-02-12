@@ -32,8 +32,8 @@ namespace OdeToFood
             });
 
             
-            //this is only for the using in dev not for production.
-            services.AddSingleton<IRestaurantData, InMemoryRestarantData>(); 
+            //this is for the sql connection
+            services.AddScoped<IRestaurantData, SqlRestarantData>(); 
            services.AddRazorPages();
         }
 
