@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  odetofood:
+    image: odetofood:dev
+    build:
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "OdeToFood"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_odetofood$
+    volumes:
+      - /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood:/app
+      - /Users/ebenburger/dev/EbenSandbox/OdeToFood:/src
+      - /Users/ebenburger/vsdbg/vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_odetofood$
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_odetofood$ \"bin/Debug/netcoreapp3.1/OdeToFood.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

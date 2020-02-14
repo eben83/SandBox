@@ -1,32 +1,18 @@
 ﻿<Properties StartupConfiguration="{D7A8DBAE-155F-4BCF-808F-0675FFB071FD}|Default">
   <MonoDevelop.Ide.ItemProperties.OdeToFood PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood.Data/IRestaurantData.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood/Pages/Restarants/List.cshtml">
     <Files>
-      <File FileName="OdeToFood/Pages/Restarants/Delete.cshtml" Line="1" Column="1" />
-      <File FileName="OdeToFood/Pages/Restarants/Delete.cshtml.cs" Line="47" Column="2" />
-      <File FileName="OdeToFood/Pages/Shared/_Layout.cshtml" Line="1" Column="1" />
-      <File FileName="OdeToFood.Core/Restarant.cs" Line="1" Column="1" />
-      <File FileName="OdeToFood.Data/IRestaurantData.cs" Line="3" Column="1" />
+      <File FileName="OdeToFood/Pages/Restarants/_Summary.cshtml" Line="14" Column="41" />
+      <File FileName="OdeToFood/Pages/Restarants/List.cshtml" Line="31" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OdeToFood" expanded="True">
-            <Node name="docker-compose" expanded="True" />
-            <Node name="OdeToFood" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="Restarants" expanded="True">
-                  <Node name="Delete.cshtml" expanded="True" />
-                  <Node name="Edit.cshtml" expanded="True" />
-                </Node>
-                <Node name="Shared" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="docker-compose" expanded="True" selected="True" />
+            <Node name="OdeToFood" expanded="True" />
             <Node name="OdeToFood.Core" expanded="True" />
-            <Node name="OdeToFood.Data" expanded="True">
-              <Node name="Migrations" expanded="True" />
-              <Node name="IRestaurantData.cs" selected="True" />
-            </Node>
+            <Node name="OdeToFood.Data" expanded="True" />
           </Node>
         </State>
       </Pad>
