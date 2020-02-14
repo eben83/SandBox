@@ -19,6 +19,8 @@ namespace OdeToFood.Data
         Restarant Add(Restarant newRestarant);
         Restarant Delete(int id);
 
+        int GetCountOfRestarants();
+
         int Commit();
         /*this will be used to commit the the server*/
 

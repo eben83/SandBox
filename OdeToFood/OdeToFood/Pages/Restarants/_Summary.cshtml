@@ -1,4 +1,5 @@
 ﻿@using OdeToFood.Data
+
 @model Restarant
 
 <div class="panel panel-defualt">
@@ -11,10 +12,10 @@
     </div>
     <div class="panel-footer">
         <a asp-page="./Detail"
-           asp-route-restarantId="@restarant.ID">Click</a>
+           asp-route-restarantId="@Model.ID">Click</a>
         <a asp-page="./Edit"
-           asp-route-restarantId="@restarant.ID">Edit</a>
+           asp-route-restarantId="@Model.ID">Edit</a>
         <a asp-page="./Delete"
-           asp-route-restarantId="@restarant.ID">Delete</a>
+           asp-route-restarantId="@Model.ID">Delete</a>
     </div>
 </div>

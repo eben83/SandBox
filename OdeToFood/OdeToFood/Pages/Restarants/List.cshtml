@@ -1,6 +1,7 @@
 ﻿@page
 @model ListModel
 @{
+    ViewData["Title"] = "List";
 }
 
 <h1>Restarants</h1>
@@ -20,18 +21,11 @@
     </div>
 </form>
 
-<table class="table">
-    @foreach (var restarant in Model.Restarants)
-    {
-        <tr>
-            <td>@restarant.Name</td>
-            <td>@restarant.Location</td>
-            <td>@restarant.Cuisine</td>
-            <td>
-            </td>
-        </tr>
-    }
-</table>
+@foreach(var restarant in Model.Restarants)
+{
+    <partial name="_Summary" model="restarant" />
+    <!--this is how to add a partial view-->
+}
 
 <a asp-page="./Edit">Add New</a>
 
