@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{D7A8DBAE-155F-4BCF-808F-0675FFB071FD}|Default">
   <MonoDevelop.Ide.ItemProperties.OdeToFood PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood/Pages/Shared/Components/RestarantCount/Default.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood/Pages/Shared/_Layout.cshtml">
     <Files>
       <File FileName="OdeToFood/Pages/Restarants/_Summary.cshtml" Line="21" Column="7" />
       <File FileName="OdeToFood/Pages/Restarants/Delete.cshtml" Line="4" Column="32" />
@@ -18,10 +18,9 @@
                 <Node name="Restarants" expanded="True" />
                 <Node name="Shared" expanded="True">
                   <Node name="Components" expanded="True">
-                    <Node name="RestarantCount" expanded="True">
-                      <Node name="Default.cshtml" selected="True" />
-                    </Node>
+                    <Node name="RestarantCount" expanded="True" />
                   </Node>
+                  <Node name="_Layout.cshtml" selected="True" />
                 </Node>
               </Node>
               <Node name="ViewComponents" expanded="True" />
