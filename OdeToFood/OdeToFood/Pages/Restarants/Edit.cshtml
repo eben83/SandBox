@@ -31,10 +31,18 @@
         </select>
         <span class="text-danger" asp-validation-for="Restarant.Cuisine"></span>
 
-
-
     </div>
 
 
     <button type="submit" class="btn btn-primary">Save</button>
 </form>
+
+@section Scripts {
+
+<!-- adding this section adds nice validation to the form
+    once the required fields ghave text the error message goes
+    away.
+    
+---------------------------------------------------->
+    <partial name="_ValidationScriptsPartial" />
+}
