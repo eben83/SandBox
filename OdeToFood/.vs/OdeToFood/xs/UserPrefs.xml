@@ -1,12 +1,9 @@
 ﻿<Properties StartupConfiguration="{D7A8DBAE-155F-4BCF-808F-0675FFB071FD}|Default">
   <MonoDevelop.Ide.ItemProperties.OdeToFood PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood/Pages/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood/Properties/launchSettings.json">
     <Files>
-      <File FileName="OdeToFood/Pages/Restarants/_Summary.cshtml" Line="21" Column="7" />
-      <File FileName="OdeToFood/Pages/Restarants/Delete.cshtml" Line="4" Column="32" />
-      <File FileName="OdeToFood/Pages/Shared/Components/RestarantCount/Default.cshtml" Line="6" Column="32" />
-      <File FileName="OdeToFood/ViewComponents/RestarantCountViewComponent.cs" Line="1" Column="1" />
-      <File FileName="OdeToFood/Pages/Shared/_Layout.cshtml" Line="55" Column="8" />
+      <File FileName="OdeToFood/Pages/Shared/_Layout.cshtml" Line="56" Column="1" />
+      <File FileName="OdeToFood/Properties/launchSettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,18 +11,13 @@
           <Node name="OdeToFood" expanded="True">
             <Node name="OdeToFood" expanded="True">
               <Node name="Pages" expanded="True">
-                <Node name="R2" expanded="True" />
                 <Node name="Restarants" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="Components" expanded="True">
-                    <Node name="RestarantCount" expanded="True" />
-                  </Node>
-                  <Node name="_Layout.cshtml" selected="True" />
-                </Node>
+              </Node>
+              <Node name="Properties" expanded="True">
+                <Node name="launchSettings.json" selected="True" />
               </Node>
               <Node name="ViewComponents" expanded="True" />
             </Node>
-            <Node name="OdeToFood.Data" expanded="True" />
           </Node>
         </State>
       </Pad>
