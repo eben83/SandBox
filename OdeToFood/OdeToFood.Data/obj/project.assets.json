@@ -339,6 +339,25 @@
           }
         }
       },
+      "OdeToCode.UseNodeModules/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/OdeToCode.UseNodeModules.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/OdeToCode.UseNodeModules.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "contentFiles": {
+          "contentFiles/any/netcoreapp3.0/Properties/launchSettings.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "runtime.native.System/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1284,6 +1303,9 @@
       "OdeToFood.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "OdeToCode.UseNodeModules": "3.0.0"
+        },
         "compile": {
           "bin/placeholder/OdeToFood.Core.dll": {}
         },
@@ -1853,6 +1875,20 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "OdeToCode.UseNodeModules/3.0.0": {
+      "sha512": "w1Xdc8oDggU4nucBSnoR4pPT9oHf/JtYGOisaeaFd8jiOoBcByddyuIPmWI2GiNUpXGKMPQROD4wl1aeEZ5aaA==",
+      "type": "package",
+      "path": "odetocode.usenodemodules/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Properties/launchSettings.json",
+        "contentFiles/any/netcoreapp3.0/Properties/launchSettings.json",
+        "lib/netcoreapp3.0/OdeToCode.UseNodeModules.dll",
+        "odetocode.usenodemodules.3.0.0.nupkg.sha512",
+        "odetocode.usenodemodules.nuspec"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -5009,6 +5045,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 3.1.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.1",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.1",
+      "OdeToCode.UseNodeModules >= 3.0.0",
       "OdeToFood.Core >= 1.0.0"
     ]
   },
@@ -5074,6 +5111,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[3.1.1, )"
+          },
+          "OdeToCode.UseNodeModules": {
+            "target": "Package",
+            "version": "[3.0.0, )"
           }
         },
         "imports": [

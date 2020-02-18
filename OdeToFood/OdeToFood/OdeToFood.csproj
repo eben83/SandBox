@@ -15,7 +15,6 @@
     <Folder Include="Pages\Shared\Components\RestarantCount\" />
     <Folder Include="Pages\R2\" />
     <Folder Include="Api\" />
-    <Folder Include="wwwroot\Api\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OdeToFood.Data\OdeToFood.Data.csproj">
@@ -38,5 +37,11 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.1" />
+    <PackageReference Include="OdeToCode.UseNodeModules" Version="3.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="node_modules\datatables.net\js\jquery.dataTables.js" />
+    <None Include="node_modules\datatables.net-bs4\css\dataTables.bootstrap4.css" />
+    <None Include="node_modules\datatables.net-bs4\js\dataTables.bootstrap4.js" />
   </ItemGroup>
 </Project>

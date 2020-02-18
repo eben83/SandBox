@@ -12,6 +12,7 @@
           "Microsoft.EntityFrameworkCore.Design": "3.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.1",
+          "OdeToCode.UseNodeModules": "3.0.0",
           "OdeToFood.Core": "1.0.0"
         },
         "runtime": {
@@ -278,6 +279,14 @@
         "dependencies": {
           "System.Security.AccessControl": "4.5.0",
           "System.Security.Principal.Windows": "4.5.0"
+        }
+      },
+      "OdeToCode.UseNodeModules/3.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.0/OdeToCode.UseNodeModules.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
         }
       },
       "runtime.native.System/4.3.0": {
@@ -714,12 +723,6 @@
       "System.Security.Permissions/4.5.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.5.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Permissions.dll": {
-            "assemblyVersion": "4.0.1.0",
-            "fileVersion": "4.6.26515.6"
-          }
         }
       },
       "System.Security.Principal.Windows/4.5.0": {
@@ -856,6 +859,9 @@
         }
       },
       "OdeToFood.Core/1.0.0": {
+        "dependencies": {
+          "OdeToCode.UseNodeModules": "3.0.0"
+        },
         "runtime": {
           "OdeToFood.Core.dll": {}
         }
@@ -1049,6 +1055,13 @@
       "sha512": "sha512-+FWlwd//+Tt56316p00hVePBCouXyEzT86Jb3+AuRotTND0IYn0OO3obs1gnQEs/txEnt+rF2JBGLItTG+Be6A==",
       "path": "microsoft.win32.registry/4.5.0",
       "hashPath": "microsoft.win32.registry.4.5.0.nupkg.sha512"
+    },
+    "OdeToCode.UseNodeModules/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w1Xdc8oDggU4nucBSnoR4pPT9oHf/JtYGOisaeaFd8jiOoBcByddyuIPmWI2GiNUpXGKMPQROD4wl1aeEZ5aaA==",
+      "path": "odetocode.usenodemodules/3.0.0",
+      "hashPath": "odetocode.usenodemodules.3.0.0.nupkg.sha512"
     },
     "runtime.native.System/4.3.0": {
       "type": "package",
