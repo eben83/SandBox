@@ -8641,6 +8641,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.1",
       "Microsoft.Extensions.Logging.Debug >= 3.1.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.1",
+      "OdeToFood.Core >= 1.0.0",
       "OdeToFood.Data >= 1.0.0"
     ]
   },
@@ -8672,6 +8673,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/OdeToFood.Core.csproj": {
+              "projectPath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/OdeToFood.Core.csproj"
+            },
             "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/OdeToFood.Data.csproj": {
               "projectPath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/OdeToFood.Data.csproj"
             }

@@ -175,3 +175,4 @@
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/Razor/Pages/R2/Edit.cshtml.g.cs
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/Razor/Pages/R2/Index.cshtml.g.cs
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/Razor/Pages/Restarants/ClientRestarant.cshtml.g.cs
+/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/Razor/Pages/ClientRestarants.cshtml.g.cs

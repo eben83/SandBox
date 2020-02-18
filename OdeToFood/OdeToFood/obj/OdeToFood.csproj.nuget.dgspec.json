@@ -160,6 +160,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/OdeToFood.Core.csproj": {
+                "projectPath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/OdeToFood.Core.csproj"
+              },
               "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/OdeToFood.Data.csproj": {
                 "projectPath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/OdeToFood.Data.csproj"
               }
