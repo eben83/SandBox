@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using OdeToFood.Data;
+using OdeToFood.Core;
+
 
 namespace OdeToFood.Pages.R2
 {

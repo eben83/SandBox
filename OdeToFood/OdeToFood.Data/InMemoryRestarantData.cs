@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using OdeToFood.Core;
 
 namespace OdeToFood.Data
 {
@@ -78,6 +79,21 @@ namespace OdeToFood.Data
         public int GetCountOfRestarants()
         {
             return restarants.Count();
+        }
+
+        IEnumerable<Restarant> IRestaurantData.GetRestaurantsByName(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        Restarant IRestaurantData.GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Restarant IRestaurantData.Delete(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

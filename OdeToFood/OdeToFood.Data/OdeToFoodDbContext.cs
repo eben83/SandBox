@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using OdeToFood.Core;
 
 namespace OdeToFood.Data
 {

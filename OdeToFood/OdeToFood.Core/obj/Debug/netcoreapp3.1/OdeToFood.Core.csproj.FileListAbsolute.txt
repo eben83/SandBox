@@ -5,4 +5,3 @@
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/obj/Debug/netcoreapp3.1/OdeToFood.Core.AssemblyInfo.cs
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/obj/Debug/netcoreapp3.1/OdeToFood.Core.dll
 /Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/obj/Debug/netcoreapp3.1/OdeToFood.Core.pdb
-/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/obj/Debug/netcoreapp3.1/OdeToFood.Core.csprojAssemblyReference.cache

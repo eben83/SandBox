@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using OdeToFood.Data;
+using OdeToFood.Core;
+
 
 namespace OdeToFood.Pages.Restarants
 {

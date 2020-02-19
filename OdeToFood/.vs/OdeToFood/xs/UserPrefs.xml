@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{D7A8DBAE-155F-4BCF-808F-0675FFB071FD}|Default">
   <MonoDevelop.Ide.ItemProperties.OdeToFood PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood/Startup.cs">
+    <Files>
+      <File FileName="OdeToFood/Program.cs" Line="14" Column="30" />
+      <File FileName="../../../.nuget/packages/odetocode.usenodemodules/3.0.0/contentFiles/any/netcoreapp3.0/Properties/launchSettings.json" Line="27" Column="2" />
+      <File FileName="OdeToFood/Startup.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OdeToFood" expanded="True">
             <Node name="OdeToFood" expanded="True">
-              <Node name="node_modules" expanded="True">
-                <Node name="datatables.net" expanded="True">
-                  <Node name="js" expanded="True" />
-                </Node>
-                <Node name="datatables.net-bs4" expanded="True">
-                  <Node name="css" expanded="True" />
-                  <Node name="js" expanded="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Api" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Restarants" expanded="True">
+                  <Node name="ClientRestarant.cshtml" expanded="True" />
                 </Node>
               </Node>
-              <Node name="OdeToFood" expanded="True" />
-              <Node name="Pages" expanded="True" />
-              <Node name="wwwroot" expanded="True" />
+              <Node name="Properties" expanded="True" />
               <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
