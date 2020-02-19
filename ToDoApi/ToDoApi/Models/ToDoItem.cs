@@ -1,5 +1,4 @@
-﻿using System;
-namespace ToDoApi.Models
+﻿namespace ToDoApi.Models
 {
     public class ToDoItem
     {
