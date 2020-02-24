@@ -5,7 +5,7 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OdeToFood" expanded="True">
-            <Node name="OdeToFood" expanded="True">
+            <Node name="OdeToFood" expanded="True" selected="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Api" expanded="True" />
               <Node name="Pages" expanded="True">
@@ -15,7 +15,6 @@
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
