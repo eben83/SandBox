@@ -47,11 +47,23 @@ body, .SideNav, footer {
 /* Hero Image
 --------------------------------------------------*/
 
+button {
+    background-color: #2C3539;
+    color: #ffffff;
+    border-radius: 12px;
+}
+
+button:hover {
+    border: #aaa9ad;
+    border-radius: 50px;
+    color: red;
+}
+
 .hero-image {
     background-image: url("../images/monster.jpg");
     height: 250px;
 
-    /* this part places the image in the div
+    /* this part edits the Hero Image
     -----------------------------------------------*/
     background-position: center;
     background-repeat: no-repeat;
@@ -65,6 +77,19 @@ body, .SideNav, footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    color: #ffffff;
+}
+
+/* text
+--------------------------------------------------*/
+
+section {
+    justify-content: center;
+    color: #818181;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #272727;
+    border-radius: 20px;
 }
 
 
