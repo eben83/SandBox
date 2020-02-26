@@ -1,6 +1,8 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+/* Side Navigation
+ -------------------------------*/
 
 .SideNav {
     height: 100%; /* 100% Full-height */
@@ -14,6 +16,7 @@ for details on configuring this project to bundle and minify static web assets. 
     padding-top: 60px; /* Place content 60px from the top */
     border-right: solid;
     border-right-color: #818181;
+    background-color: blue;
 }
 
 .SideNav a {
@@ -35,7 +38,7 @@ main, footer {
     padding: 20px 0 0 20px;
 }
 
-html{
+html {
     height: 100%;
 }
 
@@ -43,16 +46,19 @@ body, .SideNav, footer {
     background-color: #111111;
 }
 
-.hero-image {
-    background-image: url("../images/monster.jpg");
-}
+/* Hero Image
+---------------------------------*/
 
 .hero-text {
     text-align: center;
 }
 
+/* Footer
+---------------------------------*/
+
 footer a {
     color: #818181;
+    background-color: #111111;
 }
 
 footer a:hover {
