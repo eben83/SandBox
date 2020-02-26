@@ -9,4 +9,11 @@ nav {
 
 a {
     padding-left: 30px;
+    color: #ffffff;
+}
+
+.topnav {
+    background-color: #555652;
+    overflow: hidden;
+    padding: 20px;
 }
