@@ -26,9 +26,10 @@ for details on configuring this project to bundle and minify static web assets. 
     display: block;
 }
 
-.SideNav a:hover {
-    color: #f1f1f1;
-}
+    .SideNav a:hover {
+        color: #f1f1f1;
+        text-shadow: 0px 10px 8px #ffffff, 0px -10px 10px #ffffff;
+    }
 
 main, footer {
     margin-left: 220px;
