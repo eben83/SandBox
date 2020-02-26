@@ -1,19 +1,62 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-nav {
-    background-color: #555652;
-    color: red;
-    height: 60px:
+
+.SideNav {
+    height: 100%; /* 100% Full-height */
+    width: 220px;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    /*background-color: #111111;  Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    border-right: solid;
+    border-right-color: #818181;
 }
 
-a {
-    padding-left: 30px;
-    color: #ffffff;
+.SideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
-.topnav {
-    background-color: #555652;
-    overflow: hidden;
-    padding: 20px;
+.SideNav a:hover {
+    color: #f1f1f1;
 }
+
+main, footer {
+    margin-left: 220px;
+    color: #818181;
+    padding: 20px 0 0 20px;
+}
+
+html{
+    height: 100%;
+}
+
+body, .SideNav, footer {
+    background-color: #111111;
+}
+
+.hero-image {
+    background-image: url("../images/monster.jpg");
+}
+
+.hero-text {
+    text-align: center;
+}
+
+footer a {
+    color: #818181;
+}
+
+footer a:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+

@@ -9,11 +9,15 @@
 </head>
 <body> 
     <header>
-        <div class="topnav">
-            <nav>
-                <a asp-page="/Index" asp-area="">Home</a>
-                <a asp-page="" asp-area="">Future</a>
-            </nav>
+        <div id="MySideNav" class="SideNav">
+            <ul>
+                <li>
+                <a asp-page="/Index">Home</a>
+                </li>
+                <li>
+                <a asp-page="/Future">Future</a>
+                </li>
+            </ul>
         </div>
     </header>
     <div class="container">
@@ -24,7 +28,7 @@
 
     <footer>
         <div>
-            &copy; 2020 - ArolwConsulting | Eben Burger - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2020 - ArolwConsulting | Eben Burger - <a asp-area="" asp-page="">Privacy</a>
         </div>
     </footer>
 
