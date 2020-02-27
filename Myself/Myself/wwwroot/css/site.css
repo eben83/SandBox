@@ -92,11 +92,11 @@ button:hover {
 
 .section {
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 30px;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
 
     .SideNav {
@@ -124,9 +124,29 @@ button:hover {
         padding: 0;
     }
 
+    .section {
+        text-align: center;
+    }
     
 }
 
-@media screen and (max-width: 400px) {
-    
+@media screen and (max-width: 481px) {
+
+    .SideNav {
+        font-size: 12px;
+    }
+
+    .flex-container{
+        margin: 0.5em;
+    }
+
+    .border {
+        margin: 0.5em;
+    }
+
+    .section {
+        font-size: 10px;
+        padding: 0.9em;
+
+    }
 }
