@@ -84,14 +84,36 @@ button:hover {
 /* text
 --------------------------------------------------*/
 
-section {
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    
+}
+
+.border {
+    justify-content: space-between;
+    border-style: solid;
+    border-radius: 12%;
+    margin: 30px;
+    background-color: #272727;
+}
+
+.section {
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+/*section {
     justify-content: center;
     color: #818181;
     padding: 15px;
-    margin-top: 20px;
-    background-color: #272727;
+    margin-top: 30px;
+    
     border-radius: 20px;
-}
+}*/
+
 
 
 /* Footer
