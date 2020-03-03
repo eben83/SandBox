@@ -2,7 +2,7 @@
 
 .SideNav {
     height: 100%;
-    width: 220px;
+    width: 180px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -14,9 +14,9 @@
 }
 
 .SideNav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 6px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     color: #818181;
     display: block;
 }
@@ -31,7 +31,7 @@
 }
 
 main {
-    margin-left: 220px;
+    margin-left: 180px;
     color: #818181;
     padding: 20px 0 0 0;
 }
@@ -88,13 +88,19 @@ button:hover {
     border-radius: 12%;
     margin: 30px;
     background-color: #272727;
+    padding: 20px;
 }
 
-.section {
-    flex-wrap: wrap;
-    padding: 30px;
+table, h2, tr {
+    width: 80%;
+    margin: 20px;
+    color: #818181;
+    text-align: center;
 }
 
+tr:hover {
+    background-color: #ffffff;
+}
 
 @media screen and (max-width: 769px) {
 
