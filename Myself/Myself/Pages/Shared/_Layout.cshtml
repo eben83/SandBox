@@ -14,14 +14,16 @@
         <div class="SideNav">
             <ul>
                 <li>
-                    <a class="active" asp-page="/Index">Home</a>
+                    <a asp-page="/Index">Home</a>
                 </li>
-                <li>
-                    <select>
-                        <option><a asp-page="/SkillMatrix">Skill Matrix</a></option>
-                        <option><a asp-page="/Forms">Forms</a></option>
-                    </select>
-                </li>
+            </ul>
+            <div class="dropdown">
+                <button class="dropbtn">Click</button>
+                <div class="dropdown-content">
+                    <a asp-page="/SkillMatrix">Skills Matrix</a>
+                </div>
+            </div>
+            <ul>
                 <li>
                     <a asp-page="/Privacy">Future</a>
                 </li>
