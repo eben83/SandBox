@@ -31,6 +31,7 @@
 }
 
 main {
+    width: auto;
     margin-left: 180px;
     color: #818181;
     padding: 20px 0 0 0;
@@ -47,7 +48,7 @@ body, .SideNav, footer {
 button {
     background-color: #2C3539;
     color: #ffffff;
-    border-radius: 12px;
+    border-radius: 50px;
 }
 
 button:hover {
@@ -58,7 +59,7 @@ button:hover {
 
 .hero-image {
     background-image: url("../images/monster.jpg");
-    height: 250px;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,18 +92,40 @@ button:hover {
     padding: 20px;
 }
 
-table, h2, tr {
-    width: 80%;
-    margin: 20px;
-    color: #818181;
+h2 {
     text-align: center;
+    margin-top: 25px;
+}
+
+.table {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+
+}
+
+tr, td {
+    width: 10px;
+    color: #818181;
 }
 
 tr:hover {
-    background-color: #ffffff;
+    background-color: #3a3e46;
 }
 
-@media screen and (max-width: 769px) {
+h2:hover {
+    color: #f6740a;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        color: #f6740a;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
 
 
     .SideNav {
@@ -110,6 +133,12 @@ tr:hover {
         height: auto;
         position: relative;
         font-size: 1em;
+    }
+
+    .SideNav a {
+        border: solid 1px;
+        border-radius: 12px;
+        margin: 0 5px;
     }
 
     .SideNav a {
@@ -133,13 +162,23 @@ tr:hover {
     .section {
         text-align: center;
     }
-    
+
+    h2 {
+        margin: 20px 0 0 0;
+        color: #f6740a;
+    }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 375px) {
 
     .SideNav {
         font-size: 12px;
+    }
+
+    .SideNav a {
+        border: solid 1px;
+        border-radius: 12px;
+        margin: 0 5px;
     }
 
     .flex-container{
@@ -151,8 +190,11 @@ tr:hover {
     }
 
     .section {
-        font-size: 10px;
         padding: 0.9em;
+    }
 
+    h2 {
+        margin-top: 15px;
+        color: #f6740a;
     }
 }
