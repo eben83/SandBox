@@ -30,6 +30,21 @@
     list-style-type: none
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #111111;
+}
+
+.dropdown-content:hover {
+    display: inline-block;
+}
+
 main {
     width: auto;
     margin-left: 180px;
