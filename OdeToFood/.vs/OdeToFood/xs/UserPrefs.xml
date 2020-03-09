@@ -1,13 +1,17 @@
 ﻿<Properties StartupConfiguration="{D7A8DBAE-155F-4BCF-808F-0675FFB071FD}|Default">
   <MonoDevelop.Ide.ItemProperties.OdeToFood PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="OdeToFood.Data/InMemoryRestarantData.cs">
+    <Files>
+      <File FileName="OdeToFood.Core/CuisineType.cs" Line="65" Column="10" />
+      <File FileName="OdeToFood.Core/Restarant.cs" Line="24" Column="1" />
+      <File FileName="OdeToFood.Data/InMemoryRestarantData.cs" Line="23" Column="10" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OdeToFood" expanded="True">
-            <Node name="OdeToFood" expanded="True" selected="True">
+            <Node name="OdeToFood" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Api" expanded="True" />
               <Node name="Pages" expanded="True">
                 <Node name="Restarants" expanded="True">
                   <Node name="ClientRestarant.cshtml" expanded="True" />
@@ -15,6 +19,9 @@
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
+            </Node>
+            <Node name="OdeToFood.Data" expanded="True">
+              <Node name="InMemoryRestarantData.cs" selected="True" />
             </Node>
           </Node>
         </State>
