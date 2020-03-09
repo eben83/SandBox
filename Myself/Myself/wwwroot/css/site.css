@@ -133,7 +133,6 @@ h2:hover {
     text-transform: capitalize;
 }
 
-
 @media screen and (max-width: 1024px) {
     h2 {
         color: #f6740a;
