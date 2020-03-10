@@ -8690,11 +8690,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/OdeToFood.csproj",
+      "projectUniqueName": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/OdeToFood.csproj",
       "projectName": "OdeToFood",
-      "projectPath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/OdeToFood.csproj",
+      "projectPath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/OdeToFood.csproj",
       "packagesPath": "/Users/ebenburger/.nuget/packages/",
-      "outputPath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/obj/",
+      "outputPath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -8711,11 +8711,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/OdeToFood.Core.csproj": {
-              "projectPath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/OdeToFood.Core.csproj"
+            "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood.Core/OdeToFood.Core.csproj": {
+              "projectPath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood.Core/OdeToFood.Core.csproj"
             },
-            "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/OdeToFood.Data.csproj": {
-              "projectPath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Data/OdeToFood.Data.csproj"
+            "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood.Data/OdeToFood.Data.csproj": {
+              "projectPath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood.Data/OdeToFood.Data.csproj"
             }
           }
         }

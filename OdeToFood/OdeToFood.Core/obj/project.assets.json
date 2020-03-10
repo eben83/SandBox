@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/OdeToFood.Core.csproj",
+      "projectUniqueName": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood.Core/OdeToFood.Core.csproj",
       "projectName": "OdeToFood.Core",
-      "projectPath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/OdeToFood.Core.csproj",
+      "projectPath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood.Core/OdeToFood.Core.csproj",
       "packagesPath": "/Users/ebenburger/.nuget/packages/",
-      "outputPath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood.Core/obj/",
+      "outputPath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood.Core/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
