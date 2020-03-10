@@ -1,12 +1,12 @@
-﻿namespace Myself.core
+﻿using System;
+namespace Myself.core
 {
-    public enum InterestType
+    public enum IntrestType
     {
-        Nothing,
+        Nope,
         Eager,
         Ecstatic,
         Elated,
         Electrified,
-
     }
 }
