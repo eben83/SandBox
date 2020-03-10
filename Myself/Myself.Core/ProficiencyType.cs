@@ -9,8 +9,5 @@ namespace Myself.Core
         Ninja,
     }
 
-    public enum InterestScore
-    {
-        // Interest score to be added
-    }
+    
 }
