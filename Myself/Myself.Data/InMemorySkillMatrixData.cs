@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using Myself.Core;
 
 namespace Myself.Data
@@ -19,6 +20,11 @@ namespace Myself.Data
                new SkillMatrix {ID = 5, Skill = "ASP.NET Core", Proficiency = ProficiencyType.Beginner, Interest = InterestType.Ecstatic},
                new SkillMatrix {ID = 6, Skill = "HTML Forms", Proficiency = ProficiencyType.Beginner, Interest = InterestType.Eager},
            };
+        }
+
+        public SkillMatrix GetById(int id)
+        {
+            // need to find where this method invoked.
         }
     }
 }
