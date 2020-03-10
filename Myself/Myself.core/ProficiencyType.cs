@@ -3,10 +3,9 @@ namespace Myself.Core
 {
     public enum ProficiencyType
     {
-        nope,
-        Eager,
-        Ecstatic,
-        Elated,
-        Electrified,
+        Beginner,
+        Intermediate,
+        Advanced,
+        Ninja,
     }
 }
