@@ -9,4 +9,12 @@
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Myself.core\Myself.core.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\MySelf.Data\MySelf.Data.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

@@ -1,13 +1,12 @@
-﻿using System;
-namespace Myself.Core
+﻿namespace Myself.core
 {
     public enum ProficiencyType
     {
         Beginner,
-        intermediate,
+        Intermediate,
         Advanced,
         Ninja,
     }
 
-    
+
 }
