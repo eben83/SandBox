@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Dynamic;
+using System.Linq;
 using Myself.Core;
 
 namespace Myself.Data
@@ -22,19 +23,18 @@ namespace Myself.Data
            };
         }
 
-        public IEnumerable<SkillMatrix> GetSkillsBySkill(string skill)
+        
+
+        IEnumerable<SkillMatrix> ISkillMatrixData.GetSkillMatricesBySkill(string skill)
         {
             throw new NotImplementedException();
         }
 
-        public SkillMatrix GetByID(int id)
+        public SkillMatrix GetById(int id)
         {
-            throw new NotImplementedException();
+            return skills.Single(s => s.ID == id);
         }
 
-        public SkillMatrix Add(SkillMatrix newSkillMatrix)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }
