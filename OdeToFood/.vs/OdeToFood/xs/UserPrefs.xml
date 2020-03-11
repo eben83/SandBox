@@ -11,21 +11,11 @@
             <Node name="OdeToFood" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="Restarants" expanded="True">
-                  <Node name="ClientRestarant.cshtml" expanded="True" />
-                  <Node name="List.cshtml" expanded="True" />
-                </Node>
-                <Node name="Error.cshtml" expanded="True" />
-                <Node name="Index.cshtml" expanded="True" />
+                <Node name="Restarants" selected="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
-              <Node name="ViewComponents" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
             </Node>
             <Node name="OdeToFood.Core" expanded="True" />
-            <Node name="OdeToFood.Data" expanded="True">
-              <Node name="IRestaurantData.cs" selected="True" />
-            </Node>
+            <Node name="OdeToFood.Data" expanded="True" />
           </Node>
         </State>
       </Pad>
