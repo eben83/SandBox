@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/OdeToFood.csproj",
+  "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/OdeToFood.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -96,7 +96,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -193,7 +194,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -284,7 +286,8 @@
             "Documentation": "Specifies the parameter name for the 'NotAuthorized' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -324,7 +327,8 @@
             "Documentation": "Specifies the parameter name for the 'NotAuthorized' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -467,7 +471,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -608,7 +613,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -648,7 +654,8 @@
             "Documentation": "Specifies the parameter name for the 'Authorized' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -688,7 +695,8 @@
             "Documentation": "Specifies the parameter name for the 'Authorized' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -780,7 +788,8 @@
             "Documentation": "Specifies the parameter name for the 'ChildContent' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -820,7 +829,8 @@
             "Documentation": "Specifies the parameter name for the 'ChildContent' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -861,7 +871,8 @@
             "Documentation": "Specifies the parameter name for the 'NotAuthorized' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -901,7 +912,8 @@
             "Documentation": "Specifies the parameter name for the 'NotAuthorized' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -1649,7 +1661,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -1746,7 +1759,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -1786,7 +1800,8 @@
             "Documentation": "Specifies the parameter name for the 'Found' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -1826,7 +1841,8 @@
             "Documentation": "Specifies the parameter name for the 'Found' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -2069,7 +2085,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -2210,7 +2227,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -2250,7 +2268,8 @@
             "Documentation": "Specifies the parameter name for the 'ChildContent' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -2290,7 +2309,8 @@
             "Documentation": "Specifies the parameter name for the 'ChildContent' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -17848,6 +17868,31 @@
         }
       },
       {
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__RestarantCountViewComponentTagHelper",
+        "AssemblyName": "OdeToFood",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:restarant-count",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__RestarantCountViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "RestarantCount"
+        }
+      },
+      {
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -20501,58 +20546,103 @@
   "RootNamespace": "OdeToFood",
   "Documents": [
     {
-      "FilePath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Shared/_Layout.cshtml",
-      "TargetPath": "Pages/Shared/_Layout.cshtml",
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/R2/Delete.cshtml",
+      "TargetPath": "Pages\\R2\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/_ViewStart.cshtml",
-      "TargetPath": "Pages/_ViewStart.cshtml",
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Restarants/Edit.cshtml",
+      "TargetPath": "Pages\\Restarants\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages/Shared/_ValidationScriptsPartial.cshtml",
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Shared/Components/RestarantCount/Default.cshtml",
+      "TargetPath": "Pages\\Shared\\Components\\RestarantCount\\Default.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Restarants/Detail.cshtml",
-      "TargetPath": "Pages/Restarants/Detail.cshtml",
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/R2/Index.cshtml",
+      "TargetPath": "Pages\\R2\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Restarants/NotFound.cshtml",
-      "TargetPath": "Pages/Restarants/NotFound.cshtml",
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/R2/Details.cshtml",
+      "TargetPath": "Pages\\R2\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/_ViewImports.cshtml",
-      "TargetPath": "Pages/_ViewImports.cshtml",
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Privacy.cshtml",
-      "TargetPath": "Pages/Privacy.cshtml",
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Restarants/List.cshtml",
-      "TargetPath": "Pages/Restarants/List.cshtml",
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Shared/_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Error.cshtml",
-      "TargetPath": "Pages/Error.cshtml",
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Restarants/ClientRestarant.cshtml",
+      "TargetPath": "Pages\\Restarants\\ClientRestarant.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Restarants/Edit.cshtml",
-      "TargetPath": "Pages/Restarants/Edit.cshtml",
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/ebenburger/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Index.cshtml",
-      "TargetPath": "Pages/Index.cshtml",
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Restarants/Delete.cshtml",
+      "TargetPath": "Pages\\Restarants\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Restarants/NotFound.cshtml",
+      "TargetPath": "Pages\\Restarants\\NotFound.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Restarants/Detail.cshtml",
+      "TargetPath": "Pages\\Restarants\\Detail.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/R2/Edit.cshtml",
+      "TargetPath": "Pages\\R2\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/R2/Create.cshtml",
+      "TargetPath": "Pages\\R2\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Restarants/List.cshtml",
+      "TargetPath": "Pages\\Restarants\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/Pages/Restarants/_Summary.cshtml",
+      "TargetPath": "Pages\\Restarants\\_Summary.cshtml",
       "FileKind": "mvc"
     }
   ],

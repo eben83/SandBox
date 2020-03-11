@@ -5,7 +5,7 @@ using Myself.Core;
 
 namespace Myself.Data
 {
-    public class InMemorySkillMatrixData
+    public class InMemorySkillMatrixData : ISkillMatrixData
     {
         List<SkillMatrix> skills;
 
@@ -22,9 +22,19 @@ namespace Myself.Data
            };
         }
 
-        public SkillMatrix GetById(int id)
+        public IEnumerable<SkillMatrix> GetSkillsBySkill(string skill)
         {
-            // need to find where this method invoked.
+            throw new NotImplementedException();
+        }
+
+        public SkillMatrix GetByID(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public SkillMatrix Add(SkillMatrix newSkillMatrix)
+        {
+            throw new NotImplementedException();
         }
     }
 }
