@@ -5,7 +5,7 @@ namespace Myself.Data
 {
     public interface ISkillMatrixData
     {
-        IEnumerable<SkillMatrix> GetSkillMatricesBySkill(string skill);
-        IEnumerable<Myself.Pages.SkillMatrix> GetSkillMatricesBySkill();
+        //IEnumerable<SkillMatrix> GetSkillMatricesBySkill(string skill);
+        //IEnumerable<Myself.Pages.SkillMatrix> GetSkillMatricesBySkill();
     }
 }

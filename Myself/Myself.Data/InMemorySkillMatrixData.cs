@@ -23,17 +23,17 @@ namespace Myself.Data
            };
         }
 
-        
 
-        IEnumerable<SkillMatrix> ISkillMatrixData.GetSkillMatricesBySkill(string skill)
-        {
-            throw new NotImplementedException();
-        }
 
-        public SkillMatrix GetById(int id)
-        {
-            return skills.Single(s => s.ID == id);
-        }
+        //IEnumerable<SkillMatrix> ISkillMatrixData.GetSkillMatricesBySkill(string skill)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //public SkillMatrix GetById(int id)
+        //{
+        //    return skills.Single(s => s.ID == id);
+        //}
 
 
     }
