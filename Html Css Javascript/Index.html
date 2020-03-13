@@ -21,7 +21,8 @@
             </div>
         </nav>
         <div class="information">
-            <img src="Images/Phone2.jpg" class="mobile">
+            <div class="overlay"></div>
+            <img src="Images/Mobile.png" class="mobile">
             <div id="circle">
                 <div class="feature one">
                     <div>
@@ -54,9 +55,32 @@
             </div>
         </div>
         <div class="controls">
-            <img src="#" alt="up Arrow">
-            <img src="#" alt="down Arrow">
+            <img src="Images/Arrow.png" alt="up Arrow" id="UpBtn">
+            <h3>features</h3>
+            <img src="Images/Arrow.png" alt="down Arrow" id="DownBtn">
         </div>
     </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var UpBtn = document.getElementById("UpBtn");
+        var DownBtn = document.getElementById("DownBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        UpBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        DownBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
 </body>
 </html>
