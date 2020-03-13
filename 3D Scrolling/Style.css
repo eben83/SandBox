@@ -180,3 +180,27 @@ h1::after{
     border: none !important;
     box-shadow: none !important;
 }
+::placeholder{
+    font-size: 12px;
+}
+
+.contact-form button{
+    border: none !important;
+    background: #ff4d73 !important;
+    box-shadow: none !important;
+    border-radius: 0;
+}
+
+.contact-info .follow{
+    background-color: #ffffff;
+    padding: 8px;
+    margin: 15 px;
+}
+
+contact-info .fa{
+    margin: 10px;
+    font-size: 20px !important;
+    color: #ff4d73  !important;
+    font-weight: bold;
+    padding-right: 20px;
+}
