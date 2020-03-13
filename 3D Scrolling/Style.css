@@ -5,7 +5,7 @@
    
 }
 
-.content-box{
+.header .content-box{
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
          url(./Images/GTR.jpg);
     background-position: center;
@@ -31,4 +31,136 @@
     position: absolute;
     right: 10%;
     top: 5%;
+}
+
+.menu button .fa{
+    margin-right: 10px;
+}
+
+.banner-text{
+    width: 80%;
+    color: #ffffff;
+    margin: 16% auto 0;
+    text-align: center;
+}
+
+.banner-text h2{
+    margin-top: 50px;
+    font-size: 64px;
+}
+
+.banner-text p{
+    font-size: 14px;
+    margin: 20px 0 50px;
+}
+.banner-text a{
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ff4d73;
+    display: block;
+    padding: 10px;
+    width: 180px;
+    margin: auto;
+    background: #ff4d73;
+    transition: 3s;
+}
+.banner-text a:hover{
+    background: transparent;
+}
+/* ------------Service------------ */
+
+.content-box{
+    background: #f4f3ff;
+    height: 100%;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    padding-top: 100px;
+}
+h1::after{
+    content: '';
+    background: #ff4d73;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 50px;
+}
+.services .icon{
+    font-size: 30px;
+    margin: 20px auto;
+    padding: 18px;
+    height: 70px;
+    width: 70px;
+    border: 1px solid #ff4d73;
+    border-radius: 50%;
+    color: #ff4d73;
+}
+
+.services p{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #777777;
+    padding: 20px;
+}
+
+.services span{
+    color: #ff4d73;
+    transition: 1.5s;
+}
+.services .col-md-3:hover{
+    background: #ff4d73;
+    cursor: pointer;
+    color: #ffffff;
+    box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+    transition: 1.5s;
+
+}
+.services .col-md-3:hover .icon{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+.services .col-md-3:hover p{
+    color: #ffffff;
+}
+.services .col-md-3:hover span{
+    color: #ffffff;
+}
+
+/*--------Feature------------*/
+
+.feature h2{
+    margin-top: 130px;
+}
+
+.feature h2::after{
+    content: '';
+    background: #ff4d73;
+    display: block;
+    height: 3px;
+    width: 100px;
+    margin: 10px auto 50px;
+    position: absolute;
+    left: 17px;
+}
+.feature ul{
+    margin-top: 30px;
+    margin-left: 50px;
+    list-style-type: none;
+}
+.feature ul li {
+    line-height: 40px;
+    font-size: 14px;
+    position: relative;
+}
+
+.feature ul li::after{
+    content: '';
+    height: 7px;
+    width: 7px;
+    background: #ff4d73;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 17px;
+    left: -17px;
 }
