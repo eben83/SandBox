@@ -164,3 +164,7 @@ h1::after{
     top: 17px;
     left: -17px;
 }
+
+.feature img{
+    margin-top: 130px;
+}
