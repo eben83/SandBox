@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
+    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.tiltedpage-scroll.js"></script>
+    <link rel="stylesheet" href="jquery.tiltedpage-scroll.js">
     <title>Cars</title>
 </head>
 <body>
+    <div class="main">
     <section class="header">
         <div class="content-box">
             <div class="menu">
@@ -130,10 +134,29 @@
                         <div class="follow">
                             <i class="fa fa-envelope"></i><span>eben@me.com</span>
                         </div>
+                        <div class="follow">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-youtube-play"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-instagram"></i>
+                        </div>
                     </div>
                 </div>
+                <hr>
+                    <p class="copyright">Made By Eben with <i class="fa fa-heart-o"></i></p>
             </div>
         </div>
     </section>
+</div>
+<script>
+    $(".main").tiltedpage_scroll({
+    sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
+    angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+    opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
+    scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
+    outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+  });
+</script>
+
 </body>
 </html>
