@@ -76,7 +76,7 @@
 }
 
 .feature div {
-    margin: 30px;
+    margin-left: 30px;
 }
 
 .feature div p{
@@ -101,4 +101,13 @@
 .four {
     bottom: 150px;
     right: 350px;
+}
+
+.mobile{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
