@@ -168,3 +168,15 @@ h1::after{
 .feature img{
     margin-top: 130px;
 }
+/*--------footer----------*/
+.footer h1 {
+    padding-top: 50px;
+}
+.contact-form{
+    padding: 15px;
+}
+.form-control{
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
