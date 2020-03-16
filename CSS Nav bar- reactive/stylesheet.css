@@ -67,6 +67,7 @@ main{
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
+    transition: 200ms;
 }
 
 .link-text{
