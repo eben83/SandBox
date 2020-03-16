@@ -49,6 +49,7 @@ main{
 }
 .nav-item{
     width: 100%;
+    
 }
 .nav-item:last-child {
     margin-top: auto;
@@ -60,6 +61,12 @@ main{
     height: 5rem;
     color: var(--text-primary);
     text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+}
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--bg-secondary);
 }
 
 .link-text{
@@ -77,14 +84,7 @@ main{
 
 .navbar:hover .link-text{
     display: block;
-
 }
-
-.fa{
+.svg-inline--fa{
     color: #df49a6;
-}
-
-.fa-primary,
-.fa-secondary{
-    transition: var(--transition-speed);
 }
