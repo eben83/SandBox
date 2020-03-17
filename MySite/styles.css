@@ -105,6 +105,27 @@ main{
     max-width: 2rem;
 }
 
+/*  */
+
+.header .content-box{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+         url(./Images/GTR.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.menu {
+    display: inline-flex;
+}
+.menu img {
+    height: 70px;
+    margin: 20px 0 0 110px;
+    cursor: pointer;
+}
+
+
 /* Small screens */
 @media only screen and (max-width: 600px)
 {
