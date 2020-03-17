@@ -6,19 +6,16 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
 }
-
 body{
     color: black;
     background-color: var(--bg-primary);
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 /*target the scroll bar look*/
 body::-webkit-scrollbar{
     width: 0.25rem;
 }
-
 body::-webkit-scrollbar-track{
     background: #1e1e24;
 }
@@ -27,12 +24,11 @@ body::-webkit-scrollbar-thumb{
 }
 main{
     margin-left: 5rem;
-    padding: 1rem;
 }
 
+
+
 .navbar {
-    /* width: 5rem;
-    height: 100vh; */
     position: fixed;
     color: var(--text-secondary);
     background: var(--bg-secondary);
@@ -50,12 +46,10 @@ main{
 }
 .nav-item{
     width: 100%;
-    
 }
 .nav-item:last-child {
     margin-top: auto;
 }
-
 .nav-link{
     display: flex;
     align-items: center;
@@ -70,7 +64,6 @@ main{
     color: var(--text-secondary);
     transition: 200ms;
 }
-
 .link-text{
     display: none;
     margin-left: 1rem;
@@ -79,11 +72,9 @@ main{
     min-width: 2rem;
     margin: 0 1.5rem;
 }
-
 .svg-inline--fa{
     color: #ff4c14;
 }
-
 .logo{
     font-weight: bold;
     text-transform: uppercase;
@@ -95,64 +86,49 @@ main{
     letter-spacing: 0.3ch;
     width: 100%;
 }
-
 .logo svg{
     transform: rotate(0deg);
     transition: 500ms;
 }
-
 .navbar:hover .logo svg{
     transform: rotate(-180deg);
     max-width: 2rem;
 }
 
+
+
+
 /* landing page  */
 
-.header .content-box{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-         url(./Images/GTR.jpg);
+.header .content-box {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(./Images/GTR.jpg);
     background-position: center;
     background-size: cover;
-    width: 100%;
     height: 100vh;
-}
-
-.menu {
-    display: inline-flex;
-}
-.menu img {
-    height: 70px;
-    margin: 20px 0 0 110px;
-    cursor: pointer;
 }
 .banner-text{
     width: 80%;
     color: #ffffff;
-    margin: 16% auto 0;
+    margin: 0 auto 0;
     text-align: center;
 }
-
 .banner-text h2{
-    margin-top: 50px;
+    padding-top: 40vh;
     font-size: 64px;
 }
-
 .banner-text p{
     font-size: 14px;
     margin: 20px 0 50px;
 }
 
-/* Skills Page */
-
+/* Skills Section */
 .content-box{
     background: #f4f3ff;
     height: 100%;
     width: 100%;
 }
-h1{
-    text-align: center;
-    padding-top: 100px;
-}
+
 
 /* Small screens */
 @media only screen and (max-width: 600px)
