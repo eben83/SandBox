@@ -1,8 +1,8 @@
 ﻿:root{
     font-size: 16px;
     font-family: fantasy;
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
+        --text-primary: #b6b6b6;
+        --text-secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #141418;
 }
@@ -41,16 +41,15 @@ main{
     width:100%;
 }
 
-/*
-.nav-item:last-child{
+.nav-item:last-child {
     margin-top: auto;
-}*/
+}
 
 .nav-link{
     display: flex;
     align-items: center;
     height: 5rem;
-    color: var(--text-primary);
+    color: #b6b6b6;
     text-decoration: none;
     opacity: 0.7;
 }
@@ -58,7 +57,7 @@ main{
 .nav-link:hover{
     opacity: 1;
     background: var(--bg-secondary);
-    color: var(--text-secondary);
+    color: #ececec;
     transition: 200ms;
 }
 .link-text{
@@ -80,7 +79,7 @@ main{
     text-transform: uppercase;
     margin: 1rem;
     text-align: center;
-    color: var(--text-primary);
+    color: #b6b6b6;
     background: var(--bg-secondary);
     font-size: 1.5rem;
     letter-spacing: 0.3ch;
