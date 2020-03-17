@@ -12,6 +12,7 @@ body{
     background-color: var(--bg-primary);
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 /*target the scroll bar look*/
 body::-webkit-scrollbar{
@@ -105,7 +106,7 @@ main{
     max-width: 2rem;
 }
 
-/*  */
+/* landing page  */
 
 .header .content-box{
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
@@ -124,7 +125,34 @@ main{
     margin: 20px 0 0 110px;
     cursor: pointer;
 }
+.banner-text{
+    width: 80%;
+    color: #ffffff;
+    margin: 16% auto 0;
+    text-align: center;
+}
 
+.banner-text h2{
+    margin-top: 50px;
+    font-size: 64px;
+}
+
+.banner-text p{
+    font-size: 14px;
+    margin: 20px 0 50px;
+}
+
+/* Skills Page */
+
+.content-box{
+    background: #f4f3ff;
+    height: 100%;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    padding-top: 100px;
+}
 
 /* Small screens */
 @media only screen and (max-width: 600px)
