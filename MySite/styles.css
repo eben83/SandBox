@@ -129,6 +129,23 @@ main{
     width: 100%;
 }
 
+.skill h1{
+    padding-top: 100px;
+    text-align: center;
+}
+.skill p {
+    text-align: center;
+}
+table{
+    padding-top: 100px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+table td{
+    padding-top: 20px;
+}
+
 
 /* Small screens */
 @media only screen and (max-width: 600px)
