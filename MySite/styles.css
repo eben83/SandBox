@@ -99,7 +99,6 @@ main{
 
 
 /* landing page  */
-
 .header .content-box {
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url(./Images/GTR.jpg);
@@ -123,28 +122,37 @@ main{
 }
 
 /* Skills Section */
-.content-box{
+.skill .content-box{
     background: #f4f3ff;
     height: 100%;
     width: 100%;
 }
 
-.skill h1{
+h1{
     padding-top: 100px;
     text-align: center;
 }
-.skill p {
+p {
     text-align: center;
 }
-table{
-    padding-top: 100px;
-    width: 100%;
+
+table {
+    padding: 50px 0;
+    width: 60%;
     align-content: center;
     text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
-table td{
-    padding-top: 20px;
+
+.skill table td{
+    padding-top: 10px;
 }
+
+/* Course */
+
 
 
 /* Small screens */
