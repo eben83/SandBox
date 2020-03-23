@@ -143,12 +143,16 @@ table {
     width: 60%;
     align-content: center;
     text-align: center;
-    border: 1px solid #111111;
     border-radius: 50px;
     margin-left: auto;
     margin-right: auto;
 }
-
+th tr td{
+    padding: 25px 0;
+}
+.skill table {
+    border: 1px solid #111111;
+}
 .skill table td{
     padding-top: 10px;
 }
@@ -157,6 +161,10 @@ table {
 
 .course .content-box{
     color: #ffffff;
+}
+.course table{
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 /* Small screens */
@@ -170,15 +178,15 @@ table {
     .logo{
         display: none;
     }
-.navbar-nav{
-    flex-direction: row;
-}
-.nav-link{
-    justify-content: center;
-}
-main{
-    margin: 0;
-}
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .nav-link{
+        justify-content: center;
+    }
+    main{
+        margin: 0;
+    }
 
 }
 
