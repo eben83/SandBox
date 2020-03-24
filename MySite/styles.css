@@ -25,15 +25,13 @@ body::-webkit-scrollbar-thumb{
 main{
     margin-left: 5rem;
 }
-
-
-
 .navbar {
     position: fixed;
+    width: 5rem;
     color: var(--text-secondary);
     background: var(--bg-secondary);
     /*animation*/
-    transition: 200ms ease;
+    transition: 300ms ease;
 }
 .navbar-nav{
     list-style: none;
@@ -70,14 +68,14 @@ main{
 }
 .nav-link svg{
     min-width: 2rem;
-    margin: 0 1.5rem;
+    margin: 0 2rem;
 }
 .svg-inline--fa{
     color: #ff4c14;
 }
 .logo{
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: none;
     margin-bottom: 1rem;
     text-align: center;
     color: var(--text-secondary);
@@ -88,11 +86,13 @@ main{
 }
 .logo svg{
     transform: rotate(0deg);
-    transition: 500ms;
+    max-width: 2rem;
+    transition: 600ms ease;
 }
 .navbar:hover .logo svg{
     transform: rotate(-180deg);
-    max-width: 2rem;
+    min-width: 2rem;
+    transition: 200ms ease;
 }
 
 .content-box{
