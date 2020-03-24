@@ -99,7 +99,16 @@ main{
     width: 100%;
     height: 100%;
 }
-
+table {
+    padding: 50px 0;
+    width: 60%;
+    align-content: center;
+    text-align: center;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
 
 /* landing page  */
@@ -136,16 +145,6 @@ h1{
 }
 p {
     text-align: center;
-}
-
-table {
-    padding: 50px 0;
-    width: 60%;
-    align-content: center;
-    text-align: center;
-    border-radius: 50px;
-    margin-left: auto;
-    margin-right: auto;
 }
 th tr td{
     padding: 25px 0;
