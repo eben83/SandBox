@@ -30,6 +30,7 @@ main{
     width: 5rem;
     color: var(--text-secondary);
     background: var(--bg-secondary);
+    justify-content: center;
     /*animation*/
     transition: 300ms ease;
 }
@@ -60,7 +61,7 @@ main{
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
-    transition: 200ms;
+    transition: 600ms;
 }
 .link-text{
     display: none;
@@ -82,7 +83,7 @@ main{
     background: var(--bg-secondary);
     font-size: 1.5rem;
     letter-spacing: 0.3ch;
-    width: 100%;
+    width: 5rem;
 }
 .logo svg{
     transform: rotate(0deg);
@@ -107,7 +108,9 @@ table {
     border-radius: 50px;
     margin-left: auto;
     margin-right: auto;
-    
+}
+.table-hover:hover{
+    background: #ff4c14;
 }
 
 
@@ -171,8 +174,8 @@ th tr td{
 {
     .navbar{
         bottom: 0;
-        width: 100vw;
-        height: 5rem;
+        width: 5rem;
+        height: 100vh;
     }
     .logo{
         display: none;
