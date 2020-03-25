@@ -92,7 +92,7 @@ main{
 .navbar:hover .logo svg{
     transform: rotate(-180deg);
     min-width: 2rem;
-    transition: 200ms ease;
+    transition: 600ms ease;
 }
 
 .content-box{
