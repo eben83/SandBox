@@ -10,7 +10,7 @@ function GetActivities(res){
         //these are the ticks next to LHS shift key
 
         fetch(activities_link)
-            .then((res) => console.log(res.json()))
+         .then((res) => console.log(res.json()))
 }
 
 
