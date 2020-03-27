@@ -5,13 +5,12 @@ const authorization_link = "https://www.strava.com/oauth/token"
 
 function GetActivities(res){
 
-    Console.log(res)
+    const activities_link = 
+        `https://www.strava.com/api/v3/athlete/activities?access_token=${res.access_token}`
+        //these are the ticks next to LHS shift key
 
-    // const activities_link = 
-    //     "https://www.strava.com/api/v3/athlete/activities?access_token=${res.access_token}"
-
-    //     fetch(activities_link)
-    //         .then((res) => console.log(res.json()))
+        fetch(activities_link)
+            .then((res) => console.log(res.json()))
 }
 
 
