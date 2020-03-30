@@ -2,6 +2,16 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StravaApi", "StravaApi\StravaApi.csproj", "{6E9EBB90-7ED5-411A-8B3E-2B0F60A0EC9F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StravaApi.Core", "StravaApi.Core", "{27703302-2295-4158-A4BF-E3F8282D0D4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StravaApi", "StravaApi", "{C6B58696-F56E-4C82-A6BC-F402E65A12A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StravaApi.Data", "StravaApi.Data", "{3166E409-F86C-496E-9094-3FED03FBFC81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StravaApi.Integration", "StravaApi.Integration", "{134D645F-19D3-4CE9-B8C3-DCC4097C8137}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StravaApi.Data", "StravaApi.Data\StravaApi.Data.csproj", "{9F85D7DC-2FC6-4E0A-BCA6-DA81FA9BB7A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +22,13 @@ Global
 		{6E9EBB90-7ED5-411A-8B3E-2B0F60A0EC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E9EBB90-7ED5-411A-8B3E-2B0F60A0EC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E9EBB90-7ED5-411A-8B3E-2B0F60A0EC9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F85D7DC-2FC6-4E0A-BCA6-DA81FA9BB7A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F85D7DC-2FC6-4E0A-BCA6-DA81FA9BB7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F85D7DC-2FC6-4E0A-BCA6-DA81FA9BB7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F85D7DC-2FC6-4E0A-BCA6-DA81FA9BB7A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E9EBB90-7ED5-411A-8B3E-2B0F60A0EC9F} = {C6B58696-F56E-4C82-A6BC-F402E65A12A5}
+		{9F85D7DC-2FC6-4E0A-BCA6-DA81FA9BB7A5} = {3166E409-F86C-496E-9094-3FED03FBFC81}
 	EndGlobalSection
 EndGlobal
