@@ -18,6 +18,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Dtos" t="Include">
           <e p="ActivityDto.cs" t="Include" />
+          <e p="AuthenticationDetails.cs" t="Include" />
           <e p="BaseDto.cs" t="Include" />
         </e>
         <e p="Integration.Strava.csproj" t="IncludeRecursive" />

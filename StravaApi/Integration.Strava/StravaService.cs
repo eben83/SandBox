@@ -24,5 +24,11 @@ namespace Integration.Strava
             return response.Data;
 
         }
+
+        public Method Authentication(AuthenticationDetails)
+        {
+           
+        }
+        
     }
 }
