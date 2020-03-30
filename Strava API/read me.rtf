@@ -1,12 +1,12 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2512
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red171\green43\blue52;
-\red236\green236\blue236;\red30\green30\blue30;\red0\green0\blue0;\red239\green240\blue236;\red239\green239\blue236;
-\red0\green0\blue0;\red255\green255\blue255;\red239\green239\blue236;\red238\green238\blue236;}
-{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c100000;\cssrgb\c73462\c24534\c26169;
-\cssrgb\c94118\c94118\c94118;\cssrgb\c15686\c15686\c15686;\cssrgb\c0\c1\c1;\cssrgb\c95132\c95127\c93945;\cssrgb\c94934\c94930\c93986;
-\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99985;\cssrgb\c95033\c95029\c93966;\cssrgb\c94733\c94731\c94023;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww9240\viewh18000\viewkind0
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red236\green236\blue236;
+\red30\green30\blue30;\red239\green240\blue236;\red239\green239\blue236;\red255\green255\blue255;\red239\green239\blue236;
+\red238\green238\blue236;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c100000;\cssrgb\c94118\c94118\c94118;
+\cssrgb\c15686\c15686\c15686;\cssrgb\c95132\c95127\c93945;\cssrgb\c94934\c94930\c93986;\cssrgb\c100000\c100000\c99985;\cssrgb\c95033\c95029\c93966;
+\cssrgb\c94733\c94731\c94023;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20160\viewh7420\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf2 \cb3 Strava Access \
@@ -15,15 +15,14 @@
 \
 2) click on add app- to get access to api part\
 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf2 3) paste in link to browser.\
+3) paste in link to browser.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \fs28 \cf2 \expnd0\expndtw0\kerning0
 \
-\cf2 https://www.strava.com/oauth/authorize?client_id= 45021&redirect_url=http://localhost&response_type=code&scope=activity:read_all\cf2 \
+https://www.strava.com/oauth/authorize?client_id= 45021&redirect_uri=http://localhost&response_type=code&scope=activity:read_all\
+\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf2 \
 
 \fs24 \cf2 4) grab url\
 \
@@ -33,13 +32,13 @@ http://localhost/?state=&code=[CODE]&scope=read,activity:read_all\
 5) postman\
 	post\
 \pard\pardeftab720\partightenfactor0
-\cf5 \cb6 \outl0\strokewidth0 \strokec5 https://www.strava.com/oauth/token?client_id=45021&client_secret=c258cacbe62c5e597322479531b3211e5cacc844&code=d7b1f2bf90b59a1bb636978fb8147c6b6fe425b6&grant_type=authorization_code\cf7 \cb3 \strokec8 \
+\cf4 \cb5 https://www.strava.com/oauth/token?client_id=45021&client_secret=c258cacbe62c5e597322479531b3211e5cacc844&code=d7b1f2bf90b59a1bb636978fb8147c6b6fe425b6&grant_type=authorization_code\cf2 \cb3 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf2 \strokec9 \
+\cf2 \
 6)postman\
 	Get\
-	\cf10 \cb11 \strokec12 	\cf5 \cb6 \strokec5 https://www.strava.com/api/v3/athlete/activities?access_token=ec2ef468b303dce39d6a1fd31ac02c6b3831442b\cf10 \cb11 \strokec13 \
+	\cf2 \cb8 	\cf4 \cb5 https://www.strava.com/api/v3/athlete/activities?access_token=ec2ef468b303dce39d6a1fd31ac02c6b3831442b\cf2 \cb8 \
 \
 7) postman\
-\cf2 \cb3 \strokec12 	post\
-	\cf5 \cb6 \strokec5 https://www.strava.com/api/v3/oauth/token?client_id=45021&client_secret=c258cacbe62c5e597322479531b3211e5cacc844&grant_type=refresh_token&refresh_token=f28d1c1bdb4ca4b18b9df128891f4d16fd23e2c2}
+\cf2 \cb3 	post\
+	\cf4 \cb5 https://www.strava.com/api/v3/oauth/token?client_id=45021&client_secret=c258cacbe62c5e597322479531b3211e5cacc844&grant_type=refresh_token&refresh_token=f28d1c1bdb4ca4b18b9df128891f4d16fd23e2c2}

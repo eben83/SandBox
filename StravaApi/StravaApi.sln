@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StravaApi", "StravaApi\StravaApi.csproj", "{6E9EBB90-7ED5-411A-8B3E-2B0F60A0EC9F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C6B58696-F56E-4C82-A6BC-F402E65A12A5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{DF2FB199-8A49-437B-B9C6-D2B8FBB4B918}"
@@ -12,7 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{2A586245-5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{FD049B35-555E-4273-A865-560D3B56F9E6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integration.StravaApi", "integration.StravaApi", "{9A0ED908-EDC1-4F4E-8BB0-AFBF9F376A98}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{9A0ED908-EDC1-4F4E-8BB0-AFBF9F376A98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Strava", "Integration.Strava\Integration.Strava.csproj", "{449E9606-E3DB-43A6-A670-939016D299C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Strava.Tests", "Integration.Strava.Tests\Integration.Strava.Tests.csproj", "{4B671FB9-05F2-43DD-AF57-03DCF76B4226}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,13 +22,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6E9EBB90-7ED5-411A-8B3E-2B0F60A0EC9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E9EBB90-7ED5-411A-8B3E-2B0F60A0EC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E9EBB90-7ED5-411A-8B3E-2B0F60A0EC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E9EBB90-7ED5-411A-8B3E-2B0F60A0EC9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{449E9606-E3DB-43A6-A670-939016D299C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{449E9606-E3DB-43A6-A670-939016D299C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{449E9606-E3DB-43A6-A670-939016D299C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{449E9606-E3DB-43A6-A670-939016D299C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B671FB9-05F2-43DD-AF57-03DCF76B4226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B671FB9-05F2-43DD-AF57-03DCF76B4226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B671FB9-05F2-43DD-AF57-03DCF76B4226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B671FB9-05F2-43DD-AF57-03DCF76B4226}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{6E9EBB90-7ED5-411A-8B3E-2B0F60A0EC9F} = {C6B58696-F56E-4C82-A6BC-F402E65A12A5}
 		{9A0ED908-EDC1-4F4E-8BB0-AFBF9F376A98} = {DF2FB199-8A49-437B-B9C6-D2B8FBB4B918}
+		{449E9606-E3DB-43A6-A670-939016D299C9} = {9A0ED908-EDC1-4F4E-8BB0-AFBF9F376A98}
+		{4B671FB9-05F2-43DD-AF57-03DCF76B4226} = {FD049B35-555E-4273-A865-560D3B56F9E6}
 	EndGlobalSection
 EndGlobal
