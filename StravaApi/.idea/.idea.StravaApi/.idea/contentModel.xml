@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeFlat">
-      <e p="Application" t="Include" />
+      <e p="Application" t="Include">
+        <e p="integration.StravaApi" t="Include" />
+      </e>
       <e p="Data" t="Include" />
       <e p="Domain" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
