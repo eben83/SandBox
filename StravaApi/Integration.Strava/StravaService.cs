@@ -10,10 +10,10 @@ namespace Integration.Strava
     {
         public List<ActivityDto> GetActivities()
         {
-            var client = new RestClient("www.strava.com");
-            client.Authenticator = new SuperAuthenticator();
+            var client = new RestClient("");
+            client.Authenticator = new HttpBasicAuthenticator("test", "test");
             
-            var request = new RestRequest("/api/v3/athlete/activities?access_token=cacd7a0fcce8491472fa28da12ce6637604748ae");
+            var request = new RestRequest("");
             request.AddHeader("contentType", "application/json");
 
             var response = client.Get<List<ActivityDto>>(request);
