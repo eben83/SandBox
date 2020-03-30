@@ -54,6 +54,7 @@
             </e>
           </e>
         </e>
+        <e p="StravaApi.cs" t="Include" />
         <e p="StravaService.csproj" t="IncludeRecursive" />
       </e>
     </e>
