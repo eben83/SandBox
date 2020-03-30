@@ -21,7 +21,17 @@
         <e p="Startup.cs" t="Include" />
         <e p="StravaApi.csproj" t="IncludeRecursive" />
       </e>
-      <e p="StravaApi.Core" t="Include" />
+      <e p="StravaApi.Core" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="StravaApi.Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="StravaApi.Core.csproj" t="IncludeRecursive" />
+      </e>
       <e p="StravaApi.Data" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -35,6 +45,17 @@
       </e>
       <e p="StravaApi.Integration" t="Include" />
       <e p="StravaApi.sln" t="IncludeFlat" />
+      <e p="StravaService" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="StravaService.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="StravaService.csproj" t="IncludeRecursive" />
+      </e>
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_StravaApi.-1382043930.00" t="ExcludeRecursive" />
