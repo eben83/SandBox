@@ -30,7 +30,7 @@ namespace AnimalConsoleApp
             if (myAnimal.canAnimalFly == true)
             {
                 Console.WriteLine($"your animal can fly because its a {myAnimal.nameOfAnimal} " +
-                                  $" your animal also has {myAnimal.numberOfLegs} legs");
+                                  $" your animal has {myAnimal.numberOfLegs} legs");
             }
             else
             {
