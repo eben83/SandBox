@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Linq;
 using System.Xml;
 
 namespace AnimalConsoleApp
@@ -16,8 +17,7 @@ namespace AnimalConsoleApp
     {
         static void Main(string[] args)
         {
-            
-            
+
             Console.WriteLine("Welcome to my Animal App");
             Console.WriteLine();
             
@@ -26,9 +26,25 @@ namespace AnimalConsoleApp
 
             Console.WriteLine($"Top of the morning to ya, {name}");
             Console.WriteLine();
+
+            Console.WriteLine("Name three animals");
+            var animals = Console.ReadLine();
+            var animalsArray = animals.Split(",");
+
+            Console.WriteLine("List three names");
+            var names = Console.ReadLine();
+            var namesArray = names.Split(",");
             
+            for (int i = 0; i < animalsArray.Length; i++)
+            {
+                Console.WriteLine($"{animalsArray[i]} - {namesArray[i]}");
+            }
+            
+
             Console.WriteLine("Press enter to exit");
             Console.ReadLine();
+            
+            
             // var myAnimal = new Animal();
 
             // Console.WriteLine("Choose an animal");
@@ -42,6 +58,7 @@ namespace AnimalConsoleApp
 
             // myAnimal.canAnimalFly = Convert.ToBoolean(Console.ReadLine());
             //
+            
             // if (myAnimal.canAnimalFly == true)
             // {
             //     Console.WriteLine($"your animal can fly because its a {myAnimal.nameOfAnimal} " +
