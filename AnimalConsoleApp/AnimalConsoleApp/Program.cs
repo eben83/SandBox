@@ -16,29 +16,44 @@ namespace AnimalConsoleApp
     {
         static void Main(string[] args)
         {
+            
+            
             Console.WriteLine("Welcome to my Animal App");
+            Console.WriteLine();
             
-            var myAnimal = new Animal();
-            Console.WriteLine("Choose an animal");
-            myAnimal.nameOfAnimal = Console.ReadLine();
-            Console.WriteLine("How many legs does your animal have?");
-            myAnimal.numberOfLegs = Console.ReadLine();
-            Console.WriteLine("Can your animal fly?");
-            Console.WriteLine("True or false");
-            myAnimal.canAnimalFly = Convert.ToBoolean(Console.ReadLine());
+            Console.WriteLine("Please enter your name");
+            var name = Console.ReadLine();
+
+            Console.WriteLine($"Top of the morning to ya, {name}");
+            Console.WriteLine();
             
-            if (myAnimal.canAnimalFly == true)
-            {
-                Console.WriteLine($"your animal can fly because its a {myAnimal.nameOfAnimal} " +
-                                  $" your animal has {myAnimal.numberOfLegs} legs");
-            }
-            else
-            {
-                Console.WriteLine($"your animal is unable to fly, but your animal is a {myAnimal.nameOfAnimal} " +
-                                  $"and has {myAnimal.numberOfLegs} legs");
-            }
-            
-            Console.ReadKey();
+            Console.WriteLine("Press enter to exit");
+            Console.ReadLine();
+            // var myAnimal = new Animal();
+
+            // Console.WriteLine("Choose an animal");
+            // myAnimal.nameOfAnimal = Console.ReadLine();
+
+            // Console.WriteLine("How many legs does your animal have?");
+            // myAnimal.numberOfLegs = Console.ReadLine();
+
+            // Console.WriteLine("Can your animal fly?");
+            // Console.WriteLine("True or false");
+
+            // myAnimal.canAnimalFly = Convert.ToBoolean(Console.ReadLine());
+            //
+            // if (myAnimal.canAnimalFly == true)
+            // {
+            //     Console.WriteLine($"your animal can fly because its a {myAnimal.nameOfAnimal} " +
+            //                       $" your animal has {myAnimal.numberOfLegs} legs");
+            // }
+            // else
+            // {
+            //     Console.WriteLine($"your animal is unable to fly, but your animal is a {myAnimal.nameOfAnimal} " +
+            //                       $"and has {myAnimal.numberOfLegs} legs");
+            // }
+            //
+            // Console.ReadKey();
 
 
 
