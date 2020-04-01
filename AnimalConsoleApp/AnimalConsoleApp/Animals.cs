@@ -8,32 +8,32 @@ namespace AnimalConsoleApp
         public string Name { get; set; }
         public void Run()
         {
-            Console.WriteLine("Elephant is running....");
+            Console.WriteLine($"{Type} is running....");
             Console.WriteLine("doof, doof, doof");
             Console.WriteLine("Look at him go!");
             Console.WriteLine("Feeling the earth moving!!");
-            Console.WriteLine("Elephant stops Running. He looks quite Hungry");
+            Console.WriteLine($"{Type} stops Running. He looks quite Hungry");
             Console.WriteLine("and tired now.");
             Console.WriteLine();
-            Console.WriteLine("Press enter to carry on.");
+            
         }
 
         public void Eat()
         {
-            Console.WriteLine("Dog is eating...");
+            Console.WriteLine($"{Type} is eating...");
             Console.WriteLine("munch, munch, munch");
             Console.WriteLine("Look at all that food go down!!!");
             Console.WriteLine("Burp!!");
             Console.WriteLine();
-            Console.WriteLine("press enter to carry on.");
+            
         }
 
         public void Sleep()
         {
-            Console.WriteLine("Cat is sleeping...");
+            Console.WriteLine($"{Type} is sleeping...");
             Console.WriteLine("ZZzzZZZzzzZZz");
             Console.WriteLine("how loud can he snore!!!");
-            Console.WriteLine("Cats acn sleep all day");
+            Console.WriteLine("Cats can sleep all day");
         }
     }
 }

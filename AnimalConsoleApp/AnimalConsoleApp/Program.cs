@@ -54,6 +54,7 @@ namespace AnimalConsoleApp
             var dogAction = Console.ReadLine();
             Console.WriteLine();
             
+            Console.WriteLine("Press enter to carry on.");
             Console.ReadKey();
 
             Console.WriteLine("Specify yet another animal and action you want to perform:");
@@ -61,7 +62,7 @@ namespace AnimalConsoleApp
             var catAction = Console.ReadLine();
             Console.WriteLine();
             
-
+            Console.WriteLine("press enter to carry on.");
             Console.WriteLine();
             Console.WriteLine("Press enter to exit");
             Console.ReadLine();
