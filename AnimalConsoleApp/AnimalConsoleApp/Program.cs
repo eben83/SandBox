@@ -34,6 +34,8 @@ namespace AnimalConsoleApp
             Console.WriteLine("List three names");
             var names = Console.ReadLine();
             var namesArray = names.Split(",");
+
+            Console.WriteLine();
             
             for (int i = 0; i < animalsArray.Length; i++)
             {
