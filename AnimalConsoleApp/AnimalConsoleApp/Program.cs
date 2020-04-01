@@ -5,13 +5,6 @@ using System.Xml;
 
 namespace AnimalConsoleApp
 {
-    public class Animal
-    {
-        public string nameOfAnimal { get; set; }
-        public string numberOfLegs { get; set; }
-        public bool canAnimalFly { get; set; }
-
-    }
 
     class Program
     {
@@ -45,7 +38,7 @@ namespace AnimalConsoleApp
             }
 
             Console.WriteLine();
-E
+
             Console.WriteLine("Animals can do the following:");
             Console.WriteLine("Run, Sleep, Eat");
             Console.WriteLine();
