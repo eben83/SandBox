@@ -1,11 +1,14 @@
 namespace AnimalConsoleApp
 {
-    public class IAnimal
+    public interface IAnimal
     {
-        string animalType { get; set; }
-        string animalName { get; set; }
-        string actionRun { get; set; }
-        string actionEat { get; set; }
-        string actionSleep { get; set; }
+        string AnimalType { get; set; }
+        string AnimalName { get; set; }
+
+        public void Run(){}
+        
+        public void Eat(){}
+        
+        public void Sleep(){}
     }
 }
