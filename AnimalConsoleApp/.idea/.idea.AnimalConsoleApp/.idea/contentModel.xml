@@ -4,6 +4,7 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="AnimalConsoleApp" t="IncludeRecursive">
         <e p="AnimalConsoleApp.csproj" t="IncludeRecursive" />
+        <e p="Animals.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="IAnimal.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">

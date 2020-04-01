@@ -2,13 +2,13 @@ namespace AnimalConsoleApp
 {
     public interface IAnimal
     {
-        string AnimalType { get; set; }
-        string AnimalName { get; set; }
+        string Type { get; set; }
+        string Name { get; set; }
 
-        public void Run(){}
-        
-        public void Eat(){}
-        
-        public void Sleep(){}
+        public void Run();
+
+        public void Eat();
+
+        public void Sleep();
     }
 }
