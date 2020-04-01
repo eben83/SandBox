@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
 
@@ -10,7 +11,8 @@ namespace AnimalConsoleApp
     {
         static void Main(string[] args)
         {
-
+            var animals = new List<Animal>();
+            
             Console.WriteLine("Welcome to my Animal App");
             Console.WriteLine();
             
@@ -21,13 +23,19 @@ namespace AnimalConsoleApp
             Console.WriteLine();
 
             Console.WriteLine("Name any amount of animals you like:");
-            var animals = Console.ReadLine();
-            var animalsArray = animals.Split(",");
+            var animalTypes = Console.ReadLine().Split(",");
+            
+            foreach (var type in animalTypes)
+            {
+                
+            }
 
             Console.WriteLine("Enter as many names as you wish:");
             var names = Console.ReadLine();
             var namesArray = names.Split(",");
 
+            
+            
             Console.WriteLine();
             
             Console.WriteLine("You entered the following choices");
