@@ -9,9 +9,11 @@ namespace AnimalConsoleApp
 
     class Program
     {
+        
         static void Main(string[] args)
         {
             var animals = new List<Animal>();
+            
 
             Console.WriteLine("Welcome to my Animal App");
             Console.WriteLine();
@@ -47,7 +49,7 @@ namespace AnimalConsoleApp
 
             foreach (var animal in animals)
             {
-                Console.WriteLine($"{animal.Type} - {animal.Name}");
+                Console.WriteLine($"{animal.Identification}");
             }
             
 

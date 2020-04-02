@@ -7,6 +7,12 @@ namespace AnimalConsoleApp
     {
         public string Type { get; set; }
         public string Name { get; set; }
+
+        public string Identification
+        {
+            get { return $"{Type} - {Name}"; }
+        }
+
         public void Run()
         {
             Console.WriteLine($"{Type} is running....");
