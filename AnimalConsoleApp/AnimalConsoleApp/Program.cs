@@ -37,8 +37,7 @@ namespace AnimalConsoleApp
 
             for (int index = 0; index < animals.Count; index++)
             {
-                var me = animals[0];
-                
+                animals[index].Name = names[index];
                 
             }
             
