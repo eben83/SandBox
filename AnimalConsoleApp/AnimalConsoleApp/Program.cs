@@ -55,29 +55,37 @@ namespace AnimalConsoleApp
 
             Console.WriteLine();
 
+            string animalAction;
+
             Console.WriteLine("Animals can do the following:");
             Console.WriteLine("Run, Sleep, Eat");
             Console.WriteLine();
             Console.WriteLine("Specify the animal and action you want to perform:");
             Console.WriteLine("Example: Elephant - Run / ELEPHANT-RUN / Elephant- Run / Elephant - RUN");
-            var elephantAction = Console.ReadLine();
+            animalAction = Console.ReadLine().ToLower().Replace(" ", "");
+            animalAction.IndexOf('r');
+            var animalRun = animalAction.Substring(3);
+            
             Console.WriteLine();
             
-            Console.ReadKey();
+            Console.WriteLine("Animals can do the following:");
+            Console.WriteLine("Run, Sleep, Eat");
+            Console.WriteLine();
+            Console.WriteLine("Specify the animal and action you want to perform:");
+            Console.WriteLine("Example: Cat - Sleep / CAT-SLEEP / Cat- Sleep / Cat - SLEEP");
+            animalAction = Console.ReadLine();
+            Console.WriteLine();
+            
+            Console.WriteLine("Animals can do the following:");
+            Console.WriteLine("Run, Sleep, Eat");
+            Console.WriteLine();
+            Console.WriteLine("Specify the animal and action you want to perform:");
+            Console.WriteLine("Example: Dog - Eat / DOG-EAT / Dog- Eat / Dog - EAT");
+            animalAction = Console.ReadLine();
+            Console.WriteLine();
 
-            Console.WriteLine("Specify another animal and action you want to perform:");
-            Console.WriteLine("Example: Dog - Eat / DOG-EAT / Dog- Eat");
-            var dogAction = Console.ReadLine();
-            Console.WriteLine();
             
-            Console.WriteLine("Press enter to carry on.");
-            Console.ReadKey();
-
-            Console.WriteLine("Specify yet another animal and action you want to perform:");
-            Console.WriteLine("Example: Cat - Sleep / CAT-SlEEP / Cat- Sleep");
-            var catAction = Console.ReadLine();
             Console.WriteLine();
-            
             Console.WriteLine("press enter to carry on.");
             Console.WriteLine();
             Console.WriteLine("Press enter to exit");
