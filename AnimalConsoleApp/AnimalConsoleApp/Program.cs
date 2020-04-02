@@ -25,7 +25,7 @@ namespace AnimalConsoleApp
             Console.WriteLine("Name any amount of animals you like:");
             var animalTypes = Console.ReadLine().Split(",");
             
-            foreach (var type in animalTypes)
+            foreach (var animal in animalTypes)
             {
                 
             }
