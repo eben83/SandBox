@@ -41,17 +41,15 @@ namespace AnimalConsoleApp
                 
             }
             
-            
-            
             Console.WriteLine();
             
-            Console.WriteLine("You entered the following choices");
-            
-            for (int i = 0; i < animalsArray.Length; i++)
+            Console.WriteLine($"You entered the following choices (Total {animals.Count})");
+
+            foreach (var animal in animals)
             {
-                
-                Console.WriteLine($"{animalsArray[i]} - {namesArray[i]}");
+                Console.WriteLine($"{animal.Type} - {animal.Name}");
             }
+            
 
             Console.WriteLine();
 
