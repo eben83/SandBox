@@ -2,6 +2,7 @@ using System;
 
 namespace AnimalConsoleApp
 {
+    // this is the class
     public class Animal: IAnimal
     {
         public string Type { get; set; }

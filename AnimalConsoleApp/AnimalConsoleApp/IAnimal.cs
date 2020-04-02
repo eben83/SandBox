@@ -1,5 +1,6 @@
 namespace AnimalConsoleApp
 {
+    // this is the interface
     public interface IAnimal
     {
         string Type { get; set; }
