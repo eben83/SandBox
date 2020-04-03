@@ -66,7 +66,7 @@ namespace AnimalConsoleApp
             Console.WriteLine("Example: Elephant - Run / ELEPHANT-RUN / Elephant- Run / Elephant - RUN");
             animalAction = Console.ReadLine().ToLower().Replace(" ", "");
             animalActionFirstWord = animalAction.Substring(0, animalAction.IndexOf("-"));
-            animalActionSecondWord = animalAction.Substring(animalAction.IndexOf("-")-1);
+            animalActionSecondWord = animalAction.Substring(animalAction.IndexOf("-"));
 
             foreach (var animal in animals)
             {
@@ -156,8 +156,6 @@ namespace AnimalConsoleApp
             Console.WriteLine();
 
             
-            Console.WriteLine();
-            Console.WriteLine("press enter to carry on.");
             Console.WriteLine();
             Console.WriteLine("Press enter to exit");
             Console.ReadLine();
