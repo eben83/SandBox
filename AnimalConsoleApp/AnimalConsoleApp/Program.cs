@@ -63,9 +63,10 @@ namespace AnimalConsoleApp
             Console.WriteLine("Specify the animal and action you want to perform:");
             Console.WriteLine("Example: Elephant - Run / ELEPHANT-RUN / Elephant- Run / Elephant - RUN");
             animalAction = Console.ReadLine().ToLower().Replace(" ", "");
-            animalAction.IndexOf('r');
-            var animalRun = animalAction.Substring(3);
-            
+            int animalActionFirstWordIndex = animalAction.IndexOf("-",-1);
+            int animalActionSecondWordIndex = animalAction.IndexOf("-", +1);
+            var animalActionfirstWord = animalAction.Substring(0, animalActionFirstWordIndex);
+            var animalActionSecondWord = animalAction.Substring(animalActionSecondWordIndex);
             Console.WriteLine();
             
             Console.WriteLine("Animals can do the following:");
