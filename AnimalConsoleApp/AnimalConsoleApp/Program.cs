@@ -56,6 +56,8 @@ namespace AnimalConsoleApp
             Console.WriteLine();
 
             string animalAction;
+            string animalActionFirstWord;
+            string animalActionSecondWord;
 
             Console.WriteLine("Animals can do the following:");
             Console.WriteLine("Run, Sleep, Eat");
@@ -63,10 +65,17 @@ namespace AnimalConsoleApp
             Console.WriteLine("Specify the animal and action you want to perform:");
             Console.WriteLine("Example: Elephant - Run / ELEPHANT-RUN / Elephant- Run / Elephant - RUN");
             animalAction = Console.ReadLine().ToLower().Replace(" ", "");
-            int animalActionFirstWordIndex = animalAction.IndexOf("-",-1);
-            int animalActionSecondWordIndex = animalAction.IndexOf("-", +1);
-            var animalActionfirstWord = animalAction.Substring(0, animalActionFirstWordIndex);
-            var animalActionSecondWord = animalAction.Substring(animalActionSecondWordIndex);
+            animalActionFirstWord = animalAction.Substring(0, animalAction.IndexOf("-"));
+            animalActionSecondWord = animalAction.Substring(animalAction.IndexOf("-")-1);
+
+            foreach (var animal in animals)
+            {
+                if (animal.Type == animalActionFirstWord)
+                {
+                    
+                }
+            }
+            
             Console.WriteLine();
             
             Console.WriteLine("Animals can do the following:");
@@ -74,7 +83,18 @@ namespace AnimalConsoleApp
             Console.WriteLine();
             Console.WriteLine("Specify the animal and action you want to perform:");
             Console.WriteLine("Example: Cat - Sleep / CAT-SLEEP / Cat- Sleep / Cat - SLEEP");
-            animalAction = Console.ReadLine();
+            animalAction = Console.ReadLine().ToLower().Replace(" ", "");
+            animalActionFirstWord = animalAction.Substring(0, animalAction.IndexOf("-"));
+            animalActionSecondWord = animalAction.Substring(animalAction.IndexOf("-")-1);
+
+            foreach (var animal in animals)
+            {
+                if (animal.Type == animalActionFirstWord)
+                {
+                    
+                }
+            }
+            
             Console.WriteLine();
             
             Console.WriteLine("Animals can do the following:");
@@ -82,7 +102,18 @@ namespace AnimalConsoleApp
             Console.WriteLine();
             Console.WriteLine("Specify the animal and action you want to perform:");
             Console.WriteLine("Example: Dog - Eat / DOG-EAT / Dog- Eat / Dog - EAT");
-            animalAction = Console.ReadLine();
+            animalAction = Console.ReadLine().ToLower().Replace(" ", "");
+            animalActionFirstWord = animalAction.Substring(0, animalAction.IndexOf("-"));
+            animalActionSecondWord = animalAction.Substring(animalAction.IndexOf("-")-1);
+
+            foreach (var animal in animals)
+            {
+                if (animal.Type == animalActionFirstWord)
+                {
+                    
+                }
+            }
+            
             Console.WriteLine();
 
             
