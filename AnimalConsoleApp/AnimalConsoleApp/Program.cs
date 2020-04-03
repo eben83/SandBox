@@ -64,15 +64,15 @@ namespace AnimalConsoleApp
             Console.WriteLine();
             Console.WriteLine("Specify the animal and action you want to perform:");
             Console.WriteLine("Example: Elephant - Run / ELEPHANT-RUN / Elephant- Run / Elephant - RUN");
-            animalAction = Console.ReadLine().ToLower().Replace(" ", "");
-            animalActionFirstWord = animalAction.Substring(0, animalAction.IndexOf("-"));
-            animalActionSecondWord = animalAction.Substring(animalAction.IndexOf("-")-1);
+            animalAction = Console.ReadLine();
+            animalActionFirstWord = animalAction.Substring(0, animalAction.IndexOf("-")).Trim().ToLower();
+            animalActionSecondWord = animalAction.Substring(animalAction.IndexOf("-") + 1).Trim().ToLower();
 
             foreach (var animal in animals)
             {
-                if (animal.Type == animalActionFirstWord)
+                if (string.Compare(animal.Type, animalActionFirstWord, StringComparison.InvariantCultureIgnoreCase) == 0)
                 {
-                    if (animalActionSecondWord == "run")
+                    if (string.Compare(animalActionSecondWord,"run", StringComparison.InvariantCultureIgnoreCase) == 0)
                     {
                         animal.Run();
                     }
