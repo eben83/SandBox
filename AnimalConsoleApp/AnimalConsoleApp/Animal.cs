@@ -13,6 +13,10 @@ namespace AnimalConsoleApp
             get { return $"{Type} - {Name}"; }
         }
 
+        public void GetAndPerformAnimalAction()
+        {
+        }
+
         public void Run()
         {
             Console.WriteLine($"{Type} is running....");
