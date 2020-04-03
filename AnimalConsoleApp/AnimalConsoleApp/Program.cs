@@ -72,7 +72,20 @@ namespace AnimalConsoleApp
             {
                 if (animal.Type == animalActionFirstWord)
                 {
-                    
+                    if (animalActionSecondWord == "run")
+                    {
+                        animal.Run();
+                    }
+
+                    if (animalActionSecondWord == "sleep")
+                    {
+                        animal.Sleep();
+                    }
+
+                    if (animalActionSecondWord == "eat")
+                    {
+                        animal.Eat();
+                    }
                 }
             }
             
@@ -91,7 +104,20 @@ namespace AnimalConsoleApp
             {
                 if (animal.Type == animalActionFirstWord)
                 {
-                    
+                    if (animalActionSecondWord == "run")
+                    {
+                        animal.Run();
+                    }
+
+                    if (animalActionSecondWord == "sleep")
+                    {
+                        animal.Sleep();
+                    }
+
+                    if (animalActionSecondWord == "eat")
+                    {
+                        animal.Eat();
+                    }
                 }
             }
             
@@ -110,7 +136,20 @@ namespace AnimalConsoleApp
             {
                 if (animal.Type == animalActionFirstWord)
                 {
-                    
+                    if (animalActionSecondWord == "run")
+                    {
+                        animal.Run();
+                    }
+
+                    if (animalActionSecondWord == "sleep")
+                    {
+                        animal.Sleep();
+                    }
+
+                    if (animalActionSecondWord == "eat")
+                    {
+                        animal.Eat();
+                    }
                 }
             }
             
