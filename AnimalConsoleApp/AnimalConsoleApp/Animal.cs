@@ -20,11 +20,11 @@ namespace AnimalConsoleApp
 
         public virtual void Run()
         {
-            Console.WriteLine($"{Type} is running....");
             Console.WriteLine("doof, doof, doof");
             Console.WriteLine("Look at him go!");
             Console.WriteLine("Feeling the earth moving!!");
             Console.WriteLine($"{Type} stops Running. He looks quite Hungry");
+            Console.WriteLine($"{Type} is running....");
             Console.WriteLine("and tired now.");
             Console.WriteLine();
         }
