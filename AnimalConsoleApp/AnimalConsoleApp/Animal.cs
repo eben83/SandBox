@@ -2,8 +2,8 @@ using System;
 
 namespace AnimalConsoleApp
 {
-    // this is the class
-    public class Animal: IAnimal
+    // this is a complex class
+    abstract class Animal: IAnimal
     {
         public string Type { get; set; }
         public string Name { get; set; }

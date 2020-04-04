@@ -1,15 +1,16 @@
+using System;
+
 namespace AnimalConsoleApp
 {
-    // this is the interface
     public interface IAnimal
     {
-        string Type { get; set; }
+        AnimalTypes  Type { get; set; }
         string Name { get; set; }
+        string Identification { get; set; }
 
-        public void Run();
+        void Run();
+        void Eat();
 
-        public void Eat();
-
-        public void Sleep();
+        void Sleep();
     }
 }
