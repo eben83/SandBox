@@ -3,9 +3,9 @@ using System;
 namespace AnimalConsoleApp
 {
     // this is a complex class
-    abstract class Animal: IAnimal
+    public abstract class Animal
     {
-        public string Type { get; set; }
+        public virtual string Type { get; set; }
         public string Name { get; set; }
 
         public string Identification
@@ -13,7 +13,12 @@ namespace AnimalConsoleApp
             get { return $"{Type} - {Name}"; }
         }
 
-        public void Run()
+        public Animal(string name)
+        {
+            Name = name;
+        }
+
+        public virtual void Run()
         {
             Console.WriteLine($"{Type} is running....");
             Console.WriteLine("doof, doof, doof");
@@ -24,12 +29,12 @@ namespace AnimalConsoleApp
             Console.WriteLine();
         }
 
-        public void Eat()
+        public virtual void Eat()
         {
             Console.WriteLine($"{Type} is eating...");
             Console.WriteLine("munch, munch, munch");
             Console.WriteLine("Look at all that food go down!!!");
-            Console.WriteLine("Burp!!");
+            Console.WriteLine("Burp!!"); 
             Console.WriteLine();
         }
 
