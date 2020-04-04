@@ -81,19 +81,27 @@ namespace AnimalConsoleApp
                  if (string.Compare(animal.Type, animalActionFirstWord, StringComparison.InvariantCultureIgnoreCase) ==
                      0)
                  {
-                     if (string.Compare(animalActionSecondWord, "run", StringComparison.InvariantCultureIgnoreCase) == 0)
+                     switch (animalActionSecondWord)
                      {
-                         animal.Run();
-                     }
-
-                     if (animalActionSecondWord == "sleep")
-                     {
-                         animal.Sleep();
-                     }
-
-                     if (animalActionSecondWord == "eat")
-                     {
-                         animal.Eat();
+                         case "run":
+                         {
+                             animal.Run();
+                             break;
+                         }
+                         case "sleep":
+                         {
+                             animal.Sleep();
+                             break;
+                         }
+                         case "eat" :
+                         {
+                             animal.Eat();
+                             break;
+                         }
+                         default:
+                         {
+                             break;
+                         }
                      }
                  }
              }
