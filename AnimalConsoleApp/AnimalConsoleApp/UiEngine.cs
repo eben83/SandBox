@@ -13,12 +13,6 @@ namespace AnimalConsoleApp
             Console.WriteLine("Welcome to my Animal App");
             Console.WriteLine();
 
-            Console.WriteLine("Please enter your name");
-            var name = Console.ReadLine();
-
-            Console.WriteLine($"Top of the morning to ya, {name}");
-            Console.WriteLine();
-
             Console.WriteLine("Name any amount of animals you like:");
             var animalTypes = Console.ReadLine().Split(",");
 
