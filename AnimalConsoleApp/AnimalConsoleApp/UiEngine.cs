@@ -42,10 +42,8 @@ namespace AnimalConsoleApp
             var getChoiceInt = 0;
             var isChoiceValid = false;
             
-            
             while (!isChoiceValid)
             {
-                
                 Console.WriteLine(userMessage);
                 
                 if (!int.TryParse(Console.ReadLine(), out getChoiceInt ))
@@ -59,10 +57,18 @@ namespace AnimalConsoleApp
                 else
                 {
                     isChoiceValid = true;
+                    Welcome();
                 }
             }
             return getChoiceInt;
         }
+        //method animals menu
+        public void animalMenu()
+        {
+            
+        }
+        
+        //action actions menu
     }
 }
 
