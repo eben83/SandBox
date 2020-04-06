@@ -45,7 +45,7 @@ namespace AnimalConsoleApp
             Console.WriteLine(userMessage);
             bool result = int.TryParse(getChoice = Console.ReadLine(), out int getChoiceInt);
 
-            if (result )
+            if (result)
             {
                 
             }
