@@ -6,10 +6,7 @@ namespace AnimalConsoleApp
         {
         }
 
-        public override AnimalTypes Type
-        {
-            get { return AnimalTypes.Cat; }
-        }
+        public override AnimalTypes Type => AnimalTypes.Cat; //lamda expression
         public string Identification { get; set; }
     }
 }
