@@ -7,18 +7,18 @@ namespace AnimalConsoleApp
 {
     public class UiEngine
     {
-        private string userMessage;
-        string menuChoice;
+        private const int EXIT_MENU_CHOICE = 4;
         
         public void Run()
         {
-           
-            
-            while (menuChoice != "4")
+            int menuChoice = 0;
+        
+            while (menuChoice != EXIT_MENU_CHOICE)
             {
                 Welcome();
                 MainMenu();
-                menuChoice = Console.ReadLine();
+                menuChoice = GetMenuChoice("Please make a choice, fool!!!", MainMenu);
+
             }
         }
         private void Welcome()
@@ -27,7 +27,6 @@ namespace AnimalConsoleApp
             Console.WriteLine("Welcome to my Animal App");
             Console.WriteLine();
         }
-​
         private void MainMenu()
         {
             Console.WriteLine();
@@ -38,25 +37,32 @@ namespace AnimalConsoleApp
             Console.WriteLine();
         }
 
-        public void GetMenuChoice(string userMessage)
+        private int GetMenuChoice( string userMessage, Action menuToShow)
         {
-            string getChoice;
+            var getChoiceInt = 0;
+            var isChoiceValid = false;
             
-            Console.WriteLine(userMessage);
-            bool result = int.TryParse(getChoice = Console.ReadLine(), out int getChoiceInt);
-
-            if (result)
+            
+            while (!isChoiceValid)
             {
                 
+                Console.WriteLine(userMessage);
+                
+                if (!int.TryParse(Console.ReadLine(), out getChoiceInt ))
+                {
+                    Console.WriteLine("Sorry your choice is incorrect");
+                    Console.WriteLine("Please make another choice.");
+                    Console.ReadLine();
+                    Welcome();
+                    menuToShow();
+                }
+                else
+                {
+                    isChoiceValid = true;
+                }
             }
-            else
-            {
-                Console.WriteLine("Sorry your choice is incorrect");
-                Console.WriteLine("Please make another choice.");
-            }
+            return getChoiceInt;
         }
-            
-            
     }
 }
 
