@@ -19,11 +19,20 @@ namespace AnimalConsoleApp
             {
                 Welcome();
                 MainMenu();
-                menuChoice = GetMenuChoice("Please make a choice, fool!!!", MainMenu);
-                AnimalMenu();
-                menuChoice = GetMenuChoice("Please, make a choice", AnimalMenu);
-                ActionMenu();
-                menuChoice = GetMenuChoice("Make an action choice", ActionMenu);
+                menuChoice  = GetMenuChoice("Please make a choice, fool!!!", MainMenu);
+                switch (menuChoice)
+                {
+                    case 1:
+                        AnimalMenu();
+                        menuChoice = GetMenuChoice("Please, make a choice", AnimalMenu);
+                        break;
+                    case 2 :
+                        ActionMenu();
+                        menuChoice = GetMenuChoice("Make an action choice", ActionMenu);
+                        break;
+                }
+                
+                
             }
         }
 
