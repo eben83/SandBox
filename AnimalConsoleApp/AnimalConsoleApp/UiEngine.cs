@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Globalization;
 using System.Linq;
+using System.Xml;
 
 namespace AnimalConsoleApp
 {
@@ -19,7 +20,10 @@ namespace AnimalConsoleApp
                 Welcome();
                 MainMenu();
                 menuChoice = GetMenuChoice("Please make a choice, fool!!!", MainMenu);
-                // GetAnimalMenu();
+                AnimalMenu();
+                menuChoice = GetMenuChoice("Please, make a choice", AnimalMenu);
+                ActionMenu();
+                menuChoice = GetMenuChoice("Make an action choice", ActionMenu);
             }
         }
 
@@ -64,30 +68,29 @@ namespace AnimalConsoleApp
                     
                 }
             }
-
             return getChoiceInt;
         }
 
-        
-        private int GetAnimalMenu()
+        private void AnimalMenu()
         {
-            var animalMenu = 0;
-            animalMenu = GetMenuChoice("Please make a choice", MainMenu);
-            
-            while (animalMenu != EXIT_MENU_CHOICE)
-            {
-                foreach (var animalType in Enum.GetValues(typeof(AnimalTypes)))
-                {
-                    Console.WriteLine("make a choice");
-                    Console.WriteLine(animalType);
-                }
-            }
-            return animalMenu;
+            int menuChoice = 1;
+            foreach (var animalType in Enum.GetValues(typeof(AnimalTypes)))
+                Console.WriteLine($"{(int) animalType}. {animalType}");
+            //(int) animalType- displays the int of the array
+        }
+
+        private void ActionMenu()
+        {
+            int menuChoice = 2;
+            foreach (var animalAction in Enum.GetValues(typeof(AnimalActions)))
+                Console.WriteLine($"{(int) animalAction}. {animalAction}");
+
         }
     }
 }
 
 //method- return animals menu
+
 //method- return actions menu
     
 
