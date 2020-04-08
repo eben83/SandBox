@@ -25,33 +25,22 @@ namespace AnimalConsoleApp
                         break;
                     case 1 :
                         AddAnimal();
-                        Welcome();
-                        MainMenu();
                         break;
                     case 2:
-                        AnimalMenu();
-                        menuChoice = GetMenuChoice("Make an animal choice", AnimalMenu);
-                        ActionMenu();
-                        menuChoice = GetMenuChoice("Choose your action", ActionMenu);
+                        InteractWithAnimal();
                         break;
                     case 3:
-                        Welcome();
-                        MainMenu();
-                        menuChoice = GetMenuChoice("Nothing to see here yet", MainMenu);
+                        InteractWithAnimals();
                         break;
                     default:
                         break;
                 }
 
                 if (menuChoice != 0)
-                {
                     menuChoice = 0;
-                }
                 else
-                {
-                    menuChoice  = GetMenuChoice("Please make a choice, fool!!!", MainMenu);
-                }
-                
+                    menuChoice = GetMenuChoice("Please make a choice, fool!!!", MainMenu);
+
             }
         }
 
@@ -60,6 +49,8 @@ namespace AnimalConsoleApp
             Console.Clear();
             Console.WriteLine("Welcome to my Animal App");
             Console.WriteLine();
+            
+            //TODO: Lets show a message here with the animal identifications that was already added.
         }
 
         private void MainMenu()
@@ -70,6 +61,18 @@ namespace AnimalConsoleApp
             Console.WriteLine("3. Interact with all animals");
             Console.WriteLine("4. Exit");
             Console.WriteLine();
+        }
+
+        private void AnimalMenu()
+        {
+            foreach (var animalType in Enum.GetValues(typeof(AnimalTypes)))
+                Console.WriteLine($"{(int) animalType}. {animalType}");
+        }
+
+        private void ActionMenu()
+        {
+            foreach (var animalAction in Enum.GetValues(typeof(AnimalActions)))
+                Console.WriteLine($"{(int) animalAction}. {animalAction}");
         }
 
         private int GetMenuChoice(string userMessage, Action menuToShow)
@@ -100,22 +103,46 @@ namespace AnimalConsoleApp
         
         private void AddAnimal()
         {
-            Console.WriteLine("Enter you animal to be added:");
-            Console.ReadLine();
-            Console.WriteLine("Your animal was added...");
+            Welcome();
+            AnimalMenu();
+            
+            var animalOption = GetMenuChoice("Select the type of animal you would like to add.", AnimalMenu);
+            
+            //TODO: Now get the animal name from the user
+            
+            //TODO: Lets add the animal to our list of animals.
+            //We will use a factory to create the animal. Add a AnimalFactory class.
+            //The class will have one method called Create that requires a parameter of type AnimalsTypes
+            //Then use a switch to new up the correct animal based on the animal type parameter.
+            
         }
 
-        private void AnimalMenu()
+        private void InteractWithAnimal()
         {
-            foreach (var animalType in Enum.GetValues(typeof(AnimalTypes)))
-                Console.WriteLine($"{(int) animalType}. {animalType}");
+            Welcome();
+            AnimalMenu();
+            
+            var animalOption = GetMenuChoice("Which animal would like to interact with?", AnimalMenu);
+            
+            //You can do the reverse (int) animalType, by casting an int back to the enum.
+            var animalType = (AnimalTypes) animalOption;
+            
+            //TODO: Get the animal from our list
+            Welcome();
+            ActionMenu();
+
+            //Personalize the message a bit more once we have the animal
+            var actionOption = GetMenuChoice("What would you like your animal to do?", ActionMenu);
+            //TODO: Perform action
         }
 
-        private void ActionMenu()
+        private void InteractWithAnimals()
         {
-            foreach (var animalAction in Enum.GetValues(typeof(AnimalActions)))
-                Console.WriteLine($"{(int) animalAction}. {animalAction}");
+            
+            
         }
+        
+        
     }
 }
 
