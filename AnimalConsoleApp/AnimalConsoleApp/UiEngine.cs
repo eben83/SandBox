@@ -26,14 +26,13 @@ namespace AnimalConsoleApp
                         break;
                     case 1 :
                         AddAnimal();
-                        menuChoice = GetMenuChoice("Animal to be added...", AddAnimal);
-                        MainMenu();
+                        goto case 0;
                         break;
                     case 2:
                         AnimalMenu();
                         menuChoice = GetMenuChoice("Make an animal choice", AnimalMenu);
                         ActionMenu();
-                        menuChoice = GetMenuChoice("Choose and action.", ActionMenu);
+                        goto case 0;
                         break;
                     case 3:
                         Welcome();
@@ -43,12 +42,6 @@ namespace AnimalConsoleApp
                     default:
                         break;
                 }
-                
-                
-                
-
-                
-                            
             }
         }
 
@@ -90,7 +83,6 @@ namespace AnimalConsoleApp
                 {
                     isChoiceValid = true;
                     Welcome();
-                    
                 }
             }
             return getChoiceInt;
@@ -98,7 +90,9 @@ namespace AnimalConsoleApp
         
         private void AddAnimal()
         {
-            AnimalMenu();
+            Console.WriteLine("Enter you animal to be added:");
+            Console.ReadLine();
+            Console.WriteLine("Your animal was added...");
         }
 
         private void AnimalMenu()
