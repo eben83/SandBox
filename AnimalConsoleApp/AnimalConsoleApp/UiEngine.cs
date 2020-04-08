@@ -22,26 +22,36 @@ namespace AnimalConsoleApp
                     case 0:
                         Welcome();
                         MainMenu();
-                        menuChoice  = GetMenuChoice("Please make a choice, fool!!!", MainMenu);
                         break;
                     case 1 :
                         AddAnimal();
-                        goto case 0;
+                        Welcome();
+                        MainMenu();
                         break;
                     case 2:
                         AnimalMenu();
                         menuChoice = GetMenuChoice("Make an animal choice", AnimalMenu);
                         ActionMenu();
-                        goto case 0;
+                        menuChoice = GetMenuChoice("Choose your action", ActionMenu);
                         break;
                     case 3:
                         Welcome();
                         MainMenu();
-                        menuChoice  = GetMenuChoice("Nothing to See here yet", MainMenu);
+                        menuChoice = GetMenuChoice("Nothing to see here yet", MainMenu);
                         break;
                     default:
                         break;
                 }
+
+                if (menuChoice != 0)
+                {
+                    menuChoice = 0;
+                }
+                else
+                {
+                    menuChoice  = GetMenuChoice("Please make a choice, fool!!!", MainMenu);
+                }
+                
             }
         }
 
