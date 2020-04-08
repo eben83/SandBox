@@ -17,22 +17,38 @@ namespace AnimalConsoleApp
 
             while (menuChoice != EXIT_MENU_CHOICE)
             {
-                Welcome();
-                MainMenu();
-                menuChoice  = GetMenuChoice("Please make a choice, fool!!!", MainMenu);
                 switch (menuChoice)
                 {
-                    case 1:
-                        AnimalMenu();
-                        menuChoice = GetMenuChoice("Please, make a choice", AnimalMenu);
+                    case 0:
+                        Welcome();
+                        MainMenu();
+                        menuChoice  = GetMenuChoice("Please make a choice, fool!!!", MainMenu);
                         break;
-                    case 2 :
+                    case 1 :
+                        AddAnimal();
+                        menuChoice = GetMenuChoice("Animal to be added...", AddAnimal);
+                        MainMenu();
+                        break;
+                    case 2:
+                        AnimalMenu();
+                        menuChoice = GetMenuChoice("Make an animal choice", AnimalMenu);
                         ActionMenu();
-                        menuChoice = GetMenuChoice("Make an action choice", ActionMenu);
+                        menuChoice = GetMenuChoice("Choose and action.", ActionMenu);
+                        break;
+                    case 3:
+                        Welcome();
+                        MainMenu();
+                        menuChoice  = GetMenuChoice("Nothing to See here yet", MainMenu);
+                        break;
+                    default:
                         break;
                 }
                 
                 
+                
+
+                
+                            
             }
         }
 
@@ -79,21 +95,22 @@ namespace AnimalConsoleApp
             }
             return getChoiceInt;
         }
+        
+        private void AddAnimal()
+        {
+            AnimalMenu();
+        }
 
         private void AnimalMenu()
         {
-            int menuChoice = 1;
             foreach (var animalType in Enum.GetValues(typeof(AnimalTypes)))
                 Console.WriteLine($"{(int) animalType}. {animalType}");
-            //(int) animalType- displays the int of the array
         }
 
         private void ActionMenu()
         {
-            int menuChoice = 2;
             foreach (var animalAction in Enum.GetValues(typeof(AnimalActions)))
                 Console.WriteLine($"{(int) animalAction}. {animalAction}");
-
         }
     }
 }
