@@ -6,7 +6,7 @@ namespace AnimalConsoleApp
 {
     public class AnimalFactory
     {
-        public IAnimal Create(AnimalTypes animalType, string name)
+        public static IAnimal Create(AnimalTypes animalType, string name)
         {
             switch (animalType)
             {
