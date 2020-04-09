@@ -13,8 +13,9 @@ namespace AnimalConsoleApp
             get { return $"{Type} - {Name}"; }
         }
 
+        
         public Animal(string name)
-        {
+        {    //constructor
             Name = name;
         }
 
