@@ -130,12 +130,11 @@ namespace AnimalConsoleApp
             
             //TODO: Get the animal from our list
             Welcome();
+            Console.WriteLine($"You have chosen: {animalType}");
             ActionMenu();
 
-            
-
             //Personalize the message a bit more once we have the animal
-            var actionOption = GetMenuChoice("What would you like your animal to do?", ActionMenu);
+            var actionOption = GetMenuChoice($"What would you like your {animalType} to do?", ActionMenu);
             //TODO: Perform action
         }
 
