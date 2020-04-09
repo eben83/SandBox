@@ -107,7 +107,7 @@ namespace AnimalConsoleApp
             AnimalMenu();
             
             var animalOption = GetMenuChoice("Select the type of animal you would like to add.", AnimalMenu);
-            
+            Console.WriteLine();
             //TODO: Now get the animal name from the user
             
             //TODO: Lets add the animal to our list of animals.
@@ -145,11 +145,5 @@ namespace AnimalConsoleApp
         
     }
 }
-
-//method- return animals menu
-
-//method- return actions menu
-    
-
 
 
