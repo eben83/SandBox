@@ -49,7 +49,7 @@ namespace AnimalConsoleApp
             Console.Clear();
             Console.WriteLine("Welcome to my Animal App");
             Console.WriteLine();
-            Console.WriteLine("The Following are Animals are loaded:");
+            // Console.WriteLine("The Following are Animals are loaded:");
             //TODO: Lets show a message here with the animal identifications that was already added.
         }
 
@@ -65,6 +65,7 @@ namespace AnimalConsoleApp
 
         private void AnimalMenu()
         {
+            Console.WriteLine("The following animals are loaded:");
             foreach (var animalType in Enum.GetValues(typeof(AnimalTypes)))
                 Console.WriteLine($"{(int) animalType}. {animalType}");
         }
@@ -108,13 +109,13 @@ namespace AnimalConsoleApp
             
             var animalOption = GetMenuChoice("Select the type of animal you would like to add.", AnimalMenu);
             Console.WriteLine();
-            //TODO: Now get the animal name from the user
-            
-            //TODO: Lets add the animal to our list of animals.
-            //We will use a factory to create the animal. Add a AnimalFactory class.
-            //The class will have one method called Create that requires a parameter of type AnimalsTypes
+                        //TODO: Now get the animal name from the user
+            Console.ReadLine();
+                        //TODO: Lets add the animal to our list of animals.
+                        //We will use a factory to create the animal. Add a AnimalFactory class.
+                        //The class will have one method called Create that requires a parameter of type AnimalsTypes
             //Then use a switch to new up the correct animal based on the animal type parameter.
-            
+
         }
 
         private void InteractWithAnimal()
@@ -130,6 +131,8 @@ namespace AnimalConsoleApp
             //TODO: Get the animal from our list
             Welcome();
             ActionMenu();
+
+            
 
             //Personalize the message a bit more once we have the animal
             var actionOption = GetMenuChoice("What would you like your animal to do?", ActionMenu);
