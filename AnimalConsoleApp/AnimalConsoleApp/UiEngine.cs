@@ -17,7 +17,6 @@ namespace AnimalConsoleApp
             int menuChoice = 0;
             var animalsList = new List<IAnimal>();
 
-
             while (menuChoice != EXIT_MENU_CHOICE)
             {
                 switch (menuChoice)
@@ -29,6 +28,7 @@ namespace AnimalConsoleApp
                     case 1 :
                         AddAnimal();
                         animalsList.Add(AddAnimal());
+                        MainMenu();
                         menuChoice = 0;
                         break;
                     case 2:
@@ -39,6 +39,7 @@ namespace AnimalConsoleApp
                         InteractWithAnimals();
                         break;
                     default:
+                        menuChoice = 0;
                         break;
                 }
 
@@ -151,7 +152,7 @@ namespace AnimalConsoleApp
             var actionOption = GetMenuChoice($"What would you like your {animalType} to do?", ActionMenu);
             //TODO: Perform action
             var actionType = (AnimalActions) actionOption;
-            Console.WriteLine(actionType);
+            
             var animalAction = AddAnimal();
             return animalAction;
         }
