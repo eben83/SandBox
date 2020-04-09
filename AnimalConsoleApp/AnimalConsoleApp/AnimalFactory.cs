@@ -1,30 +1,26 @@
+using System;
 using System.Collections;
 using System.Diagnostics;
 
 namespace AnimalConsoleApp
 {
-    public class AnimalFactory: IAnimal
+    public class AnimalFactory
     {
-        static void Create(AnimalTypes animalTypes)
+        public IAnimal Create(AnimalTypes animalType, string name)
         {
-        }
+            switch (animalType)
+            {
+                case AnimalTypes.Dog:
+                    return new Dog(name);
+                case AnimalTypes.Cat:
+                    return new Cat(name);
+                case AnimalTypes.Elephant:
+                    return new Elephant(name);
+                case AnimalTypes.Fish:
+                    return new Fish(name);
+            }
 
-        public AnimalTypes Type { get; set; }
-        public string Name { get; set; }
-        public string Identification { get; set; }
-        public void Run()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Eat()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Sleep()
-        {
-            throw new System.NotImplementedException();
-        }
+            return null;
+        } 
     }
 }
