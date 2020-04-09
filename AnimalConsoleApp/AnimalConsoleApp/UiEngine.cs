@@ -111,12 +111,14 @@ namespace AnimalConsoleApp
             Console.WriteLine();
                         //TODO: Now get the animal name from the user
             var animalType = (AnimalTypes) animalOption;
-            animalOption = GetMenuChoice($"you selected to create another {animalType}", MainMenu);
-                        // AnimalFactory.Create(animalType(), animalName);
-                        //TODO: Lets add the animal to our list of animals.
-                        //We will use a factory to create the animal. Add a AnimalFactory class.
-                        //The class will have one method called Create that requires a parameter of type AnimalsTypes
-                        //Then use a switch to new up the correct animal based on the animal type parameter.
+            AnimalFactory.Create(animalType,"");
+            animalOption = GetMenuChoice($"you selected to create another: {animalType}", MainMenu);
+            
+            
+            //TODO: Lets add the animal to our list of animals.
+            //We will use a factory to create the animal. Add a AnimalFactory class.
+            //The class will have one method called Create that requires a parameter of type AnimalsTypes
+            //Then use a switch to new up the correct animal based on the animal type parameter.
 
 
         }
