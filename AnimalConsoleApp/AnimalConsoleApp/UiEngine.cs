@@ -16,8 +16,7 @@ namespace AnimalConsoleApp
             //add in list and then list add return...
             int menuChoice = 0;
             var animalsList = new List<IAnimal>();
-            
-            
+
 
             while (menuChoice != EXIT_MENU_CHOICE)
             {
@@ -29,11 +28,11 @@ namespace AnimalConsoleApp
                         break;
                     case 1 :
                         AddAnimal();
+                        animalsList.Add(AddAnimal());
                         menuChoice = 0;
                         break;
                     case 2:
                         InteractWithAnimal();
-                        animalsList.Add(AddAnimal());
                         menuChoice = 0;
                         break;
                     case 3:
@@ -119,9 +118,7 @@ namespace AnimalConsoleApp
             var animalType = (AnimalTypes) animalOption;
             Console.WriteLine($"What name would you like to give you new {animalType}");
             string animalName = Console.ReadLine();
-
-            // var animal = AnimalFactory.CreateIAnimal(animalType, animalName);
-
+            
             Console.WriteLine($"Brilliant, Your {animalType} now has the name of {animalName}- " +
                               $"Congratulations on the new member to the family...");
             Console.WriteLine("Press Enter to carry on.");
@@ -135,7 +132,7 @@ namespace AnimalConsoleApp
             //Then use a switch to new up the correct animal based on the animal type parameter.
         }
 
-        private void InteractWithAnimal()
+        public IAnimal InteractWithAnimal()
         {
             Welcome();
             AnimalMenu();
@@ -145,7 +142,7 @@ namespace AnimalConsoleApp
             //You can do the reverse (int) animalType, by casting an int back to the enum.
             var animalType = (AnimalTypes) animalOption;
             
-            //TODO: Get the animal from our list
+            //TODO: Geta the animal from our list
             Welcome();
             Console.WriteLine($"You have chosen: {animalType}");
             ActionMenu();
@@ -153,8 +150,10 @@ namespace AnimalConsoleApp
             //Personalize the message a bit more once we have the animal
             var actionOption = GetMenuChoice($"What would you like your {animalType} to do?", ActionMenu);
             //TODO: Perform action
-            var actionType = (AnimalTypes) actionOption;
-
+            var actionType = (AnimalActions) actionOption;
+            Console.WriteLine(actionType);
+            var animalAction = AddAnimal();
+            return animalAction;
         }
 
         private void InteractWithAnimals()
