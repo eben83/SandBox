@@ -13,7 +13,11 @@ namespace AnimalConsoleApp
 
         public void Run()
         {
+            //add in list and then list add return...
             int menuChoice = 0;
+            var animalsList = new List<IAnimal>();
+            
+            
 
             while (menuChoice != EXIT_MENU_CHOICE)
             {
@@ -25,9 +29,12 @@ namespace AnimalConsoleApp
                         break;
                     case 1 :
                         AddAnimal();
+                        menuChoice = 0;
                         break;
                     case 2:
                         InteractWithAnimal();
+                        animalsList.Add(AddAnimal());
+                        menuChoice = 0;
                         break;
                     case 3:
                         InteractWithAnimals();
@@ -40,7 +47,6 @@ namespace AnimalConsoleApp
                     menuChoice = 0;
                 else
                     menuChoice = GetMenuChoice("Please make a choice, fool!!!", MainMenu);
-
             }
         }
 
@@ -102,7 +108,7 @@ namespace AnimalConsoleApp
             return getChoiceInt;
         }
         
-        private void AddAnimal()
+        private IAnimal AddAnimal()
         {
             Welcome();
             AnimalMenu();
@@ -111,16 +117,22 @@ namespace AnimalConsoleApp
             Console.WriteLine();
                         //TODO: Now get the animal name from the user
             var animalType = (AnimalTypes) animalOption;
-            AnimalFactory.Create(animalType,"");
-            animalOption = GetMenuChoice($"you selected to create another: {animalType}", MainMenu);
-            
+            Console.WriteLine($"What name would you like to give you new {animalType}");
+            string animalName = Console.ReadLine();
+
+            // var animal = AnimalFactory.CreateIAnimal(animalType, animalName);
+
+            Console.WriteLine($"Brilliant, Your {animalType} now has the name of {animalName}- " +
+                              $"Congratulations on the new member to the family...");
+            Console.WriteLine("Press Enter to carry on.");
+            Console.ReadLine();
+
+            return AnimalFactory.CreateIAnimal(animalType, animalName);
             
             //TODO: Lets add the animal to our list of animals.
             //We will use a factory to create the animal. Add a AnimalFactory class.
             //The class will have one method called Create that requires a parameter of type AnimalsTypes
             //Then use a switch to new up the correct animal based on the animal type parameter.
-
-
         }
 
         private void InteractWithAnimal()
