@@ -136,6 +136,8 @@ namespace AnimalConsoleApp
             //Personalize the message a bit more once we have the animal
             var actionOption = GetMenuChoice($"What would you like your {animalType} to do?", ActionMenu);
             //TODO: Perform action
+            var actionType = (AnimalTypes) actionOption;
+
         }
 
         private void InteractWithAnimals()
