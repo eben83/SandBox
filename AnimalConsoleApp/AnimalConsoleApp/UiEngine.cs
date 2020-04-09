@@ -49,7 +49,7 @@ namespace AnimalConsoleApp
             Console.Clear();
             Console.WriteLine("Welcome to my Animal App");
             Console.WriteLine();
-            
+            Console.WriteLine("The Following are Animals are loaded:");
             //TODO: Lets show a message here with the animal identifications that was already added.
         }
 
