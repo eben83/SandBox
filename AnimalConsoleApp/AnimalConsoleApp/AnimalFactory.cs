@@ -18,9 +18,9 @@ namespace AnimalConsoleApp
                     return new Elephant(name);
                 case AnimalTypes.Fish:
                     return new Fish(name);
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(animalType), animalType, null);
             }
-
-            return null;
         } 
     }
 }
