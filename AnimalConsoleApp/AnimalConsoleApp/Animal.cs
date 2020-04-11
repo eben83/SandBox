@@ -18,7 +18,7 @@ namespace AnimalConsoleApp
             Name = name;
         }
 
-        public virtual void Run()
+        public void Run()
         {
             Console.WriteLine("doof, doof, doof");
             Console.WriteLine("Look at him go!");
@@ -29,7 +29,7 @@ namespace AnimalConsoleApp
             Console.WriteLine();
         }
 
-        public virtual void Eat()
+        public void Eat()
         {
             Console.WriteLine($"{Type} is eating...");
             Console.WriteLine("munch, munch, munch");
