@@ -10,7 +10,7 @@ namespace AnimalConsoleApp
         public void Run()
         {
             int menuChoice = 0;
-            var animalsList = new List<IAnimal>();
+            var animalsList = new List<Animal>();
 
             while (menuChoice != EXIT_MENU_CHOICE)
             {
@@ -24,17 +24,14 @@ namespace AnimalConsoleApp
                         AddAnimal();
                         animalsList.Add(AddAnimal());
                         MainMenu();
-                        menuChoice = 0;
                         break;
                     case 2:
-                        InteractWithAnimal();    
-                        menuChoice = 0;
+                        InteractWithAnimal(animalsList);    
                         break;
                     case 3:
                         InteractWithAnimals();
                         break;
                     default:
-                        menuChoice = 0;
                         break;
                 }
 
@@ -48,7 +45,7 @@ namespace AnimalConsoleApp
         private void Welcome()
         {
             Console.Clear();
-            Console.WriteLine("Welcome to my Animal App");
+            Console.WriteLine("Welcome to my AnimalAbstract App");
             Console.WriteLine();
             // Console.WriteLine("The Following are Animals are loaded:");
             //TODO: Lets show a message here with the animal identifications that was already added.
@@ -108,7 +105,7 @@ namespace AnimalConsoleApp
             return getChoiceInt;
         }
 
-        private IAnimal AddAnimal()
+        private Animal AddAnimal()
         {
             Welcome();
             AnimalMenu();
@@ -125,7 +122,9 @@ namespace AnimalConsoleApp
             Console.WriteLine("Press Enter to carry on.");
             Console.ReadLine();
             
-            return AnimalFactory.CreateIAnimal(animalType, animalName);
+            var animal = new Animal(animalName);
+            animal.Type = animalType;
+            return animal;
         }
 
         private static string GetAnimalType(int animalOption)
@@ -140,19 +139,15 @@ namespace AnimalConsoleApp
             }
         }
 
-        public void InteractWithAnimal()
+        public void InteractWithAnimal(List<Animal> localAnimals)
         {
             Welcome();
-            AnimalMenu();
 
-            var animalOption = GetMenuChoice("Which animal would like to interact with?", AnimalMenu);
-            var animalType = GetAnimalType(animalOption);
-            
-            Welcome();
-            Console.WriteLine($"You have chosen: {animalType}");
-            ActionMenu();
-
-            var actionOption = GetMenuChoice($"What would you like your {animalType} to do?", ActionMenu);
+            Console.WriteLine("Which animal do you want to interact with:");
+            for (int i = 0; i < localAnimals.Count; i++)
+            {
+                Console.WriteLine($"{i}. {localAnimals[i].Identification}");
+            }
 
         }
         
