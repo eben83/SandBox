@@ -108,7 +108,7 @@ namespace AnimalConsoleApp
             return getChoiceInt;
         }
 
-        private void AddAnimal()
+        private IAnimal AddAnimal()
         {
             Welcome();
             AnimalMenu();
@@ -125,6 +125,7 @@ namespace AnimalConsoleApp
             Console.WriteLine("Press Enter to carry on.");
             Console.ReadLine();
             
+            return AnimalFactory.CreateIAnimal(animalType, animalName);
         }
 
         private static string GetAnimalType(int animalOption)
