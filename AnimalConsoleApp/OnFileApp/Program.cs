@@ -231,6 +231,8 @@ namespace OneFileApp
                                 default:
                                     throw new Exception("You made the wrong choice.");
                             }
+
+                            Console.ReadLine();
                         }
                         
                         
