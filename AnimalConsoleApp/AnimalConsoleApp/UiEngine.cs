@@ -1,11 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Diagnostics;
-using System.Globalization;
-using System.Linq;
-using System.Resources;
-using System.Xml;
 
 namespace AnimalConsoleApp
 {
@@ -75,15 +69,19 @@ namespace AnimalConsoleApp
 
         private void AnimalMenu()
         {
-            Console.WriteLine("The following animals are loaded:");
-            foreach (var animalType in Enum.GetValues(typeof(AnimalTypes)))
-                Console.WriteLine($"{(int) animalType}. {animalType}");
+            Console.WriteLine("The following animals are available:");
+            Console.WriteLine("1. Dog");
+            Console.WriteLine("2. Cat");
+            Console.WriteLine("3. Elephant");
+            Console.WriteLine("4. Fish");
         }
 
         private void ActionMenu()
         {
-            foreach (var animalAction in Enum.GetValues(typeof(AnimalActions)))
-                Console.WriteLine($"{(int) animalAction}. {animalAction}");
+            Console.WriteLine("Animals can perform the following actions:");
+            Console.WriteLine("1. Eat");
+            Console.WriteLine("2. Sleep");
+            Console.WriteLine("3. Run");
         }
 
         private int GetMenuChoice(string userMessage, Action menuToShow)
@@ -120,9 +118,9 @@ namespace AnimalConsoleApp
 
             var animalOption = GetMenuChoice("Select the type of animal you would like to add.", AnimalMenu);
             Console.WriteLine();
-            //TODO: Now get the animal name from the user
-            var animalType = (AnimalTypes) animalOption;
-            Console.WriteLine($"What name would you like to give you new {animalType}");
+            var animalType = GetAnimalType(animalOption);
+            
+            Console.WriteLine($"What name would you like to give your new {animalType}");
             string animalName = Console.ReadLine();
 
             Console.WriteLine($"Brilliant, Your {animalType} now has the name of {animalName}- " +
@@ -131,51 +129,36 @@ namespace AnimalConsoleApp
             Console.ReadLine();
 
             return AnimalFactory.CreateIAnimal(animalType, animalName);
-
-            //TODO: Lets add the animal to our list of animals.
-            //We will use a factory to create the animal. Add a AnimalFactory class.
-            //The class will have one method called Create that requires a parameter of type AnimalsTypes
-            //Then use a switch to new up the correct animal based on the animal type parameter.
         }
 
-        public AnimalActions InteractWithAnimal()
+        private static string GetAnimalType(int animalOption)
+        {
+            switch (animalOption)
+            {
+                case 1: return "Dog";
+                case 2: return "Cat";
+                case 3: return "Elephant";
+                case 4: return "Fish";
+                default: throw new Exception("Invalid animal type.");
+            }
+        }
+
+        public void InteractWithAnimal()
         {
             Welcome();
             AnimalMenu();
 
             var animalOption = GetMenuChoice("Which animal would like to interact with?", AnimalMenu);
-
-            //You can do the reverse (int) animalType, by casting an int back to the enum.
-            var animalType = (AnimalTypes) animalOption;
-
-            //TODO: Geta the animal from our list
+            var animalType = GetAnimalType(animalOption);
+            
             Welcome();
             Console.WriteLine($"You have chosen: {animalType}");
             ActionMenu();
 
-            //Personalize the message a bit more once we have the animal
             var actionOption = GetMenuChoice($"What would you like your {animalType} to do?", ActionMenu);
-            //TODO: Perform action
-            var actionType = (AnimalActions) actionOption;
-            
-            switch (actionType)
-                {
-                    case AnimalActions.Eat:
-                        return AnimalActions.Eat;
-                    case AnimalActions.Run:
-                        return AnimalActions.Run;
-                    case AnimalActions.Sleep:
-                        return AnimalActions.Sleep;
-                    default:
-                        throw new ArgumentOutOfRangeException(nameof(actionOption), actionOption, null);
-                }
         }
-    
-
-
-
-
-    private void InteractWithAnimals()
+        
+        private void InteractWithAnimals()
         {
             
             

@@ -5,7 +5,7 @@ namespace AnimalConsoleApp
     // this is a complex class
     public abstract class Animal
     {
-        public virtual AnimalTypes Type { get; set; }
+        public virtual string Type { get; set; }
         public string Name { get; set; }
 
         public string Identification

@@ -6,9 +6,9 @@ namespace AnimalConsoleApp
         {
         }
 
-        public override AnimalTypes Type
+        public override string Type
         {
-            get { return AnimalTypes.Fish; }
+            get { return "Fish"; }
         }
         public string Identification { get; set; }
     }

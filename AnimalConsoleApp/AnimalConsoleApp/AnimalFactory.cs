@@ -6,20 +6,20 @@ namespace AnimalConsoleApp
 {
     public class AnimalFactory
     {
-        public static IAnimal CreateIAnimal(AnimalTypes animalType, string name)
+        public static IAnimal CreateIAnimal(string animalType, string name)
         {
-            switch (animalType)
+            switch (animalType.ToLower())
             {
-                case AnimalTypes.Dog:
+                case "dog":
                     return new Dog(name);
-                case AnimalTypes.Cat:
+                case "cat":
                     return new Cat(name);
-                case AnimalTypes.Elephant:
+                case "elephant":
                     return new Elephant(name);
-                case AnimalTypes.Fish:
+                case "fish":
                     return new Fish(name);
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(animalType), animalType, null);
+                    throw new Exception($"{animalType} is not supported.");
             }
         } 
     }
