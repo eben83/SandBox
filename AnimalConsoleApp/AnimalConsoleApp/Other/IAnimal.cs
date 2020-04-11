@@ -1,6 +1,4 @@
-using System;
-
-namespace AnimalConsoleApp
+namespace AnimalConsoleApp.Other
 {
     public interface IAnimal
     {

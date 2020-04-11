@@ -1,6 +1,6 @@
-namespace AnimalConsoleApp
+namespace AnimalConsoleApp.Other
 {
-    public class Elephant : Animal, IAnimal
+    public class Elephant : AnimalAbstract, IAnimal
     {
         public Elephant(string name) : base(name)
         {

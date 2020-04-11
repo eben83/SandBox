@@ -1,8 +1,6 @@
 using System;
-using System.Collections;
-using System.Diagnostics;
 
-namespace AnimalConsoleApp
+namespace AnimalConsoleApp.Other
 {
     public class AnimalFactory
     {

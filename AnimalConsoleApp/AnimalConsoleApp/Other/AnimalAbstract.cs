@@ -1,9 +1,9 @@
 using System;
 
-namespace AnimalConsoleApp
+namespace AnimalConsoleApp.Other
 {
     // this is a complex class
-    public abstract class Animal
+    public abstract class AnimalAbstract
     {
         public virtual string Type { get; set; }
         public string Name { get; set; }
@@ -14,7 +14,7 @@ namespace AnimalConsoleApp
         }
 
         
-        public Animal(string name)
+        public AnimalAbstract(string name)
         {    //constructor
             Name = name;
         }
