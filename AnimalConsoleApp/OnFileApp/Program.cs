@@ -137,7 +137,7 @@ namespace OneFileApp
                         animalsList.Add(animal);
 
                         //reset menu choice so we can display the main menu again
-                        menuChoice = 4;
+                        menuChoice = 0;
                         break;
 
                     case 2:
@@ -197,14 +197,14 @@ namespace OneFileApp
                         //TODO:Implement the rest of the method here
                         
                         //reset menu choice so we can display the main menu again
-                        menuChoice = 4;
+                        menuChoice = 0;
                         break;
 
                     case 3:
                         //TODO: Implement the rest of the method here
                         
                         //reset menu choice so we can display the main menu again
-                        menuChoice = 4;
+                        menuChoice = 0;
                         break;
                 }
             }
