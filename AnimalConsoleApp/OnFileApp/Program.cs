@@ -204,7 +204,7 @@ namespace OneFileApp
                         //TODO: Implement the rest of the method here
                         
                         //reset menu choice so we can display the main menu again
-                        menuChoice = 0;1
+                        menuChoice = 0;
                         break;
                 }
             }
