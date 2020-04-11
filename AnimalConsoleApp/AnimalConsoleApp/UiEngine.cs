@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
+using System.Resources;
 using System.Xml;
 
 namespace AnimalConsoleApp
@@ -13,7 +15,6 @@ namespace AnimalConsoleApp
 
         public void Run()
         {
-            //add in list and then list add return...
             int menuChoice = 0;
             var animalsList = new List<IAnimal>();
 
@@ -25,14 +26,17 @@ namespace AnimalConsoleApp
                         Welcome();
                         MainMenu();
                         break;
-                    case 1 :
+                    case 1:
                         AddAnimal();
                         animalsList.Add(AddAnimal());
                         MainMenu();
                         menuChoice = 0;
                         break;
                     case 2:
-                        InteractWithAnimal();
+                        foreach (var animalList in animalsList)
+                        {
+                            InteractWithAnimal();    
+                        }
                         menuChoice = 0;
                         break;
                     case 3:
@@ -105,44 +109,45 @@ namespace AnimalConsoleApp
                     Welcome();
                 }
             }
+
             return getChoiceInt;
         }
-        
+
         private IAnimal AddAnimal()
         {
             Welcome();
             AnimalMenu();
-            
+
             var animalOption = GetMenuChoice("Select the type of animal you would like to add.", AnimalMenu);
             Console.WriteLine();
-                        //TODO: Now get the animal name from the user
+            //TODO: Now get the animal name from the user
             var animalType = (AnimalTypes) animalOption;
             Console.WriteLine($"What name would you like to give you new {animalType}");
             string animalName = Console.ReadLine();
-            
+
             Console.WriteLine($"Brilliant, Your {animalType} now has the name of {animalName}- " +
                               $"Congratulations on the new member to the family...");
             Console.WriteLine("Press Enter to carry on.");
             Console.ReadLine();
 
             return AnimalFactory.CreateIAnimal(animalType, animalName);
-            
+
             //TODO: Lets add the animal to our list of animals.
             //We will use a factory to create the animal. Add a AnimalFactory class.
             //The class will have one method called Create that requires a parameter of type AnimalsTypes
             //Then use a switch to new up the correct animal based on the animal type parameter.
         }
 
-        public IAnimal InteractWithAnimal()
+        public AnimalActions InteractWithAnimal()
         {
             Welcome();
             AnimalMenu();
-            
+
             var animalOption = GetMenuChoice("Which animal would like to interact with?", AnimalMenu);
-            
+
             //You can do the reverse (int) animalType, by casting an int back to the enum.
             var animalType = (AnimalTypes) animalOption;
-            
+
             //TODO: Geta the animal from our list
             Welcome();
             Console.WriteLine($"You have chosen: {animalType}");
@@ -153,17 +158,28 @@ namespace AnimalConsoleApp
             //TODO: Perform action
             var actionType = (AnimalActions) actionOption;
             
-            var animalAction = AddAnimal();
-            return animalAction;
+            switch (actionType)
+                {
+                    case AnimalActions.Eat:
+                        return AnimalActions.Eat;
+                    case AnimalActions.Run:
+                        return AnimalActions.Run;
+                    case AnimalActions.Sleep:
+                        return AnimalActions.Sleep;
+                    default:
+                        throw new ArgumentOutOfRangeException(nameof(actionOption), actionOption, null);
+                }
         }
+    
 
-        private void InteractWithAnimals()
+
+
+
+    private void InteractWithAnimals()
         {
             
             
         }
-        
-        
     }
 }
 

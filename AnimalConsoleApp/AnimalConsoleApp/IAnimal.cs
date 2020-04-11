@@ -10,7 +10,6 @@ namespace AnimalConsoleApp
 
         void Run();
         void Eat();
-
         void Sleep();
     }
 }
