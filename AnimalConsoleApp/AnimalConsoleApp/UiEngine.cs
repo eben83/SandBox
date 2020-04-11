@@ -21,7 +21,6 @@ namespace AnimalConsoleApp
                         MainMenu();
                         break;
                     case 1:
-                        AddAnimal();
                         animalsList.Add(AddAnimal());
                         MainMenu();
                         break;
@@ -142,13 +141,16 @@ namespace AnimalConsoleApp
         public void InteractWithAnimal(List<Animal> localAnimals)
         {
             Welcome();
+            for (int index = 0; index < localAnimal.Count; index++)
+            {
+                localAnimal[index].Name = GetAnimalType(index);
+            }
 
             Console.WriteLine("Which animal do you want to interact with:");
             for (int i = 0; i < localAnimals.Count; i++)
             {
                 Console.WriteLine($"{i}. {localAnimals[i].Identification}");
             }
-
         }
         
         private void InteractWithAnimals()
