@@ -125,6 +125,7 @@ namespace AnimalConsoleApp
             Console.WriteLine("Press Enter to carry on.");
             Console.ReadLine();
             
+
         }
 
         private static string GetAnimalType(int animalOption)
