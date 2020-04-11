@@ -21,13 +21,12 @@ namespace AnimalConsoleApp
                         MainMenu();
                         break;
                     case 1:
-                        AddAnimal();
                         animalsList.Add(AddAnimal());
                         MainMenu();
                         menuChoice = 0;
                         break;
                     case 2:
-                        InteractWithAnimal();    
+                        InteractWithAnimal(animalsList);    
                         menuChoice = 0;
                         break;
                     case 3:
@@ -140,10 +139,14 @@ namespace AnimalConsoleApp
             }
         }
 
-        public void InteractWithAnimal()
+        public void InteractWithAnimal(List<IAnimal> localAnimal)
         {
             Welcome();
-            AnimalMenu();
+
+            for (int index = 0; index < localAnimal.Count; index++)
+            {
+                localAnimal[index].Name = GetAnimalType(index);
+            }
 
             var animalOption = GetMenuChoice("Which animal would like to interact with?", AnimalMenu);
             var animalType = GetAnimalType(animalOption);
@@ -153,7 +156,6 @@ namespace AnimalConsoleApp
             ActionMenu();
 
             var actionOption = GetMenuChoice($"What would you like your {animalType} to do?", ActionMenu);
-
         }
         
         private void InteractWithAnimals()
