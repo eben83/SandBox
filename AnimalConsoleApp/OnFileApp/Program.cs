@@ -197,17 +197,23 @@ namespace OneFileApp
                         //TODO:Implement the rest of the method here
                         var actualAnimalActionOption = 0;
                         var isActualAnimalActionOption = false;
-                        if (!int.TryParse(Console.ReadLine(), out actualAnimalActionOption))
+                        while (!isActualAnimalActionOption)
                         {
-                            Console.WriteLine("Sorry your choice is incorrect");
-                            Console.WriteLine("Please make another choice.");
-                            Console.ReadLine();
-                            
-                            //clear the console
-                            Console.Clear();
-                            Console.WriteLine("welcome to my one page Animal App");
-                            
-                            
+                            if (!int.TryParse(Console.ReadLine(), out actualAnimalActionOption))
+                            {
+                                Console.WriteLine("Sorry your choice is incorrect");
+                                Console.WriteLine("Please make another choice.");
+                                Console.ReadLine();
+                                
+                                //clear the console
+                                Console.Clear();
+                                Console.WriteLine("welcome to my one page Animal App");
+                                
+                            }
+                            else
+                            {
+                                isActualAnimalActionOption = true;
+                            }
                         }
                         //reset menu choice so we can display the main menu again
                         menuChoice = 0;
