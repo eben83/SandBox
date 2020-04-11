@@ -152,6 +152,7 @@ namespace AnimalConsoleApp
             {
                 Console.WriteLine($"{i}. {localAnimals[i].Identification}");
             }
+            
         }
         
         private void InteractWithAnimals()
