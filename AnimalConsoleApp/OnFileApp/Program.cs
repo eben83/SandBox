@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace OneFileApp
 {
@@ -195,26 +196,45 @@ namespace OneFileApp
                         Console.WriteLine("3. Run");
 
                         //TODO:Implement the rest of the method here
-                        var actualAnimalActionOption = 0;
+                        var animalActionOption = 0;
                         var isActualAnimalActionOption = false;
-                        while (!isActualAnimalActionOption)
+
+                        while (! isActualAnimalActionOption)
                         {
-                            if (!int.TryParse(Console.ReadLine(), out actualAnimalActionOption))
+                            if (!int.TryParse(Console.ReadLine(), out animalActionOption))
                             {
                                 Console.WriteLine("Sorry your choice is incorrect");
                                 Console.WriteLine("Please make another choice.");
+                                menuChoice = 0;
                                 Console.ReadLine();
-                                
+                            
                                 //clear the console
                                 Console.Clear();
                                 Console.WriteLine("welcome to my one page Animal App");
-                                
                             }
                             else
                             {
                                 isActualAnimalActionOption = true;
                             }
+                    
+                            switch(animalActionOption)
+                            {
+                                case 1:
+                                    selectedAnimal.Eat();
+                                    break;
+                                case 2:
+                                    selectedAnimal.Sleep();
+                                    break;
+                                case 3:
+                                    selectedAnimal.Run();
+                                    break;
+                                default:
+                                    throw new Exception("You made the wrong choice.");
+                            }
                         }
+                        
+                        
+                        
                         //reset menu choice so we can display the main menu again
                         menuChoice = 0;
                         break;
