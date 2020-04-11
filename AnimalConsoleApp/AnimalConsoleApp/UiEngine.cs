@@ -44,7 +44,7 @@ namespace AnimalConsoleApp
         private void Welcome()
         {
             Console.Clear();
-            Console.WriteLine("Welcome to my AnimalAbstract App");
+            Console.WriteLine("Welcome to my Animal App");
             Console.WriteLine();
             // Console.WriteLine("The Following are Animals are loaded:");
             //TODO: Lets show a message here with the animal identifications that was already added.
@@ -141,10 +141,11 @@ namespace AnimalConsoleApp
         public void InteractWithAnimal(List<Animal> localAnimals)
         {
             Welcome();
-            for (int index = 0; index < localAnimal.Count; index++)
-            {
-                localAnimal[index].Name = GetAnimalType(index);
-            }
+            // for (int index = 0; index < localAnimals.Count; index++)
+            // {
+            //     localAnimals[index].Name = GetAnimalType(index);
+            // }
+            //Compare your method to the one below. 
 
             Console.WriteLine("Which animal do you want to interact with:");
             for (int i = 0; i < localAnimals.Count; i++)
