@@ -27,10 +27,7 @@ namespace AnimalConsoleApp
                         menuChoice = 0;
                         break;
                     case 2:
-                        foreach (var animalList in animalsList)
-                        {
-                            InteractWithAnimal();    
-                        }
+                        InteractWithAnimal();    
                         menuChoice = 0;
                         break;
                     case 3:
@@ -111,7 +108,7 @@ namespace AnimalConsoleApp
             return getChoiceInt;
         }
 
-        private IAnimal AddAnimal()
+        private void AddAnimal()
         {
             Welcome();
             AnimalMenu();
@@ -127,8 +124,7 @@ namespace AnimalConsoleApp
                               $"Congratulations on the new member to the family...");
             Console.WriteLine("Press Enter to carry on.");
             Console.ReadLine();
-
-            return AnimalFactory.CreateIAnimal(animalType, animalName);
+            
         }
 
         private static string GetAnimalType(int animalOption)
@@ -156,6 +152,7 @@ namespace AnimalConsoleApp
             ActionMenu();
 
             var actionOption = GetMenuChoice($"What would you like your {animalType} to do?", ActionMenu);
+
         }
         
         private void InteractWithAnimals()
