@@ -33,10 +33,7 @@ namespace AnimalConsoleApp
                         menuChoice = 0;
                         break;
                     case 2:
-                        foreach (var animalList in animalsList)
-                        {
-                            InteractWithAnimal();    
-                        }
+                        InteractWithAnimal();    
                         menuChoice = 0;
                         break;
                     case 3:
@@ -113,7 +110,7 @@ namespace AnimalConsoleApp
             return getChoiceInt;
         }
 
-        private IAnimal AddAnimal()
+        private void AddAnimal()
         {
             Welcome();
             AnimalMenu();
@@ -129,8 +126,7 @@ namespace AnimalConsoleApp
                               $"Congratulations on the new member to the family...");
             Console.WriteLine("Press Enter to carry on.");
             Console.ReadLine();
-
-            return AnimalFactory.CreateIAnimal(animalType, animalName);
+            
 
             //TODO: Lets add the animal to our list of animals.
             //We will use a factory to create the animal. Add a AnimalFactory class.
@@ -138,7 +134,7 @@ namespace AnimalConsoleApp
             //Then use a switch to new up the correct animal based on the animal type parameter.
         }
 
-        public AnimalActions InteractWithAnimal()
+        public void InteractWithAnimal()
         {
             Welcome();
             AnimalMenu();
@@ -157,18 +153,21 @@ namespace AnimalConsoleApp
             var actionOption = GetMenuChoice($"What would you like your {animalType} to do?", ActionMenu);
             //TODO: Perform action
             var actionType = (AnimalActions) actionOption;
+
+            Console.WriteLine($"{animalType} {actionType}");
             
-            switch (actionType)
-                {
-                    case AnimalActions.Eat:
-                        return AnimalActions.Eat;
-                    case AnimalActions.Run:
-                        return AnimalActions.Run;
-                    case AnimalActions.Sleep:
-                        return AnimalActions.Sleep;
-                    default:
-                        throw new ArgumentOutOfRangeException(nameof(actionOption), actionOption, null);
-                }
+            // switch (animalOption)
+            //     {
+            //         case AnimalActions.Eat:
+            //             return AnimalActions.Eat;
+            //         case AnimalActions.Run:
+            //             return AnimalActions.Run;
+            //         case AnimalActions.Sleep:
+            //             return AnimalActions.Sleep;
+            //         default:
+            //             throw new ArgumentOutOfRangeException(nameof(actionOption), actionOption, null);
+            //     }
+            
         }
     
 
