@@ -19,7 +19,7 @@ namespace OneFileApp
                     case 0:
                         //Clear the console and show the welcome message
                         Console.Clear();
-                        Console.WriteLine("Welcome to my Animal App");
+                        Console.WriteLine("Welcome to my one page Animal App");
                         Console.WriteLine();
 
                         //Show the main menu
@@ -65,7 +65,7 @@ namespace OneFileApp
                     case 1:
                         //Clear the console and show the welcome message
                         Console.Clear();
-                        Console.WriteLine("Welcome to my Animal App");
+                        Console.WriteLine("Welcome to my one page Animal App");
                         Console.WriteLine();
 
                         //Show the available animal types menu
@@ -89,7 +89,7 @@ namespace OneFileApp
 
                                 //Clear the console and show the welcome message
                                 Console.Clear();
-                                Console.WriteLine("Welcome to my Animal App");
+                                Console.WriteLine("Welcome to my one page Animal App");
                                 Console.WriteLine();
 
                                 //Show the available animal types menu
@@ -143,7 +143,7 @@ namespace OneFileApp
                     case 2:
                         //Clear the console and show the welcome message
                         Console.Clear();
-                        Console.WriteLine("Welcome to my Animal App");
+                        Console.WriteLine("Welcome to my one page Animal App");
                         Console.WriteLine();
 
                         Console.WriteLine("These are your animals that you can interact with:");
@@ -169,7 +169,7 @@ namespace OneFileApp
 
                                 //Clear the console and show the welcome message
                                 Console.Clear();
-                                Console.WriteLine("Welcome to my Animal App");
+                                Console.WriteLine("Welcome to my one page Animal App");
                                 Console.WriteLine();
 
                                 Console.WriteLine("These are your animals that you can interact with:");

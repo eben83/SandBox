@@ -5,13 +5,7 @@
       <e p="AnimalConsoleApp" t="IncludeRecursive">
         <e p="Animal.cs" t="Include" />
         <e p="AnimalConsoleApp.csproj" t="IncludeRecursive" />
-        <e p="AnimalFactory.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Cat.cs" t="Include" />
-        <e p="Dog.cs" t="Include" />
-        <e p="Elephant.cs" t="Include" />
-        <e p="Fish.cs" t="Include" />
-        <e p="IAnimal.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -19,10 +13,31 @@
             </e>
           </e>
         </e>
+        <e p="Other" t="Include">
+          <e p="AnimalAbstract.cs" t="Include" />
+          <e p="AnimalFactory.cs" t="Include" />
+          <e p="Cat.cs" t="Include" />
+          <e p="Dog.cs" t="Include" />
+          <e p="Elephant.cs" t="Include" />
+          <e p="Fish.cs" t="Include" />
+          <e p="IAnimal.cs" t="Include" />
+        </e>
         <e p="Program.cs" t="Include" />
         <e p="UiEngine.cs" t="Include" />
       </e>
       <e p="AnimalConsoleApp.sln" t="IncludeFlat" />
+      <e p="OnFileApp" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="OnFileApp.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="OnFileApp.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+      </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
