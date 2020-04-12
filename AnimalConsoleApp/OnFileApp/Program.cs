@@ -20,7 +20,7 @@ namespace OneFileApp
                     case 0:
                         //Clear the console and show the welcome message
                         Console.Clear();
-                        Console.WriteLine("Welcome to my one page Animal App");
+                        Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
                         Console.WriteLine();
 
                         //Show the main menu
@@ -34,17 +34,17 @@ namespace OneFileApp
                         var isMainMenuChoiceValid = false;
                         while (!isMainMenuChoiceValid)
                         {
-                            Console.WriteLine("What would you like to do?");
+                            Console.WriteLine("Please, make a selection, to carry on.");
 
                             if (!int.TryParse(Console.ReadLine(), out menuChoice))
                             {
                                 Console.WriteLine("Sorry your choice is incorrect");
-                                Console.WriteLine("Please make another choice.");
+                                Console.WriteLine("Please, try make another choice.");
                                 Console.ReadLine();
 
                                 //Clear the console and show the welcome message
                                 Console.Clear();
-                                Console.WriteLine("Welcome to my Animal App");
+                                Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
                                 Console.WriteLine();
 
                                 //Show the main menu
@@ -66,7 +66,7 @@ namespace OneFileApp
                     case 1:
                         //Clear the console and show the welcome message
                         Console.Clear();
-                        Console.WriteLine("Welcome to my one page Animal App");
+                        Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
                         Console.WriteLine();
 
                         //Show the available animal types menu
@@ -75,6 +75,8 @@ namespace OneFileApp
                         Console.WriteLine("2. Cat");
                         Console.WriteLine("3. Elephant");
                         Console.WriteLine("4. Fish");
+                        Console.WriteLine("5. Ostrich");
+                        Console.WriteLine();
 
                         var animalMenuOption = 0;
                         var isAnimalMenuChoiceValid = false;
@@ -85,12 +87,12 @@ namespace OneFileApp
                             if (!int.TryParse(Console.ReadLine(), out animalMenuOption))
                             {
                                 Console.WriteLine("Sorry your choice is incorrect");
-                                Console.WriteLine("Please make another choice.");
+                                Console.WriteLine("Please, try make another choice.");
                                 Console.ReadLine();
 
                                 //Clear the console and show the welcome message
                                 Console.Clear();
-                                Console.WriteLine("Welcome to my one page Animal App");
+                                Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
                                 Console.WriteLine();
 
                                 //Show the available animal types menu
@@ -99,6 +101,7 @@ namespace OneFileApp
                                 Console.WriteLine("2. Cat");
                                 Console.WriteLine("3. Elephant");
                                 Console.WriteLine("4. Fish");
+                                Console.WriteLine("5. Ostrich");
                                 Console.WriteLine();
                             }
                             else
@@ -122,7 +125,10 @@ namespace OneFileApp
                             case 4:
                                 animalType = "Fish";
                                 break;
-                            default: throw new Exception("Invalid animal type.");
+                            case 5:
+                                animalType = "Ostrich";
+                                break;
+                            default: throw new Exception("Invalid choice, please try again.");
                         }
 
                         Console.WriteLine($"What name would you like to give your new {animalType}");
@@ -144,11 +150,11 @@ namespace OneFileApp
                     case 2:
                         //Clear the console and show the welcome message
                         Console.Clear();
-                        Console.WriteLine("Welcome to my one page Animal App");
+                        Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
                         Console.WriteLine();
 
-                        Console.WriteLine("These are your animals that you can interact with:");
-                        Console.WriteLine("(To add more, follow the Add Animal menu option)");
+                        Console.WriteLine("The following animals are what you've added and are able to interact with them:");
+                        Console.WriteLine("(To add more, follow the Add Animal menu option one)");
                         
                         for (int i = 0; i < animalsList.Count; i++)
                         {
@@ -160,21 +166,21 @@ namespace OneFileApp
                         while (!isActualAnimalMenuChoiceValid)
                         {
                             Console.WriteLine();
-                            Console.WriteLine("Which animal would you like to interact with?");
+                            Console.WriteLine("Which of your animals would you like to interact with?");
 
                             if (!int.TryParse(Console.ReadLine(), out actualAnimalsMenuOption))
                             {
                                 Console.WriteLine("Sorry your choice is incorrect");
-                                Console.WriteLine("Please make another choice.");
+                                Console.WriteLine("Please, try make another choice.");
                                 Console.ReadLine();
 
                                 //Clear the console and show the welcome message
                                 Console.Clear();
-                                Console.WriteLine("Welcome to my one page Animal App");
+                                Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
                                 Console.WriteLine();
 
-                                Console.WriteLine("These are your animals that you can interact with:");
-                                Console.WriteLine("(To add more, follow the Add Animal menu option)");
+                                Console.WriteLine("These are your animals that you are able to interact with:");
+                                Console.WriteLine("(To add more, follow the Add Animal menu option one)");
                         
                                 for (int i = 0; i < animalsList.Count; i++)
                                 {
@@ -194,6 +200,7 @@ namespace OneFileApp
                         Console.WriteLine("1. Eat");
                         Console.WriteLine("2. Sleep");
                         Console.WriteLine("3. Run");
+                        Console.WriteLine("4. Fly");
 
                         //TODO:Implement the rest of the method here
                         var animalActionOption = 0;
@@ -204,39 +211,37 @@ namespace OneFileApp
                             if (!int.TryParse(Console.ReadLine(), out animalActionOption))
                             {
                                 Console.WriteLine("Sorry your choice is incorrect");
-                                Console.WriteLine("Please make another choice.");
+                                Console.WriteLine("Please, try make another choice.");
                                 menuChoice = 0;
                                 Console.ReadLine();
                             
                                 //clear the console
                                 Console.Clear();
-                                Console.WriteLine("welcome to my one page Animal App");
+                                Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
                             }
                             else
                             {
                                 isActualAnimalActionOption = true;
                             }
-                    
-                            switch(animalActionOption)
-                            {
-                                case 1:
-                                    selectedAnimal.Eat();
-                                    break;
-                                case 2:
-                                    selectedAnimal.Sleep();
-                                    break;
-                                case 3:
-                                    selectedAnimal.Run();
-                                    break;
-                                default:
-                                    throw new Exception("You made the wrong choice.");
-                            }
-
-                            Console.ReadLine();
                         }
-                        
-                        
-                        
+                        switch(animalActionOption)
+                        {
+                            case 1:
+                                selectedAnimal.Eat();
+                                break;
+                            case 2:
+                                selectedAnimal.Sleep();
+                                break;
+                            case 3:
+                                selectedAnimal.Run();
+                                break;
+                            default:
+                                throw new Exception("Sorry, something went wrong there, " +
+                                                    "please, make another choice.");
+                        }
+
+                        Console.ReadLine();
+
                         //reset menu choice so we can display the main menu again
                         menuChoice = 0;
                         break;
@@ -294,6 +299,13 @@ namespace OneFileApp
             Console.WriteLine("ZZzzZZZzzzZZz");
             Console.WriteLine("how loud can he snore!!!");
             Console.WriteLine("Cats can sleep all day");
+        }
+
+        public void Fly()
+        {
+            Console.WriteLine("Is it a bird?!");
+            Console.WriteLine("Is it a plane?!");
+            Console.WriteLine("it's a Flamingo!!");
         }
     }
 }
