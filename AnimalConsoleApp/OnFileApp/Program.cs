@@ -19,7 +19,6 @@ namespace OneFileApp
                 switch (menuChoice)
                 {
                     case 0:
-                        //Clear the console and show the welcome message
                         Console.Clear();
                         Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                         Console.WriteLine();
@@ -30,14 +29,18 @@ namespace OneFileApp
                         }
                         else
                         {
+                            Console.WriteLine();
                             Console.WriteLine($"you currently have {animalsList.Count} animals loaded.");
+                            Console.WriteLine();
+                            Console.WriteLine($"Your animals: ");
+                            Console.WriteLine();
                             foreach (var pet in animalsList)
                             {
-                                Console.WriteLine(pet.Identification);
+                                Console.Write($"{pet.Identification} |");
                             }
                         }
 
-                        //Show the main menu
+                        Console.WriteLine();
                         Console.WriteLine();
                         Console.WriteLine("1. Add animal");
                         Console.WriteLine("2. Interact with animal");
@@ -56,12 +59,10 @@ namespace OneFileApp
                                 Console.WriteLine("Please, try make another choice.");
                                 Console.ReadLine();
 
-                                //Clear the console and show the welcome message
                                 Console.Clear();
                                 Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                                 Console.WriteLine();
 
-                                //Show the main menu
                                 Console.WriteLine();
                                 Console.WriteLine("1. Add animal");
                                 Console.WriteLine("2. Interact with animal");
@@ -78,12 +79,10 @@ namespace OneFileApp
                         break;
 
                     case 1:
-                        //Clear the console and show the welcome message
                         Console.Clear();
                         Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                         Console.WriteLine();
                         
-                        //show the animals in the list
                         if (animalsList.Count == 0)
                         {
                             Console.WriteLine("No animals loaded");
@@ -91,13 +90,14 @@ namespace OneFileApp
                         else
                         {
                             Console.WriteLine($"you currently have {animalsList.Count} animals loaded.");
+                            Console.WriteLine();
                             foreach (var pet in animalsList)
                             {
-                                Console.WriteLine(pet.Identification);
+                                Console.Write($"{pet.Identification} |");
                             }
                         }
 
-                        //Show the available animal types menu
+                        Console.WriteLine();
                         Console.WriteLine("The following animals are available:");
                         Console.WriteLine("1. Dog");
                         Console.WriteLine("2. Cat");
@@ -119,12 +119,10 @@ namespace OneFileApp
                                 Console.WriteLine("Please, try make another choice.");
                                 Console.ReadLine();
 
-                                //Clear the console and show the welcome message
                                 Console.Clear();
                                 Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                                 Console.WriteLine();
 
-                                //Show the available animal types menu
                                 Console.WriteLine("The following animals are available:");
                                 Console.WriteLine("1. Dog");
                                 Console.WriteLine("2. Cat");
@@ -173,12 +171,10 @@ namespace OneFileApp
                         animal.Type = animalType;
                         animalsList.Add(animal);
 
-                        //reset menu choice so we can display the main menu again
                         menuChoice = 0;
                         break;
 
                     case 2:
-                        //Clear the console and show the welcome message
                         Console.Clear();
                         Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                         Console.WriteLine();
@@ -189,15 +185,20 @@ namespace OneFileApp
                         }
                         else
                         {
+                            Console.WriteLine();
                             Console.WriteLine($"you currently have {animalsList.Count} animals loaded.");
+                            Console.WriteLine();
                             foreach (var pet in animalsList)
                             {
-                                Console.WriteLine(pet.Identification);
+                                Console.Write($"{pet.Identification} |");
                             }
                         }
 
+                        Console.WriteLine();
+                        Console.WriteLine();
                         Console.WriteLine("The following animals are what you've added and are able to interact with them:");
                         Console.WriteLine("(To add more, follow the Add Animal menu option one)");
+                        Console.WriteLine();
 
                         for (int i = 0; i < animalsList.Count; i++)
                         {
@@ -217,7 +218,6 @@ namespace OneFileApp
                                 Console.WriteLine("Please, try make another choice.");
                                 Console.ReadLine();
 
-                                //Clear the console and show the welcome message
                                 Console.Clear();
                                 Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                                 Console.WriteLine();
@@ -238,7 +238,6 @@ namespace OneFileApp
 
                         Animal selectedAnimal = animalsList[actualAnimalsMenuOption];
 
-                        //Show the available action that animals can perform
                         Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
                         Console.WriteLine("1. Eat");
                         Console.WriteLine("2. Sleep");
@@ -259,7 +258,6 @@ namespace OneFileApp
                                 menuChoice = 0;
                                 Console.ReadLine();
                             
-                                //clear the console
                                 Console.Clear();
                                 Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                             }
@@ -280,9 +278,19 @@ namespace OneFileApp
                                 selectedAnimal.Run();
                                 break;
                             case 4:
-                                selectedAnimal.Fly();
+                                if (selectedAnimal.Type == "Penguin")
+                                {
+                                    selectedAnimal.Fly();
+                                }
+                                else
+                                {
+                                    Console.WriteLine($"Sorry your {selectedAnimal.Type} does not have the ability to fly.");
+                                    Console.WriteLine();
+                                }
+                                
                                 break;
                             case 5:
+                                
                                 if (selectedAnimal.Type == "Dog")
                                 {
                                     selectedAnimal.DogTalk();
@@ -309,23 +317,22 @@ namespace OneFileApp
                                                     "please, make another choice.");
                         }
 
+                        Console.WriteLine();
+                        Console.WriteLine("Press enter to carry on.");
                         Console.ReadLine();
 
-                        //reset menu choice so we can display the main menu again
                         menuChoice = 0;
                         break;
 
                     case 3:
 
                         var allAnimalActionOption = 0;
-                        //TODO: Implement the rest of the method here
-                        //Clear screen, and display the welcome message
                         Console.Clear();
                         Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                         Console.WriteLine();
                         Console.WriteLine("Once you make your choice- the animals will perform the action" +
                                           "after each other");
-                        //shows number of animals in list
+                        Console.WriteLine();
                         if (animalsList.Count == 0)
                         {
                             Console.WriteLine("We currently have no animals in your list,");
@@ -335,29 +342,31 @@ namespace OneFileApp
                             Console.ReadLine();
 
                         }
-                        
-                        //show the list of animals again.
-                        for (int i = 0; i < animalsList.Count; i++)
+
+                        Console.WriteLine();
+                        foreach (var pet in animalsList)
                         {
-                            Console.WriteLine($" {animalsList[i].Identification}");
+                            Console.Write($"{pet.Identification} |");
                         }
-                        //show the list of actions
+
+                        Console.WriteLine();
                         Console.WriteLine($"What action would yo like all your animals to do?");
                         Console.WriteLine("1. Eat");
                         Console.WriteLine("2. Sleep");
                         Console.WriteLine("3. Run");
                         Console.WriteLine("4. Fly");
                         Console.WriteLine("5. Talk");
-                        //get action from user
 
                         if (!int.TryParse(Console.ReadLine(), out allAnimalActionOption))
                         {
+                            Console.WriteLine();
                             Console.WriteLine("Sorry your choice is incorrect");
                             Console.WriteLine("Please, try make another choice.");
+                            Console.WriteLine("Press enter to carry on.");
+                            Console.ReadLine();
                             menuChoice = 0;
                             Console.ReadLine();
                             
-                            //clear the console
                             Console.Clear();
                             Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                         }
@@ -366,8 +375,6 @@ namespace OneFileApp
                             isActualAnimalActionOption = true;
                         }
                         
-                        //loop all animals though the actions.
-
                         foreach (var pet in animalsList)
                         {
                             switch (allAnimalActionOption)
@@ -378,7 +385,19 @@ namespace OneFileApp
                                     break;
                                 case 2:
                                     Console.WriteLine(pet.Identification);
-                                    pet.Fly();
+                                    if (pet.Type == "Penguin")
+                                    {
+                                        pet.Fly();    
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine($"Sorry, but your {pet.Type} does not fly.");
+                                        Console.WriteLine("choose another animal- if you wish to fly.");
+                                        Console.WriteLine();
+                                        Console.WriteLine("Press enter to carry on.");
+                                        Console.ReadLine();
+                                    }
+                                    
                                     break;
                                 case 3:
                                     Console.WriteLine(pet.Identification);
@@ -409,6 +428,10 @@ namespace OneFileApp
                                     {
                                         pet.PenguinTalk();
                                     }
+
+                                    Console.WriteLine();
+                                    Console.WriteLine("Press enter to carry on");
+                                    Console.ReadLine();
                                     break;
                                 default:
                                     throw new Exception("Wrong Choice, Please TRY again...");
@@ -419,7 +442,6 @@ namespace OneFileApp
 
                         Console.ReadLine();
 
-                        //reset menu choice so we can display the main menu again
                         menuChoice = 0;
                         break;
                 }
@@ -434,12 +456,12 @@ namespace OneFileApp
 
         public string Identification
         {
-            get { return $"{Name} the {Type}"; }
+            get { return $"{Type} - {Name}"; }
             
         }
         
         public Animal(string name)
-        {    //constructor
+        {
             Name = name;
         }
 
@@ -475,12 +497,13 @@ namespace OneFileApp
         {
             Console.WriteLine("Is it a bird?!");
             Console.WriteLine("Is it a plane?!");
-            Console.WriteLine("it's a Flamingo!!");
+            Console.WriteLine($"it's a {Type}!!");
         }
 
         public void DogTalk()
         {
-            Console.WriteLine("Bark, Bark");
+            Console.WriteLine("Bark!!");
+            Console.WriteLine("Bark!!");
         }
 
         public void CatTalk()
@@ -492,17 +515,19 @@ namespace OneFileApp
         public void ElephantTalk()
         {
             Console.WriteLine("Trumpet!!!!");
+            Console.WriteLine("Trumpet!!!!");
         }
 
         public void FishTalk()
         {
-            Console.WriteLine("bubble");
+            Console.WriteLine("Bubble");
+            Console.WriteLine("Bubble");
         }
 
         public void PenguinTalk()
         {
-            Console.WriteLine("cheap!");
-            Console.WriteLine("cheap!!");
+            Console.WriteLine("Cheap!");
+            Console.WriteLine("Cheap!!");
         }
     }
 }
