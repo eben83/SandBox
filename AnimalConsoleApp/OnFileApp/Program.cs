@@ -282,6 +282,28 @@ namespace OneFileApp
                             case 4:
                                 selectedAnimal.Fly();
                                 break;
+                            case 5:
+                                if (selectedAnimal.Type == "Dog")
+                                {
+                                    selectedAnimal.DogTalk();
+                                }
+                                else if (selectedAnimal.Type == "Cat")
+                                {
+                                    selectedAnimal.CatTalk();
+                                }
+                                else if (selectedAnimal.Type == "Elephant")
+                                {
+                                    selectedAnimal.ElephantTalk();
+                                }
+                                else if (selectedAnimal.Type == "Fish")
+                                {
+                                    selectedAnimal.FishTalk();
+                                }
+                                else if (selectedAnimal.Type == "Penguin")
+                                {
+                                    selectedAnimal.PenguinTalk();
+                                }
+                                break;
                             default:
                                 throw new Exception("Sorry, something went wrong there, " +
                                                     "please, make another choice.");
@@ -313,9 +335,8 @@ namespace OneFileApp
                             Console.ReadLine();
 
                         }
-                        else
-                        {
-                            //show the list of animals again.
+                        
+                        //show the list of animals again.
                         for (int i = 0; i < animalsList.Count; i++)
                         {
                             Console.WriteLine($" {animalsList[i].Identification}");
@@ -326,6 +347,7 @@ namespace OneFileApp
                         Console.WriteLine("2. Sleep");
                         Console.WriteLine("3. Run");
                         Console.WriteLine("4. Fly");
+                        Console.WriteLine("5. Talk");
                         //get action from user
 
                         if (!int.TryParse(Console.ReadLine(), out allAnimalActionOption))
@@ -367,12 +389,30 @@ namespace OneFileApp
                                     pet.Sleep();
                                     break;
                                 case 5:
+                                    if (pet.Type == "Dog")
+                                    {
+                                        pet.DogTalk();
+                                    }
+                                    else if (pet.Type == "Cat")
+                                    {
+                                        pet.CatTalk();
+                                    }
+                                    else if (pet.Type == "Elephant")
+                                    {
+                                        pet.ElephantTalk();
+                                    }
+                                    else if (pet.Type == "Fish")
+                                    {
+                                        pet.FishTalk();
+                                    }
+                                    else if (pet.Type == "Penguin")
+                                    {
+                                        pet.PenguinTalk();
+                                    }
                                     break;
                                 default:
                                     throw new Exception("Wrong Choice, Please TRY again...");
                             }
-                        }
-                            
                         }
 
                         
@@ -438,9 +478,31 @@ namespace OneFileApp
             Console.WriteLine("it's a Flamingo!!");
         }
 
-        public void Talk()
+        public void DogTalk()
         {
             Console.WriteLine("Bark, Bark");
+        }
+
+        public void CatTalk()
+        {
+            Console.WriteLine("Meow");
+            Console.WriteLine("Meow");
+        }
+
+        public void ElephantTalk()
+        {
+            Console.WriteLine("Trumpet!!!!");
+        }
+
+        public void FishTalk()
+        {
+            Console.WriteLine("bubble");
+        }
+
+        public void PenguinTalk()
+        {
+            Console.WriteLine("cheap!");
+            Console.WriteLine("cheap!!");
         }
     }
 }
