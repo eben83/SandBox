@@ -21,7 +21,7 @@ namespace OneFileApp
                     case 0:
                         //Clear the console and show the welcome message
                         Console.Clear();
-                        Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
+                        Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                         Console.WriteLine();
 
                         //Show the main menu
@@ -45,7 +45,7 @@ namespace OneFileApp
 
                                 //Clear the console and show the welcome message
                                 Console.Clear();
-                                Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
+                                Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                                 Console.WriteLine();
 
                                 //Show the main menu
@@ -67,7 +67,7 @@ namespace OneFileApp
                     case 1:
                         //Clear the console and show the welcome message
                         Console.Clear();
-                        Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
+                        Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                         Console.WriteLine();
 
                         //Show the available animal types menu
@@ -93,7 +93,7 @@ namespace OneFileApp
 
                                 //Clear the console and show the welcome message
                                 Console.Clear();
-                                Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
+                                Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                                 Console.WriteLine();
 
                                 //Show the available animal types menu
@@ -151,7 +151,7 @@ namespace OneFileApp
                     case 2:
                         //Clear the console and show the welcome message
                         Console.Clear();
-                        Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
+                        Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                         Console.WriteLine();
 
                         Console.WriteLine("The following animals are what you've added and are able to interact with them:");
@@ -177,7 +177,7 @@ namespace OneFileApp
 
                                 //Clear the console and show the welcome message
                                 Console.Clear();
-                                Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
+                                Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                                 Console.WriteLine();
 
                                 Console.WriteLine("These are your animals that you are able to interact with:");
@@ -218,7 +218,7 @@ namespace OneFileApp
                             
                                 //clear the console
                                 Console.Clear();
-                                Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
+                                Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                             }
                             else
                             {
@@ -256,7 +256,7 @@ namespace OneFileApp
                         //TODO: Implement the rest of the method here
                         //Clear screen, and display the welcome message
                         Console.Clear();
-                        Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
+                        Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                         Console.WriteLine();
                         Console.WriteLine("These following animals will perform the action to decide," +
                                           "all at once.");
@@ -283,7 +283,7 @@ namespace OneFileApp
                             
                             //clear the console
                             Console.Clear();
-                            Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
+                            Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                         }
                         else
                         {
