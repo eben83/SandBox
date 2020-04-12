@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Security.Cryptography;
 
 namespace OneFileApp
 {
@@ -235,6 +236,9 @@ namespace OneFileApp
                             case 3:
                                 selectedAnimal.Run();
                                 break;
+                            case 4:
+                                selectedAnimal.Fly();
+                                break;
                             default:
                                 throw new Exception("Sorry, something went wrong there, " +
                                                     "please, make another choice.");
@@ -247,8 +251,74 @@ namespace OneFileApp
                         break;
 
                     case 3:
+
+                        var allAnimalActionOption = 0;
                         //TODO: Implement the rest of the method here
+                        //Clear screen, and display the welcome message
+                        Console.Clear();
+                        Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
+                        Console.WriteLine();
+                        Console.WriteLine("These following animals will perform the action to decide," +
+                                          "all at once.");
                         
+                        //show the list of animals again.
+                        for (int i = 0; i < animalsList.Count; i++)
+                        {
+                            Console.WriteLine($" {animalsList[i].Identification}");
+                        }
+                        //show the list of actions
+                        Console.WriteLine($"What action would yo like all your animals to do?");
+                        Console.WriteLine("1. Eat");
+                        Console.WriteLine("2. Sleep");
+                        Console.WriteLine("3. Run");
+                        Console.WriteLine("4. Fly");
+                        //get action from user
+
+                        if (!int.TryParse(Console.ReadLine(), out allAnimalActionOption))
+                        {
+                            Console.WriteLine("Sorry your choice is incorrect");
+                            Console.WriteLine("Please, try make another choice.");
+                            menuChoice = 0;
+                            Console.ReadLine();
+                            
+                            //clear the console
+                            Console.Clear();
+                            Console.WriteLine("Welcome, This is mt one page Animal App, I hope you will enjoy it");
+                        }
+                        else
+                        {
+                            isActualAnimalActionOption = true;
+                        }
+                        
+                        //loop all animals though the actions.
+
+                        foreach (var pet in animalsList)
+                        {
+                            switch (allAnimalActionOption)
+                            {
+                                case 1:
+                                    Console.WriteLine(pet.Identification);
+                                    pet.Eat();
+                                    break;
+                                case 2:
+                                    Console.WriteLine(pet.Identification);
+                                    pet.Fly();
+                                    break;
+                                case 3:
+                                    Console.WriteLine(pet.Identification);
+                                    pet.Run();
+                                    break;
+                                case 4:
+                                    Console.WriteLine(pet.Identification);
+                                    pet.Sleep();
+                                    break;
+                                default:
+                                    throw new Exception("Wrong Choice, Please TRY again...");
+                            }
+                        }
+
+                        Console.ReadLine();
+
                         //reset menu choice so we can display the main menu again
                         menuChoice = 0;
                         break;
@@ -264,7 +334,7 @@ namespace OneFileApp
 
         public string Identification
         {
-            get { return $"{Type} - {Name}"; }
+            get { return $"{Name} the {Type}"; }
             
         }
         
