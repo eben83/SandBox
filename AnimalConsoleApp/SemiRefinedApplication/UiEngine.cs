@@ -22,8 +22,7 @@ namespace SemiRefinedApplication
                         break;
 
                     case 1:
-                        
-
+                        ShowAnimalMenuAndAddAnimal(animalsList);
                         menuChoice = 0;
                         break;
 
@@ -343,7 +342,7 @@ namespace SemiRefinedApplication
             return menuSelection;
         }
 
-        public  void ShowAnimalMenuAndAddAnimal()
+        public  void ShowAnimalMenuAndAddAnimal(List<Animal> AddAnimalToList)
         {
             Console.Clear();
             Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
@@ -420,7 +419,7 @@ namespace SemiRefinedApplication
 
             var animal = new Animal(animalName);
             animal.Type = animalType;
-            animalsList.Add(animal);
+            AddAnimalToList.Add(animal);
         }
     }
 }
