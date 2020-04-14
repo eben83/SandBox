@@ -22,82 +22,7 @@ namespace SemiRefinedApplication
                         break;
 
                     case 1:
-                        Console.Clear();
-                        Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-
-                        Console.WriteLine();
-                        Console.WriteLine("The following animals are available:");
-                        Console.WriteLine("1. Dog");
-                        Console.WriteLine("2. Cat");
-                        Console.WriteLine("3. Elephant");
-                        Console.WriteLine("4. Fish");
-                        Console.WriteLine("5. Penguin");
-                        Console.WriteLine();
                         
-
-                        var animalMenuOption = 0;
-                        var isAnimalMenuChoiceValid = false;
-                        while (!isAnimalMenuChoiceValid)
-                        {
-                            Console.WriteLine("Which animal would you like to add?");
-
-                            if (!int.TryParse(Console.ReadLine(), out animalMenuOption))
-                            {
-                                Console.WriteLine("Sorry your choice is incorrect");
-                                Console.WriteLine("Please, try make another choice.");
-                                Console.ReadLine();
-
-                                Console.Clear();
-                                Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-                                Console.WriteLine();
-
-                                Console.WriteLine("The following animals are available:");
-                                Console.WriteLine("1. Dog");
-                                Console.WriteLine("2. Cat");
-                                Console.WriteLine("3. Elephant");
-                                Console.WriteLine("4. Fish");
-                                Console.WriteLine("5. Penguin");
-                                Console.WriteLine();
-                            }
-                            else
-                            {
-                                isAnimalMenuChoiceValid = true;
-                            }
-                        }
-
-                        string animalType = "";
-                        
-                        switch (animalMenuOption)
-                        {
-                            case 1:
-                                animalType = "Dog";
-                                break;
-                            case 2:
-                                animalType = "Cat";
-                                break;
-                            case 3:
-                                animalType = "Elephant";
-                                break;
-                            case 4:
-                                animalType = "Fish";
-                                break;
-                            case 5:
-                                animalType = "Penguin";
-                                break;
-                            default: throw new Exception("Invalid choice, please try again.");
-                        }
-
-                        Console.WriteLine($"What name would you like to give your new {animalType}");
-                        string animalName = Console.ReadLine();
-
-                        Console.WriteLine($"Brilliant, You have named your {animalType}, {animalName}- " +
-                                          $"Congratulations on the new member to the family...");
-                        Console.WriteLine("Press Enter to carry on.");
-                        Console.ReadLine();
-
-                        var animal = new Animal(animalName);
-                        animal.Type = animalType;
-                        animalsList.Add(animal);
 
                         menuChoice = 0;
                         break;
@@ -416,6 +341,86 @@ namespace SemiRefinedApplication
                 }
             }
             return menuSelection;
+        }
+
+        public  void ShowAnimalMenuAndAddAnimal()
+        {
+            Console.Clear();
+            Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
+
+            Console.WriteLine();
+            Console.WriteLine("The following animals are available:");
+            Console.WriteLine("1. Dog");
+            Console.WriteLine("2. Cat");
+            Console.WriteLine("3. Elephant");
+            Console.WriteLine("4. Fish");
+            Console.WriteLine("5. Penguin");
+            Console.WriteLine();
+            
+
+            var animalMenuOption = 0;
+            var isAnimalMenuChoiceValid = false;
+            while (!isAnimalMenuChoiceValid)
+            {
+                Console.WriteLine("Which animal would you like to add?");
+
+                if (!int.TryParse(Console.ReadLine(), out animalMenuOption))
+                {
+                    Console.WriteLine("Sorry your choice is incorrect");
+                    Console.WriteLine("Please, try make another choice.");
+                    Console.ReadLine();
+
+                    Console.Clear();
+                    Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
+                    Console.WriteLine();
+
+                    Console.WriteLine("The following animals are available:");
+                    Console.WriteLine("1. Dog");
+                    Console.WriteLine("2. Cat");
+                    Console.WriteLine("3. Elephant");
+                    Console.WriteLine("4. Fish");
+                    Console.WriteLine("5. Penguin");
+                    Console.WriteLine();
+                }
+                else
+                {
+                    isAnimalMenuChoiceValid = true;
+                }
+            }
+
+            string animalType = "";
+            
+            switch (animalMenuOption)
+            {
+                case 1:
+                    animalType = "Dog";
+                    break;
+                case 2:
+                    animalType = "Cat";
+                    break;
+                case 3:
+                    animalType = "Elephant";
+                    break;
+                case 4:
+                    animalType = "Fish";
+                    break;
+                case 5:
+                    animalType = "Penguin";
+                    break;
+                default: throw new Exception("Invalid choice, please try again.");
+            }
+
+            Console.WriteLine($"What name would you like to give your new {animalType}");
+            string animalName = Console.ReadLine();
+
+            Console.WriteLine($"Brilliant, You have named your {animalType}, {animalName}- " +
+                              $"Congratulations on the new member to the family...");
+            Console.WriteLine("Press Enter to carry on.");
+            Console.ReadLine();
+
+            var animal = new Animal(animalName);
+            animal.Type = animalType;
+            animalsList.Add(animal);
         }
     }
 }
