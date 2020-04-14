@@ -288,7 +288,7 @@ namespace SemiRefinedApplication
             }
         }
 
-        public void InteractWithOneAnimal(List<Animal> )
+        public void InteractWithOneAnimal(List<Animal> animalInteractList)
         {
             ShowWelcomeMessage();
 
@@ -296,7 +296,7 @@ namespace SemiRefinedApplication
             Console.WriteLine("You are able to interact with the following animals:");
             Console.WriteLine("(To add more, follow the Add Animal menu option one)");
             Console.WriteLine();
-            ShowAnimalListSummary();
+            ShowAnimalListSummary(animalInteractList);
 
             var actualAnimalsMenuOption = 0;
             var isActualAnimalMenuChoiceValid = false;
@@ -307,21 +307,13 @@ namespace SemiRefinedApplication
 
                 if (!int.TryParse(Console.ReadLine(), out actualAnimalsMenuOption))
                 {
-                    Console.WriteLine("Sorry your choice is incorrect");
-                    Console.WriteLine("Please, try make another choice.");
-                    Console.ReadLine();
-
-                    Console.Clear();
-                    Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-                    Console.WriteLine();
+                    ShowErrorMessage();
+                    ShowWelcomeMessage();
 
                     Console.WriteLine("These are your animals that you are able to interact with:");
                     Console.WriteLine("(To add more, follow the Add Animal menu option one)");
             
-                    for (int i = 0; i < animalsList.Count; i++)
-                    {
-                        Console.WriteLine($"{i}. {animalsList[i].Identification}");
-                    }
+                    ShowAnimalListSummary(animalInteractList);
                 }
                 else
                 {
