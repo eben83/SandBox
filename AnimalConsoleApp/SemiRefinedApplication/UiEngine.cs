@@ -9,7 +9,7 @@ namespace SemiRefinedApplication
         {
             const int EXIT_MENU_CHOICE = 4;
 
-        int menuChoice = 0;
+            int menuChoice = 0;
             var animalsList = new List<Animal>();
 
             while (menuChoice != EXIT_MENU_CHOICE)
@@ -17,69 +17,7 @@ namespace SemiRefinedApplication
                 switch (menuChoice)
                 {
                     case 0:
-                        Console.Clear();
-                        Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-                        Console.WriteLine();
-
-                        if (animalsList.Count == 0)
-                        {
-                            Console.WriteLine("No animals loaded");
-                        }
-                        else if (animalsList.Count == 1)
-                        {
-                            Console.WriteLine($"You currently have {animalsList.Count} animal loaded.");
-                            Console.Write("Your animal: ");
-                            foreach (var pet in animalsList)
-                            {
-                                Console.Write($" {pet.Identification} | ");
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine($"You currently have {animalsList.Count} animals loaded.");
-                            Console.Write("Your animals: ");
-                            foreach (var pet in animalsList)
-                            {
-                                Console.Write($" {pet.Identification} | ");
-                            }
-                        }
-
-                        Console.WriteLine();
-                        Console.WriteLine();
-                        Console.WriteLine("1. Add animal");
-                        Console.WriteLine("2. Interact with animal");
-                        Console.WriteLine("3. Interact with all animals");
-                        Console.WriteLine("4. Exit");
-                        Console.WriteLine();
-
-                        var isMainMenuChoiceValid = false;
-                        while (!isMainMenuChoiceValid)
-                        {
-                            Console.WriteLine("Please, make a selection, to carry on.");
-
-                            if (!int.TryParse(Console.ReadLine(), out menuChoice))
-                            {
-                                Console.WriteLine("Sorry your choice is incorrect");
-                                Console.WriteLine("Please, try make another choice.");
-                                Console.ReadLine();
-
-                                Console.Clear();
-                                Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-                                Console.WriteLine();
-
-                                Console.WriteLine();
-                                Console.WriteLine("1. Add animal");
-                                Console.WriteLine("2. Interact with animal");
-                                Console.WriteLine("3. Interact with all animals");
-                                Console.WriteLine("4. Exit");
-                                Console.WriteLine();
-                            }
-                            else
-                            {
-                                isMainMenuChoiceValid = true;
-                            }
-                        }
-
+                        MainMenu(animalsList);
                         break;
 
                     case 1:
@@ -402,6 +340,75 @@ namespace SemiRefinedApplication
                         break;
                 }
             }
+        }
+
+        public void MainMenu(List<Animal> animalsList)
+        {
+            var menuChoice = 0;
+            
+            Console.Clear();
+            Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
+            Console.WriteLine();
+
+            if (animalsList.Count == 0)
+            {
+                Console.WriteLine("No animals loaded");
+            }
+            else if (animalsList.Count == 1)
+            {
+                Console.WriteLine($"You currently have {animalsList.Count} animal loaded.");
+                Console.Write("Your animal: ");
+                foreach (var pet in animalsList)
+                {
+                    Console.Write($" {pet.Identification} | ");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"You currently have {animalsList.Count} animals loaded.");
+                Console.Write("Your animals: ");
+                foreach (var pet in animalsList)
+                {
+                    Console.Write($" {pet.Identification} | ");
+                }
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("1. Add animal");
+            Console.WriteLine("2. Interact with animal");
+            Console.WriteLine("3. Interact with all animals");
+            Console.WriteLine("4. Exit");
+            Console.WriteLine();
+
+            var isMainMenuChoiceValid = false;
+            while (!isMainMenuChoiceValid)
+            {
+                Console.WriteLine("Please, make a selection, to carry on.");
+
+                if (!int.TryParse(Console.ReadLine(), out menuChoice))
+                {
+                    Console.WriteLine("Sorry your choice is incorrect");
+                    Console.WriteLine("Please, try make another choice.");
+                    Console.ReadLine();
+
+                    Console.Clear();
+                    Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
+                    Console.WriteLine();
+
+                    Console.WriteLine();
+                    Console.WriteLine("1. Add animal");
+                    Console.WriteLine("2. Interact with animal");
+                    Console.WriteLine("3. Interact with all animals");
+                    Console.WriteLine("4. Exit");
+                    Console.WriteLine();
+                }
+                else
+                {
+                    isMainMenuChoiceValid = true;
+                }
+            }
+            
         }
         
     }
