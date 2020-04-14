@@ -3,11 +3,13 @@ using System.Collections.Generic;
 
 namespace SemiRefinedApplication
 {
-    static class UiEngine
+    public class UiEngine
     {
-        const int EXIT_MENU_CHOICE = 4;
+        public void Run()
+        {
+            const int EXIT_MENU_CHOICE = 4;
 
-            int menuChoice = 0;
+        int menuChoice = 0;
             var animalsList = new List<Animal>();
 
             while (menuChoice != EXIT_MENU_CHOICE)
@@ -400,5 +402,7 @@ namespace SemiRefinedApplication
                         break;
                 }
             }
+        }
+        
     }
 }
