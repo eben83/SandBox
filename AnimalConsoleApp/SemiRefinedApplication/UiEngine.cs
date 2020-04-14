@@ -347,7 +347,6 @@ namespace SemiRefinedApplication
             ShowWelcomeMessage();
             ShowMainMenu();
             
-
             var animalMenuOption = 0;
             var isAnimalMenuChoiceValid = false;
             while (!isAnimalMenuChoiceValid)
@@ -366,27 +365,7 @@ namespace SemiRefinedApplication
                 }
             }
 
-            string animalType = "";
             
-            switch (animalMenuOption)
-            {
-                case 1:
-                    animalType = "Dog";
-                    break;
-                case 2:
-                    animalType = "Cat";
-                    break;
-                case 3:
-                    animalType = "Elephant";
-                    break;
-                case 4:
-                    animalType = "Fish";
-                    break;
-                case 5:
-                    animalType = "Penguin";
-                    break;
-                default: throw new Exception("Invalid choice, please try again.");
-            }
 
             Console.WriteLine($"What name would you like to give your new {animalType}");
             string animalName = Console.ReadLine();
@@ -412,9 +391,32 @@ namespace SemiRefinedApplication
             Console.WriteLine();   
         }
 
-        public void GetAnimalMenuChoice()
+        public int GetAnimalMenuChoice()
         {
+            string animalType = "";
+            var animalMenuChoice = 0;
             
+            switch (animalMenuChoice)
+            {
+                case 1:
+                    animalType = "Dog";
+                    break;
+                case 2:
+                    animalType = "Cat";
+                    break;
+                case 3:
+                    animalType = "Elephant";
+                    break;
+                case 4:
+                    animalType = "Fish";
+                    break;
+                case 5:
+                    animalType = "Penguin";
+                    break;
+                default: throw new Exception("Invalid choice, please try again.");
+            }
+
+            return animalMenuChoice;
         }
     }
 }
