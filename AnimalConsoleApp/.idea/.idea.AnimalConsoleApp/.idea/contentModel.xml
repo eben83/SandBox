@@ -40,6 +40,7 @@
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="SemiRefinedApplication" t="IncludeRecursive">
+        <e p="Animal.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
