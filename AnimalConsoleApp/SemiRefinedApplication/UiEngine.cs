@@ -349,7 +349,7 @@ namespace SemiRefinedApplication
             ShowWelcomeMessage();
             ShowAnimalListSummary(animalsList);
             ShowMainMenu();
-            return GetMenuChoice();
+            return GetMainMenuChoice();
         }
         
         public void ShowWelcomeMessage()
@@ -376,9 +376,12 @@ namespace SemiRefinedApplication
                 Console.WriteLine("No animals loaded");
                 return;
             }
+
+            Console.WriteLine();
             var nounToUse = listOfAnimals.Count > 1 ? "animals" : "animal";
             Console.WriteLine($"You currently have {listOfAnimals.Count} {nounToUse} loaded.");
-            Console.Write($"Your {nounToUse}");
+            Console.WriteLine();
+            Console.Write($"Your {nounToUse}:");
             foreach (var pet in listOfAnimals)
             {
                 Console.Write($" {pet.Identification} |");
@@ -392,7 +395,7 @@ namespace SemiRefinedApplication
             Console.ReadLine();
         }
 
-        public int GetMenuChoice()
+        public int GetMainMenuChoice()
         {
             var menuSelection = 0;
             
