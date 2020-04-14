@@ -18,7 +18,7 @@ namespace SemiRefinedApplication
                 {
                     case 0:
                         Console.Clear();
-                        Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
+                        Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
                         Console.WriteLine();
 
                         if (animalsList.Count == 0)
@@ -64,7 +64,7 @@ namespace SemiRefinedApplication
                                 Console.ReadLine();
 
                                 Console.Clear();
-                                Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
+                                Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
                                 Console.WriteLine();
 
                                 Console.WriteLine();
@@ -84,7 +84,7 @@ namespace SemiRefinedApplication
 
                     case 1:
                         Console.Clear();
-                        Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
+                        Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
 
                         Console.WriteLine();
                         Console.WriteLine("The following animals are available:");
@@ -109,7 +109,7 @@ namespace SemiRefinedApplication
                                 Console.ReadLine();
 
                                 Console.Clear();
-                                Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
+                                Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
                                 Console.WriteLine();
 
                                 Console.WriteLine("The following animals are available:");
@@ -165,7 +165,7 @@ namespace SemiRefinedApplication
 
                     case 2:
                         Console.Clear();
-                        Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
+                        Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
 
                         Console.WriteLine();
                         Console.WriteLine();
@@ -192,7 +192,7 @@ namespace SemiRefinedApplication
                                 Console.ReadLine();
 
                                 Console.Clear();
-                                Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
+                                Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
                                 Console.WriteLine();
 
                                 Console.WriteLine("These are your animals that you are able to interact with:");
@@ -232,7 +232,7 @@ namespace SemiRefinedApplication
                                 Console.ReadLine();
                             
                                 Console.Clear();
-                                Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
+                                Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
                             }
                             else
                             {
@@ -299,7 +299,7 @@ namespace SemiRefinedApplication
 
                         var allAnimalActionOption = 0;
                         Console.Clear();
-                        Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
+                        Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
                         Console.WriteLine();
                         Console.WriteLine("Once you make your choice - All the animals will perform the action");
 
@@ -322,7 +322,7 @@ namespace SemiRefinedApplication
                             Console.ReadLine();
                             
                             Console.Clear();
-                            Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
+                            Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
                         }
                         else
                         {
