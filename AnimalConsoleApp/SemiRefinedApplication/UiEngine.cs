@@ -17,7 +17,7 @@ namespace SemiRefinedApplication
                 switch (menuChoice)
                 {
                     case 0:
-                        MainMenu(animalsList);
+                        menuChoice = MainMenu(animalsList);
                         break;
 
                     case 1:
@@ -342,7 +342,7 @@ namespace SemiRefinedApplication
             }
         }
 
-        public void MainMenu(List<Animal> animalsList)
+        public int MainMenu(List<Animal> animalsList)
         {
             var menuChoice = 0;
             
@@ -408,7 +408,8 @@ namespace SemiRefinedApplication
                     isMainMenuChoiceValid = true;
                 }
             }
-            
+
+            return menuChoice;
         }
         
     }
