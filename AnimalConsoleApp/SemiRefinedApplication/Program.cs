@@ -7,7 +7,7 @@ namespace SemiRefinedApplication
     {
         static void Main(string[] args)
         {
-            
+            new UiEngine().Run();
         }
     }
 }
