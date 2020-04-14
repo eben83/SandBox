@@ -377,7 +377,7 @@ namespace SemiRefinedApplication
                 return;
             }
             var nounToUse = listOfAnimals.Count > 1 ? "animals" : "animal";
-            foreach (var pet in listOfAnimals)
+            for (int i = 0; i < listOfAnimals.Count; i++)
             {
                 Console.WriteLine($"You currently have {listOfAnimals.Count} {nounToUse} loaded.");
             }
