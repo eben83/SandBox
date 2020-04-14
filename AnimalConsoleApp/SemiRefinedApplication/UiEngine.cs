@@ -374,8 +374,9 @@ namespace SemiRefinedApplication
             Console.WriteLine();   
         }
 
-        public int GetAnimalMenuChoice(int menuSelection)
+        public int GetAnimalMenuChoice()
         {
+            var menuSelection = 0;
             var isAnimalMenuChoiceValid = false;
             while (!isAnimalMenuChoiceValid)
             {
