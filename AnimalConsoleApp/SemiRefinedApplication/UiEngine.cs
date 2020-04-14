@@ -349,8 +349,8 @@ namespace SemiRefinedApplication
             var menuSelection = 0;
             
             ShowWelcomeMessage();
-            AnimalListCounterAndShowAnimalsInList(animalsList);
-            MainMenuOptions();
+            ShowAnimalListSummary(animalsList);
+            ShowMainMenu();
             
             
             var isMainMenuChoiceValid = false;
@@ -365,7 +365,7 @@ namespace SemiRefinedApplication
                     Console.ReadLine();
 
                     ShowWelcomeMessage();
-                    MainMenuOptions();
+                    ShowMainMenu();
                 }
                 else
                 {
@@ -383,7 +383,7 @@ namespace SemiRefinedApplication
             Console.WriteLine();
         }
 
-        public void MainMenuOptions()
+        public void ShowMainMenu()
         {
             Console.WriteLine();
             Console.WriteLine("1. Add animal");
@@ -393,7 +393,7 @@ namespace SemiRefinedApplication
             Console.WriteLine();   
         }
 
-        public void AnimalListCounterAndShowAnimalsInList(List<Animal> listOfAnimals)
+        public void ShowAnimalListSummary(List<Animal> listOfAnimals)
         {
             if (listOfAnimals.Count == 0)
             {
