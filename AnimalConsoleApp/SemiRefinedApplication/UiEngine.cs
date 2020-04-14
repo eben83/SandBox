@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Channels;
 
 namespace SemiRefinedApplication
 {
@@ -360,10 +361,7 @@ namespace SemiRefinedApplication
 
                 if (!int.TryParse(Console.ReadLine(), out menuSelection))
                 {
-                    Console.WriteLine("Sorry your choice is incorrect");
-                    Console.WriteLine("Please, try make another choice.");
-                    Console.ReadLine();
-
+                    ShowErrorMessage();
                     ShowWelcomeMessage();
                     ShowMainMenu();
                 }
@@ -398,26 +396,17 @@ namespace SemiRefinedApplication
             if (listOfAnimals.Count == 0)
             {
                 Console.WriteLine("No animals loaded");
+                return;
             }
-            else if (listOfAnimals.Count == 1)
-            {
-                Console.WriteLine($"You currently have {listOfAnimals.Count} animal loaded.");
-                Console.Write("Your animal: ");
-                foreach (var pet in listOfAnimals)
-                {
-                    Console.Write($" {pet.Identification} | ");
-                }
-            }
-            else
-            {
-                Console.WriteLine($"You currently have {listOfAnimals.Count} animals loaded.");
-                Console.Write("Your animals: ");
-                foreach (var pet in listOfAnimals)
-                {
-                    Console.Write($" {pet.Identification} | ");
-                }
-            }
+
+            var nounToUse = listOfAnimals.Count > 1 ? "animals" : "animal";
         }
-        
+
+        public void ShowErrorMessage()
+        {
+            Console.WriteLine("Sorry your choice is incorrect");
+            Console.WriteLine("Please, try make another choice.");
+            Console.ReadLine();
+        }
     }
 }
