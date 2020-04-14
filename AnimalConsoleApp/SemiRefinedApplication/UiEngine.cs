@@ -17,7 +17,7 @@ namespace SemiRefinedApplication
                 switch (menuChoice)
                 {
                     case 0:
-                        menuChoice = MainMenu(animalsList);
+                        menuChoice = ShowMainMenuAndGetMainMenuChoice(animalsList);
                         break;
 
                     case 1:
@@ -342,53 +342,16 @@ namespace SemiRefinedApplication
             }
         }
 
-        public void WelcomeMessage()
-        {
-            Console.Clear();
-            Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-            Console.WriteLine();
-        }
+        
 
-        public void MenuChoice()
-        {
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("1. Add animal");
-            Console.WriteLine("2. Interact with animal");
-            Console.WriteLine("3. Interact with all animals");
-            Console.WriteLine("4. Exit");
-            Console.WriteLine();   
-        }
-
-        public void AnimalListCounter(List<Animal> numberOfAnimals)
-        {
-            if (numberOfAnimals.Count == 0)
-            {
-                Console.WriteLine("No animals loaded");
-            }
-            else if (numberOfAnimals.Count == 1)
-            {
-                Console.WriteLine($"You currently have {numberOfAnimals.Count} animal loaded.");
-                Console.Write("Your animal: ");
-                foreach (var pet in numberOfAnimals)
-                {
-                    Console.Write($" {pet.Identification} | ");
-                }
-            }
-            else
-            {
-                Console.WriteLine($"You currently have {numberOfAnimals.Count} animals loaded.");
-                Console.Write("Your animals: ");
-                foreach (var pet in numberOfAnimals)
-                {
-                    Console.Write($" {pet.Identification} | ");
-                }
-            }
-        }
-
-        public int MainMenu(List<Animal> animalsList)
+        public int ShowMainMenuAndGetMainMenuChoice(List<Animal> animalsList)
         {
             var menuSelection = 0;
+            
+            ShowWelcomeMessage();
+            AnimalListCounterAndShowAnimalsInList(animalsList);
+            MainMenuOptions();
+            
             
             var isMainMenuChoiceValid = false;
             while (!isMainMenuChoiceValid)
@@ -401,16 +364,8 @@ namespace SemiRefinedApplication
                     Console.WriteLine("Please, try make another choice.");
                     Console.ReadLine();
 
-                    Console.Clear();
-                    Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-                    Console.WriteLine();
-
-                    Console.WriteLine();
-                    Console.WriteLine("1. Add animal");
-                    Console.WriteLine("2. Interact with animal");
-                    Console.WriteLine("3. Interact with all animals");
-                    Console.WriteLine("4. Exit");
-                    Console.WriteLine();
+                    ShowWelcomeMessage();
+                    MainMenuOptions();
                 }
                 else
                 {
@@ -419,6 +374,49 @@ namespace SemiRefinedApplication
             }
 
             return menuSelection;
+        }
+        
+        public void ShowWelcomeMessage()
+        {
+            Console.Clear();
+            Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
+            Console.WriteLine();
+        }
+
+        public void MainMenuOptions()
+        {
+            Console.WriteLine();
+            Console.WriteLine("1. Add animal");
+            Console.WriteLine("2. Interact with animal");
+            Console.WriteLine("3. Interact with all animals");
+            Console.WriteLine("4. Exit");
+            Console.WriteLine();   
+        }
+
+        public void AnimalListCounterAndShowAnimalsInList(List<Animal> listOfAnimals)
+        {
+            if (listOfAnimals.Count == 0)
+            {
+                Console.WriteLine("No animals loaded");
+            }
+            else if (listOfAnimals.Count == 1)
+            {
+                Console.WriteLine($"You currently have {listOfAnimals.Count} animal loaded.");
+                Console.Write("Your animal: ");
+                foreach (var pet in listOfAnimals)
+                {
+                    Console.Write($" {pet.Identification} | ");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"You currently have {listOfAnimals.Count} animals loaded.");
+                Console.Write("Your animals: ");
+                foreach (var pet in listOfAnimals)
+                {
+                    Console.Write($" {pet.Identification} | ");
+                }
+            }
         }
         
     }
