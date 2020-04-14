@@ -390,8 +390,6 @@ namespace SemiRefinedApplication
         {
             var menuSelection = 0;
             
-            
-
             var isMainMenuChoiceValid = false;
             while (!isMainMenuChoiceValid)
             {
