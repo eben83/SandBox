@@ -27,12 +27,12 @@ namespace SemiRefinedApplication
                         break;
 
                     case 2:
-                        
+                        InteractWithOneAnimal(animalsList);
                         menuChoice = 0;
                         break;
 
                     case 3:
-
+                        var isActualAnimalActionOption = false;
                         var allAnimalActionOption = 0;
                         Console.Clear();
                         Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
@@ -291,37 +291,16 @@ namespace SemiRefinedApplication
         public void InteractWithOneAnimal(List<Animal> animalInteractList)
         {
             ShowWelcomeMessage();
-
             Console.WriteLine();
             Console.WriteLine("You are able to interact with the following animals:");
             Console.WriteLine("(To add more, follow the Add Animal menu option one)");
             Console.WriteLine();
             ShowAnimalListSummary(animalInteractList);
 
-            var actualAnimalsMenuOption = 0;
-            var isActualAnimalMenuChoiceValid = false;
-            while (!isActualAnimalMenuChoiceValid)
-            {
-                Console.WriteLine();
-                Console.WriteLine("Which of your animals would you like to interact with?");
+            Animal selectedAnimal = animalInteractList[GetAnimalMenuChoice()];
 
-                if (!int.TryParse(Console.ReadLine(), out actualAnimalsMenuOption))
-                {
-                    ShowErrorMessage();
-                    ShowWelcomeMessage();
 
-                    Console.WriteLine("These are your animals that you are able to interact with:");
-                    Console.WriteLine("(To add more, follow the Add Animal menu option one)");
-            
-                    ShowAnimalListSummary(animalInteractList);
-                }
-                else
-                {
-                    isActualAnimalMenuChoiceValid = true;
-                }
-            }
 
-            Animal selectedAnimal = animalsList[actualAnimalsMenuOption];
 
             Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
             Console.WriteLine("1. Eat");
@@ -340,7 +319,6 @@ namespace SemiRefinedApplication
                 {
                     Console.WriteLine("Sorry your choice is incorrect");
                     Console.WriteLine("Please, try make another choice.");
-                    menuChoice = 0;
                     Console.ReadLine();
                 
                     Console.Clear();
@@ -404,6 +382,60 @@ namespace SemiRefinedApplication
 
             Console.WriteLine("Press enter to carry on:");
             Console.ReadLine();
+        }
+
+        public int GetAnimalChoice()
+        {
+            var actualAnimalsMenuOption = 0;
+            var isActualAnimalMenuChoiceValid = false;
+            while (!isActualAnimalMenuChoiceValid)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Which of your animals would you like to interact with?");
+
+                if (!int.TryParse(Console.ReadLine(), out actualAnimalsMenuOption))
+                {
+                    ShowErrorMessage();
+                    ShowWelcomeMessage();
+
+                    Console.WriteLine("These are your animals that you are able to interact with:");
+                    Console.WriteLine("(To add more, follow the Add Animal menu option one)");
+                }
+                else
+                {
+                    isActualAnimalMenuChoiceValid = true;
+                }
+            }
+
+            return actualAnimalsMenuOption;
+        }
+
+        public int GetAnimalActionMenuChoice(List<Animal>animalInteractList)
+        {
+            var actualAnimalsMenuOption = 0;
+            var isActualAnimalMenuChoiceValid = false;
+            while (!isActualAnimalMenuChoiceValid)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Which of your animals would you like to interact with?");
+
+                if (!int.TryParse(Console.ReadLine(), out actualAnimalsMenuOption))
+                {
+                    ShowErrorMessage();
+                    ShowWelcomeMessage();
+
+                    Console.WriteLine("These are your animals that you are able to interact with:");
+                    Console.WriteLine("(To add more, follow the Add Animal menu option one)");
+            
+                    ShowAnimalListSummary(animalInteractList);
+                }
+                else
+                {
+                    isActualAnimalMenuChoiceValid = true;
+                }
+            }
+
+            return actualAnimalsMenuOption;
         }
     }
 }
