@@ -27,16 +27,22 @@ namespace OneFileApp
                         {
                             Console.WriteLine("No animals loaded");
                         }
-                        else
+                        else if (animalsList.Count == 1)
                         {
-                            Console.WriteLine();
-                            Console.WriteLine($"you currently have {animalsList.Count} animals loaded.");
-                            Console.WriteLine();
-                            Console.WriteLine($"Your animals: ");
-                            Console.WriteLine();
+                            Console.WriteLine($"You currently have {animalsList.Count} animal loaded.");
+                            Console.Write("Your animal: ");
                             foreach (var pet in animalsList)
                             {
-                                Console.Write($"{pet.Identification} |");
+                                Console.Write($" {pet.Identification} | ");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine($"You currently have {animalsList.Count} animals loaded.");
+                            Console.Write("Your animals: ");
+                            foreach (var pet in animalsList)
+                            {
+                                Console.Write($" {pet.Identification} | ");
                             }
                         }
 
@@ -81,21 +87,6 @@ namespace OneFileApp
                     case 1:
                         Console.Clear();
                         Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
-                        Console.WriteLine();
-                        
-                        if (animalsList.Count == 0)
-                        {
-                            Console.WriteLine("No animals loaded");
-                        }
-                        else
-                        {
-                            Console.WriteLine($"you currently have {animalsList.Count} animals loaded.");
-                            Console.WriteLine();
-                            foreach (var pet in animalsList)
-                            {
-                                Console.Write($"{pet.Identification} |");
-                            }
-                        }
 
                         Console.WriteLine();
                         Console.WriteLine("The following animals are available:");
@@ -162,7 +153,7 @@ namespace OneFileApp
                         Console.WriteLine($"What name would you like to give your new {animalType}");
                         string animalName = Console.ReadLine();
 
-                        Console.WriteLine($"Brilliant, Your {animalType} now has the name of {animalName}- " +
+                        Console.WriteLine($"Brilliant, You have named your {animalType}, {animalName}- " +
                                           $"Congratulations on the new member to the family...");
                         Console.WriteLine("Press Enter to carry on.");
                         Console.ReadLine();
@@ -177,26 +168,10 @@ namespace OneFileApp
                     case 2:
                         Console.Clear();
                         Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
-                        Console.WriteLine();
-
-                        if (animalsList.Count == 0)
-                        {
-                            Console.WriteLine("No animals loaded");
-                        }
-                        else
-                        {
-                            Console.WriteLine();
-                            Console.WriteLine($"you currently have {animalsList.Count} animals loaded.");
-                            Console.WriteLine();
-                            foreach (var pet in animalsList)
-                            {
-                                Console.Write($"{pet.Identification} |");
-                            }
-                        }
 
                         Console.WriteLine();
                         Console.WriteLine();
-                        Console.WriteLine("The following animals are what you've added and are able to interact with them:");
+                        Console.WriteLine("You are able to interact with the following animals:");
                         Console.WriteLine("(To add more, follow the Add Animal menu option one)");
                         Console.WriteLine();
 
@@ -317,10 +292,8 @@ namespace OneFileApp
                                                     "please, make another choice.");
                         }
 
-                        Console.WriteLine();
-                        Console.WriteLine("Press enter to carry on.");
+                        Console.WriteLine("Press enter to carry on:");
                         Console.ReadLine();
-
                         menuChoice = 0;
                         break;
 
@@ -330,24 +303,7 @@ namespace OneFileApp
                         Console.Clear();
                         Console.WriteLine("Welcome, This is my one page Animal App, I hope you will enjoy it");
                         Console.WriteLine();
-                        Console.WriteLine("Once you make your choice- the animals will perform the action" +
-                                          "after each other");
-                        Console.WriteLine();
-                        if (animalsList.Count == 0)
-                        {
-                            Console.WriteLine("We currently have no animals in your list,");
-                            Console.WriteLine("please, could you go back to the Main Menu and load" +
-                                              "some animals first.");
-                            menuChoice = 0;
-                            Console.ReadLine();
-
-                        }
-
-                        Console.WriteLine();
-                        foreach (var pet in animalsList)
-                        {
-                            Console.Write($"{pet.Identification} |");
-                        }
+                        Console.WriteLine("Once you make your choice - All the animals will perform the action");
 
                         Console.WriteLine();
                         Console.WriteLine($"What action would yo like all your animals to do?");
@@ -396,6 +352,7 @@ namespace OneFileApp
                                         Console.WriteLine();
                                         Console.WriteLine("Press enter to carry on.");
                                         Console.ReadLine();
+                                        menuChoice = 3;
                                     }
                                     
                                     break;
@@ -438,11 +395,12 @@ namespace OneFileApp
                             }
                         }
 
-                        
 
+                        Console.WriteLine("Press Enter to carry on:");
                         Console.ReadLine();
 
                         menuChoice = 0;
+                            
                         break;
                 }
             }
@@ -467,19 +425,19 @@ namespace OneFileApp
 
         public void Run()
         {
-            Console.WriteLine("doof, doof, doof");
+            Console.WriteLine("Doof, doof, doof");
             Console.WriteLine("Look at him go!");
             Console.WriteLine("Feeling the earth moving!!");
             Console.WriteLine($"{Type} stops Running. He looks quite Hungry");
             Console.WriteLine($"{Identification} is running....");
-            Console.WriteLine("and tired now.");
+            Console.WriteLine("And tired now.");
             Console.WriteLine();
         }
 
         public void Eat()
         {
             Console.WriteLine($"{Identification} is eating...");
-            Console.WriteLine("munch, munch, munch");
+            Console.WriteLine("Munch, munch, munch");
             Console.WriteLine("Look at all that food go down!!!");
             Console.WriteLine("Burp!!"); 
             Console.WriteLine();
@@ -489,7 +447,7 @@ namespace OneFileApp
         {
             Console.WriteLine($"{Identification} is sleeping...");
             Console.WriteLine("ZZzzZZZzzzZZz");
-            Console.WriteLine("how loud can he snore!!!");
+            Console.WriteLine("How loud can he snore!!!");
             Console.WriteLine($"{Type} can sleep all day");
         }
 
@@ -497,7 +455,7 @@ namespace OneFileApp
         {
             Console.WriteLine("Is it a bird?!");
             Console.WriteLine("Is it a plane?!");
-            Console.WriteLine($"it's a {Type}!!");
+            Console.WriteLine($"It's a {Type}!!");
         }
 
         public void DogTalk()
@@ -526,8 +484,8 @@ namespace OneFileApp
 
         public void PenguinTalk()
         {
-            Console.WriteLine("Cheap!");
-            Console.WriteLine("Cheap!!");
+            Console.WriteLine("Gak!");
+            Console.WriteLine("Gak!!");
         }
     }
 }
