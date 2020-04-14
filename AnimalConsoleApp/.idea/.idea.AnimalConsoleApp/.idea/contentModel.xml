@@ -39,17 +39,6 @@
         <e p="Program.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
-      <e p="SemiRefinedApp" t="IncludeRecursive">
-        <e p="Animal.cs" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive" />
-        <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="AssemblyInfo.cs" t="Include" />
-        </e>
-        <e p="Run.cs" t="Include" />
-        <e p="SemiRefinedApp.csproj" t="IncludeRecursive" />
-      </e>
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_AnimalConsoleApp.411300198.00" t="ExcludeRecursive" />
