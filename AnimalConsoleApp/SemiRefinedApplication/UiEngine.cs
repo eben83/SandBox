@@ -346,9 +346,8 @@ namespace SemiRefinedApplication
         {
             ShowWelcomeMessage();
             ShowAnimalMenu();
-            var animalMenuChoice = 0;
 
-            string animalType = MapAnimalMenuChoiceToAnimalType(GetAnimalMenuChoice(animalMenuChoice));
+            string animalType = MapAnimalMenuChoiceToAnimalType(GetAnimalMenuChoice());
 
             Console.WriteLine($"What name would you like to give your new {animalType}");
             string animalName = Console.ReadLine();
@@ -399,30 +398,21 @@ namespace SemiRefinedApplication
 
         public string MapAnimalMenuChoiceToAnimalType(int animalMenuChoice)
         {
-            string animalChoice = "";
-            animalMenuChoice = 0;
             
             switch (animalMenuChoice)
             {
                 case 1:
-                    animalChoice = "Dog";
-                    break;
+                    return "Dog";
                 case 2:
-                    animalChoice = "Cat";
-                    break;
+                    return "Cat";
                 case 3:
-                    animalChoice = "Elephant";
-                    break;
+                    return "Elephant";
                 case 4:
-                    animalChoice = "Fish";
-                    break;
+                    return "Fish";
                 case 5:
-                    animalChoice = "Penguin";
-                    break;
+                    return "Penguin";
                 default: throw new Exception("Invalid choice, please try again.");
             }
-
-            return animalChoice;
         }
     }
 }
