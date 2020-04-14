@@ -344,17 +344,8 @@ namespace SemiRefinedApplication
 
         public  void ShowAnimalMenuAndAddAnimal(List<Animal> AddAnimalToList)
         {
-            Console.Clear();
-            Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-
-            Console.WriteLine();
-            Console.WriteLine("The following animals are available:");
-            Console.WriteLine("1. Dog");
-            Console.WriteLine("2. Cat");
-            Console.WriteLine("3. Elephant");
-            Console.WriteLine("4. Fish");
-            Console.WriteLine("5. Penguin");
-            Console.WriteLine();
+            ShowWelcomeMessage();
+            ShowMainMenu();
             
 
             var animalMenuOption = 0;
@@ -365,21 +356,9 @@ namespace SemiRefinedApplication
 
                 if (!int.TryParse(Console.ReadLine(), out animalMenuOption))
                 {
-                    Console.WriteLine("Sorry your choice is incorrect");
-                    Console.WriteLine("Please, try make another choice.");
-                    Console.ReadLine();
-
-                    Console.Clear();
-                    Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-                    Console.WriteLine();
-
-                    Console.WriteLine("The following animals are available:");
-                    Console.WriteLine("1. Dog");
-                    Console.WriteLine("2. Cat");
-                    Console.WriteLine("3. Elephant");
-                    Console.WriteLine("4. Fish");
-                    Console.WriteLine("5. Penguin");
-                    Console.WriteLine();
+                    ShowErrorMessage();
+                    ShowWelcomeMessage();
+                    ShowAnimalMenu();                    
                 }
                 else
                 {
@@ -420,6 +399,22 @@ namespace SemiRefinedApplication
             var animal = new Animal(animalName);
             animal.Type = animalType;
             AddAnimalToList.Add(animal);
+        }
+
+        public void ShowAnimalMenu()
+        {
+            Console.WriteLine("The following animals are available:");
+            Console.WriteLine("1. Dog");
+            Console.WriteLine("2. Cat");
+            Console.WriteLine("3. Elephant");
+            Console.WriteLine("4. Fish");
+            Console.WriteLine("5. Penguin");
+            Console.WriteLine();   
+        }
+
+        public void GetAnimalMenuChoice()
+        {
+            
         }
     }
 }
