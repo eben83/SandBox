@@ -348,24 +348,12 @@ namespace SemiRefinedApplication
             ShowMainMenu();
             
             var animalMenuOption = 0;
-            var isAnimalMenuChoiceValid = false;
-            while (!isAnimalMenuChoiceValid)
-            {
-                Console.WriteLine("Which animal would you like to add?");
 
-                if (!int.TryParse(Console.ReadLine(), out animalMenuOption))
-                {
-                    ShowErrorMessage();
-                    ShowWelcomeMessage();
-                    ShowAnimalMenu();                    
-                }
-                else
-                {
-                    isAnimalMenuChoiceValid = true;
-                }
-            }
+            // GetAnimalMenuChoice(animalMenuOption);
 
-            GetAnimalMenuChoice(animalMenuOption);
+            MapMenuIntToMenuString(GetAnimalMenuChoice(animalMenuOption));
+            string animalType = "";
+                
             
             Console.WriteLine($"What name would you like to give your new {animalType}");
             string animalName = Console.ReadLine();
@@ -393,30 +381,52 @@ namespace SemiRefinedApplication
 
         public int GetAnimalMenuChoice(int menuSelection)
         {
-            string animalType = "";
-            var animalMenuChoice = 0;
+            var isAnimalMenuChoiceValid = false;
+            while (!isAnimalMenuChoiceValid)
+            {
+                Console.WriteLine("Which animal would you like to add?");
+
+                if (!int.TryParse(Console.ReadLine(), out menuSelection))
+                {
+                    ShowErrorMessage();
+                    ShowWelcomeMessage();
+                    ShowAnimalMenu();                    
+                }
+                else
+                {
+                    isAnimalMenuChoiceValid = true;
+                }
+            }
+            
+            return menuSelection;
+        }
+
+        public string MapMenuIntToMenuString(int animalMenuChoice)
+        {
+            string animalChoice = "";
+            animalMenuChoice = 0;
             
             switch (animalMenuChoice)
             {
                 case 1:
-                    animalType = "Dog";
+                    animalChoice = "Dog";
                     break;
                 case 2:
-                    animalType = "Cat";
+                    animalChoice = "Cat";
                     break;
                 case 3:
-                    animalType = "Elephant";
+                    animalChoice = "Elephant";
                     break;
                 case 4:
-                    animalType = "Fish";
+                    animalChoice = "Fish";
                     break;
                 case 5:
-                    animalType = "Penguin";
+                    animalChoice = "Penguin";
                     break;
                 default: throw new Exception("Invalid choice, please try again.");
             }
 
-            return animalMenuChoice;
+            return animalChoice;
         }
     }
 }
