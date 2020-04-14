@@ -9,7 +9,7 @@ namespace SemiRefinedApplication
 
         public string Identification
         {
-            get { return $"{Type} - {Name}"; }
+            get { return $" {Type} - {Name}"; }
             
         }
         
