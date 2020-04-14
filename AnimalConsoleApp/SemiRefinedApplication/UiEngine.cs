@@ -365,8 +365,8 @@ namespace SemiRefinedApplication
                 }
             }
 
+            GetAnimalMenuChoice(animalMenuOption);
             
-
             Console.WriteLine($"What name would you like to give your new {animalType}");
             string animalName = Console.ReadLine();
 
@@ -391,7 +391,7 @@ namespace SemiRefinedApplication
             Console.WriteLine();   
         }
 
-        public int GetAnimalMenuChoice()
+        public int GetAnimalMenuChoice(int menuSelection)
         {
             string animalType = "";
             var animalMenuChoice = 0;
