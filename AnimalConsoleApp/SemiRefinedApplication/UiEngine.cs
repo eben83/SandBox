@@ -331,8 +331,7 @@ namespace SemiRefinedApplication
                                     throw new Exception("Wrong Choice, Please TRY again...");
                             }
                         }
-
-
+                        
                         Console.WriteLine("Press Enter to carry on:");
                         Console.ReadLine();
 
@@ -347,31 +346,10 @@ namespace SemiRefinedApplication
 
         public int ShowMainMenuAndGetMainMenuChoice(List<Animal> animalsList)
         {
-            var menuSelection = 0;
-            
             ShowWelcomeMessage();
             ShowAnimalListSummary(animalsList);
             ShowMainMenu();
-            
-            
-            var isMainMenuChoiceValid = false;
-            while (!isMainMenuChoiceValid)
-            {
-                Console.WriteLine("Please, make a selection, to carry on.");
-
-                if (!int.TryParse(Console.ReadLine(), out menuSelection))
-                {
-                    ShowErrorMessage();
-                    ShowWelcomeMessage();
-                    ShowMainMenu();
-                }
-                else
-                {
-                    isMainMenuChoiceValid = true;
-                }
-            }
-
-            return menuSelection;
+            return GetMenuChoice();
         }
         
         public void ShowWelcomeMessage()
@@ -407,6 +385,29 @@ namespace SemiRefinedApplication
             Console.WriteLine("Sorry your choice is incorrect");
             Console.WriteLine("Please, try make another choice.");
             Console.ReadLine();
+        }
+
+        public int GetMenuChoice()
+        {
+            var menuSelection = 0;
+            
+            var isMainMenuChoiceValid = false;
+            while (!isMainMenuChoiceValid)
+            {
+                Console.WriteLine("Please, make a selection, to carry on.");
+
+                if (!int.TryParse(Console.ReadLine(), out menuSelection))
+                {
+                    ShowErrorMessage();
+                    ShowWelcomeMessage();
+                    ShowMainMenu();
+                }
+                else
+                {
+                    isMainMenuChoiceValid = true;
+                }
+            }
+            return menuSelection;
         }
     }
 }
