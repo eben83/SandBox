@@ -344,7 +344,7 @@ namespace SemiRefinedApplication
 
         public int MainMenu(List<Animal> animalsList)
         {
-            var menuChoice = 0;
+            var menuSelection = 0;
             
             Console.Clear();
             Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
@@ -386,7 +386,7 @@ namespace SemiRefinedApplication
             {
                 Console.WriteLine("Please, make a selection, to carry on.");
 
-                if (!int.TryParse(Console.ReadLine(), out menuChoice))
+                if (!int.TryParse(Console.ReadLine(), out menuSelection))
                 {
                     Console.WriteLine("Sorry your choice is incorrect");
                     Console.WriteLine("Please, try make another choice.");
@@ -409,7 +409,7 @@ namespace SemiRefinedApplication
                 }
             }
 
-            return menuChoice;
+            return menuSelection;
         }
         
     }
