@@ -345,16 +345,11 @@ namespace SemiRefinedApplication
         public  void ShowAnimalMenuAndAddAnimal(List<Animal> AddAnimalToList)
         {
             ShowWelcomeMessage();
-            ShowMainMenu();
-            
-            var animalMenuOption = 0;
+            ShowAnimalMenu();
+            var animalMenuChoice = 0;
 
-            // GetAnimalMenuChoice(animalMenuOption);
+            string animalType = MapAnimalMenuChoiceToAnimalType(GetAnimalMenuChoice(animalMenuChoice));
 
-            MapMenuIntToMenuString(GetAnimalMenuChoice(animalMenuOption));
-            string animalType = "";
-                
-            
             Console.WriteLine($"What name would you like to give your new {animalType}");
             string animalName = Console.ReadLine();
 
@@ -401,7 +396,7 @@ namespace SemiRefinedApplication
             return menuSelection;
         }
 
-        public string MapMenuIntToMenuString(int animalMenuChoice)
+        public string MapAnimalMenuChoiceToAnimalType(int animalMenuChoice)
         {
             string animalChoice = "";
             animalMenuChoice = 0;
