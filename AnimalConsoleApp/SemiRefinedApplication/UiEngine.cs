@@ -293,13 +293,13 @@ namespace SemiRefinedApplication
         {
             ShowWelcomeMessage();
             ShowInteractMenu(animalInteractList);
-            var selectedAnimal = GetAnimalFromMenu(animalInteractList);
+            var selectedAnimal = GetAnimalFromMenu(animalInteractList);//validation
             
             Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
             ShowAnimalActionMenu();
             GetAnimalFromMenu(animalInteractList);
+            GetValidAnimalActionMenuChoice();
             
-
             switch(selectedAnimal)
             {
                 case 1:
@@ -399,21 +399,20 @@ namespace SemiRefinedApplication
             Console.WriteLine("5. Talk");
         }
 
-        public int GetValidAnimalActionMenuChoice()
+        public int GetValidAnimalActionMenuChoice(string animalType)
         {
             var animalActionOption = 0;
             var isActualAnimalActionOption = false;
             
             while (! isActualAnimalActionOption)
             {
+                Console.WriteLine($"Which action would you like your {animalType} to perform");
+                
                 if (!int.TryParse(Console.ReadLine(), out animalActionOption))
                 {
-                    Console.WriteLine("Sorry your choice is incorrect");
-                    Console.WriteLine("Please, try make another choice.");
-                    Console.ReadLine();
-                
-                    Console.Clear();
-                    Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
+                    ShowErrorMessage();
+                    ShowWelcomeMessage();
+                    ShowAnimalActionMenu();
                 }
                 else
                 {
