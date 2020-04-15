@@ -293,12 +293,12 @@ namespace SemiRefinedApplication
         {
             ShowWelcomeMessage();
             ShowInteractMessage();
-            ShowAnimalListSummary(animalInteractList);
             
             Animal selectedAnimal = animalInteractList[GetAnimalChoice()];
-
+            
             Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
             AnimalActionMenu();
+
 
             //TODO:Implement the rest of the method here
             var animalActionOption = 0;
