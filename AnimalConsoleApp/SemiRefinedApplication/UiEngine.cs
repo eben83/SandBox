@@ -297,7 +297,7 @@ namespace SemiRefinedApplication
             Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
             ShowAnimalActionMenu();
 
-            GetValidAnimalActionMenuChoice(selectedAnimal);
+            PerformAnimalAction(selectedAnimal);
             
             
 
@@ -426,6 +426,11 @@ namespace SemiRefinedApplication
                     throw new Exception("Sorry, something went wrong there, " +
                                         "please, make another choice.");
             }
-        } 
+        }
+
+        public void PerformTalkAction(Animal selectedAnimal)
+        {
+            
+        }
     }
 }
