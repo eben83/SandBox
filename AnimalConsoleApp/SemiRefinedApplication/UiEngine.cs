@@ -27,140 +27,14 @@ namespace SemiRefinedApplication
                         break;
 
                     case 2:
-                        Console.Clear();
-                        Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-
-                        Console.WriteLine();
-                        Console.WriteLine();
-                        Console.WriteLine("You are able to interact with the following animals:");
-                        Console.WriteLine("(To add more, follow the Add Animal menu option one)");
-                        Console.WriteLine();
-
-                        for (int i = 0; i < animalsList.Count; i++)
-                        {
-                            Console.WriteLine($"{i}. {animalsList[i].Identification}");
-                        }
-
-                        var actualAnimalsMenuOption = 0;
-                        var isActualAnimalMenuChoiceValid = false;
-                        while (!isActualAnimalMenuChoiceValid)
-                        {
-                            Console.WriteLine();
-                            Console.WriteLine("Which of your animals would you like to interact with?");
-
-                            if (!int.TryParse(Console.ReadLine(), out actualAnimalsMenuOption))
-                            {
-                                Console.WriteLine("Sorry your choice is incorrect");
-                                Console.WriteLine("Please, try make another choice.");
-                                Console.ReadLine();
-
-                                Console.Clear();
-                                Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-                                Console.WriteLine();
-
-                                Console.WriteLine("These are your animals that you are able to interact with:");
-                                Console.WriteLine("(To add more, follow the Add Animal menu option one)");
                         
-                                for (int i = 0; i < animalsList.Count; i++)
-                                {
-                                    Console.WriteLine($"{i}. {animalsList[i].Identification}");
-                                }
-                            }
-                            else
-                            {
-                                isActualAnimalMenuChoiceValid = true;
-                            }
-                        }
-
-                        Animal selectedAnimal = animalsList[actualAnimalsMenuOption];
-
-                        Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
-                        Console.WriteLine("1. Eat");
-                        Console.WriteLine("2. Sleep");
-                        Console.WriteLine("3. Run");
-                        Console.WriteLine("4. Fly");
-                        Console.WriteLine("5. Talk");
-
-                        //TODO:Implement the rest of the method here
-                        var animalActionOption = 0;
-                        var isActualAnimalActionOption = false;
-
-                        while (! isActualAnimalActionOption)
-                        {
-                            if (!int.TryParse(Console.ReadLine(), out animalActionOption))
-                            {
-                                Console.WriteLine("Sorry your choice is incorrect");
-                                Console.WriteLine("Please, try make another choice.");
-                                menuChoice = 0;
-                                Console.ReadLine();
-                            
-                                Console.Clear();
-                                Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-                            }
-                            else
-                            {
-                                isActualAnimalActionOption = true;
-                            }
-                        }
-                        switch(animalActionOption)
-                        {
-                            case 1:
-                                selectedAnimal.Eat();
-                                break;
-                            case 2:
-                                selectedAnimal.Sleep();
-                                break;
-                            case 3:
-                                selectedAnimal.Run();
-                                break;
-                            case 4:
-                                if (selectedAnimal.Type == "Penguin")
-                                {
-                                    selectedAnimal.Fly();
-                                }
-                                else
-                                {
-                                    Console.WriteLine($"Sorry your {selectedAnimal.Type} does not have the ability to fly.");
-                                    Console.WriteLine();
-                                }
-                                
-                                break;
-                            case 5:
-                                
-                                if (selectedAnimal.Type == "Dog")
-                                {
-                                    selectedAnimal.DogTalk();
-                                }
-                                else if (selectedAnimal.Type == "Cat")
-                                {
-                                    selectedAnimal.CatTalk();
-                                }
-                                else if (selectedAnimal.Type == "Elephant")
-                                {
-                                    selectedAnimal.ElephantTalk();
-                                }
-                                else if (selectedAnimal.Type == "Fish")
-                                {
-                                    selectedAnimal.FishTalk();
-                                }
-                                else if (selectedAnimal.Type == "Penguin")
-                                {
-                                    selectedAnimal.PenguinTalk();
-                                }
-                                break;
-                            default:
-                                throw new Exception("Sorry, something went wrong there, " +
-                                                    "please, make another choice.");
-                        }
-
-                        Console.WriteLine("Press enter to carry on:");
-                        Console.ReadLine();
 
                                     menuChoice = 0;
                                     break;
 
                     case 3:
                         var allAnimalActionOption = 0;
+                        var isActualAnimalActionOption = false;
                         Console.Clear();
                         Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
                         Console.WriteLine();
@@ -417,7 +291,134 @@ namespace SemiRefinedApplication
 
         public void InteractWithOneAnimal(List<Animal> animalInteractList)
         {
-            
+            Console.Clear();
+                        Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
+
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine("You are able to interact with the following animals:");
+                        Console.WriteLine("(To add more, follow the Add Animal menu option one)");
+                        Console.WriteLine();
+
+                        for (int i = 0; i < animalInteractList.Count; i++)
+                        {
+                            Console.WriteLine($"{i}. {animalInteractList[i].Identification}");
+                        }
+
+                        var actualAnimalsMenuOption = 0;
+                        var isActualAnimalMenuChoiceValid = false;
+                        while (!isActualAnimalMenuChoiceValid)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Which of your animals would you like to interact with?");
+
+                            if (!int.TryParse(Console.ReadLine(), out actualAnimalsMenuOption))
+                            {
+                                Console.WriteLine("Sorry your choice is incorrect");
+                                Console.WriteLine("Please, try make another choice.");
+                                Console.ReadLine();
+
+                                Console.Clear();
+                                Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
+                                Console.WriteLine();
+
+                                Console.WriteLine("These are your animals that you are able to interact with:");
+                                Console.WriteLine("(To add more, follow the Add Animal menu option one)");
+                        
+                                for (int i = 0; i < animalInteractList.Count; i++)
+                                {
+                                    Console.WriteLine($"{i}. {animalInteractList[i].Identification}");
+                                }
+                            }
+                            else
+                            {
+                                isActualAnimalMenuChoiceValid = true;
+                            }
+                        }
+
+                        Animal selectedAnimal = animalInteractList[actualAnimalsMenuOption];
+
+                        Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
+                        Console.WriteLine("1. Eat");
+                        Console.WriteLine("2. Sleep");
+                        Console.WriteLine("3. Run");
+                        Console.WriteLine("4. Fly");
+                        Console.WriteLine("5. Talk");
+
+                        //TODO:Implement the rest of the method here
+                        var animalActionOption = 0;
+                        var isActualAnimalActionOption = false;
+
+                        while (! isActualAnimalActionOption)
+                        {
+                            if (!int.TryParse(Console.ReadLine(), out animalActionOption))
+                            {
+                                Console.WriteLine("Sorry your choice is incorrect");
+                                Console.WriteLine("Please, try make another choice.");
+                                // menuChoice = 0;
+                                Console.ReadLine();
+                            
+                                Console.Clear();
+                                Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
+                            }
+                            else
+                            {
+                                isActualAnimalActionOption = true;
+                            }
+                        }
+                        switch(animalActionOption)
+                        {
+                            case 1:
+                                selectedAnimal.Eat();
+                                break;
+                            case 2:
+                                selectedAnimal.Sleep();
+                                break;
+                            case 3:
+                                selectedAnimal.Run();
+                                break;
+                            case 4:
+                                if (selectedAnimal.Type == "Penguin")
+                                {
+                                    selectedAnimal.Fly();
+                                }
+                                else
+                                {
+                                    Console.WriteLine($"Sorry your {selectedAnimal.Type} does not have the ability to fly.");
+                                    Console.WriteLine();
+                                }
+                                
+                                break;
+                            case 5:
+                                
+                                if (selectedAnimal.Type == "Dog")
+                                {
+                                    selectedAnimal.DogTalk();
+                                }
+                                else if (selectedAnimal.Type == "Cat")
+                                {
+                                    selectedAnimal.CatTalk();
+                                }
+                                else if (selectedAnimal.Type == "Elephant")
+                                {
+                                    selectedAnimal.ElephantTalk();
+                                }
+                                else if (selectedAnimal.Type == "Fish")
+                                {
+                                    selectedAnimal.FishTalk();
+                                }
+                                else if (selectedAnimal.Type == "Penguin")
+                                {
+                                    selectedAnimal.PenguinTalk();
+                                }
+                                break;
+                            default:
+                                throw new Exception("Sorry, something went wrong there, " +
+                                                    "please, make another choice.");
+                        }
+
+                        Console.WriteLine("Press enter to carry on:");
+                        Console.ReadLine();
         }
 
         public int GetAnimalChoice()
