@@ -299,6 +299,7 @@ namespace SemiRefinedApplication
             
             Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
             AnimalActionMenu();
+            GetAndValidateAnimalAction(animalInteractList);
 
 
             //TODO:Implement the rest of the method here
