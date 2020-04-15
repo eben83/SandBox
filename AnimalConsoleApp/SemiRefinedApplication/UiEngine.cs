@@ -294,13 +294,11 @@ namespace SemiRefinedApplication
             ShowWelcomeMessage();
             ShowInteractMenu(animalInteractList);
             var selectedAnimal = GetAnimalFromMenu(animalInteractList);//validation
-            
             Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
             ShowAnimalActionMenu();
-            GetAnimalFromMenu(animalInteractList);
-            GetValidAnimalActionMenuChoice();
+             
             
-            switch(selectedAnimal)
+            switch(GetValidAnimalActionMenuChoice(selectedAnimal))
             {
                 case 1:
                     selectedAnimal.Eat();
@@ -353,6 +351,7 @@ namespace SemiRefinedApplication
 
             Console.WriteLine("Press enter to carry on:");
             Console.ReadLine();
+            return null;
         }
 
         public void ShowInteractMenu(List<Animal> animalsList)
@@ -399,7 +398,7 @@ namespace SemiRefinedApplication
             Console.WriteLine("5. Talk");
         }
 
-        public int GetValidAnimalActionMenuChoice(string animalType)
+        public int GetValidAnimalActionMenuChoice(Animal animalType)
         {
             var animalActionOption = 0;
             var isActualAnimalActionOption = false;
