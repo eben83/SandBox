@@ -297,44 +297,8 @@ namespace SemiRefinedApplication
             
             Animal selectedAnimal = animalInteractList[GetAnimalChoice()];
 
-            // var actualAnimalsMenuOption = 0;
-            // var isActualAnimalMenuChoiceValid = false;
-            // while (!isActualAnimalMenuChoiceValid)
-            // {
-            //     Console.WriteLine();
-            //     Console.WriteLine("Which of your animals would you like to interact with?");
-            //
-            //     if (!int.TryParse(Console.ReadLine(), out actualAnimalsMenuOption))
-            //     {
-            //         Console.WriteLine("Sorry your choice is incorrect");
-            //         Console.WriteLine("Please, try make another choice.");
-            //         Console.ReadLine();
-            //
-            //         Console.Clear();
-            //         Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-            //         Console.WriteLine();
-            //
-            //         Console.WriteLine("These are your animals that you are able to interact with:");
-            //         Console.WriteLine("(To add more, follow the Add Animal menu option one)");
-            //
-            //         for (int i = 0; i < animalInteractList.Count; i++)
-            //         {
-            //             Console.WriteLine($"{i}. {animalInteractList[i].Identification}");
-            //         }
-            //     }
-            //     else
-            //     {
-            //         isActualAnimalMenuChoiceValid = true;
-            //     }
-            // }
-
-
             Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
-            Console.WriteLine("1. Eat");
-            Console.WriteLine("2. Sleep");
-            Console.WriteLine("3. Run");
-            Console.WriteLine("4. Fly");
-            Console.WriteLine("5. Talk");
+            AnimalActionMenu();
 
             //TODO:Implement the rest of the method here
             var animalActionOption = 0;
@@ -415,7 +379,6 @@ namespace SemiRefinedApplication
         public void ShowInteractMessage()
         {
             Console.WriteLine();
-            Console.WriteLine();
             Console.WriteLine("You are able to interact with the following animals:");
             Console.WriteLine("(To add more, follow the Add Animal menu option one)");
             Console.WriteLine();
@@ -434,6 +397,7 @@ namespace SemiRefinedApplication
                 {
                     ShowErrorMessage();
                     ShowWelcomeMessage();
+                    AnimalActionMenu();
 
                     Console.WriteLine("These are your animals that you are able to interact with:");
                     Console.WriteLine("(To add more, follow the Add Animal menu option one)");
