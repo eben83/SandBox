@@ -309,49 +309,9 @@ namespace SemiRefinedApplication
             ShowWelcomeMessage();
             Console.WriteLine("Once you make your choice - All the animals will perform the action");
             ShowAnimalActionMenu();
-            GetValidAllAnimalActions();
+            var actionMenuSelected = GetValidAllAnimalActions();
             
-            
-            // foreach (var pet in animalsAction)
-            // {
-            //     switch (allAnimalActionOption)
-            //     {
-            //         case 1:
-            //             Console.WriteLine(pet.Identification);
-            //             pet.Eat();
-            //             break;
-            //         case 2:
-            //             Console.WriteLine(pet.Identification);
-            //             if (pet.Type == "Penguin")
-            //             {
-            //                 pet.Fly();    
-            //             }
-            //             else
-            //             {
-            //                 Console.WriteLine($"Sorry, but your {pet.Type} does not fly.");
-            //                 Console.WriteLine("choose another animal- if you wish to fly.");
-            //                 Console.WriteLine();
-            //                 Console.WriteLine("Press enter to carry on.");
-            //                 Console.ReadLine();
-            //             }
-            //             
-            //             break;
-            //         case 3:
-            //             Console.WriteLine(pet.Identification);
-            //             pet.Run();
-            //             break;
-            //         case 4:
-            //             Console.WriteLine(pet.Identification);
-            //             pet.Sleep();
-            //             break;
-            //         case 5:
-            //             Console.WriteLine(pet.Identification);
-            //             pet.Talk();
-            //             break;
-            //         default:
-            //             throw new Exception("Wrong Choice, Please TRY again...");
-            //     }
-            // }
+            PerformAllAnimalsActions(animalsAction, actionMenuSelected);
             
             Console.WriteLine("Press Enter to carry on:");
             Console.ReadLine();
@@ -377,6 +337,39 @@ namespace SemiRefinedApplication
             }
 
             return allAnimalActionOption;
+        }
+
+        public void PerformAllAnimalsActions(List<Animal> allAnimalsAction, int actioMenuChoice)
+        {
+            
+            foreach (var pet in allAnimalsAction)
+            {
+                switch (actioMenuChoice)
+                {
+                    case 1:
+                        Console.WriteLine(pet.Identification);
+                        pet.Eat();
+                        break;
+                    case 2:
+                        Console.WriteLine(pet.Identification);
+                        pet.Sleep();
+                        break;
+                    case 3:
+                        Console.WriteLine(pet.Identification);
+                        pet.Run();
+                        break;
+                    case 4:
+                        Console.WriteLine(pet.Identification);
+                        pet.Fly();
+                        break;
+                    case 5:
+                        Console.WriteLine(pet.Identification);
+                        pet.Talk();
+                        break;
+                    default:
+                        throw new Exception("Wrong Choice, Please TRY again...");
+                }
+            }
         }
     }
 }
