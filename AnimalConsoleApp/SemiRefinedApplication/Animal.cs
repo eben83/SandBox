@@ -58,14 +58,19 @@ namespace SemiRefinedApplication
             switch (Type)
             {
                 case "Dog:":
+                    DogTalk();
                     break;
                 case "cat":
+                    CatTalk();
                     break;
                 case "Elephant":
+                    ElephantTalk();
                     break;
                 case "Fish":
+                    FishTalk();
                     break;
                 case "Penguin":
+                    PenguinTalk();
                     break;
             }
         }
