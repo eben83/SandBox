@@ -312,15 +312,12 @@ namespace SemiRefinedApplication
                         
                         if (!int.TryParse(Console.ReadLine(), out allAnimalActionOption))
                         {
-                            Console.WriteLine();
-                            Console.WriteLine("Sorry your choice is incorrect");
-                            Console.WriteLine("Please, try make another choice.");
+                            ShowErrorMessage();
                             Console.WriteLine("Press enter to carry on.");
                             Console.ReadLine();
-                            Console.ReadLine();
                             
-                            Console.Clear();
-                            Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
+                            ShowWelcomeMessage();
+                            
                         }
                         else
                         {
