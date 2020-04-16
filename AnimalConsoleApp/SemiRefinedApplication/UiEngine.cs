@@ -99,30 +99,8 @@ namespace SemiRefinedApplication
                                     pet.Sleep();
                                     break;
                                 case 5:
-                                    if (pet.Type == "Dog")
-                                    {
-                                        pet.DogTalk();
-                                    }
-                                    else if (pet.Type == "Cat")
-                                    {
-                                        pet.CatTalk();
-                                    }
-                                    else if (pet.Type == "Elephant")
-                                    {
-                                        pet.ElephantTalk();
-                                    }
-                                    else if (pet.Type == "Fish")
-                                    {
-                                        pet.FishTalk();
-                                    }
-                                    else if (pet.Type == "Penguin")
-                                    {
-                                        pet.PenguinTalk();
-                                    }
-
-                                    Console.WriteLine();
-                                    Console.WriteLine("Press enter to carry on");
-                                    Console.ReadLine();
+                                    Console.WriteLine(pet.Identification);
+                                    pet.Talk();
                                     break;
                                 default:
                                     throw new Exception("Wrong Choice, Please TRY again...");
@@ -288,7 +266,6 @@ namespace SemiRefinedApplication
             }
         }
 
-    //case 2- 
         public void InteractWithOneAnimal(List<Animal> animalInteractList)
         {
             ShowWelcomeMessage();
@@ -397,7 +374,7 @@ namespace SemiRefinedApplication
             }
         }
 
-        public void PerformTalkAction(Animal selectedAnimal)
+        public void InteractAllAnimals(Animal selectedAnimal)
         {
             
         }
