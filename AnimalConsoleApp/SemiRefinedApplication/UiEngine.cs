@@ -220,7 +220,7 @@ namespace SemiRefinedApplication
             ShowWelcomeMessage();
             ShowAnimalMenu();
 
-            string animalType = MapAnimalMenuChoiceToAnimalType(GetAndValidAnimalMenuChoice());
+            string animalType = MapAnimalMenuChoiceToAnimalType(GetValidAnimalMenuChoice());
 
             Console.WriteLine($"What name would you like to give your new {animalType}");
             string animalName = Console.ReadLine();
@@ -246,7 +246,7 @@ namespace SemiRefinedApplication
             Console.WriteLine();   
         }
 
-        public int GetAndValidAnimalMenuChoice()
+        public int GetValidAnimalMenuChoice()
         {
             var menuSelection = 0;
             var isAnimalMenuChoiceValid = false;
@@ -293,14 +293,12 @@ namespace SemiRefinedApplication
         {
             ShowWelcomeMessage();
             ShowInteractMenu(animalInteractList);
-            var selectedAnimal = GetAnimalFromMenu(animalInteractList);//validation
+            var selectedAnimal = GetAnimalFromMenu(animalInteractList);
             Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
             ShowAnimalActionMenu(selectedAnimal);
             var animalAction =GetValidAnimalActionMenuChoice(selectedAnimal);
             PerformAnimalAction(animalAction, selectedAnimal);
             
-            
-
             Console.WriteLine("Press enter to carry on:");
             Console.ReadLine();
         }
@@ -340,7 +338,7 @@ namespace SemiRefinedApplication
             return actualAnimals[actualAnimalsMenuChoice];
         }
         
-        public void ShowAnimalActionMenu(Animal animal)
+        public void ShowAnimalActionMenu(Animal animalSelectedToPerform)
         {
             Console.WriteLine("1. Eat");
             Console.WriteLine("2. Sleep");
@@ -348,7 +346,7 @@ namespace SemiRefinedApplication
             Console.WriteLine("4. Fly");
             Console.WriteLine("5. Talk");
             Console.WriteLine();
-            Console.WriteLine($"Which action would you like your {animal.Type} to perform");
+            Console.WriteLine($"Which action would you like your {animalSelectedToPerform.Type} to perform");
             
         }
 
