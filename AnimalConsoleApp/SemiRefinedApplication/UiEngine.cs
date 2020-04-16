@@ -386,39 +386,10 @@ namespace SemiRefinedApplication
                     selectedAction.Sleep();
                     break;
                 case 4:
-                    // if (GetAndValidAnimalMenuChoice().Type == "Penguin")
-                    // {
-                    //     chosenAnimal.Fly();
-                    // }
-                    // else
-                    // {
-                    //     Console.WriteLine($"Sorry your {chosenAnimal.Type} does not have the ability to fly.");
-                    //     Console.WriteLine();
-                    // }
-                    
+                    selectedAction.Fly();                    
                     break;
                 case 5:
-                    
-                    // if (chosenAnimal.Type == "Dog")
-                    // {
-                    //     chosenAnimal.DogTalk();
-                    // }
-                    // else if (chosenAnimal.Type == "Cat")
-                    // {
-                    //     chosenAnimal.CatTalk();
-                    // }
-                    // else if (chosenAnimal.Type == "Elephant")
-                    // {
-                    //     chosenAnimal.ElephantTalk();
-                    // }
-                    // else if (chosenAnimal.Type == "Fish")
-                    // {
-                    //     chosenAnimal.FishTalk();
-                    // }
-                    // else if (chosenAnimal.Type == "Penguin")
-                    // {
-                    //     chosenAnimal.PenguinTalk();
-                    // }
+                    selectedAction.Talk();
                     break;
                 default:
                     throw new Exception("Sorry, something went wrong there, " +
