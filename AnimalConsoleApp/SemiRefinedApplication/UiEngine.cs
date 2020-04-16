@@ -365,6 +365,7 @@ namespace SemiRefinedApplication
                     case 5:
                         Console.WriteLine(pet.Identification);
                         pet.Talk();
+                        
                         break;
                     default:
                         throw new Exception("Wrong Choice, Please TRY again...");

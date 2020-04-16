@@ -57,10 +57,10 @@ namespace SemiRefinedApplication
         {
             switch (Type)
             {
-                case "Dog:":
+                case "Dog":
                     DogTalk();
                     break;
-                case "cat":
+                case "Cat":
                     CatTalk();
                     break;
                 case "Elephant":
