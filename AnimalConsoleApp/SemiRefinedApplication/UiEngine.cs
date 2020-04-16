@@ -32,7 +32,7 @@ namespace SemiRefinedApplication
                         break;
 
                     case 3:
-                        InteractWithAllAnimals();
+                        InteractWithAllAnimals(animals);
                         menuChoice = 0;
                         break;
                 }
@@ -296,7 +296,7 @@ namespace SemiRefinedApplication
             }
         }
 
-        public void InteractWithAllAnimals()
+        public void InteractWithAllAnimals(List<Animal> animals)
         {
             var allAnimalActionOption = 0;
                         var isActualAnimalActionOption = false;
@@ -320,7 +320,6 @@ namespace SemiRefinedApplication
                             Console.WriteLine("Please, try make another choice.");
                             Console.WriteLine("Press enter to carry on.");
                             Console.ReadLine();
-                            menuChoice = 0;
                             Console.ReadLine();
                             
                             Console.Clear();
@@ -352,7 +351,6 @@ namespace SemiRefinedApplication
                                         Console.WriteLine();
                                         Console.WriteLine("Press enter to carry on.");
                                         Console.ReadLine();
-                                        menuChoice = 3;
                                     }
                                     
                                     break;
