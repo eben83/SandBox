@@ -289,21 +289,20 @@ namespace SemiRefinedApplication
         }
 
     //case 2- 
-        public Animal InteractWithOneAnimal(List<Animal> animalInteractList)
+        public void InteractWithOneAnimal(List<Animal> animalInteractList)
         {
             ShowWelcomeMessage();
             ShowInteractMenu(animalInteractList);
             var selectedAnimal = GetAnimalFromMenu(animalInteractList);//validation
             Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
             ShowAnimalActionMenu();
-
-            PerformAnimalAction(selectedAnimal);
+            var animalAction =GetValidAnimalActionMenuChoice(selectedAnimal);
+            PerformAnimalAction(animalAction, selectedAnimal);
             
             
 
             Console.WriteLine("Press enter to carry on:");
             Console.ReadLine();
-            return null;
         }
 
         public void ShowInteractMenu(List<Animal> animalsList)
@@ -348,6 +347,7 @@ namespace SemiRefinedApplication
             Console.WriteLine("3. Run");
             Console.WriteLine("4. Fly");
             Console.WriteLine("5. Talk");
+            
         }
 
         public int GetValidAnimalActionMenuChoice(Animal animalType)
@@ -374,53 +374,53 @@ namespace SemiRefinedApplication
             return animalActionOption;
         }
 
-        public void PerformAnimalAction(Animal selectedAnimal)
+        public void PerformAnimalAction(int menuChoice ,Animal selectedAction)
         {
-            switch(GetValidAnimalActionMenuChoice(selectedAnimal))
+            switch(menuChoice)
             {
                 case 1:
-                    selectedAnimal.Eat();
+                    selectedAction.Eat();
                     break;
                 case 2:
-                    selectedAnimal.Sleep();
+                    selectedAction.Run();
                     break;
                 case 3:
-                    selectedAnimal.Run();
+                    selectedAction.Sleep();
                     break;
                 case 4:
-                    if (selectedAnimal.Type == "Penguin")
-                    {
-                        selectedAnimal.Fly();
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Sorry your {selectedAnimal.Type} does not have the ability to fly.");
-                        Console.WriteLine();
-                    }
+                    // if (GetAndValidAnimalMenuChoice().Type == "Penguin")
+                    // {
+                    //     chosenAnimal.Fly();
+                    // }
+                    // else
+                    // {
+                    //     Console.WriteLine($"Sorry your {chosenAnimal.Type} does not have the ability to fly.");
+                    //     Console.WriteLine();
+                    // }
                     
                     break;
                 case 5:
                     
-                    if (selectedAnimal.Type == "Dog")
-                    {
-                        selectedAnimal.DogTalk();
-                    }
-                    else if (selectedAnimal.Type == "Cat")
-                    {
-                        selectedAnimal.CatTalk();
-                    }
-                    else if (selectedAnimal.Type == "Elephant")
-                    {
-                        selectedAnimal.ElephantTalk();
-                    }
-                    else if (selectedAnimal.Type == "Fish")
-                    {
-                        selectedAnimal.FishTalk();
-                    }
-                    else if (selectedAnimal.Type == "Penguin")
-                    {
-                        selectedAnimal.PenguinTalk();
-                    }
+                    // if (chosenAnimal.Type == "Dog")
+                    // {
+                    //     chosenAnimal.DogTalk();
+                    // }
+                    // else if (chosenAnimal.Type == "Cat")
+                    // {
+                    //     chosenAnimal.CatTalk();
+                    // }
+                    // else if (chosenAnimal.Type == "Elephant")
+                    // {
+                    //     chosenAnimal.ElephantTalk();
+                    // }
+                    // else if (chosenAnimal.Type == "Fish")
+                    // {
+                    //     chosenAnimal.FishTalk();
+                    // }
+                    // else if (chosenAnimal.Type == "Penguin")
+                    // {
+                    //     chosenAnimal.PenguinTalk();
+                    // }
                     break;
                 default:
                     throw new Exception("Sorry, something went wrong there, " +
