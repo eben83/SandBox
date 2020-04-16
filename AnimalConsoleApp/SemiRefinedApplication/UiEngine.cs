@@ -194,7 +194,7 @@ namespace SemiRefinedApplication
             ShowInteractMenu(animalInteractList);
             var selectedAnimal = GetAnimalFromMenu(animalInteractList);
             Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
-            ShowAnimalActionMenu(selectedAnimal);
+            ShowAnimalActionMenu();
             var animalAction =GetValidAnimalActionMenuChoice(selectedAnimal);
             PerformAnimalAction(animalAction, selectedAnimal);
             
@@ -237,7 +237,7 @@ namespace SemiRefinedApplication
             return actualAnimals[actualAnimalsMenuChoice];
         }
         
-        public void ShowAnimalActionMenu(Animal animalSelectedToPerform)
+        public void ShowAnimalActionMenu()
         {
             Console.WriteLine("1. Eat");
             Console.WriteLine("2. Sleep");
@@ -245,8 +245,11 @@ namespace SemiRefinedApplication
             Console.WriteLine("4. Fly");
             Console.WriteLine("5. Talk");
             Console.WriteLine();
+        }
+
+        public void ShowAnimalActionMenuMessage(Animal animalSelectedToPerform)
+        {
             Console.WriteLine($"Which action would you like your {animalSelectedToPerform.Type} to perform");
-            
         }
 
         public int GetValidAnimalActionMenuChoice(Animal animalsList)
@@ -260,7 +263,9 @@ namespace SemiRefinedApplication
                 {
                     ShowErrorMessage();
                     ShowWelcomeMessage();
-                    ShowAnimalActionMenu(animalsList);
+                    ShowAnimalActionMenu();
+                    ShowAnimalActionMenuMessage(animalsList);
+                    
                 }
                 else
                 {
@@ -300,19 +305,11 @@ namespace SemiRefinedApplication
         {
             var allAnimalActionOption = 0;
                         var isActualAnimalActionOption = false;
-                        Console.Clear();
-                        Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-                        Console.WriteLine();
+                        ShowWelcomeMessage();
                         Console.WriteLine("Once you make your choice - All the animals will perform the action");
 
-                        Console.WriteLine();
-                        Console.WriteLine($"What action would yo like all your animals to do?");
-                        Console.WriteLine("1. Eat");
-                        Console.WriteLine("2. Sleep");
-                        Console.WriteLine("3. Run");
-                        Console.WriteLine("4. Fly");
-                        Console.WriteLine("5. Talk");
-
+                        ShowAnimalActionMenu();
+                        
                         if (!int.TryParse(Console.ReadLine(), out allAnimalActionOption))
                         {
                             Console.WriteLine();
