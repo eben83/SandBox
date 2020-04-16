@@ -193,10 +193,9 @@ namespace SemiRefinedApplication
             ShowWelcomeMessage();
             ShowInteractMenu(animalInteractList);
             var selectedAnimal = GetAnimalFromMenu(animalInteractList);
-            Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
-            ShowAnimalActionMenu();
-            var animalAction =GetValidAnimalActionMenuChoice(selectedAnimal);
-            PerformAnimalAction(animalAction, selectedAnimal);
+            ShowAnimalActionMenu(selectedAnimal.Type);
+            var animalActionChoice =GetValidAnimalActionMenuChoice(selectedAnimal.Type);
+            PerformAnimalAction(animalActionChoice, selectedAnimal);
             
             Console.WriteLine("Press enter to carry on:");
             Console.ReadLine();
@@ -237,22 +236,28 @@ namespace SemiRefinedApplication
             return actualAnimals[actualAnimalsMenuChoice];
         }
         
-        public void ShowAnimalActionMenu()
+        static void ShowAnimalActionMenu(string animalType)
         {
+            if (string.IsNullOrWhiteSpace(animalType))
+            {
+                Console.WriteLine("Which action would you like your animals to perform");
+            }
+            else
+            {
+                Console.WriteLine($"Which action would you like your {animalType} to perform");
+            }
+            
             Console.WriteLine("1. Eat");
             Console.WriteLine("2. Sleep");
             Console.WriteLine("3. Run");
             Console.WriteLine("4. Fly");
             Console.WriteLine("5. Talk");
             Console.WriteLine();
+            
         }
+        
 
-        public void ShowAnimalActionMenuMessage(Animal animalSelectedToPerform)
-        {
-            Console.WriteLine($"Which action would you like your {animalSelectedToPerform.Type} to perform");
-        }
-
-        public int GetValidAnimalActionMenuChoice(Animal animalsList)
+        public int GetValidAnimalActionMenuChoice(string animalType)
         {
             var animalActionOption = 0;
             var isActualAnimalActionOption = false;
@@ -263,8 +268,8 @@ namespace SemiRefinedApplication
                 {
                     ShowErrorMessage();
                     ShowWelcomeMessage();
-                    ShowAnimalActionMenu();
-                    ShowAnimalActionMenuMessage(animalsList);
+                    ShowAnimalActionMenu(animalType);
+                    
                     
                 }
                 else
@@ -276,24 +281,24 @@ namespace SemiRefinedApplication
             return animalActionOption;
         }
 
-        public void PerformAnimalAction(int menuChoice ,Animal selectedAction)
+        public void PerformAnimalAction(int menuChoice ,Animal animal)
         {
             switch(menuChoice)
             {
                 case 1:
-                    selectedAction.Eat();
+                    animal.Eat();
                     break;
                 case 2:
-                    selectedAction.Sleep();
+                    animal.Sleep();
                     break;
                 case 3:
-                    selectedAction.Run();
+                    animal.Run();
                     break;
                 case 4:
-                    selectedAction.Fly();                    
+                    animal.Fly();                    
                     break;
                 case 5:
-                    selectedAction.Talk();
+                    animal.Talk();
                     break;
                 default:
                     throw new Exception("Sorry, something went wrong there, " +
@@ -301,76 +306,73 @@ namespace SemiRefinedApplication
             }
         }
 
-        public void InteractWithAllAnimals(List<Animal> animalsAction)
+        public void InteractWithAllAnimals(Animal animal, string animaalType)
         {
-            var allAnimalActionOption = 0;
-            
-            
             ShowWelcomeMessage();
-            Console.WriteLine("Once you make your choice - All the animals will perform the action");
-            ShowAnimalActionMenu();
-            var actionMenuSelected = GetValidAllAnimalActions();
+            ShowAnimalActionMenu(null);
+            var actionMenuSelected = GetValidAnimalActionMenuChoice(animaalType);
             
-            PerformAllAnimalsActions(animalsAction, actionMenuSelected);
+            PerformAnimalAction(actionMenuSelected, animal);
             
             Console.WriteLine("Press Enter to carry on:");
             Console.ReadLine();
         }
 
-        public int GetValidAllAnimalActions()
-        {
-            var isActualAnimalActionOption = false;
-            int allAnimalActionOption;
-            
-            if (!int.TryParse(Console.ReadLine(), out allAnimalActionOption))
-            {
-                ShowErrorMessage();
-                Console.WriteLine("Press enter to carry on.");
-                Console.ReadLine();
-                
-                ShowWelcomeMessage();
-                
-            }
-            else
-            {
-                isActualAnimalActionOption = true;
-            }
+        // public int GetValidAllAnimalActions()
+        // {
+        //     var isActualAnimalActionOption = false;
+        //     int allAnimalActionOption;
+        //     
+        //     if (!int.TryParse(Console.ReadLine(), out allAnimalActionOption))
+        //     {
+        //         ShowErrorMessage();
+        //         Console.WriteLine("Press enter to carry on.");
+        //         
+        //         Console.ReadLine();
+        //         
+        //         ShowWelcomeMessage();
+        //         
+        //     }
+        //     else
+        //     {
+        //         isActualAnimalActionOption = true;
+        //     }
+        //
+        //     return allAnimalActionOption;
+        // }
 
-            return allAnimalActionOption;
-        }
-
-        public void PerformAllAnimalsActions(List<Animal> allAnimalsAction, int actioMenuChoice)
-        {
-            
-            foreach (var pet in allAnimalsAction)
-            {
-                switch (actioMenuChoice)
-                {
-                    case 1:
-                        Console.WriteLine(pet.Identification);
-                        pet.Eat();
-                        break;
-                    case 2:
-                        Console.WriteLine(pet.Identification);
-                        pet.Sleep();
-                        break;
-                    case 3:
-                        Console.WriteLine(pet.Identification);
-                        pet.Run();
-                        break;
-                    case 4:
-                        Console.WriteLine(pet.Identification);
-                        pet.Fly();
-                        break;
-                    case 5:
-                        Console.WriteLine(pet.Identification);
-                        pet.Talk();
-                        
-                        break;
-                    default:
-                        throw new Exception("Wrong Choice, Please TRY again...");
-                }
-            }
-        }
+        // public void PerformAllAnimalsActions(List<Animal> allAnimalsAction, int actioMenuChoice)
+        // {
+        //     
+        //     foreach (var pet in allAnimalsAction)
+        //     {
+        //         switch (actioMenuChoice)
+        //         {
+        //             case 1:
+        //                 Console.WriteLine(pet.Identification);
+        //                 pet.Eat();
+        //                 break;
+        //             case 2:
+        //                 Console.WriteLine(pet.Identification);
+        //                 pet.Sleep();
+        //                 break;
+        //             case 3:
+        //                 Console.WriteLine(pet.Identification);
+        //                 pet.Run();
+        //                 break;
+        //             case 4:
+        //                 Console.WriteLine(pet.Identification);
+        //                 pet.Fly();
+        //                 break;
+        //             case 5:
+        //                 Console.WriteLine(pet.Identification);
+        //                 pet.Talk();
+        //                 
+        //                 break;
+        //             default:
+        //                 throw new Exception("Wrong Choice, Please TRY again...");
+        //         }
+        //     }
+        // }
     }
 }
