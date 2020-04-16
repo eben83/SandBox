@@ -53,31 +53,47 @@ namespace SemiRefinedApplication
             Console.WriteLine($"It's a {Type}!!");
         }
 
-        public void DogTalk()
+        public void Talk()
+        {
+            switch (Type)
+            {
+                case "Dog:":
+                    break;
+                case "cat":
+                    break;
+                case "Elephant":
+                    break;
+                case "Fish":
+                    break;
+                case "Penguin":
+                    break;
+            }
+        }
+        private void DogTalk()
         {
             Console.WriteLine("Bark!!");
             Console.WriteLine("Bark!!");
         }
 
-        public void CatTalk()
+        private void CatTalk()
         {
             Console.WriteLine("Meow");
             Console.WriteLine("Meow");
         }
 
-        public void ElephantTalk()
+        private void ElephantTalk()
         {
             Console.WriteLine("Trumpet!!!!");
             Console.WriteLine("Trumpet!!!!");
         }
 
-        public void FishTalk()
+        private void FishTalk()
         {
             Console.WriteLine("Bubble");
             Console.WriteLine("Bubble");
         }
 
-        public void PenguinTalk()
+        private void PenguinTalk()
         {
             Console.WriteLine("Gak!");
             Console.WriteLine("Gak!!");
