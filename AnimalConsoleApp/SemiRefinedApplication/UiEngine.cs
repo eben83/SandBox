@@ -284,10 +284,10 @@ namespace SemiRefinedApplication
                     selectedAction.Eat();
                     break;
                 case 2:
-                    selectedAction.Run();
+                    selectedAction.Sleep();
                     break;
                 case 3:
-                    selectedAction.Sleep();
+                    selectedAction.Run();
                     break;
                 case 4:
                     selectedAction.Fly();                    
@@ -304,25 +304,13 @@ namespace SemiRefinedApplication
         public void InteractWithAllAnimals(List<Animal> animalsAction)
         {
             var allAnimalActionOption = 0;
-            var isActualAnimalActionOption = false;
+            
             
             ShowWelcomeMessage();
             Console.WriteLine("Once you make your choice - All the animals will perform the action");
             ShowAnimalActionMenu();
+            GetValidAllAnimalActions();
             
-            if (!int.TryParse(Console.ReadLine(), out allAnimalActionOption))
-            {
-                ShowErrorMessage();
-                Console.WriteLine("Press enter to carry on.");
-                Console.ReadLine();
-                
-                ShowWelcomeMessage();
-                
-            }
-            else
-            {
-                isActualAnimalActionOption = true;
-            }
             
             // foreach (var pet in animalsAction)
             // {
@@ -369,8 +357,26 @@ namespace SemiRefinedApplication
             Console.ReadLine();
         }
 
-        public void GetValidAllAnimalActions()
+        public int GetValidAllAnimalActions()
         {
+            var isActualAnimalActionOption = false;
+            int allAnimalActionOption;
+            
+            if (!int.TryParse(Console.ReadLine(), out allAnimalActionOption))
+            {
+                ShowErrorMessage();
+                Console.WriteLine("Press enter to carry on.");
+                Console.ReadLine();
+                
+                ShowWelcomeMessage();
+                
+            }
+            else
+            {
+                isActualAnimalActionOption = true;
+            }
+
+            return allAnimalActionOption;
         }
     }
 }
