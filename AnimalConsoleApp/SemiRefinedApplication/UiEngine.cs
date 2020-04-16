@@ -295,7 +295,7 @@ namespace SemiRefinedApplication
             ShowInteractMenu(animalInteractList);
             var selectedAnimal = GetAnimalFromMenu(animalInteractList);//validation
             Console.WriteLine($"Your {selectedAnimal.Type} can perform the following actions:");
-            ShowAnimalActionMenu();
+            ShowAnimalActionMenu(selectedAnimal);
             var animalAction =GetValidAnimalActionMenuChoice(selectedAnimal);
             PerformAnimalAction(animalAction, selectedAnimal);
             
@@ -340,30 +340,30 @@ namespace SemiRefinedApplication
             return actualAnimals[actualAnimalsMenuChoice];
         }
         
-        public void ShowAnimalActionMenu()
+        public void ShowAnimalActionMenu(Animal animal)
         {
             Console.WriteLine("1. Eat");
             Console.WriteLine("2. Sleep");
             Console.WriteLine("3. Run");
             Console.WriteLine("4. Fly");
             Console.WriteLine("5. Talk");
+            Console.WriteLine();
+            Console.WriteLine($"Which action would you like your {animal.Type} to perform");
             
         }
 
-        public int GetValidAnimalActionMenuChoice(Animal animalType)
+        public int GetValidAnimalActionMenuChoice(Animal animalsList)
         {
             var animalActionOption = 0;
             var isActualAnimalActionOption = false;
             
             while (! isActualAnimalActionOption)
             {
-                Console.WriteLine($"Which action would you like your {animalType} to perform");
-                
                 if (!int.TryParse(Console.ReadLine(), out animalActionOption))
                 {
                     ShowErrorMessage();
                     ShowWelcomeMessage();
-                    ShowAnimalActionMenu();
+                    ShowAnimalActionMenu(animalsList);
                 }
                 else
                 {
