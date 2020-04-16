@@ -301,72 +301,76 @@ namespace SemiRefinedApplication
             }
         }
 
-        public void InteractWithAllAnimals(List<Animal> animals)
+        public void InteractWithAllAnimals(List<Animal> animalsAction)
         {
             var allAnimalActionOption = 0;
-                        var isActualAnimalActionOption = false;
-                        ShowWelcomeMessage();
-                        Console.WriteLine("Once you make your choice - All the animals will perform the action");
+            var isActualAnimalActionOption = false;
+            
+            ShowWelcomeMessage();
+            Console.WriteLine("Once you make your choice - All the animals will perform the action");
+            ShowAnimalActionMenu();
+            
+            if (!int.TryParse(Console.ReadLine(), out allAnimalActionOption))
+            {
+                ShowErrorMessage();
+                Console.WriteLine("Press enter to carry on.");
+                Console.ReadLine();
+                
+                ShowWelcomeMessage();
+                
+            }
+            else
+            {
+                isActualAnimalActionOption = true;
+            }
+            
+            // foreach (var pet in animalsAction)
+            // {
+            //     switch (allAnimalActionOption)
+            //     {
+            //         case 1:
+            //             Console.WriteLine(pet.Identification);
+            //             pet.Eat();
+            //             break;
+            //         case 2:
+            //             Console.WriteLine(pet.Identification);
+            //             if (pet.Type == "Penguin")
+            //             {
+            //                 pet.Fly();    
+            //             }
+            //             else
+            //             {
+            //                 Console.WriteLine($"Sorry, but your {pet.Type} does not fly.");
+            //                 Console.WriteLine("choose another animal- if you wish to fly.");
+            //                 Console.WriteLine();
+            //                 Console.WriteLine("Press enter to carry on.");
+            //                 Console.ReadLine();
+            //             }
+            //             
+            //             break;
+            //         case 3:
+            //             Console.WriteLine(pet.Identification);
+            //             pet.Run();
+            //             break;
+            //         case 4:
+            //             Console.WriteLine(pet.Identification);
+            //             pet.Sleep();
+            //             break;
+            //         case 5:
+            //             Console.WriteLine(pet.Identification);
+            //             pet.Talk();
+            //             break;
+            //         default:
+            //             throw new Exception("Wrong Choice, Please TRY again...");
+            //     }
+            // }
+            
+            Console.WriteLine("Press Enter to carry on:");
+            Console.ReadLine();
+        }
 
-                        ShowAnimalActionMenu();
-                        
-                        if (!int.TryParse(Console.ReadLine(), out allAnimalActionOption))
-                        {
-                            ShowErrorMessage();
-                            Console.WriteLine("Press enter to carry on.");
-                            Console.ReadLine();
-                            
-                            ShowWelcomeMessage();
-                            
-                        }
-                        else
-                        {
-                            isActualAnimalActionOption = true;
-                        }
-                        
-                        foreach (var pet in animals)
-                        {
-                            switch (allAnimalActionOption)
-                            {
-                                case 1:
-                                    Console.WriteLine(pet.Identification);
-                                    pet.Eat();
-                                    break;
-                                case 2:
-                                    Console.WriteLine(pet.Identification);
-                                    if (pet.Type == "Penguin")
-                                    {
-                                        pet.Fly();    
-                                    }
-                                    else
-                                    {
-                                        Console.WriteLine($"Sorry, but your {pet.Type} does not fly.");
-                                        Console.WriteLine("choose another animal- if you wish to fly.");
-                                        Console.WriteLine();
-                                        Console.WriteLine("Press enter to carry on.");
-                                        Console.ReadLine();
-                                    }
-                                    
-                                    break;
-                                case 3:
-                                    Console.WriteLine(pet.Identification);
-                                    pet.Run();
-                                    break;
-                                case 4:
-                                    Console.WriteLine(pet.Identification);
-                                    pet.Sleep();
-                                    break;
-                                case 5:
-                                    Console.WriteLine(pet.Identification);
-                                    pet.Talk();
-                                    break;
-                                default:
-                                    throw new Exception("Wrong Choice, Please TRY again...");
-                            }
-                        }
-                        
-                        Console.WriteLine("Press Enter to carry on:");
-                        Console.ReadLine();
+        public void GetValidAllAnimalActions()
+        {
         }
     }
 }
