@@ -8,10 +8,18 @@ namespace NumberApp
     {
         public void Run()
         {
+            int[] numbers = new int[300];
             for (int i = 0; i <= 300; i++)
             {
-                Console.WriteLine(i);
+                numbers.Append(i);
             }
+        }
+        
+        public void calculation(int x)
+        {
+            multiplesOfThree(x);
+            multipleOfFive(x);
+            multipleOfThreeAndFive(x);
         }
 
         public void multiplesOfThree(int x)
