@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace NumberApp
 {
@@ -6,51 +8,35 @@ namespace NumberApp
     {
         public void Run()
         {
-            ShowAllNumbers();
-        }
-
-        public void  ShowAllNumbers()
-        {
-            for (int i = 1; i <= 300; i++)
+            for (int i = 0; i <= 300; i++)
             {
-                MultiplesOfNumberThreeAndFive(i);
-                MultipleOfNumbersFive(i);
-                MultiplesOfNumberThree(i);
                 Console.WriteLine(i);
             }
-
         }
 
-        public int MultiplesOfNumberThree(int x)
+        public void multiplesOfThree(int x)
         {
-            
             if (x % 3 == 0)
             {
-                Console.WriteLine($"{x}.Pluto");
+                Console.WriteLine($"Pluto");
             }
-
-            return x;
         }
 
-        public int MultipleOfNumbersFive(int x)
+        public void multipleOfFive(int x)
         {
             if (x % 5 == 0)
             {
-                Console.WriteLine($"{x}. Mars");
+                Console.WriteLine($"Mars");
             }
-
-            return x;
         }
 
-        public int MultiplesOfNumberThreeAndFive(int x)
+        public void multipleOfThreeAndFive(int x)
         {
             if (x % 3 == 0 && x % 5 == 0)
             {
-                Console.WriteLine($"{x}. Eureka");
+                Console.WriteLine($"Eureka");
             }
-
-            return x;
         }
-        
     }
+    
 }
