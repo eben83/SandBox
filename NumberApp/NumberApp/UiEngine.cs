@@ -8,11 +8,31 @@ namespace NumberApp
     {
         public void Run()
         {
-            int[] numbers = new int[300];
-            for (int i = 0; i <= 300; i++)
+            var max = 300;
+            var i = 1;
+
+            while (i <= max)
             {
-                numbers.Append(i);
+                Console.WriteLine(i);
+                i += 1;
             }
+
+            // var three = 3;
+            // var five = 5;
+            //
+            // for (int i = 0; i < 300; i++)
+            // {
+            //
+            //     if (i % three == 0)
+            //     {
+            //         Console.WriteLine("pluto");
+            //     }
+            //
+            //     if (i % five == 0)
+            //     {
+            //         Console.WriteLine("mars");
+            //     }
+            // }
         }
         
         public void calculation(int x)
@@ -24,8 +44,9 @@ namespace NumberApp
 
         public void multiplesOfThree(int x)
         {
-            if (x % 3 == 0)
+            if (x == 3)
             {
+                x += 3;
                 Console.WriteLine($"Pluto");
             }
         }
