@@ -4,9 +4,9 @@ namespace NumberApp
 {
     class Program
     {
-        static void Main(string[] args)
+        public void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new UiEngine().Run();
         }
     }
 }
