@@ -306,7 +306,7 @@ namespace SemiRefinedApplication
             }
         }
 
-        public void InteractWithAllAnimals(Animal animals)
+        public void InteractWithAllAnimals(List<Animal> animals)
         {
             ShowWelcomeMessage();
             ShowAnimalActionMenu(null);
