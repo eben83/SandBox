@@ -9,13 +9,16 @@ namespace NumberApp
         public void Run()
         {
             var max = 300;
-            var i = 1;
+            var i = 0;
 
             while (i <= max)
             {
-                Console.WriteLine(i);
                 i += 1;
+                multipleOfFive(i);
+                multiplesOfThree(i);
+                Console.WriteLine(i);
             }
+
 
             // var three = 3;
             // var five = 5;
