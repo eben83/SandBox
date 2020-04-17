@@ -17,10 +17,7 @@ namespace NumberApp
 
                 
 
-                if (i % 3 == 0 && i % 5 == 0)
-                {
-                    Console.WriteLine($"{i}. Eureka");
-                }
+                
             }
 
         }
@@ -41,9 +38,12 @@ namespace NumberApp
             }
         }
 
-        public void MultiplesOfNumberThreeAndFive()
+        public void MultiplesOfNumberThreeAndFive(int x)
         {
-            
+            if (x % 3 == 0 && x % 5 == 0)
+            {
+                Console.WriteLine($"{x}. Eureka");
+            }
         }
         
     }
