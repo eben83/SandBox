@@ -9,12 +9,21 @@ namespace NumberApp
             ShowAllNumbers();
         }
 
-        public void ShowAllNumbers()
+        public void  ShowAllNumbers()
         {
             for (int i = 0; i <= 300; i++)
             {
-                Console.WriteLine(i);
+                if (i % 3)
+                {
+                    Console.WriteLine("Pluto");
+                }
             }
+
         }
+
+        public int MultiplesOfNumber(int x)
+        {
+        }
+        
     }
 }

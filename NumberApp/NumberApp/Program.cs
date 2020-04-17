@@ -4,7 +4,7 @@ namespace NumberApp
 {
     class Program
     {
-        public void Main(string[] args)
+        static void Main(string[] args)
         {
             new UiEngine().Run();
         }
