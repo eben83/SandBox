@@ -11,13 +11,12 @@ namespace NumberApp
 
         public void  ShowAllNumbers()
         {
-            for (int i = 0; i <= 300; i++)
+            for (int i = 1; i <= 300; i++)
             {
+                Console.WriteLine(i);
                 MultiplesOfNumberThree(i);
-
-                
-
-                
+                MultipleOfNumbersFive(i);
+                MultiplesOfNumberThreeAndFive(i);
             }
 
         }
