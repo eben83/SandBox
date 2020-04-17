@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 
 namespace NumberApp
 {
@@ -8,48 +9,37 @@ namespace NumberApp
     {
         public void Run()
         {
-            var max = 300;
-            var i = 0;
-
-            while (i <= max)
+            var three = 3;
+            var five = 5;
+            
+            for (int i = 0; i <= 300; i++)
             {
-                i += 1;
-                multipleOfFive(i);
-                multiplesOfThree(i);
+                if (i % three == 0 && i % five == 0)
+                {
+                    Console.WriteLine("Eureka");
+                    continue;
+                }
+                if (i % three == 0)
+                {
+                    Console.WriteLine("pluto");
+                    continue;
+                }
+            
+                if (i % five == 0)
+                {
+                    Console.WriteLine("mars");
+                    continue;
+                }
+
+
                 Console.WriteLine(i);
             }
-
-
-            // var three = 3;
-            // var five = 5;
-            //
-            // for (int i = 0; i < 300; i++)
-            // {
-            //
-            //     if (i % three == 0)
-            //     {
-            //         Console.WriteLine("pluto");
-            //     }
-            //
-            //     if (i % five == 0)
-            //     {
-            //         Console.WriteLine("mars");
-            //     }
-            // }
         }
         
-        public void calculation(int x)
-        {
-            multiplesOfThree(x);
-            multipleOfFive(x);
-            multipleOfThreeAndFive(x);
-        }
-
         public void multiplesOfThree(int x)
         {
             if (x == 3)
             {
-                x += 3;
                 Console.WriteLine($"Pluto");
             }
         }
@@ -72,3 +62,14 @@ namespace NumberApp
     }
     
 }
+
+// var max = 300;
+// var i = 0;
+
+// while (i <= max)
+// {
+//     i += 1;
+//     multipleOfFive(i);
+//     multiplesOfThree(i);
+//     Console.WriteLine(i);
+// }
