@@ -13,6 +13,7 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="UiEngine.cs" t="Include" />
       </e>
       <e p="NumberApp.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
