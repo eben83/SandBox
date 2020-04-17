@@ -13,22 +13,32 @@ namespace NumberApp
         {
             for (int i = 0; i <= 300; i++)
             {
-                MultiplesOfNumber(i);
+                MultiplesOfNumberThree(i);
 
                 if (i % 5 == 0)
                 {
                     Console.WriteLine($"{i}. Mars");
                 }
+
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                    Console.WriteLine($"{i}. Eureka");
+                }
             }
 
         }
 
-        public void MultiplesOfNumber(int x)
+        public void MultiplesOfNumberThree(int x)
         {
             if (x % 3 == 0)
             {
                 Console.WriteLine($"{x}.Pluto");
             }
+        }
+
+        public void multipleOfNumberFive(int x)
+        {
+            
         }
         
     }
