@@ -15,10 +15,7 @@ namespace NumberApp
             {
                 MultiplesOfNumberThree(i);
 
-                if (i % 5 == 0)
-                {
-                    Console.WriteLine($"{i}. Mars");
-                }
+                
 
                 if (i % 3 == 0 && i % 5 == 0)
                 {
@@ -36,7 +33,15 @@ namespace NumberApp
             }
         }
 
-        public void multipleOfNumberFive(int x)
+        public void MultipleOfNumbersFive(int x)
+        {
+            if (x % 5 == 0)
+            {
+                Console.WriteLine($"{x}. Mars");
+            }
+        }
+
+        public void MultiplesOfNumberThreeAndFive()
         {
             
         }
