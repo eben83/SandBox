@@ -6,6 +6,7 @@ namespace NumberApp
     {
         public void Run()
         {
+            ShowAllNumbers();
         }
 
         public void ShowAllNumbers()
