@@ -173,8 +173,8 @@ namespace SemiRefinedApplication
             ShowInteractMenu(animalInteractList);
             var selectedAnimal = GetAnimalFromMenu(animalInteractList);
             ShowAnimalActionMenu(selectedAnimal.Type);
-            AnimalActions animalActionChoice = (AnimalActions) GetValidAnimalActionMenuChoice(selectedAnimal.Type);
-            PerformAnimalAction(animalActionChoice, selectedAnimal);
+            AnimalActions animalAction = (AnimalActions) GetValidAnimalActionMenuChoice(selectedAnimal.Type);
+            PerformAnimalAction(animalAction, selectedAnimal);
             
             Console.WriteLine("Press enter to carry on:");
             Console.ReadLine();
@@ -226,8 +226,8 @@ namespace SemiRefinedApplication
                 Console.WriteLine($"Which action would you like your {animalType} to perform");
             }
 
-            foreach (var animalActionChoice in Enum.GetValues(typeof(AnimalActions)))
-                Console.WriteLine($"{(int) animalActionChoice}. {animalActionChoice}");
+            foreach (var animalAction in Enum.GetValues(typeof(AnimalActions)))
+                Console.WriteLine($"{(int) animalAction}. {animalAction}");
             
             Console.WriteLine();
             
@@ -257,9 +257,9 @@ namespace SemiRefinedApplication
             return animalActionOption;
         }
 
-        public void PerformAnimalAction(AnimalActions actionMenuSelected ,Animal animal)
+        public void PerformAnimalAction(AnimalActions animalAction ,Animal animal)
         {
-            switch(actionMenuSelected)
+            switch(animalAction)
             {
                 case AnimalActions.Run:
                     animal.Run();
@@ -286,10 +286,10 @@ namespace SemiRefinedApplication
         {
             ShowWelcomeMessage();
             ShowAnimalActionMenu(null);
-            AnimalActions actionMenuSelected = (AnimalActions) GetValidAnimalActionMenuChoice(null);
+            AnimalActions animalActionSelected = (AnimalActions) GetValidAnimalActionMenuChoice(null);
 
             foreach (var animal in animals)
-                PerformAnimalAction(actionMenuSelected, animal);
+                PerformAnimalAction(animalActionSelected, animal);
             
             Console.WriteLine("Press Enter to carry on:");
             Console.ReadLine();
