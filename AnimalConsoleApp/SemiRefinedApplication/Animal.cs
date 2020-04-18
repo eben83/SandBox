@@ -4,9 +4,9 @@ namespace SemiRefinedApplication
 {
     public class Animal
     {
-        public string Type { get; set; }
+        public AnimalTypes Type { get; set; }
         public string Name { get; set; }
-
+        
         public string Identification
         {
             get { return $" {Type} - {Name}"; }
@@ -57,26 +57,38 @@ namespace SemiRefinedApplication
         {
             switch (Type)
             {
-                case "Dog":
+                case AnimalTypes.Dog:
                     DogTalk();
                     break;
-                case "Cat":
+                case AnimalTypes.Cat:
                     CatTalk();
                     break;
-                case "Elephant":
+                case AnimalTypes.Elephant:
                     ElephantTalk();
                     break;
-                case "Fish":
+                case AnimalTypes.Salmon:
                     FishTalk();
                     break;
-                case "Penguin":
+                case AnimalTypes.Penguin:
                     PenguinTalk();
                     break;
+                case AnimalTypes.Eagle:
+                    EagleTalk();
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
         }
+
+        private void EagleTalk()
+        {
+            Console.WriteLine("Boo");
+            Console.WriteLine("Boo");
+        }
+
         private void DogTalk()
         {
-            Console.WriteLine("Bark!!");
+            Console.WriteLine("Bark!!");    
             Console.WriteLine("Bark!!");
         }
 
