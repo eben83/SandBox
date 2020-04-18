@@ -173,8 +173,8 @@ namespace SemiRefinedApplication
             ShowInteractMenu(animalInteractList);
             var selectedAnimal = GetAnimalFromMenu(animalInteractList);
             ShowAnimalActionMenu(selectedAnimal.Type);
-            var animalActionChoice =GetValidAnimalActionMenuChoice(selectedAnimal.Type);
-            PerformAnimalAction((AnimalsAction)animalActionChoice, selectedAnimal);
+            AnimalActions animalActionChoice = (AnimalActions) GetValidAnimalActionMenuChoice(selectedAnimal.Type);
+            PerformAnimalAction(animalActionChoice, selectedAnimal);
             
             Console.WriteLine("Press enter to carry on:");
             Console.ReadLine();
@@ -226,8 +226,8 @@ namespace SemiRefinedApplication
                 Console.WriteLine($"Which action would you like your {animalType} to perform");
             }
 
-            foreach (var animalAction in Enum.GetValues(typeof(AnimalsAction)))
-                Console.WriteLine($"{(int) animalAction}. {animalAction}");
+            foreach (var animalActionChoice in Enum.GetValues(typeof(AnimalActions)))
+                Console.WriteLine($"{(int) animalActionChoice}. {animalActionChoice}");
             
             Console.WriteLine();
             
@@ -257,23 +257,23 @@ namespace SemiRefinedApplication
             return animalActionOption;
         }
 
-        public void PerformAnimalAction(AnimalsAction menuChoice ,Animal animal)
+        public void PerformAnimalAction(AnimalActions actionMenuSelected ,Animal animal)
         {
-            switch(menuChoice)
+            switch(actionMenuSelected)
             {
-                case AnimalsAction.Run:
+                case AnimalActions.Run:
                     animal.Run();
                     break;
-                case AnimalsAction.Eat:
+                case AnimalActions.Eat:
                     animal.Eat();
                     break;
-                case AnimalsAction.Sleep:
+                case AnimalActions.Sleep:
                     animal.Sleep();
                     break;
-                case AnimalsAction.Fly:
+                case AnimalActions.Fly:
                     animal.Fly();
                     break;
-                case AnimalsAction.Talk:
+                case AnimalActions.Talk:
                     animal.Talk();
                     break;
                 default:
@@ -286,10 +286,10 @@ namespace SemiRefinedApplication
         {
             ShowWelcomeMessage();
             ShowAnimalActionMenu(null);
-            var actionMenuSelected = GetValidAnimalActionMenuChoice(null);
+            AnimalActions actionMenuSelected = (AnimalActions) GetValidAnimalActionMenuChoice(null);
 
             foreach (var animal in animals)
-                PerformAnimalAction((AnimalsAction)actionMenuSelected, animal);
+                PerformAnimalAction(actionMenuSelected, animal);
             
             Console.WriteLine("Press Enter to carry on:");
             Console.ReadLine();
