@@ -115,5 +115,30 @@ namespace SemiRefinedApplication
             Console.WriteLine("Gak!");
             Console.WriteLine("Gak!!");
         }
+
+        public void Command(AnimalActions animalAction)
+        {
+            switch(animalAction)
+            {
+                case AnimalActions.Run:
+                    Run();
+                    break;
+                case AnimalActions.Eat:
+                    Eat();
+                    break;
+                case AnimalActions.Sleep:
+                    Sleep();
+                    break;
+                case AnimalActions.Fly:
+                    Fly();
+                    break;
+                case AnimalActions.Talk:
+                    Talk();
+                    break;
+                default:
+                    throw new Exception("Sorry, something went wrong there, " +
+                                        "please, make another choice.");
+            }
+        }
     }
 }

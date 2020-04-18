@@ -174,7 +174,7 @@ namespace SemiRefinedApplication
             var selectedAnimal = GetAnimalFromMenu(animalInteractList);
             ShowAnimalActionMenu(selectedAnimal.Type);
             AnimalActions animalAction = (AnimalActions) GetValidAnimalActionMenuChoice(selectedAnimal.Type);
-            PerformAnimalAction(animalAction, selectedAnimal);
+            selectedAnimal.Command(animalAction);
             
             Console.WriteLine("Press enter to carry on:");
             Console.ReadLine();
@@ -257,31 +257,6 @@ namespace SemiRefinedApplication
             return animalActionOption;
         }
 
-        public void PerformAnimalAction(AnimalActions animalAction ,Animal animal)
-        {
-            switch(animalAction)
-            {
-                case AnimalActions.Run:
-                    animal.Run();
-                    break;
-                case AnimalActions.Eat:
-                    animal.Eat();
-                    break;
-                case AnimalActions.Sleep:
-                    animal.Sleep();
-                    break;
-                case AnimalActions.Fly:
-                    animal.Fly();
-                    break;
-                case AnimalActions.Talk:
-                    animal.Talk();
-                    break;
-                default:
-                    throw new Exception("Sorry, something went wrong there, " +
-                                        "please, make another choice.");
-            }
-        }
-
         public void InteractWithAllAnimals(List<Animal> animals)
         {
             ShowWelcomeMessage();
@@ -289,7 +264,7 @@ namespace SemiRefinedApplication
             AnimalActions animalActionSelected = (AnimalActions) GetValidAnimalActionMenuChoice(null);
 
             foreach (var animal in animals)
-                PerformAnimalAction(animalActionSelected, animal);
+                animal.Command(animalActionSelected);
             
             Console.WriteLine("Press Enter to carry on:");
             Console.ReadLine();
