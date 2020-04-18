@@ -120,7 +120,7 @@ namespace SemiRefinedApplication
             ShowWelcomeMessage();
             ShowAnimalMenu();
 
-            string animalType = MapAnimalMenuChoiceToAnimalType(GetValidAnimalMenuChoice());
+            AnimalTypes animalType =(AnimalTypes) GetValidAnimalMenuChoice();
 
             Console.WriteLine($"What name would you like to give your new {animalType}");
             string animalName = Console.ReadLine();
@@ -138,11 +138,8 @@ namespace SemiRefinedApplication
         public void ShowAnimalMenu()
         {
             Console.WriteLine("The following animals are available:");
-            Console.WriteLine("1. Dog");
-            Console.WriteLine("2. Cat");
-            Console.WriteLine("3. Elephant");
-            Console.WriteLine("4. Fish");
-            Console.WriteLine("5. Penguin");
+            foreach (var animalType in Enum.GetValues(typeof(AnimalTypes)))
+                Console.WriteLine($"{(int) animalType}. {animalType}");
             Console.WriteLine();   
         }
 
@@ -169,25 +166,7 @@ namespace SemiRefinedApplication
             return menuSelection;
         }
 
-        public string MapAnimalMenuChoiceToAnimalType(int animalMenuChoice)
-        {
-            
-            switch (animalMenuChoice)
-            {
-                case 1:
-                    return "Dog";
-                case 2:
-                    return "Cat";
-                case 3:
-                    return "Elephant";
-                case 4:
-                    return "Fish";
-                case 5:
-                    return "Penguin";
-                default: throw new Exception("Invalid choice, please try again.");
-            }
-        }
-
+        
         public void InteractWithOneAnimal(List<Animal> animalInteractList)
         {
             ShowWelcomeMessage();
@@ -236,9 +215,9 @@ namespace SemiRefinedApplication
             return actualAnimals[actualAnimalsMenuChoice];
         }
         
-        static void ShowAnimalActionMenu(string animalType)
+        static void ShowAnimalActionMenu(AnimalTypes? animalType)
         {
-            if (string.IsNullOrWhiteSpace(animalType))
+            if (!animalType.HasValue)
             {
                 Console.WriteLine("Which action would you like your animals to perform");
             }
@@ -255,9 +234,8 @@ namespace SemiRefinedApplication
             Console.WriteLine();
             
         }
-        
 
-        public int GetValidAnimalActionMenuChoice(string animalType)
+        public int GetValidAnimalActionMenuChoice(AnimalTypes? animalType)
         {
             var animalActionOption = 0;
             var isActualAnimalActionOption = false;
