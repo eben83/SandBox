@@ -311,8 +311,9 @@ namespace SemiRefinedApplication
             ShowWelcomeMessage();
             ShowAnimalActionMenu(null);
             var actionMenuSelected = GetValidAnimalActionMenuChoice(null);
-            
-            PerformAnimalAction(actionMenuSelected, animals);
+
+            foreach (var animal in animals)
+                PerformAnimalAction(actionMenuSelected, animal);
             
             Console.WriteLine("Press Enter to carry on:");
             Console.ReadLine();
