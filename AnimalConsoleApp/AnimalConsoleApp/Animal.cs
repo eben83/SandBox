@@ -1,38 +1,61 @@
-﻿using System;
+using System;
 
 namespace AnimalConsoleApp
 {
     public class Animal
     {
-        public string Type { get; set; }
+        public AnimalTypes Type { get; set; }
         public string Name { get; set; }
-
         public string Identification
         {
-            get { return $"{Type} - {Name}"; }
+            get { return $" {Type} - {Name}"; }
         }
-
         
         public Animal(string name)
-        {    //constructor
+        {
             Name = name;
         }
 
+        public void Command(AnimalActions animalAction)
+        {
+            switch(animalAction)
+            {
+                case AnimalActions.Run:
+                    Run();
+                    break;
+                case AnimalActions.Eat:
+                    Eat();
+                    break;
+                case AnimalActions.Sleep:
+                    Sleep();
+                    break;
+                case AnimalActions.Fly:
+                    Fly();
+                    break;
+                case AnimalActions.Talk:
+                    Talk();
+                    break;
+                default:
+                    throw new Exception("Sorry, something went wrong there, " +
+                                        "please, make another choice.");
+            }
+        }
+        
         public void Run()
         {
-            Console.WriteLine("doof, doof, doof");
+            Console.WriteLine("Doof, doof, doof");
             Console.WriteLine("Look at him go!");
             Console.WriteLine("Feeling the earth moving!!");
             Console.WriteLine($"{Type} stops Running. He looks quite Hungry");
-            Console.WriteLine($"{Type} is running....");
-            Console.WriteLine("and tired now.");
+            Console.WriteLine($"{Identification} is running....");
+            Console.WriteLine("And tired now.");
             Console.WriteLine();
         }
 
         public void Eat()
         {
-            Console.WriteLine($"{Type} is eating...");
-            Console.WriteLine("munch, munch, munch");
+            Console.WriteLine($"{Identification} is eating...");
+            Console.WriteLine("Munch, munch, munch");
             Console.WriteLine("Look at all that food go down!!!");
             Console.WriteLine("Burp!!"); 
             Console.WriteLine();
@@ -40,10 +63,81 @@ namespace AnimalConsoleApp
 
         public void Sleep()
         {
-            Console.WriteLine($"{Type} is sleeping...");
+            Console.WriteLine($"{Identification} is sleeping...");
             Console.WriteLine("ZZzzZZZzzzZZz");
-            Console.WriteLine("how loud can he snore!!!");
-            Console.WriteLine("Cats can sleep all day");
+            Console.WriteLine("How loud can he snore!!!");
+            Console.WriteLine($"{Type} can sleep all day");
         }
+
+        public void Fly()
+        {
+            Console.WriteLine("Is it a bird?!");
+            Console.WriteLine("Is it a plane?!");
+            Console.WriteLine($"It's a {Type}!!");
+        }
+
+        public void Talk()
+        {
+            switch (Type)
+            {
+                case AnimalTypes.Dog:
+                    DogTalk();
+                    break;
+                case AnimalTypes.Cat:
+                    CatTalk();
+                    break;
+                case AnimalTypes.Elephant:
+                    ElephantTalk();
+                    break;
+                case AnimalTypes.Salmon:
+                    FishTalk();
+                    break;
+                case AnimalTypes.Penguin:
+                    PenguinTalk();
+                    break;
+                case AnimalTypes.Eagle:
+                    EagleTalk();
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
+
+        private void EagleTalk()
+        {
+            Console.WriteLine("Boo");
+            Console.WriteLine("Boo");
+        }
+
+        private void DogTalk()
+        {
+            Console.WriteLine("Bark!!");    
+            Console.WriteLine("Bark!!");
+        }
+
+        private void CatTalk()
+        {
+            Console.WriteLine("Meow");
+            Console.WriteLine("Meow");
+        }
+
+        private void ElephantTalk()
+        {
+            Console.WriteLine("Trumpet!!!!");
+            Console.WriteLine("Trumpet!!!!");
+        }
+
+        private void FishTalk()
+        {
+            Console.WriteLine("Bubble");
+            Console.WriteLine("Bubble");
+        }
+
+        private void PenguinTalk()
+        {
+            Console.WriteLine("Gak!");
+            Console.WriteLine("Gak!!");
+        }
+
     }
 }
