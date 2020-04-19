@@ -66,39 +66,44 @@ namespace AnimalConsoleApp
                     throw new ArgumentOutOfRangeException();
             }
         }
-
         private void DogRun()
         {
-            
+            Console.WriteLine("Whoosh");
+            Console.WriteLine($"Play time for a {Type}, {Type}'s love to run");
+            Console.WriteLine("They are the happiest while running around");
         }
-
         private void CatRun()
         {
-            
+            Console.WriteLine("Whoosh");
+            Console.WriteLine($"this is funny you think a {Type} will run");
+            Console.WriteLine("they will rather watch you run");
         }
-
         private void ElephantRun()
         {
-            
+            Console.WriteLine("Whoosh");
+            Console.WriteLine($"when looking at an {Type}, you think you're safe");
+            Console.WriteLine($"Guess again, an {Type}, they are really fast");
         }
-
         private void SalmonRun()
         {
-            
+            Console.WriteLine("Whoosh");
+            Console.WriteLine("Okay, this is a weird one- they can't actually run like the res of us");
+            Console.WriteLine($"But once a year they have a {Type} run");
         }
-
         private void PenguinRun()
         {
-            
+            Console.WriteLine("Whoosh");
+            Console.WriteLine($"Do {Type} have Knees?");
+            Console.WriteLine("They run like drunk people...");
         }
-
         private void EagleRun()
         {
-            
+            Console.WriteLine("Whoosh");
+            Console.WriteLine($"Why would you think an {Type} will even think of running");
+            Console.WriteLine("They fly faster");
         }
 
-        
-        
+
         public void Eat()
         {
             switch (Type)
@@ -140,7 +145,7 @@ namespace AnimalConsoleApp
         private void ElephantEat()
         {
             Console.WriteLine("Burp");
-            Console.WriteLine($"{Type}\'s can never get enough food");
+            Console.WriteLine($"{Type}'s can never get enough food");
             Console.WriteLine("They will devour a full tree bu themselves");
         }
         private void SalmonEat()
