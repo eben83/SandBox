@@ -53,15 +53,69 @@ namespace AnimalConsoleApp
 
         public void Eat()
         {
-            Console.WriteLine($"{Identification} is eating...");
-            Console.WriteLine("Munch, munch, munch");
-            Console.WriteLine("Look at all that food go down!!!");
-            Console.WriteLine("Burp!!"); 
-            Console.WriteLine();
+            switch (Type)
+            {
+                case AnimalTypes.Dog:
+                    DogEat();
+                    break;
+                case AnimalTypes.Cat:
+                    CatEat();
+                    break;
+                case AnimalTypes.Elephant:
+                    ElephantEat();
+                    break;
+                case AnimalTypes.Salmon:
+                    SalmonEat();
+                    break;
+                case AnimalTypes.Penguin:
+                    PenguinEat();
+                    break;
+                case AnimalTypes.Eagle:
+                    EagleEat();
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
 
+        private void DogEat()
+        {
+            Console.WriteLine("Burp");
+            Console.WriteLine($"Look at this {Type}, how fast?");
+            Console.WriteLine("How fast do they eat?");
+        }
+
+        private void CatEat()
+        {
+            Console.WriteLine("Burp");
+            Console.WriteLine("This must be a myth, you put food out,");
+            Console.WriteLine($"But you never know who's {Type} you feed");
+        }
+
+        private void ElephantEat()
+        {
+            Console.WriteLine("Burp");
+            Console.WriteLine($"{Type}\'s can never get enough food");
+            Console.WriteLine("They will devour a full tree bu themselves");
+        }
+
+        private void SalmonEat()
+        {
+            Console.WriteLine("Burp");
+        }
+
+        private void PenguinEat()
+        {
+            Console.WriteLine("Burp");
+        }
+
+        private void EagleEat()
+        {
+            Console.WriteLine("Burp");
+        }
         
-        
+
+
         public void Sleep()
         {
             switch (Type)
@@ -79,7 +133,7 @@ namespace AnimalConsoleApp
                     SalmonSleep();
                     break;
                 case AnimalTypes.Penguin:
-                    peniguinSleep();
+                    PeniguinSleep();
                     break;
                 case AnimalTypes.Eagle:
                     EagleSleep();
@@ -112,11 +166,11 @@ namespace AnimalConsoleApp
             Console.WriteLine($"{Type}, are you really asking?");
             Console.WriteLine("I don't think anyone even knows if they can.");
         }
-        private void peniguinSleep()
+        private void PeniguinSleep()
         {
             Console.WriteLine("zzzZZZZzzzZZZ");
             Console.WriteLine($"{Type}, they will huddle in groups");
-            Console.WriteLine(" to keep warm and safe.");
+            Console.WriteLine("To keep warm and safe.");
         }
         private void EagleSleep()
         {
@@ -170,13 +224,13 @@ namespace AnimalConsoleApp
         }
         private void SalmonFly()
         {
-            Console.WriteLine($"well, {Type} could be seen as flying");
-            Console.WriteLine("when they Fly upstream...");
+            Console.WriteLine($"Well, {Type} could be seen as flying");
+            Console.WriteLine("When they Fly upstream...");
         }
         private void PenguinFly()
         {
-            Console.WriteLine("this must be the funniest animal, they really do");
-            Console.WriteLine("wish they could fly, they just got to be happy with the water flying");
+            Console.WriteLine("This must be the funniest animal, they really do");
+            Console.WriteLine("Wish they could fly, they just got to be happy with the water flying");
         }
         private void EagleFly()
         {
@@ -214,8 +268,8 @@ namespace AnimalConsoleApp
         private void EagleTalk()
         {
             Console.WriteLine("Hello");
-            Console.WriteLine("Boo");
-            Console.WriteLine("Boo");
+            Console.WriteLine("Giggle");
+            Console.WriteLine("Giggle");
         }
         private void DogTalk()
         {
