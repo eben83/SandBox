@@ -42,30 +42,32 @@ namespace AnimalConsoleApp
         
         public void Run()
         {
-            switch (Type)
-            {
-                case AnimalTypes.Dog:
-                    DogRun();
-                    break;
-                case AnimalTypes.Cat:
-                    CatRun();
-                    break;
-                case AnimalTypes.Elephant:
-                    ElephantRun();
-                    break;
-                case AnimalTypes.Salmon:
-                    SalmonRun();
-                    break;
-                case AnimalTypes.Penguin:
-                    PenguinRun();
-                    break;
-                case AnimalTypes.Eagle:
-                    EagleRun();
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+            Console.WriteLine("Animal is running");
+            // switch (Type)
+            // {
+            //     case AnimalTypes.Dog:
+            //         DogRun();
+            //         break;
+            //     case AnimalTypes.Cat:
+            //         CatRun();
+            //         break;
+            //     case AnimalTypes.Elephant:
+            //         ElephantRun();
+            //         break;
+            //     case AnimalTypes.Salmon:
+            //         SalmonRun();
+            //         break;
+            //     case AnimalTypes.Penguin:
+            //         PenguinRun();
+            //         break;
+            //     case AnimalTypes.Eagle:
+            //         EagleRun();
+            //         break;
+            //     default:
+            //         throw new ArgumentOutOfRangeException();
+            // }
         }
+        
         private void DogRun()
         {
             Console.WriteLine("Whoosh");
@@ -106,29 +108,30 @@ namespace AnimalConsoleApp
 
         public void Eat()
         {
-            switch (Type)
-            {
-                case AnimalTypes.Dog:
-                    DogEat();
-                    break;
-                case AnimalTypes.Cat:
-                    CatEat();
-                    break;
-                case AnimalTypes.Elephant:
-                    ElephantEat();
-                    break;
-                case AnimalTypes.Salmon:
-                    SalmonEat();
-                    break;
-                case AnimalTypes.Penguin:
-                    PenguinEat();
-                    break;
-                case AnimalTypes.Eagle:
-                    EagleEat();
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+            Console.WriteLine("Animal is eating");
+            // switch (Type)
+            // {
+            //     case AnimalTypes.Dog:
+            //         DogEat();
+            //         break;
+            //     case AnimalTypes.Cat:
+            //         CatEat();
+            //         break;
+            //     case AnimalTypes.Elephant:
+            //         ElephantEat();
+            //         break;
+            //     case AnimalTypes.Salmon:
+            //         SalmonEat();
+            //         break;
+            //     case AnimalTypes.Penguin:
+            //         PenguinEat();
+            //         break;
+            //     case AnimalTypes.Eagle:
+            //         EagleEat();
+            //         break;
+            //     default:
+            //         throw new ArgumentOutOfRangeException();
+            // }
         }
         private void DogEat()
         {
@@ -170,29 +173,30 @@ namespace AnimalConsoleApp
 
         public void Sleep()
         {
-            switch (Type)
-            {
-                case AnimalTypes.Dog:
-                    DogSleep();
-                    break;
-                case AnimalTypes.Cat:
-                    CatSleep();
-                    break;
-                case AnimalTypes.Elephant:
-                    ElephantSleep();
-                    break;
-                case AnimalTypes.Salmon:
-                    SalmonSleep();
-                    break;
-                case AnimalTypes.Penguin:
-                    PeniguinSleep();
-                    break;
-                case AnimalTypes.Eagle:
-                    EagleSleep();
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }   
+            Console.WriteLine("Animal is Sleeping");
+            // switch (Type)
+            // {
+            //     case AnimalTypes.Dog:
+            //         DogSleep();
+            //         break;
+            //     case AnimalTypes.Cat:
+            //         CatSleep();
+            //         break;
+            //     case AnimalTypes.Elephant:
+            //         ElephantSleep();
+            //         break;
+            //     case AnimalTypes.Salmon:
+            //         SalmonSleep();
+            //         break;
+            //     case AnimalTypes.Penguin:
+            //         PeniguinSleep();
+            //         break;
+            //     case AnimalTypes.Eagle:
+            //         EagleSleep();
+            //         break;
+            //     default:
+            //         throw new ArgumentOutOfRangeException();
+            // }   
         }
         private void DogSleep()
         {
@@ -234,29 +238,30 @@ namespace AnimalConsoleApp
         
         public void Fly()
         {
-            switch (Type)
-            {
-                case AnimalTypes.Dog:
-                    DogFly();
-                    break;
-                case AnimalTypes.Cat:
-                    CatFly();
-                    break;
-                case AnimalTypes.Elephant:
-                    ElephantFly();
-                    break;
-                case AnimalTypes.Salmon:
-                    SalmonFly();
-                    break;
-                case AnimalTypes.Penguin:
-                    PenguinFly();
-                    break;
-                case AnimalTypes.Eagle:
-                    EagleFly();
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+            Console.WriteLine("Animal is Flying");
+            // switch (Type)
+            // {
+            //     case AnimalTypes.Dog:
+            //         DogFly();
+            //         break;
+            //     case AnimalTypes.Cat:
+            //         CatFly();
+            //         break;
+            //     case AnimalTypes.Elephant:
+            //         ElephantFly();
+            //         break;
+            //     case AnimalTypes.Salmon:
+            //         SalmonFly();
+            //         break;
+            //     case AnimalTypes.Penguin:
+            //         PenguinFly();
+            //         break;
+            //     case AnimalTypes.Eagle:
+            //         EagleFly();
+            //         break;
+            //     default:
+            //         throw new ArgumentOutOfRangeException();
+            // }
 
         }
         private void DogFly()
@@ -293,29 +298,30 @@ namespace AnimalConsoleApp
         
         public void Talk()
         {
-            switch (Type)
-            {
-                case AnimalTypes.Dog:
-                    DogTalk();
-                    break;
-                case AnimalTypes.Cat:
-                    CatTalk();
-                    break;
-                case AnimalTypes.Elephant:
-                    ElephantTalk();
-                    break;
-                case AnimalTypes.Salmon:
-                    SalmonTalk();
-                    break;
-                case AnimalTypes.Penguin:
-                    PenguinTalk();
-                    break;
-                case AnimalTypes.Eagle:
-                    EagleTalk();
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+            Console.WriteLine("Animal is Talking");
+            // switch (Type)
+            // {
+            //     case AnimalTypes.Dog:
+            //         DogTalk();
+            //         break;
+            //     case AnimalTypes.Cat:
+            //         CatTalk();
+            //         break;
+            //     case AnimalTypes.Elephant:
+            //         ElephantTalk();
+            //         break;
+            //     case AnimalTypes.Salmon:
+            //         SalmonTalk();
+            //         break;
+            //     case AnimalTypes.Penguin:
+            //         PenguinTalk();
+            //         break;
+            //     case AnimalTypes.Eagle:
+            //         EagleTalk();
+            //         break;
+            //     default:
+            //         throw new ArgumentOutOfRangeException();
+            // }
         }
         private void EagleTalk()
         {
