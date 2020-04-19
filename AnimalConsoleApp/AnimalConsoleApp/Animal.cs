@@ -42,15 +42,63 @@ namespace AnimalConsoleApp
         
         public void Run()
         {
-            Console.WriteLine("Doof, doof, doof");
-            Console.WriteLine("Look at him go!");
-            Console.WriteLine("Feeling the earth moving!!");
-            Console.WriteLine($"{Type} stops Running. He looks quite Hungry");
-            Console.WriteLine($"{Identification} is running....");
-            Console.WriteLine("And tired now.");
-            Console.WriteLine();
+            switch (Type)
+            {
+                case AnimalTypes.Dog:
+                    DogRun();
+                    break;
+                case AnimalTypes.Cat:
+                    CatRun();
+                    break;
+                case AnimalTypes.Elephant:
+                    ElephantRun();
+                    break;
+                case AnimalTypes.Salmon:
+                    SalmonRun();
+                    break;
+                case AnimalTypes.Penguin:
+                    PenguinRun();
+                    break;
+                case AnimalTypes.Eagle:
+                    EagleRun();
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
 
+        private void DogRun()
+        {
+            
+        }
+
+        private void CatRun()
+        {
+            
+        }
+
+        private void ElephantRun()
+        {
+            
+        }
+
+        private void SalmonRun()
+        {
+            
+        }
+
+        private void PenguinRun()
+        {
+            
+        }
+
+        private void EagleRun()
+        {
+            
+        }
+
+        
+        
         public void Eat()
         {
             switch (Type)
@@ -77,44 +125,43 @@ namespace AnimalConsoleApp
                     throw new ArgumentOutOfRangeException();
             }
         }
-
         private void DogEat()
         {
             Console.WriteLine("Burp");
             Console.WriteLine($"Look at this {Type}, how fast?");
             Console.WriteLine("How fast do they eat?");
         }
-
         private void CatEat()
         {
             Console.WriteLine("Burp");
             Console.WriteLine("This must be a myth, you put food out,");
             Console.WriteLine($"But you never know who's {Type} you feed");
         }
-
         private void ElephantEat()
         {
             Console.WriteLine("Burp");
             Console.WriteLine($"{Type}\'s can never get enough food");
             Console.WriteLine("They will devour a full tree bu themselves");
         }
-
         private void SalmonEat()
         {
             Console.WriteLine("Burp");
+            Console.WriteLine($"I wouldn't be able to say anything here");
+            Console.WriteLine($"{Type} eat like {Type}, doing {Type} things");
         }
-
         private void PenguinEat()
         {
             Console.WriteLine("Burp");
+            Console.WriteLine("We can all watch this fake fling, wannabe bird");
+            Console.WriteLine($"But, a {Type} can hunt just like any other well oiled machine");
         }
-
         private void EagleEat()
         {
             Console.WriteLine("Burp");
+            Console.WriteLine("If you are squeamish, look away!");
+            Console.WriteLine($"an {Type}, will eat other birds or fish");
         }
         
-
 
         public void Sleep()
         {
