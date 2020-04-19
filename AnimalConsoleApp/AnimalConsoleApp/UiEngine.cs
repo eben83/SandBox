@@ -59,7 +59,6 @@ namespace AnimalConsoleApp
             }
         }
 
-
         private int ShowMainMenuAndGetMainMenuChoice(List<Animal> animalsList)
         {
             ShowWelcomeMessage();

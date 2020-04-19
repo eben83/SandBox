@@ -4,18 +4,9 @@ namespace AnimalConsoleApp
 {
     public class Dog : Animal
     {
-
-        public AnimalTypes Type => AnimalTypes.Dog;
-        public string Name { get; set; }
-
-        public string Identification
-        {
-            get { return $" {Type} - {Name}"; }
-        }
-
         public Dog(string name) : base(name)
         {
-            Name = name;
+            Type = AnimalTypes.Dog;
         }
 
         // public void Command(AnimalActions animalAction)
