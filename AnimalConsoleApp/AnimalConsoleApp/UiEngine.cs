@@ -37,7 +37,6 @@ namespace AnimalConsoleApp
                 }
             }
         }
-        
         private Animal CreateAnimal(AnimalTypes animalType, string animalName)
         {
             switch (animalType)
@@ -58,7 +57,6 @@ namespace AnimalConsoleApp
                     throw new ArgumentOutOfRangeException(nameof(animalType), animalType, null);
             }
         }
-
         private int ShowMainMenuAndGetMainMenuChoice(List<Animal> animalsList)
         {
             ShowWelcomeMessage();
@@ -66,14 +64,12 @@ namespace AnimalConsoleApp
             ShowMainMenu();
             return GetValidMainMenuChoice();
         }
-
         private void ShowWelcomeMessage()
         {
             Console.Clear();
             Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
             Console.WriteLine();
         }
-
         private void ShowMainMenu()
         {
             Console.WriteLine();
@@ -83,7 +79,6 @@ namespace AnimalConsoleApp
             Console.WriteLine("4. Exit");
             Console.WriteLine();   
         }
-
         private void ShowAnimalListSummary(List<Animal> listOfAnimals)
         {
             if (listOfAnimals.Count == 0)
@@ -102,14 +97,12 @@ namespace AnimalConsoleApp
                 Console.Write($" {pet.Identification} |");
             }
         }
-
         private void ShowErrorMessage()
         {
             Console.WriteLine("Sorry your choice is incorrect");
             Console.WriteLine("Please, try make another choice.");
             Console.ReadLine();
         }
-
         private int GetValidMainMenuChoice()
         {
             var menuSelection = 0;
@@ -132,7 +125,6 @@ namespace AnimalConsoleApp
             }
             return menuSelection;
         }
-
         private void ShowAnimalMenuAndAddAnimal(List<Animal> addAnimalToList)
         {
             ShowWelcomeMessage();
@@ -153,7 +145,6 @@ namespace AnimalConsoleApp
             animal.Type = animalType;
             addAnimalToList.Add(animal);
         }
-
         private void ShowAnimalMenu()
         {
             Console.WriteLine("The following animals are available:");
@@ -161,7 +152,6 @@ namespace AnimalConsoleApp
                 Console.WriteLine($"{(int) animalType}. {animalType}");
             Console.WriteLine();   
         }
-
         private int GetValidAnimalMenuChoice()
         {
             var menuSelection = 0;
@@ -184,7 +174,6 @@ namespace AnimalConsoleApp
             
             return menuSelection;
         }
-
         private void InteractWithOneAnimal(List<Animal> animalInteractList)
         {
             ShowWelcomeMessage();
@@ -196,7 +185,6 @@ namespace AnimalConsoleApp
             Console.WriteLine("Press enter to carry on:");
             Console.ReadLine();
         }
-
         private void ShowInteractMenu(List<Animal> animalsList)
         {
             Console.WriteLine();
@@ -208,7 +196,6 @@ namespace AnimalConsoleApp
                 Console.WriteLine($"{i}. {animalsList[i].Identification}");
             }
         }
-
         private Animal GetAnimalFromMenu(List<Animal> actualAnimals)
         {
             var actualAnimalsMenuChoice = 0;
@@ -231,7 +218,6 @@ namespace AnimalConsoleApp
 
             return actualAnimals[actualAnimalsMenuChoice];
         }
-        
         static void ShowAnimalActionMenu(AnimalTypes? animalType)
         {
             if (!animalType.HasValue)
@@ -249,7 +235,6 @@ namespace AnimalConsoleApp
             Console.WriteLine();
             
         }
-
         private int GetValidAnimalActionMenuChoice(AnimalTypes? animalType)
         {
             var animalActionOption = 0;
@@ -271,7 +256,6 @@ namespace AnimalConsoleApp
 
             return animalActionOption;
         }
-
         private void InteractWithAllAnimals(List<Animal> animals)
         {
             ShowWelcomeMessage();
