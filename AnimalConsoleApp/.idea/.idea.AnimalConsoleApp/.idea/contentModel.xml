@@ -10,6 +10,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Cat.cs" t="Include" />
         <e p="Dog.cs" t="Include" />
+        <e p="Eagle.cs" t="Include" />
         <e p="Elephant.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
