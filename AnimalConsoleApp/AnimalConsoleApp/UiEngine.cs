@@ -12,8 +12,6 @@ namespace AnimalConsoleApp
             int menuChoice = 0;
             var animals = new List<Animal>();
 
-            new Animal("Test").Command((AnimalActions) 8);
-            
             while (menuChoice != EXIT_MENU_CHOICE)
             {
                 switch (menuChoice)
@@ -39,23 +37,23 @@ namespace AnimalConsoleApp
                 }
             }
         }
-        
-        public int ShowMainMenuAndGetMainMenuChoice(List<Animal> animalsList)
+
+        private int ShowMainMenuAndGetMainMenuChoice(List<Animal> animalsList)
         {
             ShowWelcomeMessage();
             ShowAnimalListSummary(animalsList);
             ShowMainMenu();
             return GetValidMainMenuChoice();
         }
-        
-        public void ShowWelcomeMessage()
+
+        private void ShowWelcomeMessage()
         {
             Console.Clear();
             Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
             Console.WriteLine();
         }
 
-        public void ShowMainMenu()
+        private void ShowMainMenu()
         {
             Console.WriteLine();
             Console.WriteLine("1. Add animal");
@@ -65,7 +63,7 @@ namespace AnimalConsoleApp
             Console.WriteLine();   
         }
 
-        public void ShowAnimalListSummary(List<Animal> listOfAnimals)
+        private void ShowAnimalListSummary(List<Animal> listOfAnimals)
         {
             if (listOfAnimals.Count == 0)
             {
@@ -84,14 +82,14 @@ namespace AnimalConsoleApp
             }
         }
 
-        public void ShowErrorMessage()
+        private void ShowErrorMessage()
         {
             Console.WriteLine("Sorry your choice is incorrect");
             Console.WriteLine("Please, try make another choice.");
             Console.ReadLine();
         }
 
-        public int GetValidMainMenuChoice()
+        private int GetValidMainMenuChoice()
         {
             var menuSelection = 0;
             
@@ -114,7 +112,7 @@ namespace AnimalConsoleApp
             return menuSelection;
         }
 
-        public  void ShowAnimalMenuAndAddAnimal(List<Animal> addAnimalToList)
+        private void ShowAnimalMenuAndAddAnimal(List<Animal> addAnimalToList)
         {
             ShowWelcomeMessage();
             ShowAnimalMenu();
@@ -134,7 +132,7 @@ namespace AnimalConsoleApp
             addAnimalToList.Add(animal);
         }
 
-        public void ShowAnimalMenu()
+        private void ShowAnimalMenu()
         {
             Console.WriteLine("The following animals are available:");
             foreach (var animalType in Enum.GetValues(typeof(AnimalTypes)))
@@ -142,7 +140,7 @@ namespace AnimalConsoleApp
             Console.WriteLine();   
         }
 
-        public int GetValidAnimalMenuChoice()
+        private int GetValidAnimalMenuChoice()
         {
             var menuSelection = 0;
             var isAnimalMenuChoiceValid = false;
@@ -165,8 +163,7 @@ namespace AnimalConsoleApp
             return menuSelection;
         }
 
-        
-        public void InteractWithOneAnimal(List<Animal> animalInteractList)
+        private void InteractWithOneAnimal(List<Animal> animalInteractList)
         {
             ShowWelcomeMessage();
             ShowInteractMenu(animalInteractList);
@@ -179,7 +176,7 @@ namespace AnimalConsoleApp
             Console.ReadLine();
         }
 
-        public void ShowInteractMenu(List<Animal> animalsList)
+        private void ShowInteractMenu(List<Animal> animalsList)
         {
             Console.WriteLine();
             Console.WriteLine("You are able to interact with the following animals:");
@@ -191,7 +188,7 @@ namespace AnimalConsoleApp
             }
         }
 
-        public Animal GetAnimalFromMenu(List<Animal> actualAnimals)
+        private Animal GetAnimalFromMenu(List<Animal> actualAnimals)
         {
             var actualAnimalsMenuChoice = 0;
             var isActualAnimalMenuChoiceValid = false;
@@ -232,7 +229,7 @@ namespace AnimalConsoleApp
             
         }
 
-        public int GetValidAnimalActionMenuChoice(AnimalTypes? animalType)
+        private int GetValidAnimalActionMenuChoice(AnimalTypes? animalType)
         {
             var animalActionOption = 0;
             var isActualAnimalActionOption = false;
@@ -254,7 +251,7 @@ namespace AnimalConsoleApp
             return animalActionOption;
         }
 
-        public void InteractWithAllAnimals(List<Animal> animals)
+        private void InteractWithAllAnimals(List<Animal> animals)
         {
             ShowWelcomeMessage();
             ShowAnimalActionMenu(null);
