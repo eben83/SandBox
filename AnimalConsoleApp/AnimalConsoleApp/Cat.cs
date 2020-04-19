@@ -19,7 +19,7 @@ namespace AnimalConsoleApp
         {
             Console.WriteLine("Burp");
             Console.WriteLine($"I think you never feed your own {Type}");
-            Console.WriteLine("You ");
+            Console.WriteLine($"You probably feed everyone else's {Type}'s ");
         }
         protected override void Talk()
         {
