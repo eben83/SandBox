@@ -2,7 +2,7 @@ using System;
 
 namespace AnimalConsoleApp
 {
-    public class Cat
+    public class Cat : Animal
     {
         public AnimalTypes Type => AnimalTypes.Cat;
         public string Name { get; set; }
@@ -11,34 +11,34 @@ namespace AnimalConsoleApp
             get { return $" {Type} - {Name}"; }
         }
         
-        public Cat(string name)
+        public Cat(string name) : base(name)
         {
             Name = name;
         }
-
-        public void Command(AnimalActions animalAction)
-        {
-            switch(animalAction)
-            {
-                case AnimalActions.Run:
-                    Run();
-                    break;
-                case AnimalActions.Eat:
-                    Eat();
-                    break;
-                case AnimalActions.Sleep:
-                    Sleep();
-                    break;
-                case AnimalActions.Fly:
-                    Fly();
-                    break;
-                case AnimalActions.Talk:
-                    Talk();
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(animalAction), "Use the enum directly"); 
-            }
-        }
+        
+        // public override void Command(AnimalActions animalAction)
+        // {
+        //     switch(animalAction)
+        //     {
+        //         case AnimalActions.Run:
+        //             Run();
+        //             break;
+        //         case AnimalActions.Eat:
+        //             Eat();    
+        //             break;
+        //         case AnimalActions.Sleep:
+        //             Sleep();
+        //             break;
+        //         case AnimalActions.Fly:
+        //             Fly();
+        //             break;
+        //         case AnimalActions.Talk:
+        //             Talk();
+        //             break;
+        //         default:
+        //             throw new ArgumentOutOfRangeException(nameof(animalAction), "Use the enum directly"); 
+        //     }
+        // }
         
         private void Run()
         {
