@@ -8,6 +8,7 @@
         <e p="AnimalConsoleApp.csproj" t="IncludeRecursive" />
         <e p="AnimalTypes.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Dog.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
