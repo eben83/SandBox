@@ -18,14 +18,14 @@ namespace AnimalConsoleApp
         protected override void Eat()
         {
             Console.WriteLine("Burp");
-            Console.WriteLine($"Look at this {Type}, how fast?");
-            Console.WriteLine("How fast do they eat?");
+            Console.WriteLine($"I think you never feed your own {Type}");
+            Console.WriteLine("You ");
         }
         protected override void Talk()
         {
             Console.WriteLine("Hello");
-            Console.WriteLine("Bark!!");    
-            Console.WriteLine("Bark!!");
+            Console.WriteLine("Meow!!");    
+            Console.WriteLine("Meow!!");
         }
 
     }
