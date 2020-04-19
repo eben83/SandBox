@@ -2,7 +2,7 @@ using System;
 
 namespace AnimalConsoleApp
 {
-    public class Cat
+    public class Elephant
     {
         public AnimalTypes Type { get; set; }
         public string Name { get; set; }
@@ -11,7 +11,7 @@ namespace AnimalConsoleApp
             get { return $" {Type} - {Name}"; }
         }
         
-        public Cat(string name)
+        public Elephant(string name)
         {
             Name = name;
         }
