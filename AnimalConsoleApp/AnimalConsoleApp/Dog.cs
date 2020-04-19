@@ -2,7 +2,7 @@ using System;
 
 namespace AnimalConsoleApp
 {
-    public class Dog
+    public class Dog : Animal
     {
 
         public AnimalTypes Type => AnimalTypes.Dog;
@@ -13,34 +13,34 @@ namespace AnimalConsoleApp
             get { return $" {Type} - {Name}"; }
         }
 
-        public Dog(string name)
+        public Dog(string name) : base(name)
         {
             Name = name;
         }
 
-        public void Command(AnimalActions animalAction)
-        {
-            switch (animalAction)
-            {
-                case AnimalActions.Run:
-                    Run();
-                    break;
-                case AnimalActions.Eat:
-                    Eat();
-                    break;
-                case AnimalActions.Sleep:
-                    Sleep();
-                    break;
-                case AnimalActions.Fly:
-                    Fly();
-                    break;
-                case AnimalActions.Talk:
-                    Talk();
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(animalAction), "Use the enum directly");
-            }
-        }
+        // public void Command(AnimalActions animalAction)
+        // {
+        //     switch (animalAction)
+        //     {
+        //         case AnimalActions.Run:
+        //             Run();
+        //             break;
+        //         case AnimalActions.Eat:
+        //             Eat();
+        //             break;
+        //         case AnimalActions.Sleep:
+        //             Sleep();
+        //             break;
+        //         case AnimalActions.Fly:
+        //             Fly();
+        //             break;
+        //         case AnimalActions.Talk:
+        //             Talk();
+        //             break;
+        //         default:
+        //             throw new ArgumentOutOfRangeException(nameof(animalAction), "Use the enum directly");
+        //     }
+        // }
 
         private void Run()
         {
