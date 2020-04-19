@@ -4,7 +4,7 @@ namespace AnimalConsoleApp
 {
     public class Elephant
     {
-        public AnimalTypes Type { get; set; }
+        public AnimalTypes Type => AnimalTypes.Elephant;
         public string Name { get; set; }
         public string Identification
         {
