@@ -28,6 +28,7 @@
           <e p="IAnimal.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Salmon.cs" t="Include" />
         <e p="UiEngine.cs" t="Include" />
       </e>
       <e p="AnimalConsoleApp.sln" t="IncludeFlat" />
