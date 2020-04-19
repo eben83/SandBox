@@ -12,6 +12,8 @@ namespace AnimalConsoleApp
             int menuChoice = 0;
             var animals = new List<Animal>();
 
+            new Animal("Test").Command((AnimalActions) 8);
+            
             while (menuChoice != EXIT_MENU_CHOICE)
             {
                 switch (menuChoice)
