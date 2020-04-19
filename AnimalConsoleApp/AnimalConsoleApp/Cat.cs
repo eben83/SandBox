@@ -4,7 +4,7 @@ namespace AnimalConsoleApp
 {
     public class Cat
     {
-        public AnimalTypes Type { get; set; }
+        public AnimalTypes Type => AnimalTypes.Cat;
         public string Name { get; set; }
         public string Identification
         {
