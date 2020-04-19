@@ -4,7 +4,7 @@ namespace AnimalConsoleApp
 {
     public class Penguin
     {
-        public AnimalTypes Type { get; set; }
+        public AnimalTypes Type => AnimalTypes.Penguin;
         public string Name { get; set; }
         public string Identification
         {
