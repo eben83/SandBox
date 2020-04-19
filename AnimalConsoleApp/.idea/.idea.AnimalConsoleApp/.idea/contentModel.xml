@@ -27,6 +27,7 @@
           <e p="Fish.cs" t="Include" />
           <e p="IAnimal.cs" t="Include" />
         </e>
+        <e p="Penguin.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Salmon.cs" t="Include" />
         <e p="UiEngine.cs" t="Include" />
