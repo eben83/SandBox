@@ -37,6 +37,28 @@ namespace AnimalConsoleApp
                 }
             }
         }
+        
+        private Animal CreateAnimal(AnimalTypes animalType, string animalName)
+        {
+            switch (animalType)
+            {
+                case AnimalTypes.Dog:
+                    return new Dog(animalName);
+                case AnimalTypes.Cat:
+                    return new Cat(animalName);
+                case AnimalTypes.Elephant:
+                    return new Elephant(animalName);
+                case AnimalTypes.Salmon:
+                    return new Salmon(animalName);                    
+                case AnimalTypes.Penguin:
+                    return new Penguin(animalName);
+                case AnimalTypes.Eagle:
+                    return new Eagle(animalName);                    
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(animalType), animalType, null);
+            }
+        }
+
 
         private int ShowMainMenuAndGetMainMenuChoice(List<Animal> animalsList)
         {
@@ -127,7 +149,8 @@ namespace AnimalConsoleApp
             Console.WriteLine("Press Enter to carry on.");
             Console.ReadLine();
 
-            var animal = new Animal(animalName);
+            //this will create a new animal Cat and not just an Animal.Cat
+            var animal = CreateAnimal(animalType, animalName);
             animal.Type = animalType;
             addAnimalToList.Add(animal);
         }
@@ -171,7 +194,6 @@ namespace AnimalConsoleApp
             ShowAnimalActionMenu(selectedAnimal.Type);
             AnimalActions animalAction = (AnimalActions) GetValidAnimalActionMenuChoice(selectedAnimal.Type);
             selectedAnimal.Command(animalAction);
-            
             Console.WriteLine("Press enter to carry on:");
             Console.ReadLine();
         }
