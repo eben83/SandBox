@@ -9,4 +9,9 @@
       <ProjectReference Include="..\AnimalApp.Core\AnimalApp.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Application" />
+      <Folder Include="UserInterface" />
+    </ItemGroup>
+
 </Project>

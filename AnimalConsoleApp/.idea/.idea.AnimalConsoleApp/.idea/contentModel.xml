@@ -11,9 +11,11 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Cat.cs" t="Include" />
         <e p="Dog.cs" t="Include" />
+        <e p="Domain" t="Include" />
         <e p="Eagle.cs" t="Include" />
         <e p="Elephant.cs" t="Include" />
         <e p="ExtensionMethods.cs" t="Include" />
+        <e p="Infrastructure" t="Include" />
         <e p="MainMenuChoices.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -27,6 +29,7 @@
       </e>
       <e p="AnimalConsoleApp" t="IncludeRecursive">
         <e p="AnimalConsoleApp.csproj" t="IncludeRecursive" />
+        <e p="Application" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -37,6 +40,7 @@
         </e>
         <e p="Program.cs" t="Include" />
         <e p="UiEngine.cs" t="Include" />
+        <e p="UserInterface" t="Include" />
       </e>
       <e p="AnimalConsoleApp.sln" t="IncludeFlat" />
       <e p="OnFileApp" t="IncludeRecursive">
