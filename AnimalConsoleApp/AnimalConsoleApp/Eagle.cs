@@ -30,8 +30,8 @@ namespace AnimalConsoleApp
         protected override void Talk()
         {
             Console.WriteLine("Hello");
-            Console.WriteLine("Bark!!");    
-            Console.WriteLine("Bark!!");
+            Console.WriteLine("Scream!!");    
+            Console.WriteLine("Scream");
         }
     }
 }
