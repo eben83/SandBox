@@ -1,4 +1,4 @@
-namespace AnimalConsoleApp
+namespace AnimalApp.Core
 {
     public enum AnimalActions
     {

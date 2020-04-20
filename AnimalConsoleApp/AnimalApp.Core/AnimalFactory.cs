@@ -1,6 +1,6 @@
 using System;
 
-namespace AnimalConsoleApp
+namespace AnimalApp.Core
 {
     public static class AnimalFactory
     {
