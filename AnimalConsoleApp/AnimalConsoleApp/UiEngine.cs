@@ -61,7 +61,7 @@ namespace AnimalConsoleApp
         {
             Console.WriteLine();
             foreach (var menu in Enum.GetValues(typeof(MainMenuChoices)))
-                Console.WriteLine($"{(int)menu}. {menu.ToString().Split("_")}");
+                Console.WriteLine($"{(int)menu}. {menu}");
             Console.WriteLine();   
         }
         
