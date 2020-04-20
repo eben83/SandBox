@@ -12,8 +12,8 @@ namespace AnimalConsoleApp
         protected override void Run()
         {
             Console.WriteLine("Whoosh");
-            Console.WriteLine($"Play time for a {Type}, {Type}'s love to run");
-            Console.WriteLine("They are the happiest while running around");
+            Console.WriteLine($"Running, They will rather watch");
+            Console.WriteLine("You Run around");
         }
         protected override void Eat()
         {
