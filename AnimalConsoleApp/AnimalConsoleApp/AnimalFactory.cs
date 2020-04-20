@@ -4,7 +4,7 @@ namespace AnimalConsoleApp
 {
     public class AnimalFactory
     {
-        public Animal CreateAnimal(AnimalTypes animalTypes, string animalName)
+        public static Animal CreateAnimal(AnimalTypes animalTypes, string animalName)
         {
             switch (animalTypes)
             {
@@ -24,5 +24,10 @@ namespace AnimalConsoleApp
                     throw new ArgumentOutOfRangeException(nameof(animalTypes), animalTypes, null);
             }
         }
+        public Animal LetTheMagicHappen(AnimalTypes animalTypes, string animalName)
+        {
+            return CreateAnimal(animalTypes, animalName);
+        }
     }
+    
 }
