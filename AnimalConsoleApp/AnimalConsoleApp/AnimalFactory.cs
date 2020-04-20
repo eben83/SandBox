@@ -4,24 +4,24 @@ namespace AnimalConsoleApp
 {
     public class AnimalFactory
     {
-        public static Animal CreateAnimal(AnimalTypes animal, string name)
+        public Animal CreateAnimal(AnimalTypes animalTypes, string animalName)
         {
-            switch (animal)
+            switch (animalTypes)
             {
                 case AnimalTypes.Dog:
-                    return new Dog(name);
+                    return new Dog(animalName);
                 case AnimalTypes.Cat:
-                    return new Cat(name);
+                    return new Cat(animalName);
                 case AnimalTypes.Elephant:
-                    return new Elephant(name);
+                    return new Elephant(animalName);
                 case AnimalTypes.Salmon:
-                    return new Salmon(name);
+                    return new Salmon(animalName);
                 case AnimalTypes.Penguin:
-                    return new Penguin(name);
+                    return new Penguin(animalName);
                 case AnimalTypes.Eagle:
-                    return new Eagle(name);
+                    return new Eagle(animalName);
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(animal), animal, null);
+                    throw new ArgumentOutOfRangeException(nameof(animalTypes), animalTypes, null);
             }
         }
     }
