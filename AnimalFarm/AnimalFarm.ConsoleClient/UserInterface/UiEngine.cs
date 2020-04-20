@@ -60,6 +60,30 @@ namespace AnimalFarm.ConsoleClient.UserInterface
                 Console.WriteLine($"{(int)menu}. {menu.GetDescription()}");
             Console.WriteLine();   
         }
+        private void ShowAnimalMenu()
+        {
+            Console.WriteLine("The following animals are available:");
+            foreach (var animalType in Enum.GetValues(typeof(AnimalTypes)))
+                Console.WriteLine($"{(int) animalType}. {animalType}");
+            Console.WriteLine();   
+        }
+        static void ShowAnimalActionMenu(AnimalTypes? animalType)
+        {
+            if (!animalType.HasValue)
+            {
+                Console.WriteLine("Which action would you like your animals to perform");
+            }
+            else
+            {
+                Console.WriteLine($"Which action would you like your {animalType} to perform");
+            }
+
+            foreach (var animalAction in Enum.GetValues(typeof(AnimalActions)))
+                Console.WriteLine($"{(int) animalAction}. {animalAction}");
+            
+            Console.WriteLine();
+            
+        }
         private void ShowAnimalListSummary(List<Animal> listOfAnimals)
         {
             if (listOfAnimals.Count == 0)
@@ -125,13 +149,7 @@ namespace AnimalFarm.ConsoleClient.UserInterface
             var animal = AnimalFactory.CreateAnimal(animalType, animalName);
             addAnimalToList.Add(animal);
         }
-        private void ShowAnimalMenu()
-        {
-            Console.WriteLine("The following animals are available:");
-            foreach (var animalType in Enum.GetValues(typeof(AnimalTypes)))
-                Console.WriteLine($"{(int) animalType}. {animalType}");
-            Console.WriteLine();   
-        }
+        
         private int GetValidAnimalMenuChoice()
         {
             var menuSelection = 0;
@@ -198,23 +216,7 @@ namespace AnimalFarm.ConsoleClient.UserInterface
 
             return actualAnimals[actualAnimalsMenuChoice];
         }
-        static void ShowAnimalActionMenu(AnimalTypes? animalType)
-        {
-            if (!animalType.HasValue)
-            {
-                Console.WriteLine("Which action would you like your animals to perform");
-            }
-            else
-            {
-                Console.WriteLine($"Which action would you like your {animalType} to perform");
-            }
-
-            foreach (var animalAction in Enum.GetValues(typeof(AnimalActions)))
-                Console.WriteLine($"{(int) animalAction}. {animalAction}");
-            
-            Console.WriteLine();
-            
-        }
+       
         private int GetValidAnimalActionMenuChoice(AnimalTypes? animalType)
         {
             var animalActionOption = 0;
