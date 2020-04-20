@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
 
 namespace AnimalConsoleApp
 {
@@ -59,9 +61,10 @@ namespace AnimalConsoleApp
         {
             Console.WriteLine();
             foreach (var menu in Enum.GetValues(typeof(MainMenuChoices)))
-                Console.WriteLine($"{(int) menu}. {menu}");
+                Console.WriteLine($"{(int)menu}. {menu.ToString().Split("_")}");
             Console.WriteLine();   
         }
+        
         private void ShowAnimalListSummary(List<Animal> listOfAnimals)
         {
             if (listOfAnimals.Count == 0)
