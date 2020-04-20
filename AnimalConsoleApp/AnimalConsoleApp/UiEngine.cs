@@ -55,11 +55,10 @@ namespace AnimalConsoleApp
         private void ShowMainMenu()
         {
             Console.WriteLine();
-            foreach (var menu in Enum.GetValues(typeof(MainMenuChoices)))
-                Console.WriteLine($"{(int)menu}. {menu}");
+            foreach (MainMenuChoices menu in Enum.GetValues(typeof(MainMenuChoices)))
+                Console.WriteLine($"{(int)menu}. {menu.GetDescription()}");
             Console.WriteLine();   
         }
-        
         private void ShowAnimalListSummary(List<Animal> listOfAnimals)
         {
             if (listOfAnimals.Count == 0)
