@@ -12,20 +12,20 @@ namespace AnimalConsoleApp
         protected override void Run()
         {
             Console.WriteLine("Whoosh");
-            Console.WriteLine($"Play time for a {Type}, {Type}'s love to run");
-            Console.WriteLine("They are the happiest while running around");
+            Console.WriteLine($"Well, this type of run, Is not what you expect");
+            Console.WriteLine($"Once a year there is something called a {Type} run");
         }
         protected override void Eat()
         {
             Console.WriteLine("Burp");
-            Console.WriteLine($"Look at this {Type}, how fast?");
-            Console.WriteLine("How fast do they eat?");
+            Console.WriteLine($"Do {Type} even eat");
+            Console.WriteLine("This might be one of the seven wonders of the world");
         }
         protected override void Talk()
         {
             Console.WriteLine("Hello");
-            Console.WriteLine("Bark!!");    
-            Console.WriteLine("Bark!!");
+            Console.WriteLine("Bubble!!");    
+            Console.WriteLine("Bubble!!");
         }
 
     }
