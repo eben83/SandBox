@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using AnimalFarm.ConsoleClient.UserInterface.Helpers;
 using AnimalFarm.Core.Application;
 using AnimalFarm.Core.Domain;
 using AnimalFarm.Core.Infrastructure;
@@ -20,7 +21,7 @@ namespace AnimalFarm.ConsoleClient.UserInterface
                 switch (menuChoice)
                 {
                     case 0:
-                        menuChoice = ShowMainMenuAndGetMainMenuChoice(animals);
+                        menuChoice = GetChoiceFromMainMenu(animals);
                         break;
 
                     case 1:
@@ -40,25 +41,12 @@ namespace AnimalFarm.ConsoleClient.UserInterface
                 }
             }
         }
-        private int ShowMainMenuAndGetMainMenuChoice(List<Animal> animalsList)
+        private int GetChoiceFromMainMenu(List<Animal> animalsList)
         {
-            ShowWelcomeMessage();
+            UiHelper.ShowWelcomeMessage();
             ShowAnimalListSummary(animalsList);
-            ShowMainMenu();
-            return GetValidMainMenuChoice();
-        }
-        private void ShowWelcomeMessage()
-        {
-            Console.Clear();
-            Console.WriteLine("Welcome, This is my one page Semi Refined Animal App, I hope you will enjoy it");
-            Console.WriteLine();
-        }
-        private void ShowMainMenu()
-        {
-            Console.WriteLine();
-            foreach (MainMenuChoices menu in Enum.GetValues(typeof(MainMenuChoices)))
-                Console.WriteLine($"{(int)menu}. {menu.GetDescription()}");
-            Console.WriteLine();   
+            MainMenuHelper.ShowMainMenu();
+            return MainMenuHelper.GetValidMainMenuChoice();
         }
         private void ShowAnimalMenu()
         {
@@ -102,37 +90,9 @@ namespace AnimalFarm.ConsoleClient.UserInterface
                 Console.Write($" {pet.Identification} |");
             }
         }
-        private void ShowErrorMessage()
-        {
-            Console.WriteLine("Sorry your choice is incorrect");
-            Console.WriteLine("Please, try make another choice.");
-            Console.ReadLine();
-        }
-        private int GetValidMainMenuChoice()
-        {
-            var menuSelection = 0;
-            
-            var isMainMenuChoiceValid = false;
-            while (!isMainMenuChoiceValid)
-            {
-                Console.WriteLine("Please, make a selection, to carry on.");
-
-                if (!int.TryParse(Console.ReadLine(), out menuSelection))
-                {
-                    ShowErrorMessage();
-                    ShowWelcomeMessage();
-                    ShowMainMenu();
-                }
-                else
-                {
-                    isMainMenuChoiceValid = true;
-                }
-            }
-            return menuSelection;
-        }
         private void ShowAnimalMenuAndAddAnimal(List<Animal> addAnimalToList)
         {
-            ShowWelcomeMessage();
+            UiHelper.ShowWelcomeMessage();
             ShowAnimalMenu();
 
             AnimalTypes animalType =(AnimalTypes) GetValidAnimalMenuChoice();
@@ -149,7 +109,6 @@ namespace AnimalFarm.ConsoleClient.UserInterface
             var animal = AnimalFactory.CreateAnimal(animalType, animalName);
             addAnimalToList.Add(animal);
         }
-        
         private int GetValidAnimalMenuChoice()
         {
             var menuSelection = 0;
@@ -160,8 +119,8 @@ namespace AnimalFarm.ConsoleClient.UserInterface
 
                 if (!int.TryParse(Console.ReadLine(), out menuSelection))
                 {
-                    ShowErrorMessage();
-                    ShowWelcomeMessage();
+                    UiHelper.ShowErrorMessage();
+                    UiHelper.ShowWelcomeMessage();
                     ShowAnimalMenu();                    
                 }
                 else
@@ -216,7 +175,6 @@ namespace AnimalFarm.ConsoleClient.UserInterface
 
             return actualAnimals[actualAnimalsMenuChoice];
         }
-       
         private int GetValidAnimalActionMenuChoice(AnimalTypes? animalType)
         {
             var animalActionOption = 0;
