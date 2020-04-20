@@ -14,15 +14,15 @@ namespace AnimalConsoleApp
         protected override void Run()
         {
             Console.WriteLine("Whoosh");
-            Console.WriteLine($"Play time for a {Type}, {Type}'s love to run");
-            Console.WriteLine("They are the happiest while running around");
+            Console.WriteLine($"HAHAHAHAHAHAHAH");
+            Console.WriteLine($"Do {Type}'s even have knees");
         }
 
         protected override void Eat()
         {
             Console.WriteLine("Burp");
-            Console.WriteLine($"Look at this {Type}, how fast?");
-            Console.WriteLine("How fast do they eat?");
+            Console.WriteLine($"They are very quick to catch fish, ");
+            Console.WriteLine($"{Type}'s are very at catching fish");
         }
 
         protected override void Fly()
@@ -35,8 +35,8 @@ namespace AnimalConsoleApp
         protected override void Talk()
         {
             Console.WriteLine("Hello");
-            Console.WriteLine("Bark!!");
-            Console.WriteLine("Bark!!");
+            Console.WriteLine("Sneeze!!");
+            Console.WriteLine("Sneeze!!");
         }
 
 
