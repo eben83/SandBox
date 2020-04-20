@@ -39,11 +39,6 @@ namespace AnimalConsoleApp
                 }
             }
         }
-        private Animal CreateAnimal(AnimalTypes animalType, string animalName)
-        {
-            var createdAnimal = new AnimalFactory().LetTheMagicHappen(animalType, animalName);
-            return createdAnimal;
-        }
         private int ShowMainMenuAndGetMainMenuChoice(List<Animal> animalsList)
         {
             ShowWelcomeMessage();
@@ -127,7 +122,7 @@ namespace AnimalConsoleApp
             Console.ReadLine();
 
             //this will create a new animal Cat and not just an Animal.Cat
-            var animal = CreateAnimal(animalType, animalName);
+            var animal = AnimalFactory.CreateAnimal(animalType, animalName);
             addAnimalToList.Add(animal);
         }
         private void ShowAnimalMenu()
