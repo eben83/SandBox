@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace AnimalApp.Core
+namespace AnimalConsoleApp.UserInterface
 {
     public enum MainMenuChoices
     {

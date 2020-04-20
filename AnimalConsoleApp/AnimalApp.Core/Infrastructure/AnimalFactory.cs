@@ -1,6 +1,7 @@
 using System;
+using AnimalApp.Core.Domain;
 
-namespace AnimalApp.Core
+namespace AnimalApp.Core.Infrastructure
 {
     public static class AnimalFactory
     {

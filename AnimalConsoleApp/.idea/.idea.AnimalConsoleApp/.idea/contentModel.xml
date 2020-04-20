@@ -3,20 +3,25 @@
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="AnimalApp.Core" t="IncludeRecursive">
-        <e p="Animal.cs" t="Include" />
-        <e p="AnimalActions.cs" t="Include" />
         <e p="AnimalApp.Core.csproj" t="IncludeRecursive" />
-        <e p="AnimalFactory.cs" t="Include" />
-        <e p="AnimalTypes.cs" t="Include" />
+        <e p="Application" t="Include">
+          <e p="ExtensionMethods.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Cat.cs" t="Include" />
-        <e p="Dog.cs" t="Include" />
-        <e p="Domain" t="Include" />
-        <e p="Eagle.cs" t="Include" />
-        <e p="Elephant.cs" t="Include" />
-        <e p="ExtensionMethods.cs" t="Include" />
-        <e p="Infrastructure" t="Include" />
-        <e p="MainMenuChoices.cs" t="Include" />
+        <e p="Domain" t="Include">
+          <e p="Animal.cs" t="Include" />
+          <e p="AnimalActions.cs" t="Include" />
+          <e p="AnimalTypes.cs" t="Include" />
+          <e p="Cat.cs" t="Include" />
+          <e p="Dog.cs" t="Include" />
+          <e p="Eagle.cs" t="Include" />
+          <e p="Elephant.cs" t="Include" />
+          <e p="Penguin.cs" t="Include" />
+          <e p="Salmon.cs" t="Include" />
+        </e>
+        <e p="Infrastructure" t="Include">
+          <e p="AnimalFactory.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -24,8 +29,6 @@
             </e>
           </e>
         </e>
-        <e p="Penguin.cs" t="Include" />
-        <e p="Salmon.cs" t="Include" />
       </e>
       <e p="AnimalConsoleApp" t="IncludeRecursive">
         <e p="AnimalConsoleApp.csproj" t="IncludeRecursive" />
@@ -39,8 +42,10 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
-        <e p="UiEngine.cs" t="Include" />
-        <e p="UserInterface" t="Include" />
+        <e p="UserInterface" t="Include">
+          <e p="MainMenuChoices.cs" t="Include" />
+          <e p="UiEngine.cs" t="Include" />
+        </e>
       </e>
       <e p="AnimalConsoleApp.sln" t="IncludeFlat" />
       <e p="OnFileApp" t="IncludeRecursive">

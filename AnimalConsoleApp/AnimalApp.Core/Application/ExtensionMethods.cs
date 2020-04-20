@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace AnimalApp.Core
+namespace AnimalApp.Core.Application
 {
     public static class ExtensionMethods
     {

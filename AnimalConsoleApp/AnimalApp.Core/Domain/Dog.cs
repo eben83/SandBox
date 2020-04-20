@@ -1,6 +1,6 @@
 using System;
 
-namespace AnimalApp.Core
+namespace AnimalApp.Core.Domain
 {
     public class Dog : Animal
     {

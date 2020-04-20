@@ -1,4 +1,4 @@
-namespace AnimalApp.Core
+namespace AnimalApp.Core.Domain
 {
     public enum AnimalTypes
     {

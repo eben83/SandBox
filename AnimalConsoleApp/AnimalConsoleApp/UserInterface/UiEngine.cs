@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using AnimalApp.Core;
+using AnimalApp.Core.Application;
+using AnimalApp.Core.Domain;
+using AnimalApp.Core.Infrastructure;
 
-namespace AnimalConsoleApp
+namespace AnimalConsoleApp.UserInterface
 {
     public class UiEngine
     {
