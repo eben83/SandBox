@@ -58,10 +58,8 @@ namespace AnimalConsoleApp
         private void ShowMainMenu()
         {
             Console.WriteLine();
-            Console.WriteLine("1. Add animal");
-            Console.WriteLine("2. Interact with animal");
-            Console.WriteLine("3. Interact with all animals");
-            Console.WriteLine("4. Exit");
+            foreach (var menu in Enum.GetValues(typeof(MainMenuChoices)))
+                Console.WriteLine($"{(int) menu}. {menu}");
             Console.WriteLine();   
         }
         private void ShowAnimalListSummary(List<Animal> listOfAnimals)
