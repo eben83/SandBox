@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalFarm.Core", "AnimalFa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalFarm.ConsoleClient", "AnimalFarm.ConsoleClient\AnimalFarm.ConsoleClient.csproj", "{83B53A61-A51F-4841-A5A4-DC40C04286A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalFarm.WebClient", "AnimalFarm.WebClient\AnimalFarm.WebClient.csproj", "{4E7BE185-C320-43D7-BA7E-D95D0E6F9B1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{83B53A61-A51F-4841-A5A4-DC40C04286A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83B53A61-A51F-4841-A5A4-DC40C04286A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83B53A61-A51F-4841-A5A4-DC40C04286A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E7BE185-C320-43D7-BA7E-D95D0E6F9B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E7BE185-C320-43D7-BA7E-D95D0E6F9B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E7BE185-C320-43D7-BA7E-D95D0E6F9B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E7BE185-C320-43D7-BA7E-D95D0E6F9B1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
