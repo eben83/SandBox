@@ -7,5 +7,15 @@ button{
     background: blue;
     flex-direction: row;
     border-radius: 15px;
+    width: 185px;
     color: #ffffff;
+    align-content: center;
+    margin-top: 5px;
+}
+
+svg{
+    display: flex;
+    width: 1.5em;
+    height: auto;
+    flex-direction: row;
 }
