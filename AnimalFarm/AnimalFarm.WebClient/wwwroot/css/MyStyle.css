@@ -2,14 +2,13 @@
     text-align: center;
 }
 
-.mainPage button{
-    display: flex;
+ .main a{
+    display: block;
+     border: solid 1px;
     background: blue;
-    flex-direction: row;
     border-radius: 15px;
     width: 185px;
     color: #ffffff;
-    
     margin-top: 5px;
     margin-right: auto;
     margin-left: auto;
