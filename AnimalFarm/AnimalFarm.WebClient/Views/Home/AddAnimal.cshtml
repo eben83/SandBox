@@ -1,15 +1,22 @@
+@using AnimalFarm.Core.Domain
 @{
     Layout = "_Layout";
     ViewData["Title"] = "Add Animals";
 }
 
-<h1>Add Animal</h1>
+<h1>Welcome to my Animal Aplication</h1>
 
-<select>
-    <option value="1">Dog</option>
-    <option value="2">Cat</option>
-    <option value="3">Elephant</option>
-    <option value="4">Salmon</option>
-    <option value="5">Penguin</option>
-    <option value="7">Eagle</option>
-</select>
+<form>
+    <label>Please add an animal:</label>
+    <select>
+        @foreach (var option in Enum.GetValues(typeof(AnimalTypes)))
+        {
+            <option value="@Convert.ToInt32(option)">@option</option>
+        }
+
+    </select>
+
+    <label>Enter a name:</label>
+    <input type="text"/>
+    <input type="button" value="Submit"/>
+</form>
