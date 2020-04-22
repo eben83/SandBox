@@ -22,7 +22,6 @@ namespace AnimalFarm.WebClient.Controllers
         {
             return View();
         }
-
        public IActionResult AddAnimal()
        {
            return View();
@@ -37,6 +36,7 @@ namespace AnimalFarm.WebClient.Controllers
        {
            return View();
        }
+       
 
 
        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

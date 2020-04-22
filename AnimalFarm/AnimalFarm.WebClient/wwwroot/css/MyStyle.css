@@ -1,18 +1,32 @@
-.mainPage h4{
+*{
+    font-family: -apple-system;
+}
+
+.main h4{
     text-align: center;
+    margin-top: 10vh;
 }
 
  .main a{
-    display: block;
+     display: block;
      border: solid 1px;
-    background: blue;
-    border-radius: 15px;
-    width: 185px;
-    color: #ffffff;
-    margin-top: 5px;
-    margin-right: auto;
-    margin-left: auto;
+     background: blue;
+     border-radius: 15px;
+     width: 185px;
+     color: #ffffff;
+     margin-top: 5px;
+     margin-right: auto;
+     margin-left: auto;
+     width: 185px;
+     height: 25px;
+     text-decoration: none;
+     text-align: center;
 }
+ .main a:hover{
+     background: dodgerblue;
+     color: black;
+     box-shadow: black;
+ }
 
 .navbar-brand svg{
     display: flex;
