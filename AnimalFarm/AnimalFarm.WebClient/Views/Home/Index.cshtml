@@ -1,17 +1,16 @@
 ﻿@{
+    Layout = "_Layout";
     ViewData["Title"] = "Home Page";
 }
-<section class="mainPage">
-    <div class="container">
+    <div>
         <div class="jumbotron text-center">
             <h1>My Animal Farm Application</h1>
         </div>
         <div class="main">
             <h4>Main Menu</h4>
-            <button>Add Animal</button>
-            <button>Interact with an animal</button>
-            <button>Interact with all animals</button>
-            <button>Exit</button>
+            <a asp-area="" asp-page="/AddAnimal">Add Animal</a>
+            <a asp-area="" asp-page="/InteractWithOneAnimal">Interact With One Animal</a>
+            <a asp-area="" asp-page="/InteractWithAllAnimals">Interact With All Animals</a>
+            <a asp-area="" asp-page="">Exit</a>
         </div>
     </div>
-</section>
