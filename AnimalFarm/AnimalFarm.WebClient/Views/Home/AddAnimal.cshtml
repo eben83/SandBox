@@ -9,25 +9,28 @@
 <div class="d-flex justify-content-center">
     <div>
         <div class="form-group">
+            <div>
                 <label class="form-row">Please add an animal:</label>
             </div>
-            <div>
-                <select class="form-group">
-                    @foreach (var option in Enum.GetValues(typeof(AnimalTypes)))
-                    {
-                        <option value="@Convert.ToInt32(option)">@option</option>
-                    }
-                </select>
-            </div>
-        
-            <div class="form-group">
-                <label for="animalName">Name:</label>
-                <input class="was-validated form-control form-control-lg" placeholder="Enter a Name" type="text" required/>
-                <div class="invalid-feedback">Please Enter a name</div>
+            <div >
                 <div>
-                    <input type="button" value="Submit" id="animalName"/>
+                    <select>
+                        @foreach (var option in Enum.GetValues(typeof(AnimalTypes)))
+                        {
+                            <option value="@Convert.ToInt32(option)">@option</option>
+                        }
+                    </select>
+                </div>
+        
+                <div>
+                    <label for="animalName">Name:</label>
+                    <input class="was-validated form-control form-control-lg" placeholder="Enter a Name" type="text" required/>
+                    <div class="invalid-feedback">Please Enter a name</div>
+                    <div>
+                        <input type="button" value="Submit" id="animalName"/>
+                    </div>
                 </div>
             </div>
+        </div>
     </div>
 </div>
-
