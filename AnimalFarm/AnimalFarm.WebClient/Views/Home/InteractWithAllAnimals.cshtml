@@ -14,7 +14,7 @@
             <div>
                 <h4>What would you like your animals to do?</h4>
             </div>
-            <div>
+            <div class="d-flex justify-content-center">
                 <select>
                     @foreach (var action in Enum.GetValues(typeof(AnimalActions)))
                     {
@@ -23,7 +23,7 @@
                 </select>
             </div>
             <br/>
-            <div>
+            <div class="d-flex justify-content-center">
                 <input class="btn btn-lg btn-primary" type="button" value="Submit"/>
             </div>
         </div>
