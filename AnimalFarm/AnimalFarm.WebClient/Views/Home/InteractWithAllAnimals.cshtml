@@ -3,25 +3,32 @@
     Layout = "_Layout";
     ViewData["Title"] = "Interact With All Animals";
 }
+
+
 <div class="jumbotron">
-    <div>
-        <h4>
-            Here you will be able to interact with all your animals at once.
-        </h4>
     <div class="d-flex justify-content-center">
         <div>
-            <h4>
-                What would you like your animals to do?
-            </h4>
-        </div>
-        <select>
             <div>
-                @foreach (var action in Enum.GetValues(typeof(AnimalActions)))
-                {
-                    <option value="@Convert.ToInt32(action)">@action</option>  
-                }
+                <h4>Here you will be able to interact with all your animals at once.</h4>
             </div>
-        </select>
+            <div>
+                <h4>What would you like your animals to do?</h4>
+            </div>
+            <div>
+                <select>
+                    @foreach (var action in Enum.GetValues(typeof(AnimalActions)))
+                    {
+                        <option value="@Convert.ToInt32(action)">@action</option>  
+                    }
+                </select>
+            </div>
+            <br/>
+            <div>
+                <input class="btn btn-lg btn-primary" type="button" value="Submit"/>
+            </div>
         </div>
     </div>
 </div>
+
+
+
