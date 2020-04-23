@@ -1,4 +1,37 @@
+@using AnimalFarm.Core.Domain
 @{
     Layout = "_Layout";
     ViewData["Title"] = "Interact With One Animal";
 }
+<div>
+    <h1>
+        Here you will be able to interact with your animal
+    </h1>
+</div>
+<div>
+    <h1>
+        What Animal would you like to interact with?
+    </h1>
+</div>
+<div>
+    <select>
+        @foreach (var animal in Enum.GetValues(typeof(AnimalTypes)))
+            {
+                <option value="@Convert.ToInt32(animal)">@animal</option>
+            }
+    </select>
+</div>
+<div>
+    <p>You selected animal</p>
+</div>
+<div>
+    <h1>What Action would you like your animal to do?</h1>
+</div>
+<div>
+    <select>
+        @foreach (var action in Enum.GetValues(typeof(AnimalActions)))
+            {
+             <option value="@Convert.ToInt32(action)">@action</option>   
+            }
+    </select>
+</div>
