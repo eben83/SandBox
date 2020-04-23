@@ -1,3 +1,4 @@
+@model InteractWithOneAnimalViewModel;
 @using AnimalFarm.Core.Domain
 @{
     Layout = "_Layout";
@@ -9,29 +10,27 @@
         <div>
             <div>
                 <h4>Here you will be able to interact with your animals</h4>
-                <div class="d-flex justify-content-center">
-                    <select>
-                        @foreach (var animal in Enum.GetValues(typeof(AnimalTypes)))
-                        {
-                            <option value="@Convert.ToInt32(animal)">@animal</option>
-                        }
-                    </select>
-                </div>
+                @{
+                    var animalType = Html.GetEnumSelectList(typeof(AnimalTypes));
+                    var animalAction = Html.GetEnumSelectList(typeof(AnimalActions));
+                }
             </div>
-            <div>
                 <h4>What Animal would you like to interact with?</h4>
-                <div class="d-flex justify-content-center">
-                    <select>
-                        @foreach (var action in Enum.GetValues(typeof(AnimalActions)))
-                        {
-                            <option value="@Convert.ToInt32(action)">@action</option>   
-                        }
-                    </select>
+            <div class="d-flex justify-content-center">
+                <div class="col-md-4">
+                    @Html.DropDownListFor(a=>a.SelectedAnimal, animalType, "Please Select", new {@class = "form-control"})
                 </div>
             </div>
+            <h4>What would you like your animal to do?</h4>
+            <div class="d-flex justify-content-center">
+                <div class="col-md-4">
+                    @Html.DropDownListFor(a=>a.AnimalAction, animalAction, "Please Select", new {@class = "form-control"})
+                </div>
+            </div>
+                    
             <br/>
             <div class="d-flex justify-content-center">
-                <input class="btn btn-lg btn-primary" type="button" value="Submit"/>
+                <input class="btn btn-lg btn-primary" type="submit" value="Submit"/>
             </div>
         </div>
     </div>
