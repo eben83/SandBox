@@ -13,8 +13,8 @@
                 <div>
                     <label>Please add an animal:</label>
                 </div>
-                <div >
-                    <div>
+                <div>
+                    <div class="d-flex justify-content-center">
                         <select>
                             @foreach (var option in Enum.GetValues(typeof(AnimalTypes)))
                             {
@@ -28,7 +28,7 @@
                         <input class="was-validated form-control form-control-lg" placeholder="Enter a Name" type="text" required/>
                         <div class="invalid-feedback">Please Enter a name</div>
                         <br/>
-                        <div>
+                        <div class="d-flex justify-content-center">
                             <input class="btn btn-lg btn-primary" type="button" value="Submit"/>
                         </div>
                     </div>
