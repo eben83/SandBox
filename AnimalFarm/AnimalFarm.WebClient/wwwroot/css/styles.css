@@ -1,0 +1,17 @@
+*{
+    font-family: -apple-system;
+}
+.navbar-brand svg{
+    display: flex;
+    width: 1.5em;
+    height: auto;
+    flex-direction: row;
+}
+
+h4{
+    text-align: center;
+    margin-top: 1em;
+}
+.jumbotron{
+    padding: 20px;
+}
