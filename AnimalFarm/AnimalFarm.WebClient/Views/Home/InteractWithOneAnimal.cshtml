@@ -4,37 +4,32 @@
     ViewData["Title"] = "Interact With One Animal";
 }
 
-<div class="d-flex justify-content-center">
-    <div class="jumbotron">
+<div class="jumbotron">
+    <div class="d-flex justify-content-center">
         <div>
-            <h4>Here you will be able to interact with your animals</h4>
-        </div>
-        <div>
-            <h4>What Animal would you like to interact with?</h4>
-        </div>
-        <div class="d-flex justify-content-center">
             <div>
-                <select>
+                <h4>Here you will be able to interact with your animals</h4>
+                <select class="d-flex justify-content-center">
                     @foreach (var animal in Enum.GetValues(typeof(AnimalTypes)))
-                        {
-                            <option value="@Convert.ToInt32(animal)">@animal</option>
-                        }
+                    {
+                        <option value="@Convert.ToInt32(animal)">@animal</option>
+                    }
+                </select>
+            </div>
+            <div>
+                <h4>What Animal would you like to interact with?</h4>
+                <select>
+                    @foreach (var action in Enum.GetValues(typeof(AnimalActions)))
+                    {
+                        <option value="@Convert.ToInt32(action)">@action</option>   
+                    }
                 </select>
             </div>
         </div>
-        <div>
-            <h4>What Action would you like your animal to do?</h4>
-        </div>
-        <div class=" d-flex justify-content-center">
-            <select>
-                @foreach (var action in Enum.GetValues(typeof(AnimalActions)))
-                {
-                    <option value="@Convert.ToInt32(action)">@action</option>   
-                }
-            </select>
-        </div>
-        <div class="d-flex justify-content-center">
-            <input type="button" class="btn btn-lg-primary"/>
-        </div>
     </div>
 </div>
+
+
+
+
+
