@@ -4,10 +4,11 @@ namespace NumberApp
 {
     public class UiEngine
     {
+            const int three = 3;
+            const int five = 5;
+            const int ThreeAndFive = 3 * 5;
         public void Run()
         {
-            var three = 3;
-            var five = 5;
 
             for (int i = 1; i <= 300; i++)
             {
@@ -16,6 +17,7 @@ namespace NumberApp
                     Console.WriteLine("Eureka");
                     continue;
                 }
+                
                 if (i % three == 0)
                 {
                     Console.WriteLine("Pluto");
@@ -29,6 +31,13 @@ namespace NumberApp
                 }
                 Console.WriteLine(i);
             }
+        }
+        public int Factor(int number){
+            if (number % three == 0 && number % five == 0)
+            {
+                Console.WriteLine("EureKa");
+            }
+            return Factor(number);
         }
     }
 }
