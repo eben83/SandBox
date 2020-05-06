@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Container } from 'reactstrap';
+import {Container, Nav} from 'reactstrap';
 import './navbar/nav-bar';
+import NavBar from "./navbar/nav-bar";
+import {Home} from "./Home/Home";
 
 export class Layout extends Component {
   static displayName = Layout.name;
@@ -8,10 +10,11 @@ export class Layout extends Component {
   render () {
     return (
       <div>
-        <nav-bar />
-        <Container>
-          {this.props.children}
-        </Container>
+        <NavBar />
+        <Home />
+        {/*<Container>*/}
+        {/*  {this.props.children}*/}
+        {/*</Container>*/}
       </div>
     );
   }
