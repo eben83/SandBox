@@ -1,17 +1,36 @@
 import React, { useState } from 'react';
 import './nav-bar.css';
 
-const Nav = (props) => {
+const NavBar = (props) => {
 
     return (
-        <div className="navbar navbar-expand bg-light navbar-light">
+        <nav className="navbar navbar-expand bg-dark navbar-dark fixed-top">
+                <a className="navbar-brand">Eben Burger</a>
+            
             <ul className="navbar-nav">
-                <li className="navbar-item active">
-                    <a className="nav-link">Link</a>
+                
+                <li className="nav-item">
+                    <a className="nav-link" href="#">Home</a>
+                </li>
+                
+                <li className="nav-item">
+                    <a className="nav-link" href="#">About Me</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Education
+                    </a>
+                    
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
                 </li>
             </ul>
-        </div>
+        </nav>
     );
 }
 
-export default Nav;
+export default NavBar;
