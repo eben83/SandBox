@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5cd641a-e3e9-44e5-b8e8-e4ca7f1dd873" name="Default Changelist" comment="" />
+    <list default="true" id="f5cd641a-e3e9-44e5-b8e8-e4ca7f1dd873" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Myself/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Myself/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myself/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Myself/Pages/Index.cshtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +15,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Myself/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Myself/Pages/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Myself/wwwroot/css/site.css" />
+        <option value="$PROJECT_DIR$/Myself/Pages/Index.cshtml" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1bXCuE4GYsGk8uXHeEPZXAdoSzD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -96,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588769271979</updated>
-      <workItem from="1588769278810" duration="308000" />
+      <workItem from="1588769278810" duration="1073000" />
     </task>
     <servers />
   </component>
