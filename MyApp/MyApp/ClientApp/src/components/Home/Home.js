@@ -5,8 +5,9 @@ export class Home extends Component {
 
   render () {
     return (
-      <section className="p-5">
-          <h1>Welcome to my Portfolio</h1>
+      <section className="p-5 text-center">
+        <h1>Welcome to my Portfolio</h1>
+        <h1>I'm A junior Trainee Developer</h1>
       </section>
     );
   }
