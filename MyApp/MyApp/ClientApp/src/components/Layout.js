@@ -10,9 +10,9 @@ export class Layout extends Component {
     return (
       <div>
         <Home />
-        {/*<Container>*/}
-        {/*  {this.props.children}*/}
-        {/*</Container>*/}
+        <Container>
+          {this.props.children}
+        </Container>
       </div>
     );
   }
