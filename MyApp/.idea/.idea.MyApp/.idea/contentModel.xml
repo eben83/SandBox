@@ -30,7 +30,6 @@
           <e p="node_modules/@typescript-eslint/parser" t="IncludeRecursive" />
           <e p="node_modules/@typescript-eslint/typescript-estree" t="IncludeRecursive" />
           <e p="node_modules/ajv" t="IncludeRecursive" />
-          <e p="node_modules/babel-eslint" t="IncludeRecursive" />
           <e p="node_modules/babel-jest" t="IncludeRecursive" />
           <e p="node_modules/bootstrap" t="IncludeRecursive" />
           <e p="node_modules/chalk" t="IncludeRecursive" />
@@ -44,6 +43,7 @@
           <e p="node_modules/eslint-plugin-jsx-a11y" t="IncludeRecursive" />
           <e p="node_modules/eslint-plugin-react" t="IncludeRecursive" />
           <e p="node_modules/fast-deep-equal" t="IncludeRecursive" />
+          <e p="node_modules/fast-json-stable-stringify" t="IncludeRecursive" />
           <e p="node_modules/fsevents" t="IncludeRecursive" />
           <e p="node_modules/html-webpack-plugin" t="IncludeRecursive" />
           <e p="node_modules/jest" t="IncludeRecursive" />
@@ -69,7 +69,6 @@
           <e p="node_modules/source-map" t="IncludeRecursive" />
           <e p="node_modules/uri-js" t="IncludeRecursive" />
           <e p="node_modules/worker-farm" t="IncludeRecursive" />
-          <e p="package-lock.json" t="Include" />
           <e p="package.json" t="Include" />
           <e p="public" t="Include">
             <e p="favicon.ico" t="Include" />
@@ -110,6 +109,7 @@
           <e p="Error.cshtml" t="Include" />
           <e p="Error.cshtml.cs" t="Include" />
         </e>
+        <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
