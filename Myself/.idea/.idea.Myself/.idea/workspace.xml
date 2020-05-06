@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5cd641a-e3e9-44e5-b8e8-e4ca7f1dd873" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Myself/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Myself/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Myself/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Myself/Pages/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588769271979</updated>
-      <workItem from="1588769278810" duration="1073000" />
+      <workItem from="1588769278810" duration="1566000" />
     </task>
     <servers />
   </component>
@@ -122,25 +121,29 @@
       <screen x="-1920" y="-157" width="1920" height="1057" />
     </state>
     <state x="-1564" y="51" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.852/-1920.-157.1920.1057@-1920.-157.1920.1057" timestamp="1588769290914" />
-    <state width="1398" height="222" key="GridCell.Tab.0.bottom" timestamp="1588769334330">
+    <state width="1398" height="222" key="GridCell.Tab.0.bottom" timestamp="1588770998868">
       <screen x="0" y="23" width="1440" height="852" />
     </state>
     <state width="1398" height="222" key="GridCell.Tab.0.bottom/0.23.1440.852/-1920.-157.1920.1057@-1920.-157.1920.1057" timestamp="1588769268958" />
-    <state width="1398" height="222" key="GridCell.Tab.0.bottom/0.23.1440.852/-1920.-157.1920.1057@0.23.1440.852" timestamp="1588769334330" />
-    <state width="1398" height="222" key="GridCell.Tab.0.center" timestamp="1588769334328">
+    <state width="1398" height="222" key="GridCell.Tab.0.bottom/0.23.1440.852/-1920.-157.1920.1057@0.23.1440.852" timestamp="1588770998868" />
+    <state width="1398" height="222" key="GridCell.Tab.0.center" timestamp="1588770998865">
       <screen x="0" y="23" width="1440" height="852" />
     </state>
     <state width="1398" height="222" key="GridCell.Tab.0.center/0.23.1440.852/-1920.-157.1920.1057@-1920.-157.1920.1057" timestamp="1588769268956" />
-    <state width="1398" height="222" key="GridCell.Tab.0.center/0.23.1440.852/-1920.-157.1920.1057@0.23.1440.852" timestamp="1588769334328" />
-    <state width="1398" height="222" key="GridCell.Tab.0.left" timestamp="1588769334325">
+    <state width="1398" height="222" key="GridCell.Tab.0.center/0.23.1440.852/-1920.-157.1920.1057@0.23.1440.852" timestamp="1588770998865" />
+    <state width="1398" height="222" key="GridCell.Tab.0.left" timestamp="1588770998865">
       <screen x="0" y="23" width="1440" height="852" />
     </state>
     <state width="1398" height="222" key="GridCell.Tab.0.left/0.23.1440.852/-1920.-157.1920.1057@-1920.-157.1920.1057" timestamp="1588769268955" />
-    <state width="1398" height="222" key="GridCell.Tab.0.left/0.23.1440.852/-1920.-157.1920.1057@0.23.1440.852" timestamp="1588769334325" />
-    <state width="1398" height="222" key="GridCell.Tab.0.right" timestamp="1588769334329">
+    <state width="1398" height="222" key="GridCell.Tab.0.left/0.23.1440.852/-1920.-157.1920.1057@0.23.1440.852" timestamp="1588770998865" />
+    <state width="1398" height="222" key="GridCell.Tab.0.right" timestamp="1588770998866">
       <screen x="0" y="23" width="1440" height="852" />
     </state>
     <state width="1398" height="222" key="GridCell.Tab.0.right/0.23.1440.852/-1920.-157.1920.1057@-1920.-157.1920.1057" timestamp="1588769268957" />
-    <state width="1398" height="222" key="GridCell.Tab.0.right/0.23.1440.852/-1920.-157.1920.1057@0.23.1440.852" timestamp="1588769334329" />
+    <state width="1398" height="222" key="GridCell.Tab.0.right/0.23.1440.852/-1920.-157.1920.1057@0.23.1440.852" timestamp="1588770998866" />
+    <state x="255" y="184" key="Rider.ProjectTemplateDialog.Size" timestamp="1588770801899">
+      <screen x="0" y="23" width="1440" height="852" />
+    </state>
+    <state x="255" y="184" key="Rider.ProjectTemplateDialog.Size/0.23.1440.852/-1920.-157.1920.1057@0.23.1440.852" timestamp="1588770801899" />
   </component>
 </project>
