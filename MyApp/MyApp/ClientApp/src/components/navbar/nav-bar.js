@@ -1,36 +1,40 @@
-import React, { useState } from 'react';
-import './nav-bar.css';
+import React, { Component } from 'react';
+import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import './NavMenu.css';
 
-const NavBar = (props) => {
+export class NavBar extends Component {
+    static displayName = NavBar.name;
+    
+    render () {
+        return (
+            <container>
+                        <nav className="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+                            <NavbarBrand tag={Link} to="/">Eben Burger</NavbarBrand>
 
-    return (
-        <nav className="navbar navbar-expand bg-dark navbar-dark fixed-top">
-                <a className="navbar-brand">Eben Burger</a>
-            
-            <ul className="navbar-nav">
-                
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Home</a>
-                </li>
-                
-                <li className="nav-item">
-                    <a className="nav-link" href="#">About Me</a>
-                </li>
-                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                        Education
-                    </a>
-                    
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    );
+                            <ul className="navbar-nav sticky-top">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="../About/about.js">Link 1</a>
+                                </li>
+                                
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">Link 2</a>
+                                </li>
+
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle" href="#" id="navbardrop"
+                                       data-toggle="dropdown">
+                                        Dropdown link
+                                    </a>
+                                    <div className="dropdown-menu">
+                                        <a className="dropdown-item" href="#">Link 1</a>
+                                        <a className="dropdown-item" href="#">Link 2</a>
+                                        <a className="dropdown-item" href="#">Link 3</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+            </container>
+        );
+    }
 }
-
-export default NavBar;
