@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router';
-import { Layout } from './components/Layout';
-import { Home } from './components/Home/Home';
-import { About } from './components/About/about';
-
-import { FetchData } from './components/FetchData';
-import { Counter } from './components/Counter';
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { Home } from '../src/components/Home/Home'
+import { About } from '../src/components/About/about.'
+import { Training } from '../src/components/Training/training'
 
 import './custom.css';
 
@@ -14,11 +11,16 @@ export default class App extends Component {
 
   render () {
     return (
-      <Layout>
-        <Route exact path='/' component={Home} />
-        <Route path='/About' component='/About' />
-        {/*<Route path='/fetch-data' component={FetchData} />*/}
-      </Layout>
+      <React.Fragment>
+          <Router>
+            <switch>
+                <Route exact path="/" component={Home}/>
+                <Route path="/about" component={About}/>
+                <Route path="/Training" component={Training}/>
+                {/*<Route component={NoMatch}/>*/}
+            </switch>
+          </Router>
+      </React.Fragment>
     );
   }
 }
