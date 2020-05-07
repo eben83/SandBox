@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import { Home } from '../src/components/Home/Home'
-import { About } from '../src/components/About/about.'
+import { About } from '../src/components/About/about'
 import { Training } from '../src/components/Training/training'
+import { Layout } from "./components/Layout";
+import {Navigation} from "./components/navbar/Navigation";
 
 import './custom.css';
 
@@ -12,14 +14,16 @@ export default class App extends Component {
   render () {
     return (
       <React.Fragment>
-          <Router>
-            <switch>
-                <Route exact path="/" component={Home}/>
-                <Route path="/about" component={About}/>
-                <Route path="/Training" component={Training}/>
-                {/*<Route component={NoMatch}/>*/}
-            </switch>
-          </Router>
+          <Layout>
+              <Router>
+                <switch>
+                    <Route exact path="/" component={Home}/>
+                    <Navigation />
+                    <Route path="/about" component={About}/>
+                    <Route path="/Training" component={Training}/>
+                </switch>
+              </Router>
+          </Layout>
       </React.Fragment>
     );
   }
