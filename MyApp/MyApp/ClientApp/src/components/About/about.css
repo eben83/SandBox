@@ -1,12 +1,7 @@
 .about {
-    padding: 10vh 10vw;
 }
 img {
     width: 50vw;
-    height: 70vh;
-    top: -50rem;
-    padding-left: 10vw;
-    margin-right: -45vw;
+    height: 85.5vh;
     object-fit: cover;
-    z-index: -1;
 }
