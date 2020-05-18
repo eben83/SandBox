@@ -5,22 +5,22 @@
     ViewData["Title"] = "Add Animals";
 }
 <div class="jumbotron">
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center flex-column">
         <div>
             @{
                 var animalTypes = Html.GetEnumSelectList(typeof(AnimalTypes));
             }
-            <div class="flex-row">
+            <div class="">
                 @Html.LabelFor(a => a.SelectedAnimalType,"Animal Selection" ,new{ @class = "form-control"})
             </div>
-            <div class="flex-row">
+            <div class="">
                 @Html.DropDownListFor(a=>a.SelectedAnimalType, animalTypes, "Please Select", new{@class = "form-control form-control-lg"})
             </div>
     
-            <div class="flex-row">
+            <div class="">
                 @Html.LabelFor(a=>a.AnimalName, "Name", new {@class = "form-control"})
             </div>
-            <div class="flex-row">
+            <div class="">
             @Html.TextBoxFor(a => a.AnimalName, new {@class = "form-control"})
             <br/>
                 <div class="d-flex justify-content-center">
