@@ -12,28 +12,28 @@ const ContactMe = () => {
                     ...prevState, [name]: value
                 })
             )
-            console.log(form)
         }
         
-        const onSubmitHandler = (e) => {
-            e.preventDefault();
-            console.log(form)
+        const submitHandler = (e) => {
             
+            console.log(form)
+            e.preventDefault();
         }
-        
 
     return(
-        <form className="d-flex flex-column col-3 align-content-center needs-validation" onSubmit={onSubmitHandler}>
+        <form className="d-flex flex-column col-3 align-content-center needs-validation" onSubmit={submitHandler}>
             
             <input type="text" name="first_name" placeholder="Name"
                     value={form.first_name}       
-                   onChange={(e) => changeHandler(e)}/>
+                   onChange={(e) => changeHandler(e)}
+                   required
+            />
                    
             <input type="text" name="surname" placeholder="Surname"
                     value={form.surname}       
                    onChange={(e) => changeHandler(e)}/>
                    
-            <a className="btn btn-primary btn-lg" type="submit">Submit</a>
+            <button className="btn btn-primary btn-lg" type="submit">Submit</button>
             
         </form>
     );
