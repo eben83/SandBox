@@ -42,6 +42,14 @@ namespace AnimalFarm.WebClient.Controllers
            return View();
        }
 
+       [HttpPost]
+       public ActionResult Form(FormViewModel form)
+       {
+           var firstName = form.FirstName;
+           var lastName = form.LastName;
+           return View();
+       }
+
 
        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
