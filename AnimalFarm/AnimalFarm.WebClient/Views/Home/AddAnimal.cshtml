@@ -1,32 +1,63 @@
 @model AddAnimalViewModel;
 @using AnimalFarm.Core.Domain
+@using AnimalFarm.Core.Infrastructure
+@using System.Net.Mime
 @{
     Layout = "_Layout";
     ViewData["Title"] = "Add Animals";
 }
 <div class="jumbotron">
-    <div class="d-flex justify-content-center flex-column">
+    <div class="justify-content-center flex-column col-3">
         <div>
             @{
                 var animalTypes = Html.GetEnumSelectList(typeof(AnimalTypes));
+
+                
+                var animal = new List<Animal>();
+                
+                //what needs to be added to be able to add the data to the list
+                // var addAnimalToList = animal.Add();
+                
             }
-            <div class="">
-                @Html.LabelFor(a => a.SelectedAnimalType,"Animal Selection" ,new{ @class = "form-control"})
-            </div>
-            <div class="">
-                @Html.DropDownListFor(a=>a.SelectedAnimalType, animalTypes, "Please Select", new{@class = "form-control form-control-lg"})
-            </div>
-    
-            <div class="">
-                @Html.LabelFor(a=>a.AnimalName, "Name", new {@class = "form-control"})
-            </div>
-            <div class="">
-            @Html.TextBoxFor(a => a.AnimalName, new {@class = "form-control"})
-            <br/>
-                <div class="d-flex justify-content-center">
-                    <input class="btn btn-lg btn-primary" type="submit" value="Submit"/>
+            
+            @using (Html.BeginForm())
+            {
+                <div class="">
+                    @Html.LabelFor(a => a.SelectedAnimalType,
+                        "Animal Selection" ,
+                        new{ @class = "form-control"})
                 </div>
-            </div>
+                <div class="">
+                    @Html.DropDownListFor(a=>a.SelectedAnimalType, animalTypes, 
+                        "Please Select", 
+                        new{@class = "form-control form-control-lg justify-content-centre"})
+                </div>
+    
+                <div class="">
+                    @Html.LabelFor(a=>a.AnimalName, 
+                        "Name", 
+                        new {@class = "form-control"})
+                </div>
+                <div class="">
+                    @Html.TextBoxFor(a => a.AnimalName, 
+                        new {@class = "form-control", name="AnimalName"})
+                    <br/>
+                    <div class="d-flex justify-content-center">
+                        <input class="btn btn-lg btn-primary" type="submit" value="Submit"/>
+                    </div>
+                </div>
+            }
+            
         </div>
     </div>
+</div>
+
+<div class="jumbotron mt-5">
+    @{
+        foreach (var VARIABLE in animal)
+        {
+            
+        }
+    }
+    
 </div>
