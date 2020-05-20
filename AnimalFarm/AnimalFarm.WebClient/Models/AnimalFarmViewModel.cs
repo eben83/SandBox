@@ -5,7 +5,7 @@ namespace AnimalFarm.WebClient.Models
 {
     public class AnimalFarmViewModel
     {
-        List<Animal> Animals = new List<Animal>();
+        public List<Animal> Animals = new List<Animal>();
         
     }
 }
