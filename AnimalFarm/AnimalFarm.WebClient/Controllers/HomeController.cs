@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using AnimalFarm.Core.Domain;
+using AnimalFarm.Core.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AnimalFarm.WebClient.Models;
@@ -21,13 +22,26 @@ namespace AnimalFarm.WebClient.Controllers
 
        public IActionResult Index()
         {
-            return View();
+            //creates a new instance of the View Model
+            var vm = new AnimalFarmViewModel();
+
+            //creates a new instance of the Animal
+            var testAnimal = AnimalFactory.CreateAnimal(AnimalTypes.Cat, "John");
+            
+            //adds the test data to the list
+            vm.Animals.Add(testAnimal);
+
+            //this is to pass the View Model around the app, that will keep the state of the list
+            TempData["AnimalVm"] = (vm);
+            
+            //returns the view with the View Model passed in
+            return View(vm);
         }
 
-       public ActionResult AddAnimal(AddAnimalViewModel animalTypes, string animalName)
+       public ActionResult AddAnimal(AddAnimalViewModel animalTypes, string Name)
        {
            var animalType = animalTypes.SelectedAnimalType;
-           var name = animalTypes.AnimalName;
+           var animalName = animalTypes.AnimalName;
            return View();
        }
 
