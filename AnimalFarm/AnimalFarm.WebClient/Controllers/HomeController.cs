@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using AnimalFarm.Core.Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AnimalFarm.WebClient.Models;
@@ -22,8 +23,11 @@ namespace AnimalFarm.WebClient.Controllers
         {
             return View();
         }
-       public IActionResult AddAnimal()
+
+       public ActionResult AddAnimal(AddAnimalViewModel animalTypes, string animalName)
        {
+           var animalType = animalTypes.SelectedAnimalType;
+           var name = animalTypes.AnimalName;
            return View();
        }
 
