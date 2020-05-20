@@ -11,16 +11,9 @@
         <div>
             @{
                 var animalTypes = Html.GetEnumSelectList(typeof(AnimalTypes));
-
-                
-                var animal = new List<Animal>();
-                
-                //what needs to be added to be able to add the data to the list
-                // var addAnimalToList = animal.Add();
-                
             }
             
-            @using (Html.BeginForm())
+            @using (Html.BeginForm("AddAnimal", "Home"))
             {
                 <div class="">
                     @Html.LabelFor(a => a.SelectedAnimalType,
@@ -47,17 +40,6 @@
                     </div>
                 </div>
             }
-            
         </div>
     </div>
-</div>
-
-<div class="jumbotron mt-5">
-    @{
-        foreach (var VARIABLE in animal)
-        {
-            
-        }
-    }
-    
 </div>
