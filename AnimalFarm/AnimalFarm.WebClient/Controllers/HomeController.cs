@@ -2,74 +2,93 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using AnimalFarm.Core.Domain;
 using AnimalFarm.Core.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AnimalFarm.WebClient.Models;
+using Newtonsoft.Json;
 
 namespace AnimalFarm.WebClient.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private AnimalFarmViewModel _model;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            _model = new AnimalFarmViewModel();
         }
 
-       public IActionResult Index()
+        private void GetModelFromTempData ()
         {
-            //creates a new instance of the View Model
-            var vm = new AnimalFarmViewModel();
-
-            //creates a new instance of the Animal
-            var testAnimal = AnimalFactory.CreateAnimal(AnimalTypes.Cat, "John");
+            var json = TempData["AnimalVm"];
             
-            //adds the test data to the list
-            vm.Animals.Add(testAnimal);
+            if (json == null)
+            {
+                return;
+            }
 
-            //this is to pass the View Model around the app, that will keep the state of the list
-            TempData["AnimalVm"] = (vm);
-            
-            //returns the view with the View Model passed in
-            return View(vm);
+            _model = JsonConvert.DeserializeObject<AnimalFarmViewModel>(json.ToString());
         }
 
-       public ActionResult AddAnimal(AddAnimalViewModel animalTypes, string Name)
-       {
-           var animalType = animalTypes.SelectedAnimalType;
-           var animalName = animalTypes.AnimalName;
-           return View();
-       }
+        private void SetTempData()
+        {
+            TempData["AnimalVm"] = JsonConvert.SerializeObject(_model);
+        }
 
-       public IActionResult InteractWithOneAnimal()
-       {
-           return View();
-       }
+        public IActionResult Index()
+        {
+            GetModelFromTempData();
+            return View(_model);
+        }
 
-       public IActionResult InteractWithAllAnimals()
-       {
-           return View();
-       }
+        public IActionResult AddAnimal()
+        {
+            GetModelFromTempData();
+            var addAnimalView = new AddAnimalViewModel();
+            SetTempData();
+            return View(addAnimalView);
+        }
 
-       public IActionResult Form()
-       {
-           return View();
-       }
+        [HttpPost]
+        public IActionResult AddAnimal(AddAnimalViewModel vm)
+        {
+            GetModelFromTempData();
+            var animal = AnimalFactory.CreateAnimal((AnimalTypes)vm.SelectedAnimalType, vm.AnimalName);
+            _model.Animals.Add(animal);
+            SetTempData();
+            return RedirectToAction("Index");
+        }
 
-       [HttpPost]
-       public ActionResult Form(FormViewModel form)
-       {
+        public IActionResult InteractWithOneAnimal()
+        {
+           return View();
+        }
+
+        public IActionResult InteractWithAllAnimals()
+        {
+           return View();
+        }
+
+        public IActionResult Form()
+        {
+           return View();
+        }
+
+        [HttpPost]
+        public IActionResult Form(FormViewModel form)
+        {
            var firstName = form.FirstName;
            var lastName = form.LastName;
            return View();
-       }
+        }
 
-
-       [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
