@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello</p>
+    <script>
+        var bgColor = new Array("#029fd4", "#d43702", "#1eff0", "#eaeaff", "#ffea00", "#ab5252", "#ffffff", "#de28d8")
+
+
+        /*
+        the below, chooses a random number 1st and multiplies it by the number of elements in the array, \
+        the Math.floor then rounds down to the nearest whole number
+        */
+       document.body.style.background = bgColor[Math.floor(Math.random()*bgColor.length)]
+    </script>
+</body>
+</html>
