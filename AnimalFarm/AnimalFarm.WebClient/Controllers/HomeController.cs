@@ -67,12 +67,14 @@ namespace AnimalFarm.WebClient.Controllers
 
         public IActionResult InteractWithOneAnimal()
         {
-           return View();
+            GetModelFromTempData();
+            return View();
         }
 
         public IActionResult InteractWithAllAnimals()
-        {
-           return View();
+        { 
+            GetModelFromTempData();
+            return View();
         }
 
         public IActionResult Form()
