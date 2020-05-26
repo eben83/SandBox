@@ -38,35 +38,32 @@ namespace AnimalFarm.Core.Domain
                     throw new ArgumentOutOfRangeException(nameof(animalAction), "Use the enum directly"); 
             }
         }
-
         public string HungerLevel ()
         {
             var food = "";
             if (Hungry == 10)
             {
-                food = $"I'm Full {Hungry}";
+                food = $"I'm Full, lets do something!! - {Hungry}";
                 
             }
             else if (Hungry >= 5)
             {
-                food = $"I could do with a snack {Hungry}";
+                food = $"I could do with a snack - {Hungry}";
             }
             else if (Hungry <= 3)
             {
-                food = $"I'm hungry, I need something to eat {Hungry}";
+                food = $"I'm hungry, I need something to eat - {Hungry}";
             }
             else
             {
-                food = $"I'm not going to do anything until I eat!!! {Hungry}";
+                food = $"I'm not going to do anything until I eat!!! - {Hungry}";
             }
             return food;
         }
-
         public int feeding()
         {
             return Hungry += 10 - Hungry;
         }
-        
         protected virtual void Run()
         {
             Console.WriteLine("Animal is running");
