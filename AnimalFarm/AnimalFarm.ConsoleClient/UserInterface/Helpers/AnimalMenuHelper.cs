@@ -32,8 +32,8 @@ namespace AnimalFarm.ConsoleClient.UserInterface.Helpers
                 ? "Which action would you like your animals to perform"
                 : $"Which action would you like your {animalType} to perform";
 
-            UiHelper.ShowMenuFromEnum<AnimalTypes>(message);
-            
+
+            UiHelper.ShowMenuFromEnum<AnimalActions>(message);
             Console.WriteLine();
             
         }
