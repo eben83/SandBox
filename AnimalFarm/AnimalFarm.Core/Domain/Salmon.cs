@@ -21,7 +21,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"Do {Type} even eat");
             Console.WriteLine("This might be one of the seven wonders of the world");
-            Hungry += 5;
+            feeding();
         }
         protected override void Talk()
         {
