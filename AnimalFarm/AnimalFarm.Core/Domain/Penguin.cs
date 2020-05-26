@@ -32,7 +32,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Flap");
             Console.WriteLine("Flap");
             base.Fly();
-            Hungry -= 3;
+            feeding();
         }
 
         protected override void Talk()
