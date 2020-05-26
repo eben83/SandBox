@@ -43,20 +43,20 @@ namespace AnimalFarm.Core.Domain
             var food = "";
             if (Hungry == 10)
             {
-                food = $"I'm Full, lets do something!!";
+                food = $"I'm Full, lets do something!! ({Hungry})";
                 
             }
             else if (Hungry >= 5)
             {
-                food = $"I could do with a snack";
+                food = $"I could do with a snack ({Hungry})";
             }
             else if (Hungry <= 3)
             {
-                food = $"I'm hungry, I need something to eat";
+                food = $"I'm hungry, I need something to eat ({Hungry})";
             }
             else
             {
-                food = $"I'm not going to do anything until I eat!!!";
+                food = $"I'm not going to do anything until I eat!!! ({Hungry})";
             }
             return food;
         }
