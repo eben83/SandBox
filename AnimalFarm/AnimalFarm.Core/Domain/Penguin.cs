@@ -16,6 +16,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Whoosh");
             Console.WriteLine($"HAHAHAHAHAHAHAH");
             Console.WriteLine($"Do {Type}'s even have knees");
+            Hungry -= 3;
         }
 
         protected override void Eat()
@@ -23,6 +24,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"They are very quick to catch fish, ");
             Console.WriteLine($"{Type}'s are very at catching fish");
+            Hungry += 6;
         }
 
         protected override void Fly()
@@ -30,6 +32,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Flap");
             Console.WriteLine("Flap");
             base.Fly();
+            Hungry -= 3;
         }
 
         protected override void Talk()
@@ -37,6 +40,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Hello");
             Console.WriteLine("Sneeze!!");
             Console.WriteLine("Sneeze!!");
+            Hungry -= 1;
         }
 
 
