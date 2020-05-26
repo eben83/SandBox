@@ -32,12 +32,12 @@ namespace AnimalFarm.ConsoleClient.UserInterface.Helpers
                 ? "Which action would you like your animals to perform"
                 : $"Which action would you like your {animalType} to perform";
 
-            if (Animal.Hungry - AnimalActions.Run <= 0)
+            if (Animal.Hungry <= 0)
             {
                 Console.WriteLine("Please feed me");
                 Console.WriteLine();
                 Console.WriteLine("Please select the option below to carry on!");
-                Console.WriteLine($"{(int)AnimalActions.Eat} {AnimalActions.Eat}");
+                Console.WriteLine($"{(int)AnimalActions.Eat} {AnimalActions.Eat} {animalType}");
             }
             else
             {
