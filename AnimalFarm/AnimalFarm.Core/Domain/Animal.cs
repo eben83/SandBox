@@ -6,7 +6,7 @@ namespace AnimalFarm.Core.Domain
     {
         public AnimalTypes Type { get; set; }
         public string Name { get; set; }
-        public int Hungry { get; set; } = 10;
+        public static int Hungry { get; set; } = 10;
         public string Identification
         {
             get { return $" {Type} - {Name} Hunger: {HungerLevel()}"; }
