@@ -21,7 +21,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"I think you never feed your own {Type}");
             Console.WriteLine($"You probably feed everyone else's {Type}'s ");
-            Hungry += 4;
+            feeding();
         }
         protected override void Talk()
         {
