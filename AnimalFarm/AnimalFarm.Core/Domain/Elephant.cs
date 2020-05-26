@@ -21,7 +21,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"This time, an {Type} can eat, they will devour ");
             Console.WriteLine("A whole tree by themselves");
-            Hungry += 6;
+            feeding();
         }
         protected override void Talk()
         {
