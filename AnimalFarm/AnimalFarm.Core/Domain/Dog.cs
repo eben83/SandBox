@@ -14,6 +14,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Whoosh");
             Console.WriteLine($"Play time for a {Type}, {Type}'s love to run");
             Console.WriteLine("They are the happiest while running around");
+            Hungry -= 5;
         }
 
         protected override void Eat()
@@ -21,6 +22,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"Look at this {Type}, how fast?");
             Console.WriteLine("How fast do they eat?");
+            Hungry += 3;
         }
 
         protected override void Talk()
@@ -28,6 +30,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Hello");
             Console.WriteLine("Bark!!");
             Console.WriteLine("Bark!!");
+            Hungry -= 2;
         }
 
     }
