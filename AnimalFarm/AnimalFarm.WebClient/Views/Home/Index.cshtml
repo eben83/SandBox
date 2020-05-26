@@ -20,9 +20,8 @@
     </div>
     <div>
         <h5>Your List contains:</h5>
-        @foreach (var animal in Model.Animals)
-
         {
+        @foreach (var animal in Model.Animals){
             <li>@animal.Type, @animal.Name</li>
         }
         

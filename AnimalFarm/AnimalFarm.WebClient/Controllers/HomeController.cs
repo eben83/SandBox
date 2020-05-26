@@ -68,6 +68,7 @@ namespace AnimalFarm.WebClient.Controllers
         public IActionResult InteractWithOneAnimal()
         {
             GetModelFromTempData();
+            SetTempData();
             return View();
         }
 
