@@ -6,9 +6,10 @@ namespace AnimalFarm.Core.Domain
     {
         public AnimalTypes Type { get; set; }
         public string Name { get; set; }
+        public static int Hungry { get; set; }
         public string Identification
         {
-            get { return $" {Type} - {Name} Hunger: {HungerLevel()}"; }
+            get { return $" {Type} - {Name} Hunger: {Hungry}"; }
         }
         public Animal(string name)
         {
@@ -37,29 +38,29 @@ namespace AnimalFarm.Core.Domain
                     throw new ArgumentOutOfRangeException(nameof(animalAction), "Use the enum directly"); 
             }
         }
-        public string HungerLevel ()
-        {
-            var food = "";
-            if (Hungry == 10)
-            {
-                food = $"I'm Full, lets do something!! ({Hungry})";
-                
-            }
-            else if (Hungry >= 5)
-            {
-                food = $"I could do with a snack ({Hungry})";
-            }
-            else if (Hungry <= 3)
-            {
-                food = $"I'm hungry, I need something to eat ({Hungry})";
-            }
-            else
-            {
-                food = $"I'm not going to do anything until I eat!!! ({Hungry})";
-            }
-            return food;
-        }
         
+        // public string HungerLevel ()
+        // {
+        //     var food = "";
+        //     if (Hungry == 10)
+        //     {
+        //         food = $"I'm Full, lets do something!! ({Hungry})";
+        //         
+        //     }
+        //     else if (Hungry >= 5)
+        //     {
+        //         food = $"I could do with a snack ({Hungry})";
+        //     }
+        //     else if (Hungry <= 3)
+        //     {
+        //         food = $"I'm hungry, I need something to eat ({Hungry})";
+        //     }
+        //     else
+        //     {
+        //         food = $"I'm not going to do anything until I eat!!! ({Hungry})";
+        //     }
+        //     return food;
+        // }
         protected virtual void Run()
         {
             Console.WriteLine("Animal is running");
@@ -72,7 +73,6 @@ namespace AnimalFarm.Core.Domain
         private void Sleep()
         {
             Console.WriteLine("Animal is Sleeping");
-            Hungry -= 3;
         }
         protected virtual void Fly()
         {
