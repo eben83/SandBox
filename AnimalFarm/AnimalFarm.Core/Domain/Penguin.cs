@@ -7,7 +7,7 @@ namespace AnimalFarm.Core.Domain
         public Penguin(string name) : base(name)
         {
             Type = AnimalTypes.Penguin;
-            HungryLevel = 10;
+            HungerLevel = 10;
         }
 
 
@@ -16,7 +16,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Whoosh");
             Console.WriteLine($"HAHAHAHAHAHAHAH");
             Console.WriteLine($"Do {Type}'s even have knees");
-            HungryLevel -= 3;
+            HungerLevel -= 3;
         }
 
         protected override void Eat()
@@ -24,7 +24,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"They are very quick to catch fish, ");
             Console.WriteLine($"{Type}'s are very at catching fish");
-            HungryLevel += 6;
+            HungerLevel += 6;
         }
 
         protected override void Fly()
@@ -40,11 +40,11 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Hello");
             Console.WriteLine("Sneeze!!");
             Console.WriteLine("Sneeze!!");
-            HungryLevel -= 1;
+            HungerLevel -= 1;
         }
         public int FeedingTime()
         {
-            return HungryLevel += 10 - HungryLevel;
+            return HungerLevel += 10 - HungerLevel;
         }
 
 
