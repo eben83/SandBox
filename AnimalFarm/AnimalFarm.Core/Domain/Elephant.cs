@@ -7,6 +7,7 @@ namespace AnimalFarm.Core.Domain
         public Elephant(string name) : base(name)
         {
             Type = AnimalTypes.Elephant;
+            HungryLevel = 10;
         }
         
         protected override void Run()
@@ -14,7 +15,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Whoosh");
             Console.WriteLine($"You might think- because of their size, they are slow.");
             Console.WriteLine($"Guess again, {Type}'s are a lot quicker than you think.");
-            Hungry -= 7;
+            HungryLevel -= 7;
         }
         protected override void Eat()
         {
@@ -28,11 +29,11 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Hello");
             Console.WriteLine("Trumpet!!");    
             Console.WriteLine("Trumpet!!");
-            Hungry -= 4;
+            HungryLevel -= 4;
         }
         public int feeding()
         {
-            return Hungry += 10 - Hungry;
+            return HungryLevel += 10 - HungryLevel;
         }
 
     }
