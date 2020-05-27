@@ -22,7 +22,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"This time, an {Type} can eat, they will devour ");
             Console.WriteLine("A whole tree by themselves");
-            feeding();
+            FeedingTime();
         }
         protected override void Talk()
         {
@@ -31,7 +31,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Trumpet!!");
             HungryLevel -= 4;
         }
-        public int feeding()
+        public int FeedingTime()
         {
             return HungryLevel += 10 - HungryLevel;
         }

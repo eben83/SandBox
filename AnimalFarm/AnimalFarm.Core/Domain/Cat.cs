@@ -23,7 +23,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"I think you never feed your own {Type}");
             Console.WriteLine($"You probably feed everyone else's {Type}'s ");
-            feeding();
+            FeedingTime();
         }
         protected override void Talk()
         {
@@ -32,7 +32,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Meow!!");
             HungryLevel -= 1;
         }
-        public int feeding()
+        public int FeedingTime()
         {
             return HungryLevel += 10 - HungryLevel;
         }

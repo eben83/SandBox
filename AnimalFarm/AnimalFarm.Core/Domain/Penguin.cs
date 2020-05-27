@@ -32,7 +32,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Flap");
             Console.WriteLine("Flap");
             base.Fly();
-            feeding();
+            FeedingTime();
         }
 
         protected override void Talk()
@@ -42,7 +42,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Sneeze!!");
             HungryLevel -= 1;
         }
-        public int feeding()
+        public int FeedingTime()
         {
             return HungryLevel += 10 - HungryLevel;
         }

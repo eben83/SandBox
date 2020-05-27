@@ -24,7 +24,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"Look at this {Type}, how fast?");
             Console.WriteLine("How fast do they eat?");
-            feeding();
+            FeedingTime();
         }
 
         protected override void Talk()
@@ -34,7 +34,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Bark!!");
             HungryLevel -= 2;
         }
-        public int feeding()
+        public int FeedingTime()
         {
             return HungryLevel += 10 - HungryLevel;
         }

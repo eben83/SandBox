@@ -22,7 +22,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"If you have a weak tummy");
             Console.WriteLine("You better look away");
-            feeding();
+            FeedingTime();
         }
         protected override void Fly()
         {
@@ -38,7 +38,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Scream");
             HungryLevel -= 2;
         }
-        public int feeding()
+        public int FeedingTime()
         {
             return HungryLevel += 10 - HungryLevel;
         }

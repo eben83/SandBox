@@ -22,7 +22,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"Do {Type} even eat");
             Console.WriteLine("This might be one of the seven wonders of the world");
-            feeding();
+            FeedingTime();
         }
         protected override void Talk()
         {
@@ -31,7 +31,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Bubble!!");
             HungryLevel -= 1;
         }
-        public int feeding()
+        public int FeedingTime()
         {
             return HungryLevel += 10 - HungryLevel;
         }
