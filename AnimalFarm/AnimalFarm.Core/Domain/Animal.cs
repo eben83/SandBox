@@ -6,7 +6,6 @@ namespace AnimalFarm.Core.Domain
     {
         public AnimalTypes Type { get; set; }
         public string Name { get; set; }
-        public static int Hungry { get; set; } = 10;
         public string Identification
         {
             get { return $" {Type} - {Name} Hunger: {HungerLevel()}"; }
@@ -60,10 +59,7 @@ namespace AnimalFarm.Core.Domain
             }
             return food;
         }
-        public int feeding()
-        {
-            return Hungry += 10 - Hungry;
-        }
+        
         protected virtual void Run()
         {
             Console.WriteLine("Animal is running");
