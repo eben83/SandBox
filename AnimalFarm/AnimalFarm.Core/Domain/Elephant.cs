@@ -4,7 +4,6 @@ namespace AnimalFarm.Core.Domain
 {
     public class Elephant : Animal
     {
-        public int Hungry { get; set; } = 10;
         public Elephant(string name) : base(name)
         {
             Type = AnimalTypes.Elephant;
