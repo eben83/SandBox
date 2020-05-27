@@ -7,6 +7,7 @@ namespace AnimalFarm.Core.Domain
         public Salmon(string name) : base(name)
         {
             Type = AnimalTypes.Salmon;
+            HungryLevel = 10;
         }
         
         protected override void Run()
@@ -14,7 +15,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Whoosh");
             Console.WriteLine($"Well, this type of run, Is not what you expect");
             Console.WriteLine($"Once a year there is something called a {Type} run");
-            Hungry -= 7;
+            HungryLevel -= 7;
         }
         protected override void Eat()
         {
@@ -28,11 +29,11 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Hello");
             Console.WriteLine("Bubble!!");    
             Console.WriteLine("Bubble!!");
-            Hungry -= 1;
+            HungryLevel -= 1;
         }
         public int feeding()
         {
-            return Hungry += 10 - Hungry;
+            return HungryLevel += 10 - HungryLevel;
         }
 
     }
