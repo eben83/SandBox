@@ -31,16 +31,8 @@ namespace AnimalFarm.ConsoleClient.UserInterface.Helpers
             var message =!animalType.HasValue
                 ? "Which action would you like your animals to perform"
                 : $"Which action would you like your {animalType} to perform";
-
-            if (Animal.Hungry <= 3)
-            {
-                Console.WriteLine("please feed me");
-                Console.WriteLine($"{(int)AnimalActions.Eat}- {AnimalActions.Eat}");
-            }
-            else
-            {
+            
                 UiHelper.ShowMenuFromEnum<AnimalActions>(message);
-            }
         }
         public static void ShowInteractMenu(List<Animal> animalsList)
         {
