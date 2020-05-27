@@ -8,6 +8,7 @@ namespace AnimalFarm.Core.Domain
         public Dog(string name) : base(name)
         {
             Type = AnimalTypes.Dog;
+            HungryLevel = 10;
         }
         
         protected override void Run()
@@ -15,7 +16,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Whoosh");
             Console.WriteLine($"Play time for a {Type}, {Type}'s love to run");
             Console.WriteLine("They are the happiest while running around");
-            Hungry -= 5;
+            HungryLevel -= 5;
         }
 
         protected override void Eat()
@@ -31,11 +32,11 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Hello");
             Console.WriteLine("Bark!!");
             Console.WriteLine("Bark!!");
-            Hungry -= 2;
+            HungryLevel -= 2;
         }
         public int feeding()
         {
-            return Hungry += 10 - Hungry;
+            return HungryLevel += 10 - HungryLevel;
         }
 
     }
