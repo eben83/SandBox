@@ -4,6 +4,7 @@ namespace AnimalFarm.Core.Domain
 {
     public class Dog : Animal
     {
+        public int Hungry { get; set; } = 10;
         public Dog(string name) : base(name)
         {
             Type = AnimalTypes.Dog;
@@ -31,6 +32,10 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Bark!!");
             Console.WriteLine("Bark!!");
             Hungry -= 2;
+        }
+        public int feeding()
+        {
+            return Hungry += 10 - Hungry;
         }
 
     }
