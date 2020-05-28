@@ -73,6 +73,7 @@ namespace AnimalFarm.ConsoleClient.UserInterface
             
             if (selectedAnimal.HungerLevel <= 3)
             {
+                Console.WriteLine("Please Feed me- you slave driver!!");
                 Console.WriteLine($"{(int)AnimalActions.Eat}. {AnimalActions.Eat}");
                 AnimalActions animalAction = (AnimalActions) AnimalMenuHelper.GetValidAnimalActionMenuChoice(selectedAnimal.Type);
                 selectedAnimal.Command(animalAction);
@@ -95,7 +96,6 @@ namespace AnimalFarm.ConsoleClient.UserInterface
 
             foreach (var animal in animals)
             {
-                
                 animal.Command(animalActionSelected);
             }
             
