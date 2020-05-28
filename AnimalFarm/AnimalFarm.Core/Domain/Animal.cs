@@ -6,14 +6,40 @@ namespace AnimalFarm.Core.Domain
     {
         public AnimalTypes Type { get; set; }
         public string Name { get; set; }
-        public int HungryLevel { get; set; }
+        public int HungerLevel { get; set; }
         public string Identification
         {
-            get { return $" {Type} - {Name} Hunger: {HungryLevel}"; }
+            get { return $" {Type} - {Name} - {GetHungerLevel()}"; }
         }
         public Animal(string name)
         {
             Name = name;
+        }
+
+        public string GetHungerLevel()
+        {
+            if (HungerLevel == 10)
+            {
+                return "Full- lets go play";
+            }
+            else if (HungerLevel >=8)
+            {
+                return "I'm fine- let's do that again";
+            }
+            else if (HungerLevel >= 6)
+            {
+                return "I could do with a snack";
+            }
+            else if (HungerLevel >= 3)
+            {
+                return "I need food please";
+            }
+            else if (HungerLevel <= 3)
+            {
+                return "I'm not playing anymore";
+            }
+            
+            return null;
         }
         public void Command(AnimalActions animalAction)
         {
