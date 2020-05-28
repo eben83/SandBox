@@ -69,9 +69,21 @@ namespace AnimalFarm.ConsoleClient.UserInterface
             UiHelper.ShowWelcomeMessage();
             AnimalMenuHelper.ShowInteractMenu(animalInteractList);
             var selectedAnimal = AnimalMenuHelper.GetAnimalFromMenu(animalInteractList);
-            AnimalMenuHelper.ShowAnimalActionMenu(selectedAnimal.Type);
-            AnimalActions animalAction = (AnimalActions) AnimalMenuHelper.GetValidAnimalActionMenuChoice(selectedAnimal.Type);
-            selectedAnimal.Command(animalAction);
+            // AnimalMenuHelper.ShowAnimalActionMenu(selectedAnimal.Type);
+            
+            if (selectedAnimal.HungerLevel <= 3)
+            {
+                Console.WriteLine($"{(int)AnimalActions.Eat}. {AnimalActions.Eat}");
+                AnimalActions animalAction = (AnimalActions) AnimalMenuHelper.GetValidAnimalActionMenuChoice(selectedAnimal.Type);
+                selectedAnimal.Command(animalAction);
+            }
+            else
+            {
+                AnimalMenuHelper.ShowAnimalActionMenu(selectedAnimal.Type);
+                AnimalActions animalAction = (AnimalActions) AnimalMenuHelper.GetValidAnimalActionMenuChoice(selectedAnimal.Type);
+                selectedAnimal.Command(animalAction);
+            }
+            
             Console.WriteLine("Press enter to carry on:");
             Console.ReadLine();
         }
@@ -82,7 +94,10 @@ namespace AnimalFarm.ConsoleClient.UserInterface
             AnimalActions animalActionSelected = (AnimalActions) AnimalMenuHelper.GetValidAnimalActionMenuChoice(null);
 
             foreach (var animal in animals)
+            {
+                
                 animal.Command(animalActionSelected);
+            }
             
             Console.WriteLine("Press Enter to carry on:");
             Console.ReadLine();
