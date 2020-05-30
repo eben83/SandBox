@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using AnimalFarm.Core.Domain;
 using AnimalFarm.Core.Infrastructure;
+using AnimalFarm.Core.Infrastructure.Serialization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AnimalFarm.WebClient.Models;
@@ -33,7 +29,7 @@ namespace AnimalFarm.WebClient.Controllers
                 return;
             }
 
-            _model = JsonConvert.DeserializeObject<AnimalFarmViewModel>(json.ToString());
+            _model = JsonConvert.DeserializeObject<AnimalFarmViewModel>(json.ToString(), new AnimalConverter());
         }
 
         private void SetTempData()
@@ -44,6 +40,7 @@ namespace AnimalFarm.WebClient.Controllers
         public IActionResult Index()
         {
             GetModelFromTempData();
+            SetTempData();
             return View(_model);
         }
 

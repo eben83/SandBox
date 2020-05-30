@@ -7,37 +7,34 @@
     ViewData["Title"] = "Add Animals";
 }
 <div class="jumbotron">
-    <div class="justify-content-center flex-column col-3">
+    <div class="d-flex justify-content-center">
         <div>
             @{
-                var animalTypes = Html.GetEnumSelectList(typeof(AnimalTypes));
+                var availableAnimalTypes = Html.GetEnumSelectList(typeof(AnimalTypes));
             }
             
             @using (Html.BeginForm("AddAnimal", "Home"))
             {
-                <div class="">
+                <div class="form-group">
                     @Html.LabelFor(a => a.SelectedAnimalType,
                         "Animal Selection" ,
-                        new{ @class = "form-control"})
-                </div>
-                <div class="">
-                    @Html.DropDownListFor(a=>a.SelectedAnimalType, animalTypes, 
+                        new{ @class = ""})
+                    @Html.DropDownListFor(a=>a.SelectedAnimalType, availableAnimalTypes, 
                         "Please Select", 
-                        new{@class = "form-control form-control-lg justify-content-centre"})
+                        new{@class = "form-control form-control-lg"})
                 </div>
     
-                <div class="">
+                <div class="form-group">
                     @Html.LabelFor(a=>a.AnimalName, 
                         "Name", 
-                        new {@class = "form-control"})
-                </div>
-                <div class="">
+                        new {@class = ""})
                     @Html.TextBoxFor(a => a.AnimalName, 
                         new {@class = "form-control", name="AnimalName"})
                     <br/>
-                    <div class="d-flex justify-content-center">
-                        <input class="btn btn-lg btn-primary" type="submit" value="Submit"/>
-                    </div>
+                    
+                </div>
+                <div class="d-flex justify-content-center">
+                    <input class="btn btn-lg btn-primary" type="submit" value="Submit"/>
                 </div>
             }
         </div>
