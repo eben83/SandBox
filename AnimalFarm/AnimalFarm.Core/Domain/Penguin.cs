@@ -31,7 +31,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Flap");
             Console.WriteLine("Flap");
             base.Fly();
-            FeedingTime();
+            Feed();
         }
 
         protected override void Talk()

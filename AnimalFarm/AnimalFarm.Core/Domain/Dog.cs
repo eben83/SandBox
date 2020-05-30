@@ -23,7 +23,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"Look at this {Type}, how fast?");
             Console.WriteLine("How fast do they eat?");
-            FeedingTime();
+            Feed();
         }
 
         protected override void Talk()

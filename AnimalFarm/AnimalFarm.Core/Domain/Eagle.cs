@@ -21,7 +21,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"If you have a weak tummy");
             Console.WriteLine("You better look away");
-            FeedingTime();
+            Feed();
         }
         protected override void Fly()
         {

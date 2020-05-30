@@ -22,7 +22,7 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Burp");
             Console.WriteLine($"I think you never feed your own {Type}");
             Console.WriteLine($"You probably feed everyone else's {Type}'s ");
-            FeedingTime();
+            Feed();
         }
         protected override void Talk()
         {
