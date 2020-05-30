@@ -17,7 +17,7 @@ namespace AnimalFarm.Core.Domain
             _actionFeedback.Add("Whoosh");
             _actionFeedback.Add($"Running, They will rather watch");
             _actionFeedback.Add("You Run around");
-            return null;
+            return _actionFeedback;
         }
         protected override List<string> Eat()
         {
@@ -26,7 +26,7 @@ namespace AnimalFarm.Core.Domain
             _actionFeedback.Add($"I think you never feed your own {Type}");
             _actionFeedback.Add($"You probably feed everyone else's {Type}'s ");
             Feed();
-            return null;
+            return _actionFeedback;
         }
         protected override List<string> Talk()
         {
@@ -34,7 +34,7 @@ namespace AnimalFarm.Core.Domain
             _actionFeedback.Add("Meow!!");    
             _actionFeedback.Add("Hello");
             _actionFeedback.Add("Meow!!");
-            return null;
+            return _actionFeedback;
         }
     }
 }
