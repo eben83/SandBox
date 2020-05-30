@@ -15,7 +15,6 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Whoosh");
             Console.WriteLine($"Running, They will rather watch");
             Console.WriteLine("You Run around");
-            HungerLevel -= 3;
         }
         protected override void Eat()
         {
@@ -29,7 +28,6 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Hello");
             Console.WriteLine("Meow!!");    
             Console.WriteLine("Meow!!");
-            HungerLevel -= 1;
         }
     }
 }
