@@ -14,8 +14,8 @@ namespace AnimalFarm.Core.Domain
         public Animal(string name)
         {
             Name = name;
+            HungerLevel = 10;
         }
-
         public string GetHungerLevel()
         {
             if (HungerLevel == 10)
@@ -63,6 +63,10 @@ namespace AnimalFarm.Core.Domain
                 default:
                     throw new ArgumentOutOfRangeException(nameof(animalAction), "Use the enum directly"); 
             }
+        }
+        public void FeedingTime()
+        {
+            HungerLevel = 10;
         }
         protected virtual void Run()
         {
