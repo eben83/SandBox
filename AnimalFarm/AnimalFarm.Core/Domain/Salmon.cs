@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace AnimalFarm.Core.Domain
 {
@@ -9,24 +10,30 @@ namespace AnimalFarm.Core.Domain
             Type = AnimalTypes.Salmon;
         }
         
-        protected override void Run()
+        protected override List<string> Run()
         {
-            Console.WriteLine("Whoosh");
-            Console.WriteLine($"Well, this type of run, Is not what you expect");
-            Console.WriteLine($"Once a year there is something called a {Type} run");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Whoosh");
+            _actionFeedback.Add($"Well, this type of run, Is not what you expect");
+            _actionFeedback.Add($"Once a year there is something called a {Type} run");
+            return _actionFeedback;
         }
-        protected override void Eat()
+        protected override List<string> Eat()
         {
-            Console.WriteLine("Burp");
-            Console.WriteLine($"Do {Type} even eat");
-            Console.WriteLine("This might be one of the seven wonders of the world");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Burp");
+            _actionFeedback.Add($"Do {Type} even eat");
+            _actionFeedback.Add("This might be one of the seven wonders of the world");
             Feed();
+            return _actionFeedback;
         }
-        protected override void Talk()
+        protected override List<string> Talk()
         {
-            Console.WriteLine("Hello");
-            Console.WriteLine("Bubble!!");    
-            Console.WriteLine("Bubble!!");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Hello");
+            _actionFeedback.Add("Bubble!!");    
+            _actionFeedback.Add("Bubble!!");
+            return _actionFeedback;
         }
     }
 }
