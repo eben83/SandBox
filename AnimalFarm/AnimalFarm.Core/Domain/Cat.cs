@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace AnimalFarm.Core.Domain
 {
@@ -10,24 +11,30 @@ namespace AnimalFarm.Core.Domain
             Type = AnimalTypes.Cat;
         }
         
-        protected override void Run()
+        protected override List<string> Run()
         {
-            Console.WriteLine("Whoosh");
-            Console.WriteLine($"Running, They will rather watch");
-            Console.WriteLine("You Run around");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Whoosh");
+            _actionFeedback.Add($"Running, They will rather watch");
+            _actionFeedback.Add("You Run around");
+            return null;
         }
-        protected override void Eat()
+        protected override List<string> Eat()
         {
-            Console.WriteLine("Burp");
-            Console.WriteLine($"I think you never feed your own {Type}");
-            Console.WriteLine($"You probably feed everyone else's {Type}'s ");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Burp");
+            _actionFeedback.Add($"I think you never feed your own {Type}");
+            _actionFeedback.Add($"You probably feed everyone else's {Type}'s ");
             Feed();
+            return null;
         }
-        protected override void Talk()
+        protected override List<string> Talk()
         {
-            Console.WriteLine("Hello");
-            Console.WriteLine("Meow!!");    
-            Console.WriteLine("Meow!!");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Meow!!");    
+            _actionFeedback.Add("Hello");
+            _actionFeedback.Add("Meow!!");
+            return null;
         }
     }
 }
