@@ -8,7 +8,6 @@ namespace AnimalFarm.Core.Domain
         public Cat(string name) : base(name)
         {
             Type = AnimalTypes.Cat;
-            HungerLevel = 10;
         }
         
         protected override void Run()
@@ -32,10 +31,5 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Meow!!");
             HungerLevel -= 1;
         }
-        public int FeedingTime()
-        {
-            return HungerLevel += 10 - HungerLevel;
-        }
-
     }
 }
