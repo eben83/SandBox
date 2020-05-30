@@ -14,7 +14,6 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Whoosh");
             Console.WriteLine($"Well, this type of run, Is not what you expect");
             Console.WriteLine($"Once a year there is something called a {Type} run");
-            HungerLevel -= 7;
         }
         protected override void Eat()
         {
@@ -28,7 +27,6 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Hello");
             Console.WriteLine("Bubble!!");    
             Console.WriteLine("Bubble!!");
-            HungerLevel -= 1;
         }
     }
 }
