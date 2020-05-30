@@ -7,7 +7,6 @@ namespace AnimalFarm.Core.Domain
         public Penguin(string name) : base(name)
         {
             Type = AnimalTypes.Penguin;
-            HungerLevel = 10;
         }
 
 
@@ -42,11 +41,5 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Sneeze!!");
             HungerLevel -= 1;
         }
-        public int FeedingTime()
-        {
-            return HungerLevel += 10 - HungerLevel;
-        }
-
-
     }
 }
