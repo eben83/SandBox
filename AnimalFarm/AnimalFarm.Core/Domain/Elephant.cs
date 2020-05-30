@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 
 namespace AnimalFarm.Core.Domain
 {
@@ -9,24 +11,30 @@ namespace AnimalFarm.Core.Domain
             Type = AnimalTypes.Elephant;
         }
         
-        protected override void Run()
+        protected override List<string> Run()
         {
-            Console.WriteLine("Whoosh");
-            Console.WriteLine($"You might think- because of their size, they are slow.");
-            Console.WriteLine($"Guess again, {Type}'s are a lot quicker than you think.");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Whoosh");
+            _actionFeedback.Add($"You might think- because of their size, they are slow.");
+            _actionFeedback.Add($"Guess again, {Type}'s are a lot quicker than you think.");
+            return _actionFeedback;
         }
-        protected override void Eat()
+        protected override List<string> Eat()
         {
-            Console.WriteLine("Burp");
-            Console.WriteLine($"This time, an {Type} can eat, they will devour ");
-            Console.WriteLine("A whole tree by themselves");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Burp");
+            _actionFeedback.Add($"This time, an {Type} can eat, they will devour ");
+            _actionFeedback.Add("A whole tree by themselves");
             Feed();
+            return _actionFeedback;
         }
-        protected override void Talk()
+        protected override List<string> Talk()
         {
-            Console.WriteLine("Hello");
-            Console.WriteLine("Trumpet!!");    
-            Console.WriteLine("Trumpet!!");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Hello");
+            _actionFeedback.Add("Trumpet!!");    
+            _actionFeedback.Add("Trumpet!!");
+            return _actionFeedback;
         }
     }
 }
