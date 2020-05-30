@@ -14,7 +14,6 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Whoosh");
             Console.WriteLine($"You might think- because of their size, they are slow.");
             Console.WriteLine($"Guess again, {Type}'s are a lot quicker than you think.");
-            HungerLevel -= 7;
         }
         protected override void Eat()
         {
@@ -28,7 +27,6 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Hello");
             Console.WriteLine("Trumpet!!");    
             Console.WriteLine("Trumpet!!");
-            HungerLevel -= 4;
         }
     }
 }
