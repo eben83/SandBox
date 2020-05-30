@@ -64,7 +64,7 @@ namespace AnimalFarm.Core.Domain
                     throw new ArgumentOutOfRangeException(nameof(animalAction), "Use the enum directly"); 
             }
         }
-        public void FeedingTime()
+        public void Feed()
         {
             HungerLevel = 10;
         }
