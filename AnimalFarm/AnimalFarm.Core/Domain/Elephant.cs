@@ -7,7 +7,6 @@ namespace AnimalFarm.Core.Domain
         public Elephant(string name) : base(name)
         {
             Type = AnimalTypes.Elephant;
-            HungerLevel = 10;
         }
         
         protected override void Run()
@@ -31,10 +30,5 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Trumpet!!");
             HungerLevel -= 4;
         }
-        public int FeedingTime()
-        {
-            return HungerLevel += 10 - HungerLevel;
-        }
-
     }
 }
