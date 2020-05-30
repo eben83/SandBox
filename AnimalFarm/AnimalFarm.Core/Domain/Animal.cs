@@ -1,10 +1,12 @@
 using System;
+using System.Collections.Generic;
 
 namespace AnimalFarm.Core.Domain
 {
     public abstract class Animal
     {
         private int _hungerLevel;
+        protected readonly List<string> _actionFeedback = new List<string>();
         
         public AnimalTypes Type { get; set; }
         public string Name { get; set; }
@@ -19,25 +21,20 @@ namespace AnimalFarm.Core.Domain
             _hungerLevel = 10;
         }
         
-        public void Command(AnimalActions animalAction)
+        public List<string> Command(AnimalActions animalAction)
         {
             switch(animalAction)
             {
                 case AnimalActions.Run:
-                    Run();
-                    break;
+                    return Run();
                 case AnimalActions.Eat:
-                    Eat();
-                    break;
+                    return Eat();
                 case AnimalActions.Sleep:
-                    Sleep();
-                    break;
+                    return Sleep();
                 case AnimalActions.Fly:
-                    Fly();
-                    break;
+                    return Fly();
                 case AnimalActions.Talk:
-                    Talk();
-                    break;
+                    return Talk();
                 default:
                     throw new ArgumentOutOfRangeException(nameof(animalAction), "Use the enum directly"); 
             }
@@ -45,11 +42,17 @@ namespace AnimalFarm.Core.Domain
         
         protected void Feed()
         {
-            _hungerLevel = 10;
+            UpdateHungerStatus(0);
         }
 
-        private void CalculateHungerStatus()
+        private void UpdateHungerStatus(int effort)
         {
+            if (effort == 0)
+                _hungerLevel = 10;
+            else
+                _hungerLevel -= effort;
+
+            
             if (_hungerLevel == 10)
             {
                 HungerStatus = AnimalHungerStatus.Full;
@@ -72,22 +75,26 @@ namespace AnimalFarm.Core.Domain
             }
 
             HungerStatus = AnimalHungerStatus.Starving;
+            
         }
         
-        protected virtual void Run()
+        protected virtual List<string> Run()
         {
-            _hungerLevel -= 5;
+            UpdateHungerStatus(5);
+            return _actionFeedback;
         }
         
         //protected- access is limited
-        protected virtual void Eat()
+        protected virtual List<string> Eat()
         {
             Feed();
+            return _actionFeedback;
         }
         
-        private void Sleep()
+        private List<string> Sleep()
         {
-            _hungerLevel -= 2;
+            UpdateHungerStatus(2);
+            return _actionFeedback;
         }
         
         protected virtual void Fly()
@@ -98,12 +105,12 @@ namespace AnimalFarm.Core.Domain
                 return;
             }
             Console.WriteLine("Animal is Flying");
-            _hungerLevel -= 4;
+            UpdateHungerStatus(4);
         }
         
         protected virtual void Talk()
         {
-            _hungerLevel -= 2;
+            UpdateHungerStatus(2);
         }
        
     }
