@@ -16,7 +16,7 @@ namespace AnimalFarm.Core.Domain
             _actionFeedback.Add("Whoosh");
             _actionFeedback.Add($"Why? why would you think this");
             _actionFeedback.Add($"{Type} they don't need to run..");
-            return null;
+            return _actionFeedback;
         }
         protected override List<string> Eat()
         {
@@ -25,7 +25,7 @@ namespace AnimalFarm.Core.Domain
             _actionFeedback.Add($"If you have a weak tummy");
             _actionFeedback.Add("You better look away");
             Feed();
-            return null;
+            return _actionFeedback;
         }
         protected override List<string> Fly()
         {
@@ -33,7 +33,7 @@ namespace AnimalFarm.Core.Domain
             _actionFeedback.Add("Is it a bird?");
             _actionFeedback.Add("Is it a Plane?");
             _actionFeedback.Add($"It's a {Type}");
-            return null;
+            return _actionFeedback;
         }
         protected override List<string> Talk()
         {
@@ -41,7 +41,7 @@ namespace AnimalFarm.Core.Domain
             _actionFeedback.Add("Hello");
             _actionFeedback.Add("Scream!!");    
             _actionFeedback.Add("Scream");
-            return null;
+            return _actionFeedback;
         }
     }
 }
