@@ -69,20 +69,14 @@ namespace AnimalFarm.ConsoleClient.UserInterface
             UiHelper.ShowWelcomeMessage();
             AnimalMenuHelper.ShowInteractMenu(animalInteractList);
             var selectedAnimal = AnimalMenuHelper.GetAnimalFromMenu(animalInteractList);
-            // AnimalMenuHelper.ShowAnimalActionMenu(selectedAnimal.Type);
+            AnimalMenuHelper.ShowAnimalActionMenu(selectedAnimal.Type);
+            AnimalActions animalAction = (AnimalActions) AnimalMenuHelper.GetValidAnimalActionMenuChoice(selectedAnimal.Type);
             
-            if (selectedAnimal.HungerLevel <= 3)
+            var feedBack = selectedAnimal.Command(animalAction);
+
+            foreach (var item in feedBack)
             {
-                Console.WriteLine("Please Feed me- you slave driver!!");
-                Console.WriteLine($"{(int)AnimalActions.Eat}. {AnimalActions.Eat}");
-                AnimalActions animalAction = (AnimalActions) AnimalMenuHelper.GetValidAnimalActionMenuChoice(selectedAnimal.Type);
-                selectedAnimal.Command(animalAction);
-            }
-            else
-            {
-                AnimalMenuHelper.ShowAnimalActionMenu(selectedAnimal.Type);
-                AnimalActions animalAction = (AnimalActions) AnimalMenuHelper.GetValidAnimalActionMenuChoice(selectedAnimal.Type);
-                selectedAnimal.Command(animalAction);
+                Console.WriteLine(item);
             }
             
             Console.WriteLine("Press enter to carry on:");
