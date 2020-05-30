@@ -97,20 +97,24 @@ namespace AnimalFarm.Core.Domain
             return _actionFeedback;
         }
         
-        protected virtual void Fly()
+        protected virtual List<string> Fly()
         {
+            _actionFeedback.Clear();
+            
             if (Type != AnimalTypes.Eagle)
             {
-                Console.WriteLine("Really?! Whatever");
-                return;
+                _actionFeedback.Add("Really?! Whatever");
             }
-            Console.WriteLine("Animal is Flying");
+            
+            _actionFeedback.Add("Animal is Flying");
             UpdateHungerStatus(4);
+            return null;
         }
         
-        protected virtual void Talk()
+        protected virtual List<string> Talk()
         {
             UpdateHungerStatus(2);
+            return _actionFeedback;
         }
        
     }
