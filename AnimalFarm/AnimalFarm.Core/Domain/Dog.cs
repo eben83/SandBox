@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace AnimalFarm.Core.Domain
 {
@@ -10,26 +11,32 @@ namespace AnimalFarm.Core.Domain
             Type = AnimalTypes.Dog;
         }
         
-        protected override void Run()
+        protected override List<string> Run()
         {
-            Console.WriteLine("Whoosh");
-            Console.WriteLine($"Play time for a {Type}, {Type}'s love to run");
-            Console.WriteLine("They are the happiest while running around");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Whoosh");
+            _actionFeedback.Add($"Play time for a {Type}, {Type}'s love to run");
+            _actionFeedback.Add("They are the happiest while running around");
+            return null;
         }
 
-        protected override void Eat()
+        protected override List<string> Eat()
         {
-            Console.WriteLine("Burp");
-            Console.WriteLine($"Look at this {Type}, how fast?");
-            Console.WriteLine("How fast do they eat?");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Burp");
+            _actionFeedback.Add($"Look at this {Type}, how fast?");
+            _actionFeedback.Add("How fast do they eat?");
             Feed();
+            return null;
         }
 
-        protected override void Talk()
+        protected override List<string> Talk()
         {
-            Console.WriteLine("Hello");
-            Console.WriteLine("Bark!!");
-            Console.WriteLine("Bark!!");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Hello");
+            _actionFeedback.Add("Bark!!");
+            _actionFeedback.Add("Bark!!");
+            return null;
         }
     }
 }
