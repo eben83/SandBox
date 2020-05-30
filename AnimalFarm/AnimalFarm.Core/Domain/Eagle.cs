@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace AnimalFarm.Core.Domain
 {
@@ -9,30 +10,38 @@ namespace AnimalFarm.Core.Domain
             Type = AnimalTypes.Eagle;
         }
         
-        protected override void Run()
+        protected override List<string> Run()
         {
-            Console.WriteLine("Whoosh");
-            Console.WriteLine($"Why? why would you think this");
-            Console.WriteLine($"{Type} they don't need to run..");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Whoosh");
+            _actionFeedback.Add($"Why? why would you think this");
+            _actionFeedback.Add($"{Type} they don't need to run..");
+            return null;
         }
-        protected override void Eat()
+        protected override List<string> Eat()
         {
-            Console.WriteLine("Burp");
-            Console.WriteLine($"If you have a weak tummy");
-            Console.WriteLine("You better look away");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Burp");
+            _actionFeedback.Add($"If you have a weak tummy");
+            _actionFeedback.Add("You better look away");
             Feed();
+            return null;
         }
-        protected override void Fly()
+        protected override List<string> Fly()
         {
-            Console.WriteLine("Is it a bird?");
-            Console.WriteLine("Is it a Plane?");
-            Console.WriteLine($"It's a {Type}");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Is it a bird?");
+            _actionFeedback.Add("Is it a Plane?");
+            _actionFeedback.Add($"It's a {Type}");
+            return null;
         }
-        protected override void Talk()
+        protected override List<string> Talk()
         {
-            Console.WriteLine("Hello");
-            Console.WriteLine("Scream!!");    
-            Console.WriteLine("Scream");
+            _actionFeedback.Clear();
+            _actionFeedback.Add("Hello");
+            _actionFeedback.Add("Scream!!");    
+            _actionFeedback.Add("Scream");
+            return null;
         }
     }
 }
