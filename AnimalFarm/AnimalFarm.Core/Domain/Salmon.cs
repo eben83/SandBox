@@ -7,7 +7,6 @@ namespace AnimalFarm.Core.Domain
         public Salmon(string name) : base(name)
         {
             Type = AnimalTypes.Salmon;
-            HungerLevel = 10;
         }
         
         protected override void Run()
@@ -31,10 +30,5 @@ namespace AnimalFarm.Core.Domain
             Console.WriteLine("Bubble!!");
             HungerLevel -= 1;
         }
-        public int FeedingTime()
-        {
-            return HungerLevel += 10 - HungerLevel;
-        }
-
     }
 }
