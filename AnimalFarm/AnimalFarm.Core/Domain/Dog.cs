@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Data;
 
 namespace AnimalFarm.Core.Domain
 {
@@ -13,6 +14,7 @@ namespace AnimalFarm.Core.Domain
         
         protected override List<string> Run()
         {
+            UpdateHungerStatus(5);
             _actionFeedback.Clear();
             _actionFeedback.Add("Whoosh");
             _actionFeedback.Add($"Play time for a {Type}, {Type}'s love to run");
@@ -32,6 +34,7 @@ namespace AnimalFarm.Core.Domain
 
         protected override List<string> Talk()
         {
+            UpdateHungerStatus(2);
             _actionFeedback.Clear();
             _actionFeedback.Add("Hello");
             _actionFeedback.Add("Bark!!");
