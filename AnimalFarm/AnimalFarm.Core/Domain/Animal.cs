@@ -18,7 +18,7 @@ namespace AnimalFarm.Core.Domain
         public Animal(string name)
         {
             Name = name;
-            _hungerLevel = 10;
+            _hungerLevel = 12;
         }
         
         public List<string> Command(AnimalActions animalAction)
