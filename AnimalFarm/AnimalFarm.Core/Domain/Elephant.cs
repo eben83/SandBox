@@ -13,6 +13,7 @@ namespace AnimalFarm.Core.Domain
         
         protected override List<string> Run()
         {
+            UpdateHungerStatus(5);
             _actionFeedback.Clear();
             _actionFeedback.Add("Whoosh");
             _actionFeedback.Add($"You might think- because of their size, they are slow.");
@@ -21,6 +22,7 @@ namespace AnimalFarm.Core.Domain
         }
         protected override List<string> Eat()
         {
+            UpdateHungerStatus(0);
             _actionFeedback.Clear();
             _actionFeedback.Add("Burp");
             _actionFeedback.Add($"This time, an {Type} can eat, they will devour ");
@@ -30,6 +32,7 @@ namespace AnimalFarm.Core.Domain
         }
         protected override List<string> Talk()
         {
+            UpdateHungerStatus(2);
             _actionFeedback.Clear();
             _actionFeedback.Add("Hello");
             _actionFeedback.Add("Trumpet!!");    
