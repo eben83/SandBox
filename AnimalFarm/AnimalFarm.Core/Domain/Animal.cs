@@ -13,7 +13,7 @@ namespace AnimalFarm.Core.Domain
         public AnimalHungerStatus HungerStatus { get; set; }
         public string Identification
         {
-            get { return $" {Type} - {Name} - {HungerStatus}"; }
+            get { return $" {Type} - {Name} - {(int)_hungerLevel} - {HungerStatus}"; }
         }
         public Animal(string name)
         {
@@ -45,20 +45,20 @@ namespace AnimalFarm.Core.Domain
             UpdateHungerStatus(0);
         }
 
-        private void UpdateHungerStatus(int effort)
+        protected void UpdateHungerStatus(int effort)
         {
             if (effort == 0)
-                _hungerLevel = 10;
+                _hungerLevel = 12;
             else
                 _hungerLevel -= effort;
 
             
-            if (_hungerLevel == 10)
+            if (_hungerLevel == 12)
             {
                 HungerStatus = AnimalHungerStatus.Full;
                 return;
             }
-            if (_hungerLevel >=8)
+            if (_hungerLevel >=9)
             {
                 HungerStatus = AnimalHungerStatus.Satisfied;
                 return;
@@ -108,7 +108,7 @@ namespace AnimalFarm.Core.Domain
             
             _actionFeedback.Add("Animal is Flying");
             UpdateHungerStatus(4);
-            return null;
+            return _actionFeedback;
         }
         
         protected virtual List<string> Talk()
