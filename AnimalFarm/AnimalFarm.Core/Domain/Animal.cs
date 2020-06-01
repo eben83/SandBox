@@ -13,7 +13,7 @@ namespace AnimalFarm.Core.Domain
         public AnimalHungerStatus HungerStatus { get; set; }
         public string Identification
         {
-            get { return $" {Type} - {Name} - {(int)_hungerLevel} - {HungerStatus}"; }
+            get { return $" {Type} - {Name} - {_hungerLevel} - {HungerStatus}"; }
         }
         public Animal(string name)
         {
