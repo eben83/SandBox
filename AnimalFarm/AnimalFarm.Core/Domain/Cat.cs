@@ -13,6 +13,7 @@ namespace AnimalFarm.Core.Domain
         
         protected override List<string> Run()
         {
+            UpdateHungerStatus(5);
             _actionFeedback.Clear();
             _actionFeedback.Add("Whoosh");
             _actionFeedback.Add($"Running, They will rather watch");
@@ -30,6 +31,7 @@ namespace AnimalFarm.Core.Domain
         }
         protected override List<string> Talk()
         {
+            UpdateHungerStatus(2);
             _actionFeedback.Clear();
             _actionFeedback.Add("Meow!!");    
             _actionFeedback.Add("Hello");
