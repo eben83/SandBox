@@ -39,6 +39,7 @@ namespace AnimalFarm.ConsoleClient.UserInterface
                 }
             }
         }
+        
         private static int GetChoiceFromMainMenu(List<Animal> animalsList)
         {
             UiHelper.ShowWelcomeMessage();
@@ -46,6 +47,7 @@ namespace AnimalFarm.ConsoleClient.UserInterface
             MainMenuHelper.ShowMainMenu();
             return MainMenuHelper.GetValidMainMenuChoice();
         }
+        
         private static void ShowAnimalListSummary(List<Animal> listOfAnimals)
         {
             if (listOfAnimals.Count == 0)
@@ -64,6 +66,7 @@ namespace AnimalFarm.ConsoleClient.UserInterface
                 Console.Write($" {pet.Identification} |");
             }
         }
+        
         private static void InteractWithOneAnimal(List<Animal> animalInteractList)
         {
             UiHelper.ShowWelcomeMessage();
@@ -98,6 +101,7 @@ namespace AnimalFarm.ConsoleClient.UserInterface
             Console.WriteLine("Press enter to carry on:");
             Console.ReadLine();
         }
+        
         private static void InteractWithAllAnimals(List<Animal> animals)
         {
             UiHelper.ShowWelcomeMessage();
