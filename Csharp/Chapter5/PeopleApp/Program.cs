@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.Design;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using static System.Console;
 using Packt.Shared;
 
@@ -177,6 +178,16 @@ namespace PeopleApp
 
             sam.FavoritePrimaryColor = "red";
             WriteLine($"Sam's favorite primary color is {sam.FavoritePrimaryColor}");
+            
+            //indexers
+            sam.Children.Add(new Person {Name = "Charlie"});
+            sam.Children.Add(new Person {Name = "Ella"});
+            
+            WriteLine($"Sam's 1st child is {sam.Children[0].Name}");
+            WriteLine($"Sam's 2nd child is {sam.Children[1].Name}");
+            
+            // WriteLine($"Sam's 1st child is {sam[0].Name}");
+            // WriteLine($"Sam's 2nd child is {sam[1].Name}");
 
         }
     }
