@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Packt.Shared
 {
-    public class Person: object
+    public class Person : object
     {
         //fields- use the instance to access
         public string Name;
@@ -12,14 +12,14 @@ namespace Packt.Shared
         public WondersOfTheAncientWorld FavoriteAncientWonder;
         public WondersOfTheAncientWorld BucketList;
         public List<Person> Children = new List<Person>();
-        
+
         //constant- a field that will never change- use the class to access
         public const string Species = "Homo Sapien";
-        
+
         //read-only fields- use the instance to access
         public readonly string HomePlanet = "Earth";
         public readonly DateTime Instantiated;
-        
+
         //constructors- when a field need to be initialized at runtime
         public Person()
         {
@@ -29,7 +29,7 @@ namespace Packt.Shared
             Instantiated = DateTime.Now;
         }
 
-        
+
         // second constructor- this allows to set initial values
         public Person(string initialName, string homePlanet)
         {
@@ -47,7 +47,7 @@ namespace Packt.Shared
         {
             return $"{Name} was born {HomePlanet}";
         }
-        
+
         //tuples
         public (string, int) getFruit()
         {
@@ -69,6 +69,16 @@ namespace Packt.Shared
         public string SayHello(string name)
         {
             return $"{Name} says 'hello {name}!'";
+        }
+
+        //optional parameters
+        public string OptionalParameters(
+            string command = "Run!",
+            double number = 0.0,
+            bool active = true)
+        {
+            return string.Format(
+                format: "Command is {0}, number is {1}, active is {2}", arg0: command, arg1: number, arg2: active);
         }
     }
 }
