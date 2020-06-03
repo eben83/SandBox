@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design;
 using static System.Console;
 using Packt.Shared;
 
@@ -77,8 +78,16 @@ namespace PeopleApp
             
             //parameters into methods
             WriteLine(bob.SayHello());
-            WriteLine(bob.SayHello("Emily"));
+            WriteLine(bob.SayHello("Dom"));
             
+            //optional parameters
+            WriteLine(bob.OptionalParameters());
+            //passing other parameters
+            WriteLine(bob.OptionalParameters("Jump", 2));
+            //optional with naming parameters
+            WriteLine(bob.OptionalParameters(number:52.6, command:"hide"));
+            //skip parameters
+            WriteLine(bob.OptionalParameters("poke", active: false));
             
             // new short hand to initialize the object.
             var alice = new Person
