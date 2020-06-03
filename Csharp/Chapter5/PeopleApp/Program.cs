@@ -89,6 +89,17 @@ namespace PeopleApp
             //skip parameters
             WriteLine(bob.OptionalParameters("poke", active: false));
             
+            
+            // passing parametere in and out
+            int a = 10;
+            int b = 20;
+            int c = 30;
+            
+            WriteLine($"Before: a = {a}, b = {b}, c = {c}");
+            bob.PassingParameters(a, ref b, out c);
+            WriteLine($"After: a= {a}, b = {b}, c = {c}");
+            
+            
             // new short hand to initialize the object.
             var alice = new Person
             {
