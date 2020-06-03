@@ -31,6 +31,22 @@ namespace PeopleApp
             
             WriteLine($"{bob.Name}'s bucket list is {bob.BucketList}");
             
+            bob.Children.Add(new Person{Name = "Alfred"});
+            bob.Children.Add(new Person{Name = "Zoe"});
+            
+            WriteLine($"{bob.Name} has {bob.Children.Count} children");
+            for (int child = 0; child < bob.Children.Count; child++)
+            {
+                WriteLine($"{bob.Children[child].Name}");
+            }
+
+            //not working correctly
+            foreach (var child in bob.Children)
+            {
+                WriteLine($"{child.ToString()}");
+            }
+            
+            
             var alice = new Person
             {
                 Name = "Alice Jones",
