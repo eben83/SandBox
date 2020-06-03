@@ -8,6 +8,7 @@ namespace PeopleApp
     {
         static void Main(string[] args)
         {
+            // this class is the Person class imported to this app
             var bob = new Person();
             bob.Name = "Bob Smith";
             bob.DateOfBirth = new DateTime(1965, 12, 22);
