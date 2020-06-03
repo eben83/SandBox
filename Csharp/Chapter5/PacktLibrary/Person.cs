@@ -1,6 +1,5 @@
 ﻿using System;
 using static System.Console;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace Packt.Shared
