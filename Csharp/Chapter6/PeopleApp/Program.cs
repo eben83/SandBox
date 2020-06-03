@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO.Pipes;
+using static System.Console;
 
 namespace PeopleApp
 {
