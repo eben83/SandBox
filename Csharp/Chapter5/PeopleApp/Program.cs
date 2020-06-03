@@ -72,6 +72,12 @@ namespace PeopleApp
             WriteLine($"{thing2.Name} has {thing2.Count} children");
             
             //deconstruction of tuple
+            (string fruitName, int fruitNumber) = bob.getFruit();
+            WriteLine($"Deconstructed: {fruitName}, {fruitNumber}");
+            
+            //parameters into methods
+            WriteLine(bob.SayHello());
+            WriteLine(bob.SayHello("Emily"));
             
             
             // new short hand to initialize the object.
