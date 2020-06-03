@@ -3,6 +3,8 @@ namespace Packt.Shared
     [System.Flags]
     public enum WondersOfTheAncientWorld
     {
+        
+        // added bytes to ref them as its quicker and uses less memory
         none = 0b_0000_0000,
         GreatPyramidOfGiza = 0b_0000_0001,
         HangingGardensOfBabylon = 0b_0000_0010,
