@@ -28,5 +28,14 @@ namespace Packt.Shared
             Name = "Unknown";
             Instantiated = DateTime.Now;
         }
+
+        
+        // second constructor- this allows to set initial values
+        public Person(string initialName, string homePlanet)
+        {
+            Name = initialName;
+            HomePlanet = homePlanet;
+            Instantiated = DateTime.Now;
+        }
     }
 }
