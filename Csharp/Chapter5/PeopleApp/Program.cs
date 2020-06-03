@@ -103,6 +103,15 @@ namespace PeopleApp
                 arg0: blankPerson.Name,
                 arg1: blankPerson.HomePlanet,
                 arg2: blankPerson.Instantiated);
+            
+            // used the 2nd constructor to allow the initial values to be set
+            var gunny = new Person("Gunny", "Mars");
+            
+            WriteLine(format:
+                "{0} of {1} was created at {2: HH: mm: ss } on a {2: ddd}",
+                arg0: gunny.Name,
+                arg1: gunny.HomePlanet,
+                arg2: gunny.Instantiated);
         }
     }
 }
