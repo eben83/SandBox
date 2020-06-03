@@ -80,5 +80,18 @@ namespace Packt.Shared
             return string.Format(
                 format: "Command is {0}, number is {1}, active is {2}", arg0: command, arg1: number, arg2: active);
         }
+        
+        //passing parameters in and out
+        public void PassingParameters(int x, ref int y, out int z)
+        {
+            //out parameters cannot have defaults
+            //& must be initialised inside the method
+            z = 99;
+            
+            //increment each parameter
+            x++;
+            y++;
+            z++;
+        }
     }
 }
