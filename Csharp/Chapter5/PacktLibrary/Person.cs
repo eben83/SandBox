@@ -47,5 +47,17 @@ namespace Packt.Shared
         {
             return $"{Name} was born {HomePlanet}";
         }
+        
+        //tuples
+        public (string, int) getFruit()
+        {
+            return ("Apples", 5);
+        }
+
+        //naming the tuple items
+        public (string Name, int Number ) getNameedFruit()
+        {
+            return (Name: "Banana", Number: 5);
+        }
     }
 }
