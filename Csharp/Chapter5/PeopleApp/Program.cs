@@ -24,7 +24,7 @@ namespace PeopleApp
                 arg1: bob.DateOfBirth);
             
             WriteLine(format:
-                "{0}'s favorite wonder is {1}. It's interger value is {2}",
+                "{0}'s favorite wonder is {1}. It's integer value is {2}",
                 arg0: bob.Name,
                 arg1: bob.FavoriteAncientWonder,
                 arg2: (int)bob.FavoriteAncientWonder);
@@ -45,6 +45,9 @@ namespace PeopleApp
             {
                 WriteLine($"{child.ToString()}");
             }
+            
+            
+            
             
             
             var alice = new Person
