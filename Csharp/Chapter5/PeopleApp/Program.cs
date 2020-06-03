@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.Design;
+using System.Runtime.InteropServices;
 using static System.Console;
 using Packt.Shared;
 
@@ -158,7 +159,25 @@ namespace PeopleApp
                 arg0: gunny.Name,
                 arg1: gunny.HomePlanet,
                 arg2: gunny.Instantiated);
+            
+            
+            //using properties
+            var sam = new Person
+            {
+                Name = "Sam",
+                DateOfBirth = new DateTime(1972, 1, 27)
+            };
+            WriteLine(sam.Origin);
+            WriteLine(sam.Greeting);
+            WriteLine(sam.Age);
+         
+            //properties with get and set methods
+            sam.FavoriteIceCream = "Chocolate Fudge";
+            WriteLine($"Sam's favorite ice-cream is {sam.FavoriteIceCream}");
+
+            sam.FavoritePrimaryColor = "red";
+            WriteLine($"Sam's favorite primary color is {sam.FavoritePrimaryColor}");
+
         }
-        
     }
 }
