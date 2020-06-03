@@ -51,14 +51,11 @@ namespace PeopleApp
             //using the read- only
             WriteLine($"{bob.Name} was born on {bob.HomePlanet}");
             
+            // methods that perform actions or return things
+            bob.WriteToConsole();
+            WriteLine(bob.GetOrigin());
             
-
-            //not working correctly
-            // foreach (var child in bob.Children)
-            // {
-            //     WriteLine($"{child.ToString()}");
-            // }
-            //
+            
             
             // new short hand to initialize the object.
             var alice = new Person
@@ -113,5 +110,6 @@ namespace PeopleApp
                 arg1: gunny.HomePlanet,
                 arg2: gunny.Instantiated);
         }
+        
     }
 }
