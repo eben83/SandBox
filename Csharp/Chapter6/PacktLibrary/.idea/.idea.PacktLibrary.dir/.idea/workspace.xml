@@ -20,15 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de5a2afc-124c-49c1-9b94-a0f6d70863dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/.idea.PacktLibrary.dir.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacktLibrary.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PacktLibrary.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Person.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PeopleApp/.idea/.idea.PeopleApp.dir/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../PeopleApp/.idea/.idea.PeopleApp.dir/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PeopleApp/PeopleApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../PeopleApp/PeopleApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PeopleApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PeopleApp/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +77,8 @@
       <option name="presentableId" value="Default" />
       <updated>1591197619144</updated>
       <workItem from="1591197627968" duration="1016000" />
-      <workItem from="1591198779922" duration="221000" />
+      <workItem from="1591198779922" duration="832000" />
+      <workItem from="1591199726178" duration="68000" />
     </task>
     <servers />
   </component>
@@ -99,6 +97,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
