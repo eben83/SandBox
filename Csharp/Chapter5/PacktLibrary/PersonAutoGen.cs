@@ -19,7 +19,7 @@ namespace Packt.Shared
         //properties with both get and set methods
         public string FavoriteIceCream { get; set; }
 
-        private string favoritePrimaryColor;
+        private string favoritePrimaryColor; //field
 
         public string FavoritePrimaryColor
         {
