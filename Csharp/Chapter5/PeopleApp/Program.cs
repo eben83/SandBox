@@ -90,14 +90,20 @@ namespace PeopleApp
             WriteLine(bob.OptionalParameters("poke", active: false));
             
             
-            // passing parametere in and out
+            // passing parameter in and out
             int a = 10;
             int b = 20;
-            int c = 30;
+            int c = 30;// this will always be replace as its an out refrence parameter
+            int d = 10;
+            int e = 20;
             
             WriteLine($"Before: a = {a}, b = {b}, c = {c}");
             bob.PassingParameters(a, ref b, out c);
             WriteLine($"After: a= {a}, b = {b}, c = {c}");
+            
+            WriteLine($"Before: d = {d}, e = {e}, f doesn't exist yet");
+            bob.PassingParameters(d, ref e, out int f);
+            WriteLine($"After: e = {d}, e = {e}, f = {f}");
             
             
             // new short hand to initialize the object.
