@@ -54,7 +54,24 @@ namespace PeopleApp
             // methods that perform actions or return things
             bob.WriteToConsole();
             WriteLine(bob.GetOrigin());
+
+            //tuples
+            (string, int) fruit = bob.getFruit();
+            WriteLine($"{fruit.Item1}, {fruit.Item2} are there");
+
             
+            //named tuple- 
+            var fruitNamed = bob.getNameedFruit();
+            WriteLine($"there are {fruitNamed.Number} {fruitNamed.Name}'s");
+            
+            //tuple name inference
+            var thing1 = ("Neville", 4);
+            WriteLine($"{thing1.Item1} has {thing1.Item2} chidren");
+
+            var thing2 = (bob.Name, bob.Children.Count);
+            WriteLine($"{thing2.Name} has {thing2.Count} children");
+            
+            //deconstruction of tuple
             
             
             // new short hand to initialize the object.
