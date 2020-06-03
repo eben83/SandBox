@@ -59,5 +59,16 @@ namespace Packt.Shared
         {
             return (Name: "Banana", Number: 5);
         }
+
+        // passing parameters into methods
+        public string SayHello()
+        {
+            return $"{Name} says 'Hello!'";
+        }
+
+        public string SayHello(string name)
+        {
+            return $"{Name} says 'hello {name}!'";
+        }
     }
 }
