@@ -22,6 +22,10 @@
     <list default="true" id="de5a2afc-124c-49c1-9b94-a0f6d70863dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacktLibrary.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PacktLibrary.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Person.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PeopleApp/PeopleApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../PeopleApp/PeopleApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PeopleApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PeopleApp/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +41,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Class1.cs" />
+        <option value="$PROJECT_DIR$/PacktLibrary.csproj" />
         <option value="$PROJECT_DIR$/Person.cs" />
+        <option value="$PROJECT_DIR$/../PeopleApp/PeopleApp.csproj" />
       </list>
     </option>
   </component>
@@ -66,7 +73,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -82,6 +89,9 @@
       <workItem from="1591198779922" duration="832000" />
       <workItem from="1591199726178" duration="68000" />
       <workItem from="1591242544540" duration="389000" />
+      <workItem from="1591262697591" duration="818000" />
+      <workItem from="1591264296914" duration="2472000" />
+      <workItem from="1591267022468" duration="691000" />
     </task>
     <servers />
   </component>
@@ -104,5 +114,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591264757971">
+      <screen x="0" y="23" width="1440" height="852" />
+    </state>
+    <state x="184" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.852/-1920.-157.1920.1057@0.23.1440.852" timestamp="1591264757971" />
+    <state x="-1417" y="-41" key="SettingsEditor" timestamp="1591264323040">
+      <screen x="-1920" y="-157" width="1920" height="1057" />
+    </state>
+    <state x="-1417" y="-41" key="SettingsEditor/0.23.1440.852/-1920.-157.1920.1057@-1920.-157.1920.1057" timestamp="1591264323040" />
   </component>
 </project>
