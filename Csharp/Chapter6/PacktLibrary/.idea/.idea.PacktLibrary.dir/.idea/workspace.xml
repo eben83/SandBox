@@ -22,6 +22,7 @@
     <list default="true" id="de5a2afc-124c-49c1-9b94-a0f6d70863dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PacktLibrary.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Person.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PeopleApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PeopleApp/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +88,7 @@
       <workItem from="1591242544540" duration="389000" />
       <workItem from="1591262697591" duration="818000" />
       <workItem from="1591264296914" duration="2472000" />
-      <workItem from="1591267022468" duration="2339000" />
+      <workItem from="1591267022468" duration="2447000" />
     </task>
     <servers />
   </component>
