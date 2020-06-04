@@ -7,6 +7,13 @@ namespace PeopleApp
 {
     class Program
     {
+        //delegate
+        private static void Harry_Shout(object sender, EventArgs e)
+        {
+            Person p = (Person) sender;
+            WriteLine($"{p.Name} is this angry {p.AngerLevel}");
+        }
+        
         static void Main(string[] args)
         {
             var harry = new Person {Name = "Harry"};
@@ -38,6 +45,16 @@ namespace PeopleApp
             
             //calling the Factorial function
             WriteLine($"5! is {Person.Factorial(5)}");
+            
+            //assigning the method to the delegate
+            harry.Shout = Harry_Shout;
+            
+            //calling the poke method
+            harry.Poke();
+            harry.Poke();
+            harry.Poke();
+            harry.Poke();
+
         }
     }
 }
