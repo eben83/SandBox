@@ -1,6 +1,7 @@
 ﻿using System;
-using System.IO.Pipes;
 using static System.Console;
+using Packt.Shared;
+
 
 namespace PeopleApp
 {
