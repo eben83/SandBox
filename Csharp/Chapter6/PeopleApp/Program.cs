@@ -35,6 +35,9 @@ namespace PeopleApp
                 arg0: harry.Name,
                 arg1: harry.Children[1].Name);
             
+            
+            //calling the Factorial function
+            WriteLine($"5! is {Person.Factorial(5)}");
         }
     }
 }
