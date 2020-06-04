@@ -34,7 +34,14 @@ namespace Packt.Shared
         //instance method to "multiply"
         public Person ProcreateWith(Person partner)
         {
+            //this is for this instance of the Person instance
             return Procreate(this, partner);
+        }
+        
+        //operator to "multiply"
+        public static Person operator *(Person p1, Person p2)
+        {
+            return Person.Procreate(p1, p2);
         }
         
     }
