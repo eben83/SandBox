@@ -15,10 +15,12 @@ namespace PeopleApp
             
             //call instance method
             var baby1 = mary.ProcreateWith(harry);
-            var baby3 = jill.ProcreateWith(mary);
             
             //call static method
             var baby2 = Person.Procreate(harry, jill);
+            
+            //call an operator
+            var baby3 = harry * mary;
             
             WriteLine($"{harry.Name} has {harry.Children.Count} children");
             WriteLine($"{mary.Name} has {mary.Children.Count} children");
@@ -28,6 +30,11 @@ namespace PeopleApp
                 "{0}'s first child is named \"{1}\".",
                 arg0: harry.Name,
                 arg1: harry.Children[0].Name);
+            WriteLine(format:
+                "{0}'s second child is named \"{1}\".",
+                arg0: harry.Name,
+                arg1: harry.Children[1].Name);
+            
         }
     }
 }
