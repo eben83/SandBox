@@ -47,13 +47,38 @@ namespace PeopleApp
             WriteLine($"5! is {Person.Factorial(5)}");
             
             //assigning the method to the delegate
-            harry.Shout = Harry_Shout;
+            harry.Shout += Harry_Shout;
             
             //calling the poke method
             harry.Poke();
             harry.Poke();
             harry.Poke();
             harry.Poke();
+
+
+            // Using built in Interfaces- Comparing objects when sorting
+            Person[] people =
+            {
+                new Person {Name = "Simon"},
+                new Person {Name = "Jenny"},
+                new Person {Name = "Adam"},
+                new Person {Name = "Richard"},
+            };
+            
+            WriteLine("Initial List of people");
+            foreach (var person in people)
+            {
+                WriteLine($"{person.Name}");
+            }
+            
+            WriteLine("Use Person's IComparable implementation to sort:");
+            // Array.Sort(people);
+            foreach (var person in people)
+            {
+                WriteLine($"{person.Name}");
+            }
+            
+            
 
         }
     }
