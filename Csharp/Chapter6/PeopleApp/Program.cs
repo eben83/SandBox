@@ -72,7 +72,7 @@ namespace PeopleApp
             }
             
             WriteLine("Use Person's IComparable implementation to sort:");
-            // Array.Sort(people);
+            Array.Sort(people);
             foreach (var person in people)
             {
                 WriteLine($"{person.Name}");
