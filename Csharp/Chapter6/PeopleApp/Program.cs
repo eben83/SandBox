@@ -79,6 +79,13 @@ namespace PeopleApp
             }
             
             
+            //this uses the class to sort.
+            WriteLine("Use PersonComparer's IComposer implementation to sort");
+            Array.Sort(people, new PersonComparer());
+            foreach (var person in people)
+            {
+                WriteLine($"{person.Name}");
+            }
 
         }
     }
