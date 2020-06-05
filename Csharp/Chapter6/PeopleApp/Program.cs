@@ -87,6 +87,7 @@ namespace PeopleApp
                 WriteLine($"{person.Name}");
             }
 
+            //non-generic types
             var t1 = new Thing();
             t1.Data = 42;
             WriteLine($"Thing with an integer: {t1.Process(42)}");
@@ -95,6 +96,16 @@ namespace PeopleApp
             t2.Data = "apple";
             WriteLine($"Thing with a string: {t2.Process("apple")}");
 
+            
+            //generic types
+            var gt1 = new GenericThing<int>();
+            gt1.Data = 42;
+            WriteLine($"GenericThing with an interger: {gt1.Process(42)}");
+            
+            var gt2 = new GenericThing<string>();
+            gt2.Data = "apple";
+            WriteLine($"GenericThing with a string: {gt2.Process("apple")}");
+            
         }
     }
 }
