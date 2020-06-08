@@ -144,9 +144,20 @@ namespace PeopleApp
             //overridden methods- this override method is in person class
             WriteLine(john.ToString());
             
+           Employee aliceEmployee = new Employee
+           {
+               Name = "Alice",
+               EmployeeCode = "AA123"
+           };
+           Person alicePerson = aliceEmployee;
            
-            
-            
+           aliceEmployee.WriteToConsole();
+           alicePerson.WriteToConsole();
+           
+           WriteLine(aliceEmployee.ToString());
+           WriteLine(alicePerson.ToString());
+
+
         }
     }
 }
