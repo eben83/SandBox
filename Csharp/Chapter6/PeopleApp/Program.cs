@@ -131,6 +131,11 @@ namespace PeopleApp
             };
             john.WriteToConsole();
             
+            //extending classes
+            john.EmployeeCode = "JJ001";
+            john.HiteDate = new DateTime(2014, 11, 23);
+            WriteLine($"{john.Name} was hired on {john.HiteDate: dd / MM / yy}");
+
         }
     }
 }
