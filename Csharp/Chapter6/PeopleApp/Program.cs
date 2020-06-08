@@ -129,6 +129,8 @@ namespace PeopleApp
                 Name = "John Jones",
                 DateOfBirth = new DateTime(1990, 7, 28)
             };
+            
+            //this statement is the one that gets the hiding member- from the Employee Class
             john.WriteToConsole();
             
             //extending classes
