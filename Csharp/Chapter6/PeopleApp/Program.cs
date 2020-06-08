@@ -138,6 +138,15 @@ namespace PeopleApp
             john.HiteDate = new DateTime(2014, 11, 23);
             WriteLine($"{john.Name} was hired on {john.HiteDate: dd / MM / yy}");
 
+            
+            //ToString- inherits from System.Object so the implementation 
+            //returns the namespace and the type name
+            //overridden methods- this override method is in person class
+            WriteLine(john.ToString());
+            
+           
+            
+            
         }
     }
 }
