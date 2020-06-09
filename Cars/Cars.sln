@@ -1,6 +1,7 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cars", "Cars\Cars.csproj", "{97758827-035F-4F5A-A605-676D2E266CFE}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cars", "Cars\Cars.csproj", "{9EF5493E-171C-4BA5-9CDB-FD2898F84456}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +9,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{97758827-035F-4F5A-A605-676D2E266CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97758827-035F-4F5A-A605-676D2E266CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97758827-035F-4F5A-A605-676D2E266CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97758827-035F-4F5A-A605-676D2E266CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF5493E-171C-4BA5-9CDB-FD2898F84456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF5493E-171C-4BA5-9CDB-FD2898F84456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF5493E-171C-4BA5-9CDB-FD2898F84456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF5493E-171C-4BA5-9CDB-FD2898F84456}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
