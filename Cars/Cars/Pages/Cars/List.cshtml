@@ -4,19 +4,27 @@
 @{
     Layout = null;
 }
+<h1>Cars</h1>
 
-<div>
-    <h1>Cars</h1>
-    
-    <table class="table">
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Colour</th>
+        <th>Type</th>
+        </thead>
+        
+        <tbody>
         @foreach (var car in Model.Cars)
-        {
-            <tr>
-                <td>@car.Make</td>
-                <td>@car.Model</td>
-                <td>@car.Colour</td>
-                <td>@car.carType</td>
-            </tr>
-        }
+                {
+                    <tr>
+                        <td>@car.Make</td>
+                        <td>@car.Model</td>
+                        <td>@car.Colour</td>
+                        <td>@car.carType</td>
+                    </tr>
+                }
+        </tbody>
     </table>
 </div>
