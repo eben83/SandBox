@@ -22,9 +22,10 @@ namespace Cars.Pages.Cars
         }
         
         //the onGet responds to the http get
-        public void OnGet()
+        public void OnGet(string searchTerm) //model binding
         {
-            Cars = _carData.GetAll();
+            
+            Cars = _carData.GetCarsByMake(searchTerm);
         }
     }
 }
