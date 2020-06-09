@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using CarsLibrary.Core;
 using CarsLibrary.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
 
@@ -14,6 +15,8 @@ namespace Cars.Pages.Cars
 
         //property- gets the Car class
         public IEnumerable<Car> Cars { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
         
         //ctor
         public List(ICarData _carData)
@@ -22,10 +25,9 @@ namespace Cars.Pages.Cars
         }
         
         //the onGet responds to the http get
-        public void OnGet(string searchTerm) //model binding
+        public void OnGet() //model binding
         {
-            
-            Cars = _carData.GetCarsByMake(searchTerm);
+            Cars = _carData.GetCarsByMake(SearchTerm);
         }
     }
 }
