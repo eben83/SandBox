@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using CarsLibrary.Core;
 using CarsLibrary.Data;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
@@ -10,6 +12,8 @@ namespace Cars.Pages.Cars
         private readonly IConfiguration config;
         private readonly ICarData _carData; //field
 
+        //property- gets the Car class
+        public IEnumerable<Car> Cars { get; set; }
         
         //ctor
         public List(ICarData _carData)
@@ -20,7 +24,7 @@ namespace Cars.Pages.Cars
         //the onGet responds to the http get
         public void OnGet()
         {
-            
+            Cars = _carData.GetAll();
         }
     }
 }
