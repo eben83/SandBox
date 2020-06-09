@@ -1,8 +1,22 @@
 @page
-@model Cars.Pages.Cars.Detail
+@model Pages.Cars.Detail
 
 @{
     ViewData["Title"] = "Details page";
 }
 
-<div></div>
+<h2>@Model.Car.Make</h2>
+<div>
+    Make: @Model.Car.Make
+</div>
+<div>
+    Model: @Model.Car.Model
+</div>
+<div>
+    Colour: @Model.Car.Colour
+</div>
+<div>
+    Type: @Model.Car.carType
+</div>
+
+<a asp-page="./List" class="btn btn-primary btn-lg">All Cars</a>
