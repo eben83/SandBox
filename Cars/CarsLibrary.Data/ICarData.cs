@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using CarsLibrary.Core;
 
 namespace CarsLibrary.Data
@@ -26,7 +27,10 @@ namespace CarsLibrary.Data
         }
         public IEnumerable<Car> GetAll()
         {
-            throw new System.NotImplementedException();
+            //linq query
+            return from c in cars
+                orderby c.Make
+                select c;
         }
     }
 }
