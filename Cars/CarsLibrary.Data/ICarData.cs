@@ -6,7 +6,7 @@ namespace CarsLibrary.Data
 {
     public interface ICarData
     {
-        IEnumerable<Car> GetAll();
+        IEnumerable<Car> GetCarsByMake(string make);
     }
 
     public class InMemoryCarData : ICarData
@@ -25,10 +25,11 @@ namespace CarsLibrary.Data
                 new Car{ Id = 3, Model = "M5", Make = "BMW", Colour = "White", carType = CarType.Sports}
             };
         }
-        public IEnumerable<Car> GetAll()
+        public IEnumerable<Car> GetCarsByMake(string make = null)
         {
             //linq query
             return from c in cars
+                where string.IsNullOrEmpty(make) || c.Make.StartsWith(make)
                 orderby c.Make
                 select c;
         }
