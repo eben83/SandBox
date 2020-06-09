@@ -7,8 +7,13 @@ namespace CarsLibrary.Data
     public interface ICarData
     {
         IEnumerable<Car> GetCarsByMake(string make);
+        
         //search cars by id
         Car GetById(int id);
+        
+        //update car
+        Car update(Car updatedCar);
+        int Commit();
     }
 
     public class InMemoryCarData : ICarData
@@ -27,6 +32,13 @@ namespace CarsLibrary.Data
                 new Car{ Id = 3, Model = "M5", Make = "BMW", Colour = "White", carType = CarType.Sports}
             };
         }
+        
+        public Car GetById(int id)
+        {
+            //return match or null
+            return cars.SingleOrDefault(c => c.Id == id);
+        }
+        
         public IEnumerable<Car> GetCarsByMake(string make = null)
         {
             //linq query
@@ -36,10 +48,23 @@ namespace CarsLibrary.Data
                 select c;
         }
 
-        public Car GetById(int id)
+        public Car update(Car updatedCar)
         {
-            //return match or null
-            return cars.SingleOrDefault(c => c.Id == id);
+            var car = cars.SingleOrDefault(c => c.Id == updatedCar.Id);
+            if (car != null)
+            {
+                car.Make = updatedCar.Make;
+                car.Model = updatedCar.Model;
+                car.Colour = updatedCar.Colour;
+                car.carType = updatedCar.carType;
+            }
+
+            return car;
+        }
+
+        public int Commit()
+        {
+            return 0;
         }
     }
 }
