@@ -14,6 +14,7 @@ namespace Cars.Pages.Cars
         private readonly IHtmlHelper _htmlHelper;
 
         //property
+        [BindProperty]
         public Car Car { get; set; }
         public IEnumerable<SelectListItem> Cars { get; set; }
         
@@ -32,6 +33,13 @@ namespace Cars.Pages.Cars
                 return RedirectToPage("./NotFound");
             }
 
+            return Page();
+        }
+
+        public IActionResult OnPost()
+        {
+            Car = _carData.update(Car);
+            _carData.Commit();
             return Page();
         }
     }
