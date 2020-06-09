@@ -11,7 +11,7 @@ namespace CarsLibrary.Data
 
     public class InMemoryCarData : ICarData
     {
-        List<Car> cars;
+        readonly List<Car> cars;
         
         //constructor
         public InMemoryCarData()
