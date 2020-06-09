@@ -9,7 +9,7 @@ namespace Cars.Pages.Cars
         
         public void OnGet()
         {
-            
+            Car = new Car();
         }
     }
 }
