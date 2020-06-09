@@ -2,11 +2,11 @@
 @model Pages.Cars.List
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Cars page";
 }
 
 <div class="container align-content-center">
-    <h1>Cars</h1>
+    <h1>Cars List</h1>
     
     <table class="table table-hover">
         <thead>
@@ -18,7 +18,7 @@
         </tr>
         </thead>
         
-        <tbody>
+        <tbody class="table-primary">
         @foreach (var car in Model.Cars)
                 {
                     <tr>
