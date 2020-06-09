@@ -1,5 +1,6 @@
 using CarsLibrary.Core;
 using CarsLibrary.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Cars.Pages.Cars
@@ -14,10 +15,16 @@ namespace Cars.Pages.Cars
         {
             this.carData = carData;
         }
-        public void OnGet(int carId)
+        public IActionResult OnGet(int carId)
         {
             //saying that the car must equal the car id
             Car = carData.GetById(carId);
+            if (Car == null)
+            {
+                return RedirectToPage("./NotFound");
+            }
+
+            return Page();
         }
     }
 }
