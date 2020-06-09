@@ -7,4 +7,16 @@
 
 <div>
     <h1>Cars</h1>
+    
+    <table class="table">
+        @foreach (var car in Model.Cars)
+        {
+            <tr>
+                <td>@car.Make</td>
+                <td>@car.Model</td>
+                <td>@car.Colour</td>
+                <td>@car.carType</td>
+            </tr>
+        }
+    </table>
 </div>
