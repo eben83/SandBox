@@ -7,6 +7,8 @@ namespace CarsLibrary.Data
     public interface ICarData
     {
         IEnumerable<Car> GetCarsByMake(string make);
+        //search cars by id
+        Car GetById(int id);
     }
 
     public class InMemoryCarData : ICarData
@@ -32,6 +34,12 @@ namespace CarsLibrary.Data
                 where string.IsNullOrEmpty(make) || c.Make.StartsWith(make)
                 orderby c.Make
                 select c;
+        }
+
+        public Car GetById(int id)
+        {
+            //return match or null
+            return cars.SingleOrDefault(c => c.Id == id);
         }
     }
 }
