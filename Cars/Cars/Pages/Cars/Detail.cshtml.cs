@@ -7,9 +7,10 @@ namespace Cars.Pages.Cars
     {
         public Car Car { get; set; }
         
-        public void OnGet()
+        public void OnGet(int carId)
         {
             Car = new Car();
+            Car.Id = carId;
         }
     }
 }
