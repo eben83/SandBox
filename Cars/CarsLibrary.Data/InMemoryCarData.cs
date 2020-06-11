@@ -58,6 +58,18 @@ namespace CarsLibrary.Data
             return newCar;
         }
 
+        public Car Delete(int id)
+        {
+            var car = cars.FirstOrDefault(c => c.Id == id);
+
+            if (car != null)
+            {
+                cars.Remove(car);
+            }
+
+            return car;
+        }
+
         public int Commit()
         {
             return 0;
