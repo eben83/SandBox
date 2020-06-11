@@ -13,6 +13,10 @@ namespace CarsLibrary.Data
         
         //update car
         Car update(Car updatedCar);
+        
+        //add new object
+        Car Add(Car newCar);
+        
         int Commit();
     }
 
@@ -60,6 +64,14 @@ namespace CarsLibrary.Data
             }
 
             return car;
+        }
+
+        public Car Add(Car newCar)
+        {
+            cars.Add(newCar);
+            //only for development- will be removed later
+            newCar.Id = cars.Max(c => c.Id) + 1;
+            return newCar;
         }
 
         public int Commit()
