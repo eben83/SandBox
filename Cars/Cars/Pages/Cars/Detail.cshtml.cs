@@ -7,8 +7,13 @@ namespace Cars.Pages.Cars
 {
     public class Detail : PageModel
     {
+        //field
         private ICarData carData;
+        
+        //property
         public Car Car { get; set; }
+        [TempData]//will look for the TempData and display the message
+        public string Message { get; set; }
 
         //ctor
         public Detail(ICarData carData)
