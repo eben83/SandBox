@@ -38,11 +38,16 @@ namespace Cars.Pages.Cars
 
         public IActionResult OnPost()
         {
+            if (ModelState.IsValid)
+            {
+                Car = _carData.update(Car);
+                _carData.Commit();
+            }
+            
             //will display the info on the post
             Cars = _htmlHelper.GetEnumSelectList<CarType>();
             
-            Car = _carData.update(Car);
-            _carData.Commit();
+            
             return Page();
         }
     }
