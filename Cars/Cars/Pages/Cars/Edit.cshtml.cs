@@ -42,6 +42,7 @@ namespace Cars.Pages.Cars
             {
                 Car = _carData.update(Car);
                 _carData.Commit();
+                return RedirectToPage("./Detail", new {carId = Car.Id});
             }
             
             //will display the info on the post
