@@ -22,4 +22,9 @@
     Type: @Model.Car.carType
 </div>
 
+@if (Model.Message != null)
+{
+    <div class="alert alert-info">@Model.Message</div>
+}
+
 <a asp-page="./List" class="btn btn-primary btn-lg">All Cars</a>
