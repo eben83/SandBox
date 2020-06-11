@@ -24,10 +24,17 @@ namespace Cars.Pages.Cars
             _htmlHelper = htmlHelper;
         }
         
-        public IActionResult OnGet(int carId)
+        public IActionResult OnGet(int? carId)
         {
             Cars = _htmlHelper.GetEnumSelectList<CarType>();
-            Car = _carData.GetById(carId);
+            if (carId.HasValue)
+            {
+                Car = _carData.GetById(carId.Value);
+            }
+            else
+            {
+                Car = new Car();
+            }
             if (Car == null)
             {
                 return RedirectToPage("./NotFound");
