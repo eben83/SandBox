@@ -45,18 +45,28 @@ namespace Cars.Pages.Cars
 
         public IActionResult OnPost()
         {
-            if (ModelState.IsValid)
+            //not valid- return page to fix
+            if (!ModelState.IsValid)
             {
-                Car = _carData.update(Car);
-                _carData.Commit();
-                return RedirectToPage("./Detail", new {carId = Car.Id});
+                //will display the info on the post
+                Cars = _htmlHelper.GetEnumSelectList<CarType>();
+                return Page();
+            }
+
+            if (Car.Id > 0)
+            { 
+                _carData.update(Car);
+            }
+            else
+            {
+                _carData.Add(Car);
             }
             
-            //will display the info on the post
-            Cars = _htmlHelper.GetEnumSelectList<CarType>();
+            //update the car object
+            Car = _carData.update(Car);
+            _carData.Commit();
+            return RedirectToPage("./List", new {carId = Car.Id});
             
-            
-            return Page();
         }
     }
 }
