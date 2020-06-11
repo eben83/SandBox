@@ -65,7 +65,9 @@ namespace Cars.Pages.Cars
             //update the car object
             Car = _carData.update(Car);
             _carData.Commit();
-            return RedirectToPage("./List", new {carId = Car.Id});
+            //temporary data- for the message
+            TempData["Message"] = "Your car was saved!";
+            return RedirectToPage("./Detail", new {carId = Car.Id});
             
         }
     }
