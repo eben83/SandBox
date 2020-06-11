@@ -32,7 +32,7 @@ namespace Cars
             });
             
             //ICarData added with the use of the InMemoryCarData- dev only
-            services.AddSingleton<ICarData, InMemoryCarData>();
+            services.AddScoped<ICarData, SqlCarData>();
             
             services.AddRazorPages();
         }
