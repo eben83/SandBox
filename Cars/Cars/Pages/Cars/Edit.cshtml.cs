@@ -38,6 +38,9 @@ namespace Cars.Pages.Cars
 
         public IActionResult OnPost()
         {
+            //will display the info on the post
+            Cars = _htmlHelper.GetEnumSelectList<CarType>();
+            
             Car = _carData.update(Car);
             _carData.Commit();
             return Page();
