@@ -1,6 +1,26 @@
-@page
+@page "{carId}"
 @model Pages.Cars.Delete
 
 @{
     Layout = null;
 }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Delete</title>
+</head>
+
+
+<body>
+<h2>DELETE!!</h2>
+<div class="alert alert-danger">
+    Are you sure you want to delete @Model.Car.Make @Model.Car.Model
+</div>
+<form method="post">
+    <button type="submit" class="btn btn-danger btn-lg">YES!!</button>
+    <a asp-page="list" class="btn btn-default">Cancel</a>
+</form>
+</body>
+</html>
