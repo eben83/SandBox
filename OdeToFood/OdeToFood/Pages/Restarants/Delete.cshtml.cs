@@ -11,17 +11,18 @@ namespace OdeToFood.Pages.Restarants
 {
     public class DeleteModel : PageModel
     {
-        private readonly IRestaurantData restrantData;
+        private readonly IRestaurantData _restrantData;
         public Restarant Restarant { get; set; }
 
         public DeleteModel(IRestaurantData restrantData)
         {
-            this.restrantData = restrantData;
+            _restrantData = restrantData;
+            this._restrantData = restrantData;
         }
 
         public IActionResult OnGet(int restarantId)
         {
-            Restarant = restrantData.GetById(restarantId);
+            Restarant = _restrantData.GetById(restarantId);
             if(Restarant == null)
             {
                 return RedirectToPage("./NotFound");
@@ -33,8 +34,8 @@ namespace OdeToFood.Pages.Restarants
 
         public IActionResult OnPost(int restarantId)
         {
-            var restarant = restrantData.Delete(restarantId);
-            restrantData.Commit();
+            var restarant = _restrantData.Delete(restarantId);
+            _restrantData.Commit();
 
             if(restarant == null)
             {

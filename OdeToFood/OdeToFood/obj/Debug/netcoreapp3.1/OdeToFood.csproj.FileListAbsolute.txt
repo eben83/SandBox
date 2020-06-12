@@ -356,3 +356,5 @@
 /Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/staticwebassets/OdeToFood.StaticWebAssets.xml
 /Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/OdeToFood.dll
 /Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/OdeToFood.pdb
+/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/OdeToFood.csproj.CoreCompileInputs.cache
+/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood/obj/Debug/netcoreapp3.1/OdeToFood.genruntimeconfig.cache

@@ -24,3 +24,5 @@
 /Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.csproj.CopyComplete
 /Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.dll
 /Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.pdb
+/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.csproj.CoreCompileInputs.cache
+/Users/ebenburger/Documents/dev/EbenSandbox/OdeToFood/OdeToFood.Data/obj/Debug/netcoreapp3.1/OdeToFood.Data.genruntimeconfig.cache
