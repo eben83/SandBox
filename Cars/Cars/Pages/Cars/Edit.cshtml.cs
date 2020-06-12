@@ -63,7 +63,6 @@ namespace Cars.Pages.Cars
             }
             
             //update the car object
-            Car = _carData.update(Car);
             _carData.Commit();
             //temporary data- for the message
             TempData["Message"] = "Your car was saved!";
