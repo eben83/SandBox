@@ -1,0 +1,29 @@
+﻿@page "{restarantId:int}"
+<!--above is the route, what the path should look like -->
+@model DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h2>@Model.Restarant.Name</h2>
+
+<div>
+    id: @Model.Restarant.ID
+</div>
+
+<div>
+    Location: @Model.Restarant.Location
+</div>
+
+<div>
+    Cuisine: @Model.Restarant.Cuisine
+</div>
+
+@if(Model.Message != null)
+{
+    <div style="color: red;">@Model.Message</div>
+}
+
+<a asp-page="./list" class="btn btn-default" style="color: dodgerblue">All Restaurants</a>
+
+<!--this is what the page will look like.-->

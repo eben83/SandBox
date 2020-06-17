@@ -1,0 +1,42 @@
+@model AddAnimalViewModel;
+@using AnimalFarm.Core.Domain
+@using AnimalFarm.Core.Infrastructure
+@using System.Net.Mime
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Add Animals";
+}
+<div class="jumbotron">
+    <div class="d-flex justify-content-center">
+        <div>
+            @{
+                var availableAnimalTypes = Html.GetEnumSelectList(typeof(AnimalTypes));
+            }
+            
+            @using (Html.BeginForm("AddAnimal", "Home"))
+            {
+                <div class="form-group">
+                    @Html.LabelFor(a => a.SelectedAnimalType,
+                        "Animal Selection" ,
+                        new{ @class = ""})
+                    @Html.DropDownListFor(a=>a.SelectedAnimalType, availableAnimalTypes, 
+                        "Please Select", 
+                        new{@class = "form-control form-control-lg"})
+                </div>
+    
+                <div class="form-group">
+                    @Html.LabelFor(a=>a.AnimalName, 
+                        "Name", 
+                        new {@class = ""})
+                    @Html.TextBoxFor(a => a.AnimalName, 
+                        new {@class = "form-control", name="AnimalName"})
+                    <br/>
+                    
+                </div>
+                <div class="d-flex justify-content-center">
+                    <input class="btn btn-lg btn-primary" type="submit" value="Submit"/>
+                </div>
+            }
+        </div>
+    </div>
+</div>

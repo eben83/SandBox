@@ -1,0 +1,16 @@
+﻿@page "{restarantId}"
+@model DeleteModel
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete!!</h2>
+
+<div class="alert alert-danger">
+    Are you sure you want to delete @Model.Restarant.Name?
+</div>
+
+<form method="post">
+    <button class="btn btn-danger">yes!!</button>
+    <a asp-page="list" class="btn btn-default">Cancel</a>
+</form>

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  odetofood:
+    image: ${DOCKER_REGISTRY-}odetofood
+    build:
+      context: .
+      dockerfile: OdeToFood/Dockerfile

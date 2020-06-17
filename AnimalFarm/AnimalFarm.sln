@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalFarm.Core", "AnimalFarm.Core\AnimalFarm.Core.csproj", "{A0FFE14B-6B39-4033-B38F-1584F94A51EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalFarm.ConsoleClient", "AnimalFarm.ConsoleClient\AnimalFarm.ConsoleClient.csproj", "{83B53A61-A51F-4841-A5A4-DC40C04286A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalFarm.WebClient", "AnimalFarm.WebClient\AnimalFarm.WebClient.csproj", "{55079F4E-03FD-4E12-A5F9-26ACB0AE7FB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0FFE14B-6B39-4033-B38F-1584F94A51EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FFE14B-6B39-4033-B38F-1584F94A51EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FFE14B-6B39-4033-B38F-1584F94A51EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FFE14B-6B39-4033-B38F-1584F94A51EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B53A61-A51F-4841-A5A4-DC40C04286A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B53A61-A51F-4841-A5A4-DC40C04286A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B53A61-A51F-4841-A5A4-DC40C04286A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B53A61-A51F-4841-A5A4-DC40C04286A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55079F4E-03FD-4E12-A5F9-26ACB0AE7FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55079F4E-03FD-4E12-A5F9-26ACB0AE7FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55079F4E-03FD-4E12-A5F9-26ACB0AE7FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55079F4E-03FD-4E12-A5F9-26ACB0AE7FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
