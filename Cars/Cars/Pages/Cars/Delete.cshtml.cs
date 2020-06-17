@@ -16,7 +16,7 @@ namespace Cars.Pages.Cars
             _carData = carData;
         }
 
-        public IActionResult onGet(int carId)
+        public IActionResult OnGet(int carId)
         {
             CarProp = _carData.GetById(carId);
             if (CarProp == null)
@@ -27,7 +27,7 @@ namespace Cars.Pages.Cars
             return Page();
         }
 
-        public IActionResult onPost(int carId)
+        public IActionResult OnPost(int carId)
         {
             var car = _carData.Delete(carId);
             _carData.Commit();
