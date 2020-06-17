@@ -20,7 +20,7 @@ namespace Cars.Pages.Cars
         
         public Edit(ICarData carData, IHtmlHelper htmlHelper)
         {
-            this._carData = carData;
+            _carData = carData;
             _htmlHelper = htmlHelper;
         }
         
