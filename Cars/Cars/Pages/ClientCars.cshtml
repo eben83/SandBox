@@ -1,0 +1,18 @@
+@page
+@model Pages.ClientCars
+
+@{
+    ViewData["Title"] = "Client Cars";
+}
+
+<h2> Client Cars</h2>
+
+<script>
+    $(function () {
+        $.ajax("api/cars",
+        {method: "get"})
+        .then (function(response) {
+          console.dir(response)
+        });
+    });
+</script>
