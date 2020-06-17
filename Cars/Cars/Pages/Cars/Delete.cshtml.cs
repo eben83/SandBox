@@ -8,18 +8,18 @@ namespace Cars.Pages.Cars
     public class Delete : PageModel
     {
         private readonly ICarData _carData;
-
-        public Car Car { get; set; }
         
+        public Car CarProp { get; set; }
+
         public Delete(ICarData carData)
         {
             _carData = carData;
         }
-        
-        public IActionResult OnGet(int carId)
+
+        public IActionResult onGet(int carId)
         {
-            Car = _carData.GetById(carId);
-            if (Car == null)
+            CarProp = _carData.GetById(carId);
+            if (CarProp == null)
             {
                 return RedirectToPage("./NotFound");
             }
@@ -37,7 +37,7 @@ namespace Cars.Pages.Cars
                 return RedirectToPage("./NotFound");
             }
 
-            TempData["Message"] = $"{car.Make} deleted";
+            TempData["message"] = $"{car.Model} deleted";
             return RedirectToPage("./List");
         }
     }
