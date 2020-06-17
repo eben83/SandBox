@@ -126,3 +126,7 @@ storage.ide*
 /Presentation/Nop.Web/App_Data/DataProtectionKeys/*.xml
 /Presentation/Nop.Web/App_Data/dataSettings.json
 /Presentation/Nop.Web/App_Data/installedPlugins.json
+/Cars/.idea/.idea.Cars/.idea/indexLayout.xml
+/Cars/.idea/.idea.Cars/.idea/misc.xml
+/Cars/.idea/.idea.Cars/.idea/vcs.xml
+/EndlessVision2/
