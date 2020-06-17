@@ -55,6 +55,11 @@ namespace CarsLibrary.Data
             return car;
         }
 
+        public int GetCountOfCars()
+        {
+            return _db.Cars.Count();
+        }
+
         public int Commit()
         {
             return _db.SaveChanges();
