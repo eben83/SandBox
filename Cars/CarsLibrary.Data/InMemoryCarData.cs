@@ -70,6 +70,11 @@ namespace CarsLibrary.Data
             return car;
         }
 
+        public int GetCountOfCars()
+        {
+            return cars.Count();
+        }
+
         public int Commit()
         {
             return 0;
