@@ -19,6 +19,9 @@ namespace CarsLibrary.Data
         //delete
         Car Delete(int id);
         
+        //count for the view componnet
+        int GetCountOfCars();
+        
         int Commit();
     }
 }
