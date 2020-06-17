@@ -17,7 +17,8 @@ namespace Cars.ViewComponents
         //returns a view- 
         public IViewComponentResult Invoke()
         {
-            
+            var count = _carData.GetCountOfCars();
+            return View(count);
         }
     }
 }
