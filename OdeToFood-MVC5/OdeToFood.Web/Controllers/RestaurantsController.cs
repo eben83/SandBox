@@ -31,11 +31,11 @@ namespace OdeToFood.Web.Controllers
         public ActionResult Details(int id)
         {
             var model = _db.Get(id);
-            if (model == null){}
+            if (model == null)
 
             {
-                //if 
-                return RedirectToAction(NotFound);
+                //if object is null redirect to
+                return RedirectToAction("NotFound");
             }
             return View(model);
         }
@@ -43,6 +43,11 @@ namespace OdeToFood.Web.Controllers
         public ActionResult Delete(int id)
         {
             throw new System.NotImplementedException();
+        }
+
+        public ActionResult NotFound()
+        {
+            return View();
         }
     }
 }
