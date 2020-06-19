@@ -31,6 +31,12 @@ namespace OdeToFood.Web.Controllers
         public ActionResult Details(int id)
         {
             var model = _db.Get(id);
+            if (model == null){}
+
+            {
+                //if 
+                return RedirectToAction(NotFound);
+            }
             return View(model);
         }
 
