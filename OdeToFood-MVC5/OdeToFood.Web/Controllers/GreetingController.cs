@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System.Configuration;
+using System.Web.Mvc;
+using OdeToFood.Web.Models;
 
 namespace OdeToFood.Web.Controllers
 {
@@ -7,7 +9,9 @@ namespace OdeToFood.Web.Controllers
         // GET
         public ActionResult Index()
         {
-            return View();
+            var model = new GreetingViewModel();
+            model.Message = ConfigurationManager.AppSettings["message"];
+            return View(model);
         }
     }
 }
