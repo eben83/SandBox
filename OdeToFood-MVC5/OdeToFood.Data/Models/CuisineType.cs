@@ -1,6 +1,6 @@
 ﻿namespace OdeToFood.Data.Models
 {
-    public enum Cuisine
+    public enum CuisineType
     {
         None,
         Italian,
