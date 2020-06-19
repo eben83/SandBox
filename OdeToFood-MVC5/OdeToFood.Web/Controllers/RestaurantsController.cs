@@ -30,7 +30,8 @@ namespace OdeToFood.Web.Controllers
 
         public ActionResult Details(int id)
         {
-            throw new System.NotImplementedException();
+            var model = _db.Get(id);
+            return View(model);
         }
 
         public ActionResult Delete(int id)
