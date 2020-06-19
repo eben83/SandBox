@@ -2,6 +2,9 @@
 {
     public enum Cuisine
     {
-        
+        None,
+        Italian,
+        Indian,
+        French,
     }
 }
