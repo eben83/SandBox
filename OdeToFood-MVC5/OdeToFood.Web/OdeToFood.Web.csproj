@@ -173,6 +173,7 @@
         <Content Include="Views\Greeting\Index.cshtml" />
         <Content Include="Views\Restaurants\Create.cshtml" />
         <Content Include="Views\Restaurants\Details.cshtml" />
+        <Content Include="Views\Restaurants\Edit.cshtml" />
         <Content Include="Views\Restaurants\Index.cshtml" />
         <Content Include="Views\Restaurants\NotFound.cshtml" />
         <Content Include="Web.config" />
