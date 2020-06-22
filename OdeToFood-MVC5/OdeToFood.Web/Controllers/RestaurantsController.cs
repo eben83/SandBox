@@ -18,16 +18,18 @@ namespace OdeToFood.Web.Controllers
             var model = _db.GetAll();
             return View(model);
         }
-
+        
+        
         public ActionResult Create()
         {
             return View();
         }
 
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Restaurant restaurant)
         {
-            
+            _db.Add(restaurant);
             return View();
         }
 
