@@ -15,7 +15,9 @@ namespace OdeToFood.Data.Services
         
         public IEnumerable<Restaurant> GetAll()
         {
-            return _db.Restaurants;
+            return from r in _db.Restaurants
+                orderby r.Name
+                select r;
         }
 
         public Restaurant Get(int Id)
