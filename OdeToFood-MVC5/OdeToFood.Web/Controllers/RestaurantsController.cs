@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using OdeToFood.Data.Models;
 using OdeToFood.Data.Services;
 
 namespace OdeToFood.Web.Controllers
@@ -20,6 +21,13 @@ namespace OdeToFood.Web.Controllers
 
         public ActionResult Create()
         {
+            return View();
+        }
+
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Restaurant restaurant)
+        {
+            
             return View();
         }
 
