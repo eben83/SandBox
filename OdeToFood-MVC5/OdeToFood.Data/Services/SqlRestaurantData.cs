@@ -15,7 +15,7 @@ namespace OdeToFood.Data.Services
         
         public IEnumerable<Restaurant> GetAll()
         {
-            throw new System.NotImplementedException();
+            return _db.Restaurants;
         }
 
         public Restaurant Get(int Id)
