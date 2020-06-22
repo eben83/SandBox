@@ -20,7 +20,7 @@ namespace OdeToFood.Web.Controllers
 
         public ActionResult Create()
         {
-            throw new System.NotImplementedException();
+            return View();
         }
 
         public ActionResult Edit(int id)
