@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using OdeToFood.Data.Models;
 
@@ -33,6 +34,16 @@ namespace OdeToFood.Data.Services
         {
             restaurants.Add(restaurant);
             restaurant.Id = restaurants.Max(r => r.Id) + 1;
+        }
+
+        public void Update(Restaurant restaurant)
+        {
+            var existingRestaurant = Get(restaurant.Id);
+            if (existingRestaurant != null)
+            {
+                existingRestaurant.Name = restaurant.Name;
+                existingRestaurant.Cuisine = restaurant.Cuisine;
+            }
         }
     }
 }
