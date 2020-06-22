@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using OdeToFood.Data.Models;
 
@@ -33,7 +34,9 @@ namespace OdeToFood.Data.Services
 
         public void Update(Restaurant restaurant)
         {
-            throw new System.NotImplementedException();
+            var entry = _db.Entry(restaurant);
+            entry.State = EntityState.Modified;
+            _db.SaveChanges();
         }
     }
 }
