@@ -89,9 +89,11 @@ namespace OdeToFood.Web.Controllers
         }
         
         [HttpPost]
-        public ActionResult Delete(int id)
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int id, FormCollection form)
         {
-            throw new System.NotImplementedException();
+            _db.Delete(id);
+            return RedirectToAction("Index");
         }
 
         public ActionResult NotFound()
