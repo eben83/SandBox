@@ -18,10 +18,11 @@ namespace OdeToFood.Web
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
             
-            //used the in memory data
-            builder.RegisterType<InMemoryRestaurantData>()
+            //used the sql data
+            builder.RegisterType<SqlRestaurantData>()
                 .As<IRestaurantData>()
-                .SingleInstance();
+                .InstancePerRequest();
+            builder.RegisterType<OdeToFoodDbContext>().InstancePerRequest();
 
             
             //builds the container to display the in memory data
