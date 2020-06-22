@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using OdeToFood.Data.Models;
 
 namespace OdeToFood.Data.Services
@@ -19,7 +20,7 @@ namespace OdeToFood.Data.Services
 
         public Restaurant Get(int Id)
         {
-            throw new System.NotImplementedException();
+            return _db.Restaurants.FirstOrDefault(r => r.Id == Id);
         }
 
         public void Add(Restaurant restaurant)
