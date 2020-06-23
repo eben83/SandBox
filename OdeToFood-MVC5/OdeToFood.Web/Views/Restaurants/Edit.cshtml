@@ -21,7 +21,7 @@
             @Html.LabelFor(model => model.Name, htmlAttributes: new {@class = "control-label col-md-2"})
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Name, new {htmlAttributes = new {@class = "text- danger"}})
-                @Html.ValidationMessageFor(model => model.Name, "", new {@class = "text-dager"})
+                @Html.ValidationMessageFor(model => model.Name, "", new {@class = "text-danger"})
             </div>
         </div>
         
@@ -29,7 +29,7 @@
                     @Html.LabelFor(model => model.Cuisine, htmlAttributes: new {@class = "control-label col-md-2"})
                     <div class="col-md-10">
                         @Html.EnumDropDownListFor(model => model.Cuisine, new {htmlAttributes = new {@class = "text- danger"}})
-                        @Html.ValidationMessageFor(model => model.Cuisine, "", new {@class = "text-dager"})
+                        @Html.ValidationMessageFor(model => model.Cuisine, "", new {@class = "text-danger"})
                     </div>
                 </div>
         
