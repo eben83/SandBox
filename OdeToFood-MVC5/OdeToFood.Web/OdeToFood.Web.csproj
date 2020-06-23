@@ -186,6 +186,7 @@
         <Content Include="Views\Restaurants\Edit.cshtml" />
         <Content Include="Views\Restaurants\Index.cshtml" />
         <Content Include="Views\Restaurants\NotFound.cshtml" />
+        <Content Include="Views\Shared\_RestaurantSummary.cshtml" />
         <Content Include="Web.config" />
         <Content Include="Web.Debug.config">
             <DependentUpon>Web.config</DependentUpon>
