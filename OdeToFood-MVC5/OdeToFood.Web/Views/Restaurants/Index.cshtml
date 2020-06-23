@@ -10,6 +10,11 @@
     @Html.ActionLink("Create New",  "Create")
 </p>
 
+@foreach (var item in Model)
+{
+    @Html.Partial("_RestaurantSummary", item);
+}
+
 <table class="table">
     <tr>
         <th>
