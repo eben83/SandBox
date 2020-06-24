@@ -9,7 +9,7 @@
         public GearSetMake GearSetMake { get; set; }
         public string GearSet { get; set; }
         public WheelSetType WheelSetType { get; set; }
-        public string WheelSetMake { get; set; }
+        public WheelSetMake WheelSetMake { get; set; }
         public int Weight { get; set; }
     }
 }
