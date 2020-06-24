@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Bicycle
+namespace Bicycle.Web
 {
     public class FilterConfig
     {
