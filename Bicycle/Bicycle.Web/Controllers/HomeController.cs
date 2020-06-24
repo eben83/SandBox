@@ -8,6 +8,13 @@ namespace Bicycle.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private IBikeDate db;
+
+        pubilc HomeController()
+        {
+            
+        }
+
         public ActionResult Index()
         {
             return View();
