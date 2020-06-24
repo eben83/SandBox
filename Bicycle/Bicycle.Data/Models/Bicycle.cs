@@ -10,7 +10,8 @@ namespace Bicycle.Data.Models
         public string Model { get; set; }
         public GearSet GearSet { get; set; }
         public GearSetModel GearSetModel { get; set; }
-        public string WheelSet { get; set; }
+        public WheelSet WheelSet { get; set; }
+        public WheelSetModel WheelSetModel { get; set; }
         public float Weight { get; set; }
     }
 }
