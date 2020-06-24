@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\projects\EbenSandbox\WebApiFundamentals-master\starting" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="TheCodeCamp" t="IncludeRecursive">
+        <e p="App_Data" t="Include" />
+        <e p="App_Start" t="Include">
+          <e p="AutofacConfig.cs" t="Include" />
+          <e p="FilterConfig.cs" t="Include" />
+          <e p="RouteConfig.cs" t="Include" />
+          <e p="WebApiConfig.cs" t="Include" />
+        </e>
+        <e p="Areas" t="Include">
+          <e p="HelpPage" t="Include">
+            <e p="ApiDescriptionExtensions.cs" t="Include" />
+            <e p="App_Start" t="Include">
+              <e p="HelpPageConfig.cs" t="Include" />
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="HelpController.cs" t="Include" />
+            </e>
+            <e p="HelpPage.css" t="Include" />
+            <e p="HelpPageAreaRegistration.cs" t="Include" />
+            <e p="HelpPageConfigurationExtensions.cs" t="Include" />
+            <e p="ModelDescriptions" t="Include">
+              <e p="CollectionModelDescription.cs" t="Include" />
+              <e p="ComplexTypeModelDescription.cs" t="Include" />
+              <e p="DictionaryModelDescription.cs" t="Include" />
+              <e p="EnumTypeModelDescription.cs" t="Include" />
+              <e p="EnumValueDescription.cs" t="Include" />
+              <e p="IModelDocumentationProvider.cs" t="Include" />
+              <e p="KeyValuePairModelDescription.cs" t="Include" />
+              <e p="ModelDescription.cs" t="Include" />
+              <e p="ModelDescriptionGenerator.cs" t="Include" />
+              <e p="ModelNameAttribute.cs" t="Include" />
+              <e p="ModelNameHelper.cs" t="Include" />
+              <e p="ParameterAnnotation.cs" t="Include" />
+              <e p="ParameterDescription.cs" t="Include" />
+              <e p="SimpleTypeModelDescription.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="HelpPageApiModel.cs" t="Include" />
+            </e>
+            <e p="SampleGeneration" t="Include">
+              <e p="HelpPageSampleGenerator.cs" t="Include" />
+              <e p="HelpPageSampleKey.cs" t="Include" />
+              <e p="ImageSample.cs" t="Include" />
+              <e p="InvalidSample.cs" t="Include" />
+              <e p="ObjectGenerator.cs" t="Include" />
+              <e p="SampleDirection.cs" t="Include" />
+              <e p="TextSample.cs" t="Include" />
+            </e>
+            <e p="Views" t="Include">
+              <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Help" t="Include">
+                <e p="Api.cshtml" t="Include" />
+                <e p="DisplayTemplates" t="Include">
+                  <e p="ApiGroup.cshtml" t="Include" />
+                  <e p="CollectionModelDescription.cshtml" t="Include" />
+                  <e p="ComplexTypeModelDescription.cshtml" t="Include" />
+                  <e p="DictionaryModelDescription.cshtml" t="Include" />
+                  <e p="EnumTypeModelDescription.cshtml" t="Include" />
+                  <e p="HelpPageApiModel.cshtml" t="Include" />
+                  <e p="ImageSample.cshtml" t="Include" />
+                  <e p="InvalidSample.cshtml" t="Include" />
+                  <e p="KeyValuePairModelDescription.cshtml" t="Include" />
+                  <e p="ModelDescriptionLink.cshtml" t="Include" />
+                  <e p="Parameters.cshtml" t="Include" />
+                  <e p="Samples.cshtml" t="Include" />
+                  <e p="SimpleTypeModelDescription.cshtml" t="Include" />
+                  <e p="TextSample.cshtml" t="Include" />
+                </e>
+                <e p="Error.cshtml" t="Include" />
+                <e p="Index.cshtml" t="Include" />
+                <e p="ResourceModel.cshtml" t="Include" />
+              </e>
+              <e p="Shared" t="Include">
+                <e p="_Layout.cshtml" t="Include" />
+              </e>
+              <e p="Web.config" t="Include" />
+            </e>
+            <e p="XmlDocumentationProvider.cs" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="ValuesController.cs" t="Include" />
+        </e>
+        <e p="Data" t="Include">
+          <e p="CampContext.cs" t="Include" />
+          <e p="CampRepository.cs" t="Include" />
+          <e p="Entities" t="Include">
+            <e p="Camp.cs" t="Include" />
+            <e p="Location.cs" t="Include" />
+            <e p="Speaker.cs" t="Include" />
+            <e p="Talk.cs" t="Include" />
+          </e>
+          <e p="ICampRepository.cs" t="Include" />
+          <e p="Migrations" t="Include">
+            <e p="201901030609030_InitialCreate.cs" t="Include" />
+            <e p="201901030609030_InitialCreate.designer.cs" t="Include" />
+            <e p="201901030609030_InitialCreate.resx" t="Include" />
+            <e p="201901030630577_Initial.cs" t="Include" />
+            <e p="201901030630577_Initial.designer.cs" t="Include" />
+            <e p="201901030630577_Initial.resx" t="Include" />
+            <e p="Configuration.cs" t="Include" />
+          </e>
+        </e>
+        <e p="favicon.ico" t="Include" />
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="TheCodeCamp.csproj" t="IncludeRecursive" />
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="TheCodeCamp.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\Eben\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Eben\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_TheCodeCamp.-1123287786.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Eben\AppData\Roaming\JetBrains\Rider2020.1\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Eben\AppData\Roaming\JetBrains\Rider2020.1\extensions" t="IncludeRecursive" />
+  </component>
+</project>
