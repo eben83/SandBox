@@ -8,7 +8,7 @@ namespace Bicycle.Data.Models
         public string Make { get; set; }
         public string Model { get; set; }
         public GearSet GearSet { get; set; }
-        public string GearSetModel { get; set; }
+        public GearSetModel GearSetModel { get; set; }
         public string WheelSet { get; set; }
         public float Weight { get; set; }
     }
