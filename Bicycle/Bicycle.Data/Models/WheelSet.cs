@@ -2,6 +2,7 @@
 {
     public enum WheelSet
     {
-        
+        Carbon,
+        Aluminium,
     }
 }
