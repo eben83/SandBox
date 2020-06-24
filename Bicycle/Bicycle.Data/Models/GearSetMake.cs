@@ -2,7 +2,6 @@
 {
     public enum GearSetMake
     {
-        Shimano,
-        RSam,
+        
     }
 }
