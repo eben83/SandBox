@@ -7,9 +7,9 @@ namespace Bicycle.Web.Controllers
     {
         IBikeData _db;
 
-        public BikeController()
+        public BikeController(IBikeData db)
         {
-            _db = new InMemoryBikeData();
+            _db = _db;
         }
         
         // GET
