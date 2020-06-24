@@ -5,7 +5,7 @@ namespace Bicycle.Data.Services
 {
     public interface IBicycleDate
     {
-        IEnumerable<BicycleType> GetAllBycycles();
+        IEnumerable<BicycleType> GetAllBicyclesType();
         IEnumerable<Models.Bicycle> GetAllBicycles();
         IEnumerable<Models.WheelSet> GetAllWheelSets();
         IEnumerable<Models.GearSet> GetAllGearSets();
