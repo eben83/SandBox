@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Bicycle.Data.Models;
 
 namespace Bicycle.Data.Services
@@ -20,7 +21,7 @@ namespace Bicycle.Data.Services
         
         public IEnumerable<Bike> GetAll()
         {
-            throw new System.NotImplementedException();
+            return _bikes.OrderBy(b => b.BikeMake);
         }
     }
     
