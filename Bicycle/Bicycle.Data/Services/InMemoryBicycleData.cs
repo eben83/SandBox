@@ -5,7 +5,7 @@ namespace Bicycle.Data.Services
 {
     class InMemoryBicycleData : IBicycleDate
     {
-        public IEnumerable<BicycleType> GetAllBycycles()
+        public IEnumerable<BicycleType> GetAllBicyclesType()
         {
             throw new System.NotImplementedException();
         }
