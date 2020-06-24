@@ -3,13 +3,13 @@
     public class Bike
     {
         public int Id { get; set; }
-        public string BikeType { get; set; }
+        public BikeType BikeType { get; set; }
         public string BikeMake { get; set; }
         public string BikeModel { get; set; }
-        public string GearSetMake { get; set; }
-        public string GearSet { get; set; }
-        public string WheelSetType { get; set; }
-        public string WheelSetMake { get; set; }
+        public GearSetMake GearSetMake { get; set; }
+        public GearSet GearSet { get; set; }
+        public WheelSetType WheelSetType { get; set; }
+        public WheelSetMake WheelSetMake { get; set; }
         public int Weight { get; set; }
     }
 }
