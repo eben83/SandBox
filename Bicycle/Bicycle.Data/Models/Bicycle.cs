@@ -1,10 +1,13 @@
-﻿namespace Bicycle.Data.Models
+﻿using System;
+
+namespace Bicycle.Data.Models
 {
     public class Bicycle
     {
+        public string BicycleType { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
-        public string GearSet { get; set; }
+        public GearSet GearSet { get; set; }
         public string WheelSet { get; set; }
         public float Weight { get; set; }
     }
