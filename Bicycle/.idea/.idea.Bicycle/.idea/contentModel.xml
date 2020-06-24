@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\projects\EbenSandbox\Bicycle" t="IncludeFlat">
-      <e p="Bicycle.Data" t="IncludeRecursive">
+      <e p="Bicycle.sln" t="IncludeFlat" />
+      <e p="Bicycle.Web" t="IncludeRecursive">
         <e p="App_Data" t="Include" />
         <e p="App_Start" t="Include">
           <e p="BundleConfig.cs" t="Include" />
           <e p="FilterConfig.cs" t="Include" />
           <e p="RouteConfig.cs" t="Include" />
         </e>
-        <e p="Bicycle.Data.csproj" t="IncludeRecursive" />
+        <e p="Bicycle.Web.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Content" t="Include">
           <e p="bootstrap-theme.css" t="Include" />
@@ -75,7 +76,6 @@
         <e p="Web.Debug.config" t="Include" />
         <e p="Web.Release.config" t="Include" />
       </e>
-      <e p="Bicycle.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
     <e p="C:\Users\Eben\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />

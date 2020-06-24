@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bicycle.Data", "Bicycle.Data\Bicycle.Data.csproj", "{5B7C1BE0-1C20-45A2-B7AD-39DC7B5349A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bicycle.Web", "Bicycle.Web\Bicycle.Web.csproj", "{5B7C1BE0-1C20-45A2-B7AD-39DC7B5349A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
