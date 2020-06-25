@@ -23,6 +23,11 @@ namespace Bicycle.Data.Services
         {
             return bikes.OrderBy(b => b.BikeMake);
         }
+
+        public Bike Get(int id)
+        {
+            return bikes.FirstOrDefault(b => b.Id == id);
+        }
     }
     
 }
