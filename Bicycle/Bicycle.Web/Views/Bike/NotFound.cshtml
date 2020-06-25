@@ -1,18 +1,16 @@
 ﻿@model dynamic
 
 @{
-    Layout = null;
+    ViewBag.Title = "Not Found";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
+<h1>Error</h1>
+
+<div class="alert-danger">
+    <h3>
+        The item you where after was not found!
+    </h3>
 </div>
-</body>
-</html>
+
+@Html.ActionLink("Return to list", "Index")
