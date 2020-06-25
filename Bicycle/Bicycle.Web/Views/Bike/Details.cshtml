@@ -1,18 +1,79 @@
 ﻿@model Bicycle.Data.Models.Bike
 
 @{
-    Layout = null;
+    ViewBag.Title = "Details";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
+<h2>
+    @Html.DisplayFor(model => model.BikeMake)
+    @Html.DisplayFor(model => model.BikeModel)
+</h2>
 <div>
-      
+    <h4>Bikes</h4>
+    <hr/>
+    <dl class="dl-horizontal">
+        
+         <dt>
+            @Html.DisplayNameFor(model => model.BikeType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BikeType)
+        </dd>
+        
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.BikeMake)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BikeMake)
+        </dd>
+
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.BikeModel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BikeModel)
+        </dd>
+        
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.GearSetMake)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GearSetMake)
+        </dd>
+        
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.GearSet)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GearSet)
+        </dd>
+        
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.WheelSetType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WheelSetType)
+        </dd>
+        
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.WheelSetMake)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WheelSetMake)
+        </dd>
+        
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+    </dl>
 </div>
-</body>
-</html>
