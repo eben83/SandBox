@@ -31,12 +31,22 @@ namespace Bicycle.Web.Controllers
         public ActionResult Details(int id)
         {
             var model = _db.Get(id);
+            if (model == null)
+            {
+                return RedirectToAction("NotFound");
+            }
+            
             return View(model);
         }
 
         public ActionResult Delete(int id)
         {
             throw new System.NotImplementedException();
+        }
+
+        public ActionResult NotFound()
+        {
+            return View();
         }
     }
 }
