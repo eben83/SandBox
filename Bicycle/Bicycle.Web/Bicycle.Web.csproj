@@ -116,6 +116,7 @@
         <Compile Include="App_Start\BundleConfig.cs" />
         <Compile Include="App_Start\FilterConfig.cs" />
         <Compile Include="App_Start\RouteConfig.cs" />
+        <Compile Include="Controllers\BikeController.cs" />
         <Compile Include="Controllers\HomeController.cs" />
         <Compile Include="Global.asax.cs">
             <DependentUpon>Global.asax</DependentUpon>
@@ -144,7 +145,10 @@
         <Content Include="Scripts\jquery.validate.unobtrusive.js" />
         <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
         <Content Include="Scripts\modernizr-2.8.3.js" />
-        <Content Include="Views\Home\BIke.cshtml" />
+        <Content Include="Views\Bike\Create.cshtml" />
+        <Content Include="Views\Bike\Details.cshtml" />
+        <Content Include="Views\Bike\Index.cshtml" />
+        <Content Include="Views\Bike\NotFound.cshtml" />
         <Content Include="Web.config" />
         <Content Include="Web.Debug.config">
             <DependentUpon>Web.config</DependentUpon>
@@ -176,6 +180,12 @@
         <None Include="packages.config" />
         <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
         <Content Include="Scripts\jquery-3.3.1.min.map" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Bicycle.Data\Bicycle.Data.csproj">
+        <Project>{589ad766-fd97-4488-bc91-324346871da0}</Project>
+        <Name>Bicycle.Data</Name>
+      </ProjectReference>
     </ItemGroup>
     <PropertyGroup>
         <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
