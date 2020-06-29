@@ -2,6 +2,7 @@
 {
     public enum GearSetMake
     {
+        Unknown,
         Shimano,
         SRam,
     }
