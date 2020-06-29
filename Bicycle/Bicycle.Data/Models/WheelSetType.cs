@@ -2,6 +2,7 @@
 {
     public enum WheelSetType
     {
+        Unknown,
         Carbon,
         Aluminium,
     }
