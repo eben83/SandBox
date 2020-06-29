@@ -16,6 +16,7 @@ namespace Bicycle.Data.Models
         [Display(Name = "Bike Model")]
         public string BikeModel { get; set; }
         
+        [Display(Name = "Gear Set Make")]
         public GearSetMake GearSetMake { get; set; }
         
         [Display(Name = "Gear Set")]
