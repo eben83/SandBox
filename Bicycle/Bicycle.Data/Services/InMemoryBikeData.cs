@@ -28,6 +28,12 @@ namespace Bicycle.Data.Services
         {
             return bikes.FirstOrDefault(b => b.Id == id);
         }
+
+        public void Add(Bike bike)
+        {
+            bikes.Add(bike);
+            bike.Id = bikes.Max(b => b.Id) + 1;
+        }
     }
     
 }
