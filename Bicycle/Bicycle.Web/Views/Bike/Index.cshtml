@@ -7,7 +7,7 @@
 <h2>Bike Shop</h2>
 
 <p>
-    @Html.ActionLink("Create", "Create")
+    @Html.ActionLink("Create New", "Create")
 </p>
 <p>
     There are @Model.Count() Bikes
@@ -27,11 +27,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.BikeMake)
             </td>
-            <td>
+            <tr>
                 @Html.ActionLink("Edit", "Edit", new {id = item.Id}) |
                 @Html.ActionLink("Details", "Details", new {id = item.Id}) |
                 @Html.ActionLink("Delete", "Delete", new {id = item.Id})
-            </td>
+            </tr>
         </tr>
         
     }
