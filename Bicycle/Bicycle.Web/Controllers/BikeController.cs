@@ -20,7 +20,19 @@ namespace Bicycle.Web.Controllers
             var model = _db.GetAll();
             return View(model);
         }
+        
+        public ActionResult Details(int id)
+        {
+            var model = _db.Get(id);
+            if (model == null)
+            {
+                return RedirectToAction("NotFound");
+            }
+            
+            return View(model);
+        }
 
+        [HttpGet]
         public ActionResult Create()
         {
             return View();
@@ -33,9 +45,9 @@ namespace Bicycle.Web.Controllers
             if (ModelState.IsValid)
             {
                 _db.Add(bike);
-                return RedirectToAction("Index");
+                return RedirectToAction("Details");
             }
-        
+
             return View();
         }
 
@@ -50,17 +62,7 @@ namespace Bicycle.Web.Controllers
             return View(model);
         }
 
-        public ActionResult Details(int id)
-        {
-            var model = _db.Get(id);
-            if (model == null)
-            {
-                return RedirectToAction("NotFound");
-            }
-            
-            return View(model);
-        }
-
+        
         public ActionResult Delete(int id)
         {
             throw new System.NotImplementedException();
