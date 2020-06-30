@@ -9,9 +9,9 @@ namespace Bicycle.Web.Controllers
     {
         private readonly IBikeData _db;
 
-        public BikeController(IBikeData db)
+        public BikeController()
         {
-            _db = db;
+            _db = new InMemoryBikeData();
         }
 
         // GET
@@ -35,7 +35,7 @@ namespace Bicycle.Web.Controllers
                 _db.Add(bike);
                 return RedirectToAction("Index");
             }
-
+        
             return View();
         }
 
