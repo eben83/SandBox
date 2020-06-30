@@ -8,5 +8,7 @@ namespace Bicycle.Data.Services
         IEnumerable<Bike> GetAll();
 
         Bike Get(int id);
+
+        void Add(Bike bike);
     }
 }
