@@ -40,11 +40,11 @@ namespace Bicycle.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Bike bike)
+        public ActionResult Create(Components components)
         {
             if (ModelState.IsValid)
             {
-                _db.Add(bike);
+                _db.Add(components);
                 return RedirectToAction("Index");
             }
 
