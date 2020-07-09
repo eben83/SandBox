@@ -21,7 +21,7 @@ namespace Bicycle.Data.Services
         
         public IEnumerable<Components> GetAll()
         {
-            return components.OrderBy(b => b.ComponentType);
+            return components.OrderBy(b => b.Model);
         }
 
         public Components Get(int id)
