@@ -9,9 +9,9 @@ namespace Bicycle.Web.Controllers
     {
         private readonly IBikeData _db;
 
-        public BikeController()
+        public BikeController(IBikeData db)
         {
-            _db = new InMemoryBikeData();
+            _db = db;
         }
 
         // GET
