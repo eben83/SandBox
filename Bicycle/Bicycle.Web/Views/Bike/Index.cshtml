@@ -14,16 +14,25 @@
     There are @Model.Count() component entries 
 </p>
 
-<div class="panel panel-default">
+<div class="panel panel-default col-md-10">
     @foreach (var item in Model)
     {
         <div class="panel-heading">
             @item.ComponentType    
         </div>
         <div class="panel-body">
-            @item.Make
-            @item.Model    
+            <div class="col-md-3">
+                @item.Make
+                @item.Model
+            </div>
+            
+            <div class="col-md-5">
+                @Html.ActionLink("Edit", "Edit", new {Id = item.Id}) |
+                @Html.ActionLink("Details", "Details", new {id = item.Id}) |
+                @Html.ActionLink("Delete", "Delete", new {id = item.Id})
+            </div>
         </div>
+        
         
     }
 </div>
