@@ -70,7 +70,7 @@ namespace Bicycle.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                return RedirectToAction("Details", new {id = components.Id});
+                return RedirectToAction("Index", new {id = components.Id});
             }
 
             return View(components);
