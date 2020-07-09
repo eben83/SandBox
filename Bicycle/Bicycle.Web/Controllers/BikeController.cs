@@ -60,8 +60,20 @@ namespace Bicycle.Web.Controllers
             {
                 RedirectToAction("NotFound");
             }
-
+            
             return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Components components)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Details", new {id = components.Id});
+            }
+
+            return View(components);
         }
 
         
