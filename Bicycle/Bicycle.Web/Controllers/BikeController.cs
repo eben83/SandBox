@@ -45,7 +45,7 @@ namespace Bicycle.Web.Controllers
             if (ModelState.IsValid)
             {
                 _db.Add(bike);
-                return RedirectToAction("Details");
+                return RedirectToAction("Index");
             }
 
             return View();
