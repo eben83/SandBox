@@ -2,11 +2,12 @@
 {
     public enum ComponentType
     {
-        HandleBars,
+        Handlebars,
         Frame,
         Seat,
         Pedals,
         Chainring,
         Cassette,
+        Wheel,
     }
 }
