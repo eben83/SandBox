@@ -10,7 +10,10 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Bike</h4>
+        <h4>
+            @Html.DisplayFor(model => model.Make)
+            @Html.DisplayFor(model => model.Model)
+        </h4>
         
     </div>
 }
