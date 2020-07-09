@@ -15,6 +15,7 @@ namespace Bicycle.Data.Services
                 new Components{ComponentType = ComponentType.Pedals, Id = 1, Make = "Look", Model = "Carbon Blade", Weight = 321, BikeType = BikeType.Road},
                 new Components{ComponentType = ComponentType.Frame, Id = 2, Make = "Trek", Model = "Madona SLR", Weight = 1200, BikeType = BikeType.Road},
                 new Components{ComponentType = ComponentType.Cassette, Id = 3, Make = "Shimano", Model = "Ultegra", Weight = 110, BikeType = BikeType.Road},
+                new Components{ComponentType = ComponentType.Cassette, Id = 4, Make = "Shimano", Model = "Di-2", Weight = 150, BikeType = BikeType.Road},
             };
         }
         
