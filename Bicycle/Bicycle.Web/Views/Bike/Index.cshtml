@@ -1,11 +1,12 @@
 ﻿@using Bicycle.Data.Models
 @model System.Collections.Generic.IEnumerable<Bicycle.Data.Models.Components>
 
+
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Bike Shop</h2>
+<h2>Component Shop</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -14,11 +15,13 @@
     There are @Model.Count() component categories 
 </p>
 
+
 <div class="panel panel-default">
-    @foreach (var component in Model)
-        {
-            <div class="panel-heading">
-                @component.ComponentType
-            </div>
-        }
+    @foreach (var item in Model)
+    {
+        <div class="panel-heading">
+            @Html.DisplayFor(modelItem => item.Make)
+        </div>
+        
+    }
 </div>
