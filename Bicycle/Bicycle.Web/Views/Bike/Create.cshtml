@@ -1,4 +1,5 @@
-﻿@using System.Web.Mvc.Html
+﻿@using System.Collections.Specialized
+@using System.Web.Mvc.Html
 @model Bicycle.Data.Models.Components
 
 @{
@@ -11,43 +12,53 @@
 {
     @Html.AntiForgeryToken()
     
-@*     <div class="form-horizontal"> *@
-@*         <h4>Bike Form</h4> *@
-@*         <hr/> *@
-@*         @Html.ValidationSummary(true,"", new {@class = "text-danger"}) *@
-@*          *@
-    @*     <div class="form-group"> *@
-    @*         @Html.LabelFor(model => model.BikeType, new{@class="form-label col-md-2"}) *@
-    @*         <div class="col-md-10"> *@
-    @*             @Html.EnumDropDownListFor(model => model.BikeType, new{htmlAttribute = new {@class="form-control"}}) *@
-    @*         </div> *@
-    @*     </div> *@
-    @*      *@
-    @*      *@
-    @*     <div class="form-group"> *@
-    @*         @Html.LabelFor(model => model.BikeMake, new{@class="form-label col-md-2"}) *@
-    @*         <div class="col-md-10"> *@
-    @*             @Html.EditorFor(model => model.BikeMake, new{htmlAttribute = new {@class="form-control"}}) *@
-    @*             @Html.ValidationMessageFor(model => model.BikeMake, "", new{@class="text-danger"}) *@
-    @*         </div> *@
-    @*     </div> *@
-    @*      *@
-    @*      *@
-    @*     <div class="form-group"> *@
-    @*         @Html.LabelFor(model => model.BikeModel, new{@class="form-label col-md-2"}) *@
-    @*         <div class="col-md-10"> *@
-    @*             @Html.EditorFor(model => model.BikeModel, new{htmlAttribute = new {@class="form-control"}}) *@
-    @*             @Html.ValidationMessageFor(model => model.BikeModel, "", new{@class="text-danger"}) *@
-    @*         </div> *@
-    @*     </div> *@
-    @*      *@
-    @*      *@
-    @*     <div class="form-group"> *@
-    @*         <div class="col-md-offset-2 col-md-10"> *@
-    @*             <input type="submit" value="Create" class="btn btn-primary"/> *@
-    @*         </div> *@
-    @*     </div> *@
-    @* </div> *@
+     <div class="form-horizontal"> 
+         <h4>Bike Form</h4> 
+         <hr/> 
+         @Html.ValidationSummary(true,"", new {@class = "text-danger"}) 
+
+         
+         <div class="form-group"> 
+              @Html.LabelFor(model => model.BikeType, new{@class="form-label col-md-2"}) 
+              <div class="col-md-10"> 
+                  @Html.EnumDropDownListFor(model => model.BikeType, new{htmlAttribute = new {@class="form-control"}}) 
+              </div> 
+          </div> 
+     
+         <div class="form-group">
+             @Html.LabelFor(model => model.ComponentType, new{@class="form-label col-md-2"})
+             <div class="col-md-10">
+                 @Html.EnumDropDownListFor(model => model.ComponentType)
+             </div>
+         </div>
+         
+         <div class="form-group">
+             @Html.LabelFor(model => model.Make, new{@class="form-label col-md-2"})
+             <div class="col-md-10">
+                 @Html.EditorFor(model => model.Make)
+             </div>
+         </div>
+         
+         <div class="form-group">
+             @Html.LabelFor(model => model.Model, new{@class="form-label col-md-2"})
+             <div class="col-md-10">
+                 @Html.EditorFor(model => model.Model)
+             </div>
+         </div>
+         
+         <div class="form-group">
+             @Html.LabelFor(model => model.Weight, new{@class="form-lable col-md-2"})
+             <div class="col-md-10">
+                 @Html.EditorFor(model => model.Weight)
+             </div>
+         </div>
+
+         <div class="form-group"> 
+              <div class="col-md-offset-2 col-md-10"> 
+                  <input type="submit" value="Create" class="btn btn-primary"/> 
+              </div> 
+          </div> 
+      </div> 
 }
 
 <div>
