@@ -18,6 +18,7 @@ namespace Bicycle.Web.Controllers
         // GET
         public ActionResult Index()
         {
+            //find out how to group- so the grouping can be done per ComponentType
             var model = _db.GetAll();
             return View(model);
         }
