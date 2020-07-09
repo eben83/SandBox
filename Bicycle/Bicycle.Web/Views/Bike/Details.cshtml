@@ -1,105 +1,10 @@
-﻿@model Bicycle.Data.Models.Bike
+﻿@model Bicycle.Data.Models.Components
 
 @{
     ViewBag.Title = "Details";
 }
 
-<h2>
-    @Html.DisplayFor(model => model.BikeMake)
-    @Html.DisplayFor(model => model.BikeModel)
-</h2>
-<div>
-    <h4>Bikes</h4>
-    <hr/>
-    <dl class="dl-horizontal">
-        
-        <dt>
-            @Html.DisplayNameFor(model => model.BikeType)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BikeType)
-        </dd>
-        
-        
-        <dt>
-            @Html.DisplayNameFor(model => model.BikeMake)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BikeMake)
-        </dd>
 
-        
-        <dt>
-            @Html.DisplayNameFor(model => model.BikeModel)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BikeModel)
-        </dd>
-        
-        
-        <dt>
-            @Html.DisplayNameFor(model => model.GearSetMake)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.GearSetMake)
-        </dd>
-        
-        
-        <dt>
-            @Html.DisplayNameFor(model => model.GearSet.Model)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.GearSet.Model)
-        </dd>
-        
-        
-        <dt>
-            @Html.DisplayNameFor(model => model.GearSet.ModelNumber)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.GearSet.ModelNumber)
-        </dd>
-        
-        
-        <dt>
-            @Html.DisplayNameFor(model => model.WheelSetType)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.WheelSetType)
-        </dd>
-        
-        
-        <dt>
-            @Html.DisplayNameFor(model => model.WheelSetMake.Name)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.WheelSetMake.Name)
-        </dd>
-        
-        
-        <dt>
-            @Html.DisplayNameFor(model => model.WheelSetMake.Model)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.WheelSetMake.Model)
-        </dd>
-        
-        
-        <dt>
-            @Html.DisplayNameFor(model => model.WheelSetMake.Weight)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.WheelSetMake.Weight)
-        </dd>
-        
-        
-        <dt>
-            @Html.DisplayNameFor(model => model.Weight)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Weight)
-        </dd>
-    </dl>
-    
+<div>
     @Html.ActionLink("Back", "Index")
 </div>
