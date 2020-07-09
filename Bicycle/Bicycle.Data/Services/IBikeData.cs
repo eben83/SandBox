@@ -5,10 +5,10 @@ namespace Bicycle.Data.Services
 {
     public interface IBikeData
     {
-        IEnumerable<Bike> GetAll();
+        IEnumerable<Components> GetAll();
 
-        Bike Get(int id);
+        Components Get(int id);
 
-        void Add(Bike bike);
+        void Add(Components components);
     }
 }
