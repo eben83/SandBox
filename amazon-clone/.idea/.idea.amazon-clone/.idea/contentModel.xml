@@ -95,6 +95,7 @@
               <e p="NavMenu.js" t="Include" />
             </e>
             <e p="custom.css" t="Include" />
+            <e p="firebase.js" t="Include" />
             <e p="index.js" t="Include" />
             <e p="registerServiceWorker.js" t="Include" />
           </e>
