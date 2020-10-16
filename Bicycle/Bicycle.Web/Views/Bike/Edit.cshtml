@@ -1,0 +1,64 @@
+﻿@model Bicycle.Data.Models.Components
+
+@{
+    ViewBag.Title = "Edit";
+}
+<h2>Editing</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>
+            @Html.DisplayFor(model => model.Make)
+            @Html.DisplayFor(model => model.Model)
+        </h4>
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.BikeType, htmlAttributes: new{@class="control-label col-md-2"})
+            <div class="col-md-5">
+                @Html.EnumDropDownListFor(model => model.BikeType, new{htmlAttributes = new {@class="text-danger"}})
+                @Html.ValidationMessageFor(model => model.BikeType, "", new {@class="text-danger"})
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.ComponentType, htmlAttributes: new{@class="control-label col-md-2"})
+            <div class="col-md-5">
+                @Html.EnumDropDownListFor(model => model.ComponentType, new{htmlAttributes = new {@class="text-danger"}})
+                @Html.ValidationMessageFor(model => model.ComponentType, "", new {@class="text-danger"})
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.Make, htmlAttributes: new{@class="control-label col-md-2"})
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Make, new{htmlAttributes = new {@class="text-danger"}})
+                @Html.ValidationMessageFor(model => model.Make, "", new {@class="text-danger"})
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.Model, htmlAttributes: new{@class="control-label col-md-2"})
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Model, new{htmlAttributes = new {@class="text-danger"}})
+                @Html.ValidationMessageFor(model => model.Model, "", new {@class="text-danger"})
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Weight, htmlAttributes: new{@class="control-label col-md-2"})
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Weight, new{htmlAttributes = new {@class="text-danger"}})
+                @Html.ValidationMessageFor(model => model.Weight, "", new {@class="text-danger"})
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-md-offset-5 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary"/>
+            </div>
+        </div>
+    </div>
+}
