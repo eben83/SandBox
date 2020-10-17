@@ -101,7 +101,9 @@
             <e p="firebase.js" t="Include" />
             <e p="index.js" t="Include" />
             <e p="Pages" t="Include">
-              <e p="Home.js" t="Include" />
+              <e p="home" t="Include">
+                <e p="Home.js" t="Include" />
+              </e>
             </e>
             <e p="registerServiceWorker.js" t="Include" />
           </e>
