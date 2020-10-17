@@ -89,7 +89,6 @@
             <e p="components" t="Include">
               <e p="header" t="Include">
                 <e p="header.css" t="Include" />
-                <e p="header.css.map" t="Include" />
                 <e p="header.js" t="Include" />
                 <e p="header.scss" t="Include" />
               </e>
@@ -102,7 +101,10 @@
             <e p="index.js" t="Include" />
             <e p="Pages" t="Include">
               <e p="home" t="Include">
+                <e p="home.css" t="Include" />
+                <e p="home.css.map" t="Include" />
                 <e p="Home.js" t="Include" />
+                <e p="home.scss" t="Include" />
               </e>
             </e>
             <e p="registerServiceWorker.js" t="Include" />
