@@ -31,23 +31,32 @@
   height: 20px !important;
   background-color: #cd9042;
 }
-.header .header__nav {
+.header > .header__nav {
   display: flex;
   justify-content: space-evenly;
 }
-.header .header__nav .header_option {
+.header > .header__nav .header_option {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
   color: white;
 }
-.header .header__nav .header_option .header__option-line-one {
+.header > .header__nav .header_option .header__option-line-one {
   font-size: 10px;
 }
-.header .header__nav .header_option .header__option-line-two {
+.header > .header__nav .header_option .header__option-line-two {
   font-size: 13px;
   font-weight: 800;
+}
+.header > .header__nav .header__option-basket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.header > .header__nav .header__option-basket .header__basket-count {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=header.css.map */

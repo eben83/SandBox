@@ -30,7 +30,7 @@
       background-color: #cd9042;
     }
   }
-  .header__nav {
+  >.header__nav {
     display: flex;
     justify-content: space-evenly;
     .header_option {
@@ -45,6 +45,15 @@
       .header__option-line-two {
         font-size: 13px;
         font-weight: 800;
+      }
+    }
+    .header__option-basket {
+      display: flex;
+      align-items: center;
+      color: white;
+      .header__basket-count {
+        margin-left: 10px;
+        margin-right: 10px;
       }
     }
   }
