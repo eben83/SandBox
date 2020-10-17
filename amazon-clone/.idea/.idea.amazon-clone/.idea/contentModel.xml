@@ -87,9 +87,7 @@
             <e p="App.js" t="Include" />
             <e p="App.test.js" t="Include" />
             <e p="components" t="Include">
-              <e p="Counter.js" t="Include" />
-              <e p="FetchData.js" t="Include" />
-              <e p="Home.js" t="Include" />
+              <e p="header.js" t="Include" />
               <e p="Layout.js" t="Include" />
               <e p="NavMenu.css" t="Include" />
               <e p="NavMenu.js" t="Include" />
@@ -97,6 +95,9 @@
             <e p="custom.css" t="Include" />
             <e p="firebase.js" t="Include" />
             <e p="index.js" t="Include" />
+            <e p="Pages" t="Include">
+              <e p="Home.js" t="Include" />
+            </e>
             <e p="registerServiceWorker.js" t="Include" />
           </e>
         </e>
