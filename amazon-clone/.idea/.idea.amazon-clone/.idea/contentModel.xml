@@ -88,6 +88,7 @@
             <e p="App.test.js" t="Include" />
             <e p="components" t="Include">
               <e p="header" t="Include">
+                <e p="header.css" t="Include" />
                 <e p="header.js" t="Include" />
                 <e p="header.scss" t="Include" />
               </e>
