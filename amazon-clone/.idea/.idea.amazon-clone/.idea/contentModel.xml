@@ -87,7 +87,10 @@
             <e p="App.js" t="Include" />
             <e p="App.test.js" t="Include" />
             <e p="components" t="Include">
-              <e p="header.js" t="Include" />
+              <e p="header" t="Include">
+                <e p="header.js" t="Include" />
+                <e p="header.scss.sass" t="Include" />
+              </e>
               <e p="Layout.js" t="Include" />
               <e p="NavMenu.css" t="Include" />
               <e p="NavMenu.js" t="Include" />
