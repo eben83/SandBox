@@ -11,4 +11,41 @@
     object-fit: contain;
     margin: 18px 20px 0 20px;
   }
+  >.header__search {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    align-items: stretch;
+    border-radius: 24px;
+    .header__search-input {
+      height: 12px;
+      line-height: 22px;
+      padding: 10px;
+      border: none;
+      width: 100%;
+    }
+    .header__search-icon {
+      padding: 5px;
+      height: 20px !important;
+      background-color: #cd9042;
+    }
+  }
+  .header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    .header_option {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: white;
+      .header__option-line-one {
+        font-size: 10px;
+      }
+      .header__option-line-two {
+        font-size: 13px;
+        font-weight: 800;
+      }
+    }
+  }
 }

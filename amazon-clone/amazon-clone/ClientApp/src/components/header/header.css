@@ -12,5 +12,42 @@
   object-fit: contain;
   margin: 18px 20px 0 20px;
 }
+.header > .header__search {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  align-items: stretch;
+  border-radius: 24px;
+}
+.header > .header__search .header__search-input {
+  height: 12px;
+  line-height: 22px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+.header > .header__search .header__search-icon {
+  padding: 5px;
+  height: 20px !important;
+  background-color: #cd9042;
+}
+.header .header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header .header__nav .header_option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+.header .header__nav .header_option .header__option-line-one {
+  font-size: 10px;
+}
+.header .header__nav .header_option .header__option-line-two {
+  font-size: 13px;
+  font-weight: 800;
+}
 
 /*# sourceMappingURL=header.css.map */
