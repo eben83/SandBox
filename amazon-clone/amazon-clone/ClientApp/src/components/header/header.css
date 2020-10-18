@@ -7,7 +7,7 @@
   top: 0;
   z-index: 100;
 }
-.header > .header__logo {
+.header .header__logo {
   width: 100px;
   object-fit: contain;
   margin: 18px 20px 0 20px;
