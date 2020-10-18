@@ -42,7 +42,7 @@ const Home = () => {
                             image='https://images-na.ssl-images-amazon.com/images/I/813T5unjeQL._AC_SL1500_.jpg'
                             alt='Roku Streaming Stick+ | HD/4K/HDR Streaming Device with Long-range Wireless and Voice Remote with TV Controls'
                             price={400}
-                            rating={4.5}
+                            rating={4}
                         />
                         <Product
                             title='SanDisk 128GB Extreme microSDXC UHS-I Memory Card with Adapter - C10, U3, V30, 4K, A2, Micro SD - SDSQXA1-128G-GN6MA '
@@ -58,7 +58,7 @@ const Home = () => {
                             image='https://images-na.ssl-images-amazon.com/images/I/61176H1a4cL._AC_SL1000_.jpg'
                             alt='Acer Aspire 5 Slim Laptop, 15.6 inches Full HD IPS Display, AMD Ryzen 3 3200U, Vega 3 Graphics, 4GB DDR4, 128GB SSD, Backlit Keyboard, Windows 10 in S Mode, A515-43-R19L, Silver '
                             price={10000}
-                            rating={4.5}
+                            rating={4}
                         />
                     </div>
                 </div>
