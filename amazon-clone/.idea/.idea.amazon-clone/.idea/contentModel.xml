@@ -107,7 +107,10 @@
             <e p="index.js" t="Include" />
             <e p="Pages" t="Include">
               <e p="checkout" t="Include">
+                <e p="checkout.css" t="Include" />
+                <e p="checkout.css.map" t="Include" />
                 <e p="checkout.js" t="Include" />
+                <e p="checkout.scss" t="Include" />
               </e>
               <e p="home" t="Include">
                 <e p="home.css" t="Include" />
