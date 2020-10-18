@@ -16,13 +16,16 @@ const Subtotal = () => {
                         <small className='subtotal__gift'>
                             <input type='checkbox'/> This order contains a gift
                         </small>
+                        
                     </>
                 )}
                 decimalScale={2}
-                // value={getBasketTotal(basket)}
+                value={0}
                 displayType={'text'}
-                prefix={'R'}
-                /> 
+                thousandSeperator={true}
+                prefix={'$'}
+                />
+                <button>Proceed to checkout</button>
             </div>
         </>
     )
