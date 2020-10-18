@@ -103,7 +103,10 @@
                 <e p="product.scss" t="Include" />
               </e>
               <e p="subtotal" t="Include">
+                <e p="subtotal.css" t="Include" />
+                <e p="subtotal.css.map" t="Include" />
                 <e p="subtotal.js" t="Include" />
+                <e p="subtotal.scss" t="Include" />
               </e>
             </e>
             <e p="custom.css" t="Include" />
