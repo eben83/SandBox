@@ -102,6 +102,9 @@
                 <e p="product.js" t="Include" />
                 <e p="product.scss" t="Include" />
               </e>
+              <e p="subtotal" t="Include">
+                <e p="subtotal.js" t="Include" />
+              </e>
             </e>
             <e p="custom.css" t="Include" />
             <e p="firebase.js" t="Include" />
