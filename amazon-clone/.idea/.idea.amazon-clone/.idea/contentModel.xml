@@ -97,6 +97,7 @@
               <e p="NavMenu.js" t="Include" />
               <e p="product" t="Include">
                 <e p="product.css" t="Include" />
+                <e p="product.css.map" t="Include" />
                 <e p="product.js" t="Include" />
                 <e p="product.scss" t="Include" />
               </e>
@@ -105,8 +106,12 @@
             <e p="firebase.js" t="Include" />
             <e p="index.js" t="Include" />
             <e p="Pages" t="Include">
+              <e p="checkout" t="Include">
+                <e p="checkout.js" t="Include" />
+              </e>
               <e p="home" t="Include">
                 <e p="home.css" t="Include" />
+                <e p="home.css.map" t="Include" />
                 <e p="Home.js" t="Include" />
                 <e p="home.scss" t="Include" />
               </e>
