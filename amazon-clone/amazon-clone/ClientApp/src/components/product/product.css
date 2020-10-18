@@ -13,6 +13,12 @@
 .product .product__info {
   height: 100px;
   margin-bottom: 15px;
+  justify-content: left;
+  z-index: 3;
+}
+.product .product__info .product__rating {
+  display: flex;
+  color: #f0c14b;
 }
 .product .product__info .product__price {
   margin-top: 5px;
