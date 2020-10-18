@@ -4,10 +4,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+.home .home__container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .home .home__container .home__image {
-  width: 99vw;
   z-index: -1;
-  margin-bottom: -150px;
+  margin-bottom: 0;
   mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
 }
 .home .home__container .home__row {
