@@ -127,6 +127,7 @@
               </e>
             </e>
             <e p="registerServiceWorker.js" t="Include" />
+            <e p="StateProvider.js" t="Include" />
           </e>
         </e>
         <e p="Controllers" t="Include">
