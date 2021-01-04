@@ -6,17 +6,15 @@ import Checkout from './pages/checkout/checkout'
 
 import './custom.css'
 
-export default class App extends Component {
-  static displayName = App.name;
-
-  render () {
+const App = () => {
     return (
-      <Layout>
-        <switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/checkout' component={Checkout} />
-        </switch>
-      </Layout>
-    );
-  }
+        <Layout>
+            <switch>
+                <Route exact path='/' component={Home} />
+                <Route exact path='/checkout' component={Checkout} />
+            </switch>
+        </Layout>
+    )
 }
+
+export default App;

@@ -1,16 +1,19 @@
 ﻿import React from 'react'
 import StarRateIcon from '@material-ui/icons/StarRate';
-import  useStateValue  from '../../StateProvider'
+import {useStateValue} from '../../StateProvider'
 
 import './product.css'
 
-const Product = ({title, image, alt, price, rating}) => {
-    const [{ state }, dispatch] = useStateValue();
+const Product = ({ id, title, image, alt, price, rating}) => {
+    const [{basket} , dispatch] = useStateValue();
+    
+    console.log("this is the basket >>>>>", basket)
     
     const addToBasket = () => {
         dispatch ({
             type: 'ADD_TO_BASKET',
             item: {
+                id: id,
                 title: title,
                 image: image,
                 price: price,
