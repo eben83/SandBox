@@ -1,0 +1,34 @@
+﻿@page
+@model ListModel
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>Restarants</h1>
+
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control"
+                   asp-for="SearchTerm"/>
+<!--asp-for tag helper, helps with model binding, input and label tags-->
+<!-- asp-for: this input is for the following property on the model -->
+<!--SearchTearm is the part that allows you to seleact the element-->
+            <span class="input-group-btn">
+                <button class="btn btn-default">Search</button>
+            </span>
+        </div>
+    </div>
+</form>
+
+@foreach(var restarant in Model.Restarants)
+{
+    <partial name="_Summary" model="restarant" />
+    <!--this is how to add a partial view-->
+}
+
+<a asp-page="./Edit">Add New</a>
+
+<div>
+    @Model.Message
+</div>

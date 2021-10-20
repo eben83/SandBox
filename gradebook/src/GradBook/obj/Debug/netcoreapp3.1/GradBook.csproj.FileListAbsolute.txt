@@ -1,0 +1,11 @@
+/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/bin/Debug/netcoreapp3.1/GradBook
+/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/bin/Debug/netcoreapp3.1/GradBook.deps.json
+/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/bin/Debug/netcoreapp3.1/GradBook.runtimeconfig.json
+/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/bin/Debug/netcoreapp3.1/GradBook.runtimeconfig.dev.json
+/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/bin/Debug/netcoreapp3.1/GradBook.dll
+/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/bin/Debug/netcoreapp3.1/GradBook.pdb
+/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/obj/Debug/netcoreapp3.1/GradBook.csprojAssemblyReference.cache
+/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/obj/Debug/netcoreapp3.1/GradBook.AssemblyInfoInputs.cache
+/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/obj/Debug/netcoreapp3.1/GradBook.AssemblyInfo.cs
+/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/obj/Debug/netcoreapp3.1/GradBook.dll
+/Users/ebenburger/dev/EbenSandbox/gradbook/src/GradBook/obj/Debug/netcoreapp3.1/GradBook.pdb

@@ -1,0 +1,14 @@
+@page "{carId}"
+@model Pages.Cars.Delete
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>DELETE!!</h2>
+
+<div class="alert alert-danger"> Are you sure you want to delete @Model.CarProp.Make @Model.CarProp.Model?</div>
+<form method="post">
+    <button type="submit" class="btn btn-danger btn-lg">YES!!</button>
+    <a asp-page="list" class="btn btn-primary btn-lg">Cancel</a>
+</form>

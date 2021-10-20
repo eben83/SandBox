@@ -1,0 +1,15 @@
+.landing-page {
+    padding: 0 -5vw;
+}
+
+.home-image {
+    background-image: url("/Images/markus-spiske-hvSr_CVecVI-unsplash.jpg");
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 100vh;
+}
+section {
+    padding-top: 45vh;
+}
+

@@ -1,0 +1,207 @@
+:root {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+}
+body{
+    color: black;
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+}
+/*target the scroll bar look*/
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb{
+    background: #6649b8;
+}
+main{
+    margin-left: 5rem;
+}
+.navbar {
+    position: fixed;
+    width: 5rem;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    justify-content: center;
+    /*animation*/
+    transition: 300ms ease;
+}
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.nav-item{
+    width: 100%;
+}
+.nav-item:last-child {
+    margin-top: auto;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+}
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    transition: 600ms;
+}
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+.nav-link svg{
+    min-width: 2rem;
+    margin: 0 2rem;
+}
+.svg-inline--fa{
+    color: #ff4c14;
+}
+.logo{
+    font-weight: bold;
+    text-transform: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 5rem;
+}
+.logo svg{
+    transform: rotate(0deg);
+    max-width: 2rem;
+    transition: 600ms ease;
+}
+.navbar:hover .logo svg{
+    transform: rotate(-180deg);
+    min-width: 2rem;
+    transition: 600ms ease;
+}
+
+.content-box{
+    width: 100%;
+    height: 100vh;
+}
+table {
+    padding: 50px 0;
+    width: 60%;
+    align-content: center;
+    text-align: center;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table-hover:hover{
+    background: #ff4c14;
+}
+
+
+/* landing page  */
+.header .content-box {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(./Images/GTR.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.banner-text{
+    width: 80%;
+    color: #ffffff;
+    margin: 0 auto 0;
+    text-align: center;
+}
+.banner-text h2{
+    padding-top: 40vh;
+    font-size: 64px;
+}
+.banner-text p{
+    font-size: 14px;
+    margin: 20px 0 50px;
+}
+
+/* Skills Section */
+.skill .content-box{
+    background: #f4f3ff;
+}
+
+h1{
+    padding-top: 100px;
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+th tr td{
+    padding: 25px 0;
+}
+.skill table {
+    border: 1px solid #111111;
+}
+.skill table td{
+    padding-top: 10px;
+}
+
+/* Course */
+
+.course .content-box{
+    color: #ffffff;
+}
+.course table{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px)
+{
+    .navbar{
+        bottom: 0;
+        width: 5rem;
+    }
+    .logo{
+        display: none;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .nav-link{
+        justify-content: center;
+    }
+    main{
+        margin: 0;
+    }
+
+}
+
+/* large screens */
+@media only screen and (min-width: 600px)
+{
+    .navbar{
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+    .navbar:hover{
+        width: 16rem;
+    }
+    .navbar:hover .link-text{
+        display: block;
+    }
+}

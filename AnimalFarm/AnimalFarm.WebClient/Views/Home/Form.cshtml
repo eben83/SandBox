@@ -1,0 +1,30 @@
+@model FormViewModel;
+
+@{
+   Layout = "_Layout";
+   ViewData["Title"] = "Form";
+}
+
+
+@using (Html.BeginForm("Form", "Home", FormMethod.Post))
+{
+   <h1 class="justify-content-center">Form</h1>
+
+   <div class="d-flex justify-content-center">
+   
+      <div class="flex-column">
+         <div class="flex-row">
+            <label>Name</label>
+            @Html.TextBoxFor(f => f.FirstName)
+         </div>
+         <div class="flex-row">
+            <label>Surname</label>
+            @Html.TextBoxFor(l => l.LastName)
+         </div>
+         <input class="btn btn-primary btn-lg" type="submit" name="submit" value="Submit"/>
+      </div>
+   </div>
+}
+
+
+

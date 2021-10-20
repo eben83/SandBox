@@ -1,0 +1,36 @@
+#main {
+    background-color: lightgray;
+}
+
+#title {
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+img {
+    width: max-content;
+    display: block;
+    height: 40%;
+    object-fit: cover;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+}
+
+#fig-caption {
+    padding: 15px 0px 0px 0px;
+    text-align: center;
+}
+
+.img-class {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+#tribute-info {
+    text-align: justify;
+    text-justify: inter-word;
+    width: 50%;
+    margin: auto;
+}

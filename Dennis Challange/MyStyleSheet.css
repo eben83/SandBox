@@ -1,0 +1,73 @@
+/* MyStyleSheet.css */
+
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+
+}
+
+.nav {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+    text-decoration: none;
+}
+
+
+.imgNav {
+    padding: 10px 20px 0px 50px ;
+    width: 5%;
+}
+
+.imageBody{
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    float: left;
+    list-style-type: none;
+    margin-left: 30%;
+    border-style: solid;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.right {
+    float: right;
+    list-style-type: none;
+    margin-right: 30%;
+    border-style: solid;
+    padding: 20px 20px 20px 20px;
+}
+.centre {
+    list-style-type: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: crimson;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 20px;
+}
